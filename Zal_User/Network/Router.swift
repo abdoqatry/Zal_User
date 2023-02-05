@@ -13,6 +13,12 @@ enum Router {
     case citieslist
     case areas(city_id:String)
     case register(phone:String,name:String,email:String,password:String,password_confirmation:String,lat:String,lng:String,address:String)
+    case forget_password(email:String)
+    case check_forget_code(phone:String,code:String)
+    case resend_forget_code(phone:String,type:String)
+    case reset_password(phone:String,code:String,password:String,password_confirmation:String)
+    case verify(phone:String,code:String)
+    case resend_verify_code(phone:String,type:String)
     
     private var path: String {
         var path: String
@@ -27,6 +33,18 @@ enum Router {
             path = "provider/areas"
         case.register:
             path = "api/register"
+        case.forget_password:
+            path = "api/forget_password"
+        case.check_forget_code:
+            path = "api/check_forget_code"
+        case.resend_forget_code:
+            path = "api/resend_forget_code"
+        case.reset_password:
+            path = "api/reset_password"
+        case.verify:
+            path = "api/verify"
+        case.resend_verify_code:
+            path = "api/resend_verify_code"
             
         }
         return path
@@ -67,6 +85,37 @@ enum Router {
                 "lat" : lat,
                 "lng" : lng,
                 "address" : address
+            ]
+        case.forget_password(let email):
+            param = [
+                "email" : email
+            ]
+        case.check_forget_code(let phone,let code):
+            param = [
+                "phone" : phone,
+                "code" : code
+            ]
+        case.resend_forget_code(let phone,let type):
+            param = [
+                "phone" : phone,
+                "type" : type
+            ]
+        case.reset_password(let phone,let code,let password,let password_confirmation):
+            param = [
+                "phone" : phone,
+                "code" : code,
+                "password" : password,
+                "password_confirmation" : password_confirmation
+            ]
+        case.verify(let phone,let code):
+            param = [
+                "phone" : phone,
+                "code" : code
+            ]
+        case.resend_verify_code(let phone,let type):
+            param = [
+                "phone" : phone,
+                "type" : type
             ]
             
         default:

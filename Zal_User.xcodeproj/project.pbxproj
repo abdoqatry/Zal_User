@@ -38,6 +38,11 @@
 		840AE76D298D9CA2000BECE2 /* MapPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AE76B298D9CA2000BECE2 /* MapPageVC.swift */; };
 		840AE76E298D9CA2000BECE2 /* MapPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840AE76C298D9CA2000BECE2 /* MapPageVC.xib */; };
 		840AE770298D9D3D000BECE2 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AE76F298D9D3D000BECE2 /* SignUpPresenter.swift */; };
+		840AE773298EFCDA000BECE2 /* ForgetPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AE772298EFCDA000BECE2 /* ForgetPassVC.swift */; };
+		840AE775298EFE9B000BECE2 /* ForgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AE774298EFE9B000BECE2 /* ForgetModel.swift */; };
+		84A980FE2990386D00D89A72 /* ForgetPassCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A980FD2990386D00D89A72 /* ForgetPassCodeVC.swift */; };
+		84A9810129903EEA00D89A72 /* NewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9810029903EEA00D89A72 /* NewPasswordVC.swift */; };
+		84A981042990411B00D89A72 /* VerivicationCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A981032990411B00D89A72 /* VerivicationCodeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +80,11 @@
 		840AE76B298D9CA2000BECE2 /* MapPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPageVC.swift; sourceTree = "<group>"; };
 		840AE76C298D9CA2000BECE2 /* MapPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapPageVC.xib; sourceTree = "<group>"; };
 		840AE76F298D9D3D000BECE2 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		840AE772298EFCDA000BECE2 /* ForgetPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassVC.swift; sourceTree = "<group>"; };
+		840AE774298EFE9B000BECE2 /* ForgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetModel.swift; sourceTree = "<group>"; };
+		84A980FD2990386D00D89A72 /* ForgetPassCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassCodeVC.swift; sourceTree = "<group>"; };
+		84A9810029903EEA00D89A72 /* NewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordVC.swift; sourceTree = "<group>"; };
+		84A981032990411B00D89A72 /* VerivicationCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerivicationCodeVC.swift; sourceTree = "<group>"; };
 		D938FEDFF5CE5582D62E0F28 /* Pods_Zal_User.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zal_User.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -127,6 +137,7 @@
 		840AE737298D77D1000BECE2 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				840AE771298EFCC2000BECE2 /* ForgetPass */,
 				840AE762298D93C9000BECE2 /* SignUP */,
 				840AE738298D77DC000BECE2 /* Login */,
 			);
@@ -185,6 +196,7 @@
 		840AE762298D93C9000BECE2 /* SignUP */ = {
 			isa = PBXGroup;
 			children = (
+				84A98102299040FE00D89A72 /* VerivicationCode */,
 				840AE763298D93DE000BECE2 /* SignUP.swift */,
 				840AE767298D9B1B000BECE2 /* cityModel.swift */,
 				840AE76B298D9CA2000BECE2 /* MapPageVC.swift */,
@@ -192,6 +204,41 @@
 				840AE76F298D9D3D000BECE2 /* SignUpPresenter.swift */,
 			);
 			path = SignUP;
+			sourceTree = "<group>";
+		};
+		840AE771298EFCC2000BECE2 /* ForgetPass */ = {
+			isa = PBXGroup;
+			children = (
+				840AE772298EFCDA000BECE2 /* ForgetPassVC.swift */,
+				84A980FF29903ECF00D89A72 /* NewPassword */,
+				84A980FC2990380A00D89A72 /* vervicationCode */,
+				840AE774298EFE9B000BECE2 /* ForgetModel.swift */,
+			);
+			path = ForgetPass;
+			sourceTree = "<group>";
+		};
+		84A980FC2990380A00D89A72 /* vervicationCode */ = {
+			isa = PBXGroup;
+			children = (
+				84A980FD2990386D00D89A72 /* ForgetPassCodeVC.swift */,
+			);
+			path = vervicationCode;
+			sourceTree = "<group>";
+		};
+		84A980FF29903ECF00D89A72 /* NewPassword */ = {
+			isa = PBXGroup;
+			children = (
+				84A9810029903EEA00D89A72 /* NewPasswordVC.swift */,
+			);
+			path = NewPassword;
+			sourceTree = "<group>";
+		};
+		84A98102299040FE00D89A72 /* VerivicationCode */ = {
+			isa = PBXGroup;
+			children = (
+				84A981032990411B00D89A72 /* VerivicationCodeVC.swift */,
+			);
+			path = VerivicationCode;
 			sourceTree = "<group>";
 		};
 		AEC734160927DA1796338434 /* Frameworks */ = {
@@ -355,13 +402,18 @@
 				840AE76D298D9CA2000BECE2 /* MapPageVC.swift in Sources */,
 				840AE74B298D7C8A000BECE2 /* uiimageExtention.swift in Sources */,
 				840AE770298D9D3D000BECE2 /* SignUpPresenter.swift in Sources */,
+				840AE775298EFE9B000BECE2 /* ForgetModel.swift in Sources */,
 				840AE73A298D77F5000BECE2 /* LoginVC.swift in Sources */,
 				840AE724298D70AC000BECE2 /* AppDelegate.swift in Sources */,
 				840AE747298D7C53000BECE2 /* uitabelViewExtention.swift in Sources */,
 				840AE764298D93DE000BECE2 /* SignUP.swift in Sources */,
 				840AE745298D7C30000BECE2 /* CALayer.swift in Sources */,
+				84A980FE2990386D00D89A72 /* ForgetPassCodeVC.swift in Sources */,
 				840AE766298D9ACC000BECE2 /* CityPosition.swift in Sources */,
 				840AE76A298D9C0B000BECE2 /* AreaPosition.swift in Sources */,
+				840AE773298EFCDA000BECE2 /* ForgetPassVC.swift in Sources */,
+				84A9810129903EEA00D89A72 /* NewPasswordVC.swift in Sources */,
+				84A981042990411B00D89A72 /* VerivicationCodeVC.swift in Sources */,
 				840AE75D298D80C9000BECE2 /* Router.swift in Sources */,
 				840AE754298D7EE8000BECE2 /* Constant.swift in Sources */,
 				840AE75F298D8364000BECE2 /* LoginPresenter.swift in Sources */,
