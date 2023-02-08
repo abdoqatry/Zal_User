@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 100
         if #available(iOS 15, *) {
                         let navigationBarAppearance = UINavigationBarAppearance()
                         navigationBarAppearance.configureWithOpaqueBackground()
@@ -47,7 +51,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let Login = UINavigationController(rootViewController: rootViewController)
         
-        window?.rootViewController = Login
+        if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
+            window?.rootViewController = Login
+        }else{
+        window?.rootViewController = HomeTabbarVC()
+        }
+
         return true
     }
 

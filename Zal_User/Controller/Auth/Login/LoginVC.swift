@@ -18,7 +18,7 @@ class LoginVC: UIViewController,LoginProtocol {
     }
     
     func navigateLogin() {
-//        present(viewController: StoreTabbarVC())
+        present(viewController: HomeTabbarVC())
     }
     
 

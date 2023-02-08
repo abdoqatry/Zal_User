@@ -40,6 +40,14 @@
 		840AE770298D9D3D000BECE2 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AE76F298D9D3D000BECE2 /* SignUpPresenter.swift */; };
 		840AE773298EFCDA000BECE2 /* ForgetPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AE772298EFCDA000BECE2 /* ForgetPassVC.swift */; };
 		840AE775298EFE9B000BECE2 /* ForgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AE774298EFE9B000BECE2 /* ForgetModel.swift */; };
+		841BB1DF299420DE00F74113 /* HomeTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BB1DD299420DE00F74113 /* HomeTabbarVC.swift */; };
+		841BB1E0299420DE00F74113 /* HomeTabbarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841BB1DE299420DE00F74113 /* HomeTabbarVC.xib */; };
+		841BB1E8299421C500F74113 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BB1E6299421C500F74113 /* HomeVC.swift */; };
+		841BB1E9299421C500F74113 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841BB1E7299421C500F74113 /* HomeVC.xib */; };
+		841BB1EB29942CD000F74113 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BB1EA29942CD000F74113 /* HomePresenter.swift */; };
+		841BB1ED29942E2400F74113 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BB1EC29942E2400F74113 /* HomeModel.swift */; };
+		841BB1F0299435C100F74113 /* SpecialStoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BB1EE299435C100F74113 /* SpecialStoreCell.swift */; };
+		841BB1F1299435C100F74113 /* SpecialStoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841BB1EF299435C100F74113 /* SpecialStoreCell.xib */; };
 		84A980FE2990386D00D89A72 /* ForgetPassCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A980FD2990386D00D89A72 /* ForgetPassCodeVC.swift */; };
 		84A9810129903EEA00D89A72 /* NewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9810029903EEA00D89A72 /* NewPasswordVC.swift */; };
 		84A981042990411B00D89A72 /* VerivicationCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A981032990411B00D89A72 /* VerivicationCodeVC.swift */; };
@@ -82,6 +90,14 @@
 		840AE76F298D9D3D000BECE2 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		840AE772298EFCDA000BECE2 /* ForgetPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassVC.swift; sourceTree = "<group>"; };
 		840AE774298EFE9B000BECE2 /* ForgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetModel.swift; sourceTree = "<group>"; };
+		841BB1DD299420DE00F74113 /* HomeTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabbarVC.swift; sourceTree = "<group>"; };
+		841BB1DE299420DE00F74113 /* HomeTabbarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabbarVC.xib; sourceTree = "<group>"; };
+		841BB1E6299421C500F74113 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		841BB1E7299421C500F74113 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		841BB1EA29942CD000F74113 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		841BB1EC29942E2400F74113 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		841BB1EE299435C100F74113 /* SpecialStoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialStoreCell.swift; sourceTree = "<group>"; };
+		841BB1EF299435C100F74113 /* SpecialStoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialStoreCell.xib; sourceTree = "<group>"; };
 		84A980FD2990386D00D89A72 /* ForgetPassCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassCodeVC.swift; sourceTree = "<group>"; };
 		84A9810029903EEA00D89A72 /* NewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordVC.swift; sourceTree = "<group>"; };
 		84A981032990411B00D89A72 /* VerivicationCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerivicationCodeVC.swift; sourceTree = "<group>"; };
@@ -121,10 +137,10 @@
 		840AE722298D70AC000BECE2 /* Zal_User */ = {
 			isa = PBXGroup;
 			children = (
+				841BB1DB29941FC600F74113 /* Controller */,
 				840AE755298D7FCD000BECE2 /* Network */,
 				840AE74C298D7CDB000BECE2 /* Helper */,
 				840AE73B298D7BA7000BECE2 /* Extentions */,
-				840AE737298D77D1000BECE2 /* Auth */,
 				840AE723298D70AC000BECE2 /* AppDelegate.swift */,
 				840AE729298D70AC000BECE2 /* Main.storyboard */,
 				840AE72C298D70AD000BECE2 /* Assets.xcassets */,
@@ -215,6 +231,38 @@
 				840AE774298EFE9B000BECE2 /* ForgetModel.swift */,
 			);
 			path = ForgetPass;
+			sourceTree = "<group>";
+		};
+		841BB1DB29941FC600F74113 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				841BB1E12994216C00F74113 /* Tabbar */,
+				840AE737298D77D1000BECE2 /* Auth */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		841BB1DC29941FD900F74113 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				841BB1E6299421C500F74113 /* HomeVC.swift */,
+				841BB1E7299421C500F74113 /* HomeVC.xib */,
+				841BB1EA29942CD000F74113 /* HomePresenter.swift */,
+				841BB1EC29942E2400F74113 /* HomeModel.swift */,
+				841BB1EE299435C100F74113 /* SpecialStoreCell.swift */,
+				841BB1EF299435C100F74113 /* SpecialStoreCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		841BB1E12994216C00F74113 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				841BB1DC29941FD900F74113 /* Home */,
+				841BB1DD299420DE00F74113 /* HomeTabbarVC.swift */,
+				841BB1DE299420DE00F74113 /* HomeTabbarVC.xib */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 		84A980FC2990380A00D89A72 /* vervicationCode */ = {
@@ -322,8 +370,11 @@
 				840AE730298D70AD000BECE2 /* LaunchScreen.storyboard in Resources */,
 				840AE76E298D9CA2000BECE2 /* MapPageVC.xib in Resources */,
 				840AE752298D7D43000BECE2 /* DateController.xib in Resources */,
+				841BB1F1299435C100F74113 /* SpecialStoreCell.xib in Resources */,
 				840AE72D298D70AD000BECE2 /* Assets.xcassets in Resources */,
 				840AE72B298D70AC000BECE2 /* Main.storyboard in Resources */,
+				841BB1E0299420DE00F74113 /* HomeTabbarVC.xib in Resources */,
+				841BB1E9299421C500F74113 /* HomeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +451,10 @@
 				840AE768298D9B1B000BECE2 /* cityModel.swift in Sources */,
 				840AE73D298D7BBA000BECE2 /* UiRespond.swift in Sources */,
 				840AE76D298D9CA2000BECE2 /* MapPageVC.swift in Sources */,
+				841BB1F0299435C100F74113 /* SpecialStoreCell.swift in Sources */,
+				841BB1DF299420DE00F74113 /* HomeTabbarVC.swift in Sources */,
 				840AE74B298D7C8A000BECE2 /* uiimageExtention.swift in Sources */,
+				841BB1E8299421C500F74113 /* HomeVC.swift in Sources */,
 				840AE770298D9D3D000BECE2 /* SignUpPresenter.swift in Sources */,
 				840AE775298EFE9B000BECE2 /* ForgetModel.swift in Sources */,
 				840AE73A298D77F5000BECE2 /* LoginVC.swift in Sources */,
@@ -412,10 +466,12 @@
 				840AE766298D9ACC000BECE2 /* CityPosition.swift in Sources */,
 				840AE76A298D9C0B000BECE2 /* AreaPosition.swift in Sources */,
 				840AE773298EFCDA000BECE2 /* ForgetPassVC.swift in Sources */,
+				841BB1EB29942CD000F74113 /* HomePresenter.swift in Sources */,
 				84A9810129903EEA00D89A72 /* NewPasswordVC.swift in Sources */,
 				84A981042990411B00D89A72 /* VerivicationCodeVC.swift in Sources */,
 				840AE75D298D80C9000BECE2 /* Router.swift in Sources */,
 				840AE754298D7EE8000BECE2 /* Constant.swift in Sources */,
+				841BB1ED29942E2400F74113 /* HomeModel.swift in Sources */,
 				840AE75F298D8364000BECE2 /* LoginPresenter.swift in Sources */,
 				840AE757298D7FE2000BECE2 /* NetworkManager.swift in Sources */,
 				840AE759298D8001000BECE2 /* HttpHeader.swift in Sources */,
@@ -585,7 +641,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "doorbird.smart1.com.Zal-User";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zal.com.Zal-User";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -617,7 +673,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "doorbird.smart1.com.Zal-User";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zal.com.Zal-User";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

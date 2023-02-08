@@ -19,6 +19,8 @@ enum Router {
     case reset_password(phone:String,code:String,password:String,password_confirmation:String)
     case verify(phone:String,code:String)
     case resend_verify_code(phone:String,type:String)
+    case sliders
+    case home
     
     private var path: String {
         var path: String
@@ -45,6 +47,10 @@ enum Router {
             path = "api/verify"
         case.resend_verify_code:
             path = "api/resend_verify_code"
+        case.sliders:
+            path = "api/sliders"
+        case.home:
+            path = "api/home"
             
         }
         return path

@@ -40,11 +40,11 @@ class LoginPresenter {
             if Code == 200 {
                 guard let token = Data else { return }
                 AuthService.instance.SetTokenDefaults(user: token)
-                if AuthService.instance.Verifyat == false {
-                    self?.vc.openingVerivecation(phone: "")
-                }else{
+//                if AuthService.instance.Verifyat == false {
+//                    self?.vc.openingVerivecation(phone: "")
+//                }else{
                 self?.vc.navigateLogin()
-                }
+//                }
             }else{
                 self?.vc.Errormassage(msg: Data?.message ?? "")
             }
