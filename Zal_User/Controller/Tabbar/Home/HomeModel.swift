@@ -57,7 +57,7 @@ struct Provider: Codable {
     let mainCategory: MainCategory?
     let rate: Int?
     let isVerified: Bool?
-    let distance: Int?
+    let distance: Double?
 
     enum CodingKeys: String, CodingKey {
         case id, name, desc, email, image

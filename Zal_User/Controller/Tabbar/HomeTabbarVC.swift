@@ -94,13 +94,13 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
      let AddProduct = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
     
       let Homevc = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
-     let ChatVC = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
+     let ProfleVC = Bundle.main.loadNibNamed("ProfileVC", owner: nil, options: nil)![0] as! ProfileVC
      let More = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
    let MyWalletVC = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
      
      let addProduct = UINavigationController(rootViewController: AddProduct)
          let home = UINavigationController(rootViewController: Homevc)
-         let Chat = UINavigationController(rootViewController: ChatVC)
+         let profile = UINavigationController(rootViewController: ProfleVC)
          let MoreVC = UINavigationController(rootViewController: More)
      let MyWallet = UINavigationController(rootViewController: MyWalletVC)
 
@@ -131,7 +131,7 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
         }
      }
         home.tabBarItem = UITabBarItem(title: "Home".localize, image: UIImage(named: "shopping-list"), tag: 2)
-        Chat.tabBarItem = UITabBarItem(title: "Chat".localize, image:UIImage(named: "chat"), tag: 3)
+        profile.tabBarItem = UITabBarItem(title: "Chat".localize, image:UIImage(named: "chat"), tag: 3)
         MoreVC.tabBarItem = UITabBarItem(title: "More".localize, image:UIImage(named: "Group 24040"), tag: 4)
         MyWallet.tabBarItem = UITabBarItem(title: "Wallet".localize, image:UIImage(named: "Group 24370"), tag: 5)
  
@@ -140,7 +140,7 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
 //        if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
          tabBarList = [
             home,
-            Chat,
+            profile,
 //            addProduct,
             MyWallet,
             MoreVC,

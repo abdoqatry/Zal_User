@@ -25,6 +25,10 @@ protocol SpcialStoreCellView {
     func Data(name:String,ProfileImage:String,address:String,coverImage:String,rate:Int)
    }
 
+protocol NearStoreCellView {
+    func Data(name:String,ProfileImage:String,address:String,CoverImage:String,rate:Int,distance:Double)
+   }
+
 
 class HomePresenter {
     
@@ -35,6 +39,8 @@ class HomePresenter {
     }
     
     var spcialstoreList : [Provider] = []
+    var nearStoreList : [Provider] = []
+    
     func getSlider(){
         vc.openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
         NetworkManager.shared.getData(SliderModel.self, Requst: .sliders, method: .get, headerType: .unAuthenticated) {[weak self] (Massage, Data, Code) in
@@ -56,6 +62,7 @@ class HomePresenter {
             self?.vc.closeIndicator()
             if Code == 200 {
                 self?.spcialstoreList = Data?.data?.mostRatedProviders ?? []
+                self?.nearStoreList = Data?.data?.nearestProviders ?? []
                 
                 self?.vc.dataReload()
             }else{
@@ -79,6 +86,24 @@ class HomePresenter {
         let rate = data.rate ?? 0
          
         cell.Data(name: name, ProfileImage: profileImage, address: address, coverImage: coverimage, rate: rate)
+       
+        }
+    
+    func GetnearCount () -> Int{
+        return  nearStoreList.count
+        }
+    
+    func configureNear(cell: NearStoreCellView, index: Int) {
+        let data = nearStoreList[index]
+        
+        let name = data.name ?? ""
+        let profileImage = data.image ?? ""
+        let address = data.address ?? ""
+        let coverimage = data.coverImage ?? ""
+        let rate = data.rate ?? 0
+        let distance = data.distance ?? 0.0
+         
+        cell.Data(name: name, ProfileImage: profileImage, address: address, CoverImage: coverimage, rate: rate, distance: distance)
        
         }
     

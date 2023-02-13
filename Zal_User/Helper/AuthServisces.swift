@@ -125,6 +125,14 @@ private init () { }
               defaults.set(newValue, forKey: UserName)
           }
       }
+    var userAddress: String? {
+        get {
+            return defaults.value(forKey: "Useraddress") as? String
+        }
+        set {
+            defaults.set(newValue, forKey: "Useraddress")
+        }
+    }
         var UserMail: String? {
             get {
                 return defaults.value(forKey: userMail) as? String
@@ -152,7 +160,8 @@ private init () { }
 func SetTokenDefaults(user: UserModel) {
     authToken = user.data?.token
     Verifyat = user.data?.isVerified
-    
+    username = user.data?.name
+    userAddress = user.data?.address
   }
     
 //    func SetTokenDefaults(user: SignUPModel) {
