@@ -40,8 +40,8 @@
                             <constraint firstAttribute="bottom" secondItem="AZ8-es-ghd" secondAttribute="bottom" id="xMJ-rb-63X"/>
                         </constraints>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24314" translatesAutoresizingMaskIntoConstraints="NO" id="bIX-KX-GAR">
-                        <rect key="frame" x="111.66666666666667" y="189" width="20.000000000000014" height="20"/>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24314" translatesAutoresizingMaskIntoConstraints="NO" id="bIX-KX-GAR">
+                        <rect key="frame" x="116.66666666666667" y="179" width="20.000000000000014" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="NWq-rX-nTA"/>
                             <constraint firstAttribute="width" constant="20" id="XJL-Ng-gAP"/>
@@ -122,6 +122,19 @@
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suf-uQ-R32">
+                        <rect key="frame" x="60" y="599" width="273" height="45"/>
+                        <color key="backgroundColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="9Zm-lP-h4a"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                        <connections>
+                            <action selector="EditeButton:" destination="13F-hR-6bO" eventType="touchUpInside" id="hbo-7o-mQN"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <viewLayoutGuide key="safeArea" id="Phc-F9-v9W"/>
                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -133,9 +146,10 @@
                     <constraint firstItem="hsW-CC-o6d" firstAttribute="top" secondItem="Phc-F9-v9W" secondAttribute="top" constant="-5" id="CpV-aV-vgD"/>
                     <constraint firstItem="Phc-F9-v9W" firstAttribute="trailing" secondItem="hsW-CC-o6d" secondAttribute="trailing" id="Lcr-c2-Z7V"/>
                     <constraint firstItem="bmp-B2-E0X" firstAttribute="top" secondItem="hsW-CC-o6d" secondAttribute="bottom" constant="-45" id="Pfy-rN-Ru5"/>
+                    <constraint firstItem="Suf-uQ-R32" firstAttribute="centerX" secondItem="t1C-JZ-kMB" secondAttribute="centerX" id="QvX-TA-kaX"/>
                     <constraint firstItem="1IX-Xm-J7j" firstAttribute="top" secondItem="bmp-B2-E0X" secondAttribute="bottom" constant="30" id="RQt-Nk-C3o"/>
                     <constraint firstItem="YW6-zQ-tmp" firstAttribute="leading" secondItem="DTz-BC-U8u" secondAttribute="leading" id="Rqi-aW-q7B"/>
-                    <constraint firstItem="bIX-KX-GAR" firstAttribute="bottom" secondItem="bmp-B2-E0X" secondAttribute="bottom" id="VWU-oO-yqo"/>
+                    <constraint firstItem="bIX-KX-GAR" firstAttribute="bottom" secondItem="bmp-B2-E0X" secondAttribute="bottom" constant="-10" id="VWU-oO-yqo"/>
                     <constraint firstItem="bmp-B2-E0X" firstAttribute="centerX" secondItem="t1C-JZ-kMB" secondAttribute="centerX" id="c7n-ek-3wQ"/>
                     <constraint firstItem="g7Q-1e-yRW" firstAttribute="trailing" secondItem="1IX-Xm-J7j" secondAttribute="trailing" id="duo-4R-KNi"/>
                     <constraint firstItem="kbE-Pi-EHN" firstAttribute="top" secondItem="Udo-cg-8iG" secondAttribute="bottom" constant="-8" id="e4v-dp-bAd"/>
@@ -145,13 +159,17 @@
                     <constraint firstItem="hsW-CC-o6d" firstAttribute="leading" secondItem="t1C-JZ-kMB" secondAttribute="leading" id="qCk-LI-1DI"/>
                     <constraint firstItem="kbE-Pi-EHN" firstAttribute="leading" secondItem="g7Q-1e-yRW" secondAttribute="leading" id="qEV-PF-BnC"/>
                     <constraint firstItem="g7Q-1e-yRW" firstAttribute="top" secondItem="1IX-Xm-J7j" secondAttribute="bottom" constant="30" id="tGx-tk-x9s"/>
+                    <constraint firstItem="Suf-uQ-R32" firstAttribute="top" secondItem="kbE-Pi-EHN" secondAttribute="bottom" constant="150" id="vsK-PS-A6E"/>
                     <constraint firstItem="Udo-cg-8iG" firstAttribute="leading" secondItem="YW6-zQ-tmp" secondAttribute="leading" id="wGj-ev-V3V"/>
                     <constraint firstItem="g7Q-1e-yRW" firstAttribute="top" secondItem="YW6-zQ-tmp" secondAttribute="bottom" constant="-8" id="xa9-hs-KFc"/>
-                    <constraint firstItem="bmp-B2-E0X" firstAttribute="leading" secondItem="bIX-KX-GAR" secondAttribute="trailing" constant="5" id="zSR-rO-pxz"/>
+                    <constraint firstItem="Phc-F9-v9W" firstAttribute="trailing" secondItem="Suf-uQ-R32" secondAttribute="trailing" constant="60" id="zQw-bG-hVc"/>
+                    <constraint firstItem="bmp-B2-E0X" firstAttribute="leading" secondItem="bIX-KX-GAR" secondAttribute="trailing" id="zSR-rO-pxz"/>
                 </constraints>
             </view>
             <connections>
                 <outlet property="MailTF" destination="OBo-Yw-56R" id="n2a-bT-0qb"/>
+                <outlet property="SaveBt" destination="Suf-uQ-R32" id="qQZ-aZ-Sni"/>
+                <outlet property="editPenImage" destination="bIX-KX-GAR" id="Y5T-BU-SRy"/>
                 <outlet property="nameTF" destination="GtI-Xp-TxZ" id="Vjf-0Z-v8y"/>
                 <outlet property="pgoneTF" destination="k46-vk-YZ5" id="85v-ds-H1Y"/>
                 <outlet property="profileImage" destination="AZ8-es-ghd" id="Fn2-6o-gzB"/>

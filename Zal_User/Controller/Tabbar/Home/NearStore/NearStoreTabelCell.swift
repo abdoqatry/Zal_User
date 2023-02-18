@@ -8,7 +8,7 @@
 import UIKit
 import Cosmos
 
-class NearStoreTabelCell: UITableViewCell,Reuseable {
+class NearStoreTabelCell: UITableViewCell,Reuseable,NearCellView {
 
     @IBOutlet weak var profileView: UIView!
     @IBOutlet weak var MainView: UIView!
@@ -40,6 +40,17 @@ class NearStoreTabelCell: UITableViewCell,Reuseable {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func Data(name: String, ProfileImage: String, address: String, CoverImage: String, rate: Int, distance: Double) {
+        nameLabel.text = name
+        addressLabel.text = address
+        distanceLabel.text = String(distance)
+        rateView.rating = Double(rate)
+        let url = URL(string: ProfileImage)
+        profileImage.kf.setImage(with: url)
+        let url2 = URL(string: CoverImage)
+        coverImage.kf.setImage(with: url2)
     }
     
 }

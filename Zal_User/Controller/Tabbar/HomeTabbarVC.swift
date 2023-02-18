@@ -94,8 +94,8 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
      let AddProduct = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
     
       let Homevc = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
-     let ProfleVC = Bundle.main.loadNibNamed("ProfileVC", owner: nil, options: nil)![0] as! ProfileVC
-     let More = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
+     let ProfleVC = Bundle.main.loadNibNamed("MyOrderVC", owner: nil, options: nil)![0] as! MyOrderVC
+     let More = Bundle.main.loadNibNamed("MoreVC", owner: nil, options: nil)![0] as! MoreVC
    let MyWalletVC = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
      
      let addProduct = UINavigationController(rootViewController: AddProduct)

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="neosans_regular.ttf">
+            <string>NeoSansW23</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyOrderVC" customModule="Zal_User" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="Zyf-YO-x5Q" customClass="MyOrderVC" customModule="Zal_User" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="KMw-aH-Wkf">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14h-EF-KQC">
+                        <rect key="frame" x="30" y="79" width="333" height="40"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nyj-0j-n17">
+                                <rect key="frame" x="0.0" y="0.0" width="333" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ul8-f8-vUF">
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="40"/>
+                                        <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="13"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finished" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usy-ae-03U">
+                                        <rect key="frame" x="111" y="0.0" width="111" height="40"/>
+                                        <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="13"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refuse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJ9-kP-02f">
+                                        <rect key="frame" x="222" y="0.0" width="111" height="40"/>
+                                        <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="13"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="0.15337851820000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nyj-0j-n17" firstAttribute="leading" secondItem="14h-EF-KQC" secondAttribute="leading" id="1ZG-n7-a7c"/>
+                            <constraint firstItem="Nyj-0j-n17" firstAttribute="top" secondItem="14h-EF-KQC" secondAttribute="top" id="D7A-dr-Q0T"/>
+                            <constraint firstAttribute="trailing" secondItem="Nyj-0j-n17" secondAttribute="trailing" id="cIO-r5-yCX"/>
+                            <constraint firstAttribute="bottom" secondItem="Nyj-0j-n17" secondAttribute="bottom" id="hjy-bp-FBY"/>
+                            <constraint firstAttribute="height" constant="40" id="wl4-jE-dxy"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50a-Jr-xyZ">
+                        <rect key="frame" x="0.0" y="139" width="393" height="679"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="7uv-CS-BVX"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="50a-Jr-xyZ" firstAttribute="leading" secondItem="7uv-CS-BVX" secondAttribute="leading" id="0Ux-bU-igr"/>
+                    <constraint firstItem="50a-Jr-xyZ" firstAttribute="top" secondItem="14h-EF-KQC" secondAttribute="bottom" constant="20" id="54U-Ro-ORR"/>
+                    <constraint firstItem="7uv-CS-BVX" firstAttribute="trailing" secondItem="50a-Jr-xyZ" secondAttribute="trailing" id="S7J-Ao-INh"/>
+                    <constraint firstItem="7uv-CS-BVX" firstAttribute="bottom" secondItem="50a-Jr-xyZ" secondAttribute="bottom" id="d7z-hx-NR1"/>
+                    <constraint firstItem="14h-EF-KQC" firstAttribute="leading" secondItem="7uv-CS-BVX" secondAttribute="leading" constant="30" id="eTT-eu-utW"/>
+                    <constraint firstAttribute="trailing" secondItem="14h-EF-KQC" secondAttribute="trailing" constant="30" id="fcR-0r-bOe"/>
+                    <constraint firstItem="14h-EF-KQC" firstAttribute="top" secondItem="7uv-CS-BVX" secondAttribute="top" constant="20" id="x9H-j0-Qh3"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="HeaderView" destination="14h-EF-KQC" id="9qB-0z-pDp"/>
+                <outlet property="currentLabel" destination="Ul8-f8-vUF" id="mUe-Jm-ebE"/>
+                <outlet property="finishedLabel" destination="Usy-ae-03U" id="Tf5-Yy-uRD"/>
+                <outlet property="mainView" destination="50a-Jr-xyZ" id="aQD-39-u7c"/>
+                <outlet property="refuseLabel" destination="IJ9-kP-02f" id="RB1-cJ-7hP"/>
+            </connections>
+            <point key="canvasLocation" x="-34.351145038167935" y="-1.4084507042253522"/>
+        </viewController>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

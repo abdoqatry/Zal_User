@@ -22,6 +22,11 @@ class ProfileVC: UIViewController {
         super.viewDidLoad()
         
         setView()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         getProfile()
     }
     
@@ -40,10 +45,18 @@ class ProfileVC: UIViewController {
         GreetingView.layer.applySketchShadow()
         GreetingView.layer.cornerRadius = 12
         EditeProfileView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(editeProfileAction)))
+        EditePassView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(editePasswordAction)))
     }
     
     @objc func editeProfileAction(){
         let vc = Bundle.main.loadNibNamed("EditeProfileVC", owner: nil, options: nil)![0] as! EditeProfileVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func editePasswordAction(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "EditePasswordVC")  as! EditePasswordVC
+        
         navigationController?.pushViewController(vc, animated: true)
     }
     

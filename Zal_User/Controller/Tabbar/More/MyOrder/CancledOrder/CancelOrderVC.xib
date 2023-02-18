@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CancelOrderVC" customModule="Zal_User" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="Y7i-Bl-6ow" customClass="CancelOrderVC" customModule="Zal_User" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="pOJ-hx-AxI">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4nY-Hu-BVj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </tableView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="there is no data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaV-xV-sNv">
+                        <rect key="frame" x="140.66666666666666" y="417.66666666666669" width="112" height="17"/>
+                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
+                        <color key="textColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="Ead-w3-Axg"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="UaV-xV-sNv" firstAttribute="centerX" secondItem="pOJ-hx-AxI" secondAttribute="centerX" id="2nr-lN-JsJ"/>
+                    <constraint firstItem="Ead-w3-Axg" firstAttribute="trailing" secondItem="4nY-Hu-BVj" secondAttribute="trailing" id="HfB-0a-tVu"/>
+                    <constraint firstItem="4nY-Hu-BVj" firstAttribute="leading" secondItem="pOJ-hx-AxI" secondAttribute="leading" id="JBW-Xa-X7T"/>
+                    <constraint firstItem="Ead-w3-Axg" firstAttribute="bottom" secondItem="4nY-Hu-BVj" secondAttribute="bottom" id="UK1-JW-oZb"/>
+                    <constraint firstItem="4nY-Hu-BVj" firstAttribute="top" secondItem="Ead-w3-Axg" secondAttribute="top" id="jjL-mq-jhm"/>
+                    <constraint firstItem="UaV-xV-sNv" firstAttribute="centerY" secondItem="pOJ-hx-AxI" secondAttribute="centerY" id="sGh-Cc-gxz"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="canceltOrderTabelView" destination="4nY-Hu-BVj" id="cRZ-P7-rbw"/>
+                <outlet property="nodataLabel" destination="UaV-xV-sNv" id="KST-l6-8J3"/>
+            </connections>
+            <point key="canvasLocation" x="-34.351145038167935" y="62.676056338028175"/>
+        </viewController>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

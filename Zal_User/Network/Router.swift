@@ -22,6 +22,10 @@ enum Router {
     case sliders
     case home
     case profile
+    case Editeprofile(name:String,phone:String,email:String)
+    case update_password(old_password:String,password:String,password_confirmation:String)
+    case orders(status:String)
+    case near(lat:String,lng:String)
     
     private var path: String {
         var path: String
@@ -54,6 +58,14 @@ enum Router {
             path = "api/home"
         case.profile:
             path = "api/profile"
+        case.Editeprofile:
+            path = "api/profile"
+        case.update_password:
+            path = "api/update_password"
+        case.orders:
+            path = "api/orders"
+        case.near:
+            path = "api/near"
             
         }
         return path
@@ -66,6 +78,10 @@ enum Router {
         case.areas(let city_id):
             queryItems = [
             URLQueryItem(name: "city_id", value: city_id)
+            ]
+        case.orders(let status):
+            queryItems = [
+            URLQueryItem(name: "status", value: status)
             ]
         default:
             queryItems = []
@@ -125,6 +141,22 @@ enum Router {
             param = [
                 "phone" : phone,
                 "type" : type
+            ]
+        case.Editeprofile(let name,let phone,let email):
+            param = [
+                "name" : name,
+                "phone" : phone,
+            ]
+        case.update_password(let old_password,let password,let password_confirmation):
+            param = [
+                "old_password" : old_password,
+                "password" : password,
+                "password_confirmation" : password_confirmation
+            ]
+        case.near(let lat,let lng):
+            param = [
+                "lat" : lat,
+                "lng" : lng
             ]
             
         default:

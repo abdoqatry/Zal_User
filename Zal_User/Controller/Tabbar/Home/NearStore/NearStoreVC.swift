@@ -7,8 +7,16 @@
 
 import UIKit
 
-class NearStoreVC: UIViewController {
-
+class NearStoreVC: UIViewController,NearStoreProtocol {
+    
+    func Errormassage(msg: String) {
+        showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
+    }
+    
+    func dataReload() {
+        NearStoreTabelView.reloadData()
+    }
+    
     @IBOutlet weak var NearStoreTabelView: UITableView!{
         didSet {
             NearStoreTabelView.delegate = self
@@ -16,8 +24,16 @@ class NearStoreVC: UIViewController {
             NearStoreTabelView.registerCell(withCellType: NearStoreTabelCell.self)
         }
     }
+    
+    
+    var presenter : NearStorePresenter?
+    var lastLat = String(LocationManager.SharedInstans.getlatitude())
+    var lastlon = String(LocationManager.SharedInstans.getlongitude())
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter = NearStorePresenter(self)
+        
+        presenter?.getHome(lat: "31.254444422221", lan: "31.25557777777")
         
     }
     
@@ -28,12 +44,12 @@ class NearStoreVC: UIViewController {
 
 extension NearStoreVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        presenter?.GetSpecialCount() ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: NearStoreTabelCell = NearStoreTabelView.dequeueReusableCell(forIndexPath: indexPath)
-//        presenter?.configureType(cell: cell, index: indexPath.row)
+        presenter?.configureNear(cell: cell, index: indexPath.row)
         cell.selectionStyle = .none
         return cell
     }

@@ -62,6 +62,7 @@ class HomeVC: UIViewController,HomeProtocol {
         SetSiliderImages()
         setView()
         presenter?.getSlider()
+        setupNavigationBar()
         
     }
     
