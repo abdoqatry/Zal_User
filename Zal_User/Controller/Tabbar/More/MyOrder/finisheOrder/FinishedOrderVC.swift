@@ -21,10 +21,11 @@ class FinishedOrderVC: UIViewController,FinshOrderProtocol {
         }
     }
     
-    func selectIndex(id : String){
-//        let vc = Bundle.main.loadNibNamed("OrderDetailsVC", owner: nil, options: nil)![0] as! OrderDetailsVC
-//        vc.id = id
-//        self.navigationController?.pushViewController(vc, animated: true)
+    func selectIndex(id : String,num:String){
+        let vc = Bundle.main.loadNibNamed("TrackOrderVC",owner: nil, options: nil)![0] as! TrackOrderVC
+        vc.id = id
+        vc.orderNumTF.text = num
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 

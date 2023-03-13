@@ -69,10 +69,10 @@ class LoginVC: UIViewController,LoginProtocol {
     }
     
     @IBAction func ForgetPassButton(_ sender: UIButton) {
-//        let storyboard = UIStoryboard(name: "AuthSb", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "ForgetPassVC")  as! ForgetPassVC
-//
-//        navigationController?.pushViewController(vc, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ForgetPassVC")  as! ForgetPassVC
+
+        navigationController?.pushViewController(vc, animated: true)
     }
 
 }

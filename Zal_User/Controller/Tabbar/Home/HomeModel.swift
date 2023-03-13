@@ -55,7 +55,7 @@ struct Provider: Codable {
     let phone, address, lat, lng: String?
     let city, area: Area?
     let mainCategory: MainCategory?
-    let rate: Int?
+    let rate: Double?
     let isVerified: Bool?
     let distance: Double?
 

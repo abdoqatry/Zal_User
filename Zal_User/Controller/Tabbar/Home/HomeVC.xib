@@ -64,7 +64,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="محمد ا تبتي بيىبني بنيتبلايتبحمد عبد الحميد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJR-0O-8hr">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="محمد ا تبتي بيىبني بنيتبلايتبحمد عبد الحميد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJR-0O-8hr">
                                 <rect key="frame" x="96.666666666666686" y="105" width="200" height="17.666666666666671"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="KOd-ET-Uuf"/>
@@ -89,6 +89,13 @@
                                 <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-207-24" translatesAutoresizingMaskIntoConstraints="NO" id="C7M-an-yVv">
+                                <rect key="frame" x="66.666666666666671" y="106.33333333333333" width="20" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="KeE-pg-wgK"/>
+                                    <constraint firstAttribute="width" constant="20" id="PFr-SX-1wM"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -96,12 +103,14 @@
                             <constraint firstAttribute="trailing" secondItem="BW0-LX-zYW" secondAttribute="trailing" constant="40" id="3ka-mE-mYx"/>
                             <constraint firstItem="Luo-Bd-UVw" firstAttribute="top" secondItem="GTl-Fz-c06" secondAttribute="top" constant="75" id="Ckc-7a-UjJ"/>
                             <constraint firstItem="BW0-LX-zYW" firstAttribute="leading" secondItem="GTl-Fz-c06" secondAttribute="leading" constant="40" id="Fwu-QH-omQ"/>
+                            <constraint firstItem="C7M-an-yVv" firstAttribute="centerY" secondItem="SJR-0O-8hr" secondAttribute="centerY" id="JIG-oO-Mrb"/>
                             <constraint firstItem="EVL-kM-6eH" firstAttribute="centerY" secondItem="o32-qM-PBe" secondAttribute="centerY" id="KtI-W9-5I8"/>
                             <constraint firstItem="BW0-LX-zYW" firstAttribute="top" secondItem="SJR-0O-8hr" secondAttribute="bottom" constant="15" id="TiN-iN-USU"/>
                             <constraint firstItem="SJR-0O-8hr" firstAttribute="top" secondItem="Luo-Bd-UVw" secondAttribute="bottom" constant="10" id="UdC-i3-f41"/>
                             <constraint firstAttribute="trailing" secondItem="EVL-kM-6eH" secondAttribute="trailing" constant="25" id="VTb-M7-IZE"/>
                             <constraint firstItem="yU3-Ck-flE" firstAttribute="centerY" secondItem="SJR-0O-8hr" secondAttribute="centerY" id="eAa-gd-d3Z"/>
                             <constraint firstItem="yU3-Ck-flE" firstAttribute="leading" secondItem="SJR-0O-8hr" secondAttribute="trailing" constant="10" id="gMa-Vj-lx9"/>
+                            <constraint firstItem="SJR-0O-8hr" firstAttribute="leading" secondItem="C7M-an-yVv" secondAttribute="trailing" constant="10" id="lZS-2J-F3G"/>
                             <constraint firstItem="Luo-Bd-UVw" firstAttribute="centerX" secondItem="GTl-Fz-c06" secondAttribute="centerX" id="ogw-fc-ZuB"/>
                             <constraint firstItem="o32-qM-PBe" firstAttribute="top" secondItem="GTl-Fz-c06" secondAttribute="top" constant="45" id="tBJ-DO-xMm"/>
                             <constraint firstItem="SJR-0O-8hr" firstAttribute="centerX" secondItem="GTl-Fz-c06" secondAttribute="centerX" id="w6V-21-TTt"/>
@@ -236,7 +245,9 @@
                 <outlet property="ProfileImage" destination="ddO-9I-fL6" id="bNA-Ub-sfM"/>
                 <outlet property="SpecialStoreCollection" destination="nwj-PK-YfO" id="B3X-tB-lsS"/>
                 <outlet property="ViewSlider" destination="ec9-KW-9oY" id="qCV-Tn-qsM"/>
+                <outlet property="addressImage" destination="C7M-an-yVv" id="73X-bc-oKN"/>
                 <outlet property="addressLabel" destination="SJR-0O-8hr" id="tRK-nu-oeM"/>
+                <outlet property="locationImage" destination="yU3-Ck-flE" id="fTt-th-Epb"/>
                 <outlet property="nameLabel" destination="Luo-Bd-UVw" id="1Ga-Kv-AVO"/>
                 <outlet property="nearStoreCollection" destination="uZU-C5-KK3" id="yhJ-zM-eOj"/>
                 <outlet property="showNearStoreBT" destination="3we-3M-COv" id="chl-gl-dVe"/>
@@ -246,6 +257,7 @@
     </objects>
     <resources>
         <image name="Group 24032" width="24" height="24"/>
+        <image name="arrow-207-24" width="24" height="24"/>
         <image name="location (21)" width="9" height="11"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

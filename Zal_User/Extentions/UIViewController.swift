@@ -111,6 +111,25 @@ extension UIViewController {
 
         }
     
+//    func setupNavigationBar() {
+//      
+//        let navigationBarAppearance = UINavigationBarAppearance()
+//        navigationBarAppearance.configureWithOpaqueBackground()
+//        navigationBarAppearance.titleTextAttributes = [
+//            NSAttributedString.Key.foregroundColor : UIColor.white
+//        ]
+//        navigationBarAppearance.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
+//        UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+//        UINavigationBar.appearance().compactAppearance = navigationBarAppearance
+//        UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+//        navigationBarAppearance.shadowColor = .clear
+//        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)
+//        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: UIControl.State.highlighted)
+//        
+//UINavigationBar.appearance().tintColor = UIColor.white
+//
+//       }
+    
     func setupNavigationBar() {
       
         let navigationBarAppearance = UINavigationBarAppearance()
@@ -125,9 +144,9 @@ extension UIViewController {
         navigationBarAppearance.shadowColor = .clear
         
 UINavigationBar.appearance().tintColor = UIColor.white
+        
 
        }
-    
     
     func setNavigationRightBT(){
         let button1 = UIBarButtonItem(image: UIImage(named:"Group 24311")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(bell))

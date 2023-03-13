@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NearStoreVC: UIViewController,NearStoreProtocol {
+class NearStoreVC: UIViewController,NearStoreProtocol,UITextFieldDelegate {
     
     func Errormassage(msg: String) {
         showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
@@ -17,6 +17,23 @@ class NearStoreVC: UIViewController,NearStoreProtocol {
         NearStoreTabelView.reloadData()
     }
     
+    func dataCount(count:Int){
+        if count != 0 {
+            NearStoreTabelView.isHidden = false
+            nodataLabel.isHidden = true
+        }else{
+            NearStoreTabelView.isHidden = true
+            nodataLabel.isHidden = false
+        }
+    }
+    
+    func selectIndex(id : String){
+        let vc = Bundle.main.loadNibNamed("StoreVC", owner: nil, options: nil)![0] as! StoreVC
+        vc.id = id
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBOutlet weak var nodataLabel: UILabel!
     @IBOutlet weak var NearStoreTabelView: UITableView!{
         didSet {
             NearStoreTabelView.delegate = self
@@ -25,16 +42,47 @@ class NearStoreVC: UIViewController,NearStoreProtocol {
         }
     }
     
+    @IBOutlet weak var SearchTF: UITextField!
+    
+    var search = ""
+    
     
     var presenter : NearStorePresenter?
-    var lastLat = String(LocationManager.SharedInstans.getlatitude())
-    var lastlon = String(LocationManager.SharedInstans.getlongitude())
+    var lastLat = ""
+    var lastlon = ""  String(LocationManager.SharedInstans.getlongitude())
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = NearStorePresenter(self)
+        setlocation()
+        SearchTF.delegate = self
+        SearchTF.returnKeyType = UIReturnKeyType.search
+        SearchTF.layer.cornerRadius = 15
+        SearchTF.clipsToBounds = true
         
-        presenter?.getHome(lat: "31.254444422221", lan: "31.25557777777")
+       
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter?.getHome(lat: lastLat, lan: lastlon,search:search)
+    }
+    
+    func setlocation(){
+        let userdata = AuthService.instance
+        if userdata.authToken == "" || userdata.authToken == nil {
+            lastLat =  String(LocationManager.SharedInstans.getlatitude())
+            lastlon =  String(LocationManager.SharedInstans.getlongitude())
+        }else{
+            lastLat = userdata.lattitude ?? ""
+            lastlon = userdata.lantitude ?? ""
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        search = SearchTF.text ?? ""
+        presenter?.getHome(lat: lastLat, lan: lastlon,search:search)
+
+        return true
     }
     
 
@@ -55,7 +103,7 @@ extension NearStoreVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        presenter.selectRecipeCell(index: indexPath.row, RecipeId: 1)
+        presenter?.selecteCell(index: indexPath.row)
     }
     
 }

@@ -22,10 +22,11 @@ class CurrentOrderVC: UIViewController,CurrentOrderProtocol {
         }
     }
     
-    func selectIndex(id : String){
-//        let vc = Bundle.main.loadNibNamed("OrderDetailsVC", owner: nil, options: nil)![0] as! OrderDetailsVC
-//        vc.id = id
-//        self.navigationController?.pushViewController(vc, animated: true)
+    func selectIndex(id : String,num:String){
+        let vc = Bundle.main.loadNibNamed("TrackOrderVC",owner: nil, options: nil)![0] as! TrackOrderVC
+        vc.id = id
+        vc.orderNumTF.text = num
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBOutlet weak var nodataLabel: UILabel!
@@ -56,6 +57,9 @@ extension CurrentOrderVC: UITableViewDataSource {
         let cell: CurrentOrderCell = currentOrderTabelView.dequeueReusableCell(forIndexPath: indexPath)
         presenter?.configureType(cell: cell, index: indexPath.row)
         cell.selectionStyle = .none
+        cell.trackOrderafunction = {
+            self.presenter?.selecteCell(index: indexPath.row)
+        }
         return cell
     }
     

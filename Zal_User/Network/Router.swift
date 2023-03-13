@@ -20,12 +20,24 @@ enum Router {
     case verify(phone:String,code:String)
     case resend_verify_code(phone:String,type:String)
     case sliders
-    case home
+    case home(lat:String,lng:String,keyword:String)
     case profile
     case Editeprofile(name:String,phone:String,email:String)
     case update_password(old_password:String,password:String,password_confirmation:String)
     case orders(status:String)
-    case near(lat:String,lng:String)
+    case near(lat:String,lng:String,keyword:String)
+    case ordersDetails(id:String)
+    case get_provider(id:String)
+    case product_categories
+    case get_products(catId:String,providerId:String)
+    case product_rates(id:String)
+    case get_product(id:String)
+    case toggle_fav(id:String)
+    case addresses
+    case deleteaddresses(id:Int)
+    case addAddress(name:String,name_en:String,desc:String,lat:String,lng:String,location:String)
+    case editAddress(name:String,name_en:String,desc:String,lat:String,lng:String,location:String,id:Int)
+    case fav_products
     
     private var path: String {
         var path: String
@@ -66,6 +78,30 @@ enum Router {
             path = "api/orders"
         case.near:
             path = "api/near"
+        case.ordersDetails(let id):
+            path = "api/orders/\(id)"
+        case.get_provider(let id):
+            path = "api/get_provider/\(id)"
+        case.product_categories:
+            path = "api/product_categories"
+        case.get_products(let catId,let providerId):
+            path = "api/get_products/\(catId)/\(providerId)"
+        case.product_rates(let id):
+            path = "api/product_rates/\(id)"
+        case.get_product(let id):
+            path = "api/get_product/\(id)"
+        case.toggle_fav(let id):
+            path = "api/toggle_fav/\(id)"
+        case.addresses :
+            path = "api/addresses"
+        case.deleteaddresses(let id):
+            path = "api/addresses/\(id)"
+        case.addAddress:
+            path = "api/addresses"
+        case.editAddress(_,_,_,_,_,_,let id):
+            path = "api/addresses/\(id)"
+        case.fav_products:
+            path = "api/fav_products"
             
         }
         return path
@@ -82,6 +118,18 @@ enum Router {
         case.orders(let status):
             queryItems = [
             URLQueryItem(name: "status", value: status)
+            ]
+        case.near(let lat,let lng,let keyword):
+            queryItems = [
+            URLQueryItem(name: "lat", value: lat),
+            URLQueryItem(name: "lng", value: lng),
+            URLQueryItem(name: "keyword", value: keyword),
+            ]
+        case.home(let lat,let lng,let keyword):
+            queryItems = [
+            URLQueryItem(name: "lat", value: lat),
+            URLQueryItem(name: "lng", value: lng),
+            URLQueryItem(name: "keyword", value: keyword),
             ]
         default:
             queryItems = []
@@ -117,29 +165,29 @@ enum Router {
             ]
         case.check_forget_code(let phone,let code):
             param = [
-                "phone" : phone,
+                "email" : phone,
                 "code" : code
             ]
         case.resend_forget_code(let phone,let type):
             param = [
-                "phone" : phone,
+                "email" : phone,
                 "type" : type
             ]
         case.reset_password(let phone,let code,let password,let password_confirmation):
             param = [
-                "phone" : phone,
+                "email" : phone,
                 "code" : code,
                 "password" : password,
                 "password_confirmation" : password_confirmation
             ]
         case.verify(let phone,let code):
             param = [
-                "phone" : phone,
+                "email" : phone,
                 "code" : code
             ]
         case.resend_verify_code(let phone,let type):
             param = [
-                "phone" : phone,
+                "email" : phone,
                 "type" : type
             ]
         case.Editeprofile(let name,let phone,let email):
@@ -153,10 +201,29 @@ enum Router {
                 "password" : password,
                 "password_confirmation" : password_confirmation
             ]
-        case.near(let lat,let lng):
+//        case.near(let lat,let lng):
+//            param = [
+//                "lat" : lat,
+//                "lng" : lng
+//            ]
+        case.addAddress(let name,let name_en,let desc,let lat,let lng,let location):
             param = [
+                "name" : name,
+                "name_en" : name_en,
+                "desc" : desc,
                 "lat" : lat,
-                "lng" : lng
+                "lng" : lng,
+                "location" : location
+            ]
+        case.editAddress(let name,let name_en,let desc,let lat,let lng,let location,let id):
+            param = [
+                "name" : name,
+                "name_en" : name_en,
+                "desc" : desc,
+                "lat" : lat,
+                "lng" : lng,
+                "location" : location,
+                "_method" : "PUT"
             ]
             
         default:

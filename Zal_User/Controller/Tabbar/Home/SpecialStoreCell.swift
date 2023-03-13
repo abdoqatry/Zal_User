@@ -33,10 +33,10 @@ class SpecialStoreCell: UICollectionViewCell,SpcialStoreCellView {
         mainView.layer.applySketchShadow()
     }
     
-    func Data(name: String, ProfileImage: String, address: String, coverImage: String, rate: Int) {
+    func Data(name: String, ProfileImage: String, address: String, coverImage: String, rate: Double) {
         storNameLabel.text = name
         addressLabel.text = address
-        rateView.rating = Double(rate)
+        rateView.rating = rate
         let url = URL(string: ProfileImage)
         profileImage.kf.setImage(with: url)
         let url2 = URL(string: coverImage)

@@ -18,15 +18,17 @@ protocol HomeProtocol {
     func setSlidertData(slider:[sliderModel])
     
     func dataReload()
+    
+    func selectIndex(id : String)
   
 }
 
 protocol SpcialStoreCellView {
-    func Data(name:String,ProfileImage:String,address:String,coverImage:String,rate:Int)
+    func Data(name:String,ProfileImage:String,address:String,coverImage:String,rate:Double)
    }
 
 protocol NearStoreCellView {
-    func Data(name:String,ProfileImage:String,address:String,CoverImage:String,rate:Int,distance:Double)
+    func Data(name:String,ProfileImage:String,address:String,CoverImage:String,rate:Double,distance:Double)
    }
 
 
@@ -56,9 +58,9 @@ class HomePresenter {
         }
     }
     
-    func getHome(){
+    func getHome(lat: String, lng: String, keyword: String){
         vc.openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
-        NetworkManager.shared.getData(HomeModel.self, Requst: .home, method: .get, headerType: .unAuthenticated) {[weak self] (Massage, Data, Code) in
+        NetworkManager.shared.getData(HomeModel.self, Requst: .home(lat: lat, lng: lng, keyword: keyword), method: .get, headerType: .unAuthenticated) {[weak self] (Massage, Data, Code) in
             self?.vc.closeIndicator()
             if Code == 200 {
                 self?.spcialstoreList = Data?.data?.mostRatedProviders ?? []
@@ -83,7 +85,7 @@ class HomePresenter {
         let profileImage = data.image ?? ""
         let address = data.address ?? ""
         let coverimage = data.coverImage ?? ""
-        let rate = data.rate ?? 0
+        let rate = data.rate ?? 0.0
          
         cell.Data(name: name, ProfileImage: profileImage, address: address, coverImage: coverimage, rate: rate)
        
@@ -100,11 +102,21 @@ class HomePresenter {
         let profileImage = data.image ?? ""
         let address = data.address ?? ""
         let coverimage = data.coverImage ?? ""
-        let rate = data.rate ?? 0
+        let rate = data.rate ?? 0.0
         let distance = data.distance ?? 0.0
          
         cell.Data(name: name, ProfileImage: profileImage, address: address, CoverImage: coverimage, rate: rate, distance: distance)
        
         }
+    
+    func selecteNearCell(index:Int){
+        let id = String(nearStoreList[index].id ?? 0)
+        self.vc.selectIndex(id: id)
+    }
+    
+    func selecteSpecialCell(index:Int){
+        let id = String(spcialstoreList[index].id ?? 0)
+        self.vc.selectIndex(id: id)
+    }
     
 }

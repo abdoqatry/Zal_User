@@ -23,7 +23,14 @@ class HomeVC: UIViewController,HomeProtocol {
         Images = slider
     }
     
+    func selectIndex(id : String){
+        let vc = Bundle.main.loadNibNamed("StoreVC", owner: nil, options: nil)![0] as! StoreVC
+        vc.id = id
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
+    @IBOutlet weak var locationImage: UIImageView!
+    @IBOutlet weak var addressImage: UIImageView!
     @IBOutlet weak var showNearStoreBT: UIButton!
     
     @IBOutlet weak var ProfileImage: UIImageView!
@@ -52,7 +59,7 @@ class HomeVC: UIViewController,HomeProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = HomePresenter(self)
-        presenter?.getHome()
+        presenter?.getHome(lat: <#String#>, lng: <#String#>, keyword: <#String#>)
         SpecialStoreCollection.register(UINib(nibName: "SpecialStoreCell", bundle: nil), forCellWithReuseIdentifier: "SpecialStoreCell")
         nearStoreCollection.register(UINib(nibName: "NearStoreCell", bundle: nil), forCellWithReuseIdentifier: "NearStoreCell")
         let appearance = UINavigationBarAppearance()
@@ -78,12 +85,34 @@ class HomeVC: UIViewController,HomeProtocol {
     }
     
     func setView(){
+        let auth = AuthService.instance
         ViewSlider.layer.cornerRadius = 16
         ViewSlider.clipsToBounds = true
-        nameLabel.text = AuthService.instance.username ?? ""
-        addressLabel.text = AuthService.instance.userAddress ?? ""
+        nameLabel.text = auth.username ?? ""
+        addressLabel.text = auth.userAddress ?? ""
         linedBt(Button: showNearStoreBT, tittle:"Show All".localize, color: colorWithHexString(hexString: "#8B004C"))
+        if AuthService.instance.authToken != nil {
+            nameLabel.text = auth.username ?? ""
+            addressLabel.text = auth.userAddress ?? ""
+            locationImage.isHidden = false
+            addressImage.isHidden = false
+        }else{
+            nameLabel.text = "welcome to Zal application"
+            addressLabel.text = ""
+            locationImage.isHidden = true
+            addressImage.isHidden = true
+        }
+        addressImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.getAddress)))
+        addressLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.getAddress)))
     }
+    
+    @objc func getAddress(){
+         let vc = AddressPositionVC()
+        self.view.endEditing(true)
+        
+        vc.delegetAddress = self
+         presentPop(viewController: vc)
+     }
     
     @IBAction func ShowAllTransActionButton(_ sender: UIButton) {
         let vc = Bundle.main.loadNibNamed("NearStoreVC", owner: nil, options: nil)![0] as! NearStoreVC
@@ -137,9 +166,24 @@ func collectionView(_ collectionView: UICollectionView, layout collectionViewLay
    }
 
 func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    if collectionView == SpecialStoreCollection {
+        presenter?.selecteSpecialCell(index: indexPath.row)
+    }else{
+        presenter?.selecteNearCell(index: indexPath.row)
+    }
     
 }
     
 
 
+}
+
+
+extension HomeVC:Addressprotocole{
+    
+    func passAddress(value: String, Id: Int, lat: String, lon: String, code: String) {
+        if value != "" {
+            addressLabel.text = value
+        }
+    }
 }

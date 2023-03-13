@@ -46,10 +46,16 @@ class ProfileVC: UIViewController {
         GreetingView.layer.cornerRadius = 12
         EditeProfileView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(editeProfileAction)))
         EditePassView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(editePasswordAction)))
+        editeaddressView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(editeAdreesAction)))
     }
     
     @objc func editeProfileAction(){
         let vc = Bundle.main.loadNibNamed("EditeProfileVC", owner: nil, options: nil)![0] as! EditeProfileVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func editeAdreesAction(){
+        let vc = Bundle.main.loadNibNamed("ShowlistAdressVC", owner: nil, options: nil)![0] as! ShowlistAdressVC
         navigationController?.pushViewController(vc, animated: true)
     }
     

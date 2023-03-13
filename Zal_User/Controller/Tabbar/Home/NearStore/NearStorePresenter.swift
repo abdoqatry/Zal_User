@@ -16,6 +16,10 @@ protocol NearStoreProtocol {
     func Errormassage(msg:String)
     
     func dataReload()
+    
+    func dataCount(count:Int)
+    
+    func selectIndex(id : String)
   
 }
 
@@ -33,13 +37,13 @@ class NearStorePresenter {
     
     var neartoreList : [nearModel] = []
     
-    func getHome(lat:String,lan:String){
+    func getHome(lat:String,lan:String,search:String){
         vc.openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
-        NetworkManager.shared.getData(NearStoreModel.self, Requst: .near(lat: lat, lng: lan), method: .get, headerType: .unAuthenticated) {[weak self] (Massage, Data, Code) in
+        NetworkManager.shared.getData(NearStoreModel.self, Requst: .near(lat: lat, lng: lan,keyword:search), method: .get, headerType: .unAuthenticated) {[weak self] (Massage, Data, Code) in
             self?.vc.closeIndicator()
             if Code == 200 {
                 self?.neartoreList = Data?.data ?? []
-                
+                self?.vc.dataCount(count: Data?.data?.count ?? 0 )
                 self?.vc.dataReload()
             }else{
                 self?.vc.Errormassage(msg: Data?.message ?? "")
@@ -65,5 +69,10 @@ class NearStorePresenter {
         cell.Data(name: name, ProfileImage: profileImage, address: address, CoverImage: coverimage, rate: rate, distance: distance)
        
         }
+    
+    func selecteCell(index:Int){
+        let id = String(neartoreList[index].id ?? 0)
+        self.vc.selectIndex(id: id)
+    }
     
 }

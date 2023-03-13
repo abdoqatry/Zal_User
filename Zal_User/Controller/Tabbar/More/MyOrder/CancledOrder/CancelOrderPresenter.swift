@@ -16,7 +16,7 @@ protocol CancelOrderProtocol {
     
     func Errormassage(msg:String)
     
-    func selectIndex(id : String)
+    func selectIndex(id : String,num:String)
     
     func realoadData()
 }
@@ -65,5 +65,11 @@ class CancelPresenter {
         cell.Data(number: number, status: status, total: total)
        
         }
+    
+    func selecteCell(index:Int){
+        let id = OrderList[index].id ?? ""
+        let num = OrderList[index].orderNum ?? ""
+        self.vc.selectIndex(id: id, num: num)
+    }
     
 }

@@ -536,7 +536,7 @@
         <!--Forget PassVC-->
         <scene sceneID="whV-dz-xta">
             <objects>
-                <viewController id="zm3-zi-7Yk" customClass="ForgetPassVC" customModule="Zal_User" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgetPassVC" id="zm3-zi-7Yk" customClass="ForgetPassVC" customModule="Zal_User" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sgN-jt-8CP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -596,6 +596,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Send code">
                                                     <fontDescription key="titleFontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="18"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="SendCodeAction:" destination="zm3-zi-7Yk" eventType="touchUpInside" id="tZl-cC-pt0"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password recovery via email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTa-EN-2bk">
                                                 <rect key="frame" x="30" y="93" width="187.66666666666669" height="16"/>
@@ -901,7 +904,7 @@
         <!--New PasswordVC-->
         <scene sceneID="Pbw-7O-GKl">
             <objects>
-                <viewController id="3Tr-wA-lUk" customClass="NewPasswordVC" customModule="Zal_User" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewPasswordVC" id="3Tr-wA-lUk" customClass="NewPasswordVC" customModule="Zal_User" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uEH-85-N8w">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1039,7 +1042,7 @@
         <!--Verivication CodeVC-->
         <scene sceneID="qop-tH-FhL">
             <objects>
-                <viewController id="ndC-fC-UJg" customClass="VerivicationCodeVC" customModule="Zal_User" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VerivicationCodeVC" id="ndC-fC-UJg" customClass="VerivicationCodeVC" customModule="Zal_User" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hkl-Ql-X18">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -15,6 +15,8 @@ class CurrentOrderCell: UITableViewCell,Reuseable,CurrentOrderCellView {
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var trackOrderBT: UIButton!
     @IBOutlet weak var stratChatBT: UIButton!
+    
+    var trackOrderafunction: (() -> Void)?
     override func awakeFromNib() {
         super.awakeFromNib()
      setView()
@@ -46,6 +48,7 @@ class CurrentOrderCell: UITableViewCell,Reuseable,CurrentOrderCellView {
     }
     
     @IBAction func trackOrderAction(_ sender: UIButton) {
+        trackOrderafunction!()
     }
     
 }

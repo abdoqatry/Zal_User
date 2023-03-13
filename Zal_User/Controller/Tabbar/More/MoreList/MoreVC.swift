@@ -21,7 +21,8 @@ class MoreVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "More".localize
+        title = "More"
+//        setupNavigationBar()
       addDate()
     }
     
@@ -60,8 +61,14 @@ extension MoreVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        presenter.selectRecipeCell(index: indexPath.row, RecipeId: 1)
         if indexPath.row == 0 {
-//            let vc = Bundle.main.loadNibNamed("ProfileVC", owner: nil, options: nil)![0] as! ProfileVC
-//            self.navigationController?.pushViewController(vc, animated: true)
+            let vc = Bundle.main.loadNibNamed("ProfileVC", owner: nil, options: nil)![0] as! ProfileVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 1 {
+            let vc = Bundle.main.loadNibNamed("MyOrderVC", owner: nil, options: nil)![0] as! MyOrderVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 2 {
+            let vc = Bundle.main.loadNibNamed("FavoriteVC", owner: nil, options: nil)![0] as! FavoriteVC
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         
     }

@@ -58,10 +58,10 @@ class ForgetPassCodeVC: UIViewController {
             self?.closeIndicator()
             if Code == 200 {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//                let vc = storyboard.instantiateViewController(withIdentifier: "NewPasswordVC")  as! NewPasswordVC
-//                vc.email = email
-//                vc.code = code
-//                self?.navigationController?.pushViewController(vc, animated: true)
+                let vc = storyboard.instantiateViewController(withIdentifier: "NewPasswordVC")  as! NewPasswordVC
+                vc.email = email
+                vc.code = code
+                self?.navigationController?.pushViewController(vc, animated: true)
 //
             }else{
                 self?.showAlert(title: Data?.message ?? "", messages: nil, message: nil, selfDismissing: true)

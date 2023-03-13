@@ -41,22 +41,7 @@ private init () { }
                  defaults.set(newValue, forKey: verify)
              }
          }
-    var AllowEdite: Bool? {
-             get {
-                 return defaults.value(forKey: "allowEdite") as? Bool
-             }
-             set {
-                 defaults.set(newValue, forKey: "allowEdite")
-             }
-         }
-    var hasBank: Bool? {
-             get {
-                 return defaults.value(forKey: "Bank") as? Bool
-             }
-             set {
-                 defaults.set(newValue, forKey: "Bank")
-             }
-         }
+ 
     var id : String? {
             get {
                 return defaults.value(forKey: "id") as? String
@@ -65,14 +50,7 @@ private init () { }
                 defaults.set(newValue, forKey: "id")
             }
         }
-    var Orderid : Int? {
-            get {
-                return defaults.value(forKey: "Orderid") as? Int
-            }
-            set {
-                defaults.set(newValue, forKey: "Orderid")
-            }
-        }
+   
       var TappedViews: Int? {
               get {
                   return defaults.value(forKey: tapped) as? Int
@@ -109,14 +87,7 @@ private init () { }
         }
     }
     
-    var standerToken : String? {
-        get {
-            return defaults.value(forKey: "StanderTokenKey") as? String
-        }
-        set {
-            defaults.set(newValue, forKey: "StanderTokenKey")
-        }
-    }
+  
       var username: String? {
           get {
               return defaults.value(forKey: UserName) as? String
@@ -131,6 +102,22 @@ private init () { }
         }
         set {
             defaults.set(newValue, forKey: "Useraddress")
+        }
+    }
+    var lattitude: String? {
+        get {
+            return defaults.value(forKey: "lat") as? String
+        }
+        set {
+            defaults.set(newValue, forKey: "lat")
+        }
+    }
+    var lantitude: String? {
+        get {
+            return defaults.value(forKey: "lan") as? String
+        }
+        set {
+            defaults.set(newValue, forKey: "lan")
         }
     }
         var UserMail: String? {
@@ -162,6 +149,8 @@ func SetTokenDefaults(user: UserModel) {
     Verifyat = user.data?.isVerified
     username = user.data?.name
     userAddress = user.data?.address
+    lattitude = user.data?.lat
+    lantitude = user.data?.lng
   }
     
 //    func SetTokenDefaults(user: SignUPModel) {
@@ -176,7 +165,7 @@ func SetTokenDefaults(user: UserModel) {
 //         TappedViews = 0
       authToken = nil
       UserMail = nil
-      UserMail = nil
+      username = nil
 
     }
 
