@@ -56,10 +56,13 @@ class HomeVC: UIViewController,HomeProtocol {
     }
     
     var presenter : HomePresenter?
+    var lastLat = ""
+    var lastlon = "" 
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = HomePresenter(self)
-        presenter?.getHome(lat: <#String#>, lng: <#String#>, keyword: <#String#>)
+        setlocation()
+//        presenter?.getHome(lat: lastLat, lng: lastlon, keyword: "")
         SpecialStoreCollection.register(UINib(nibName: "SpecialStoreCell", bundle: nil), forCellWithReuseIdentifier: "SpecialStoreCell")
         nearStoreCollection.register(UINib(nibName: "NearStoreCell", bundle: nil), forCellWithReuseIdentifier: "NearStoreCell")
         let appearance = UINavigationBarAppearance()
@@ -73,6 +76,21 @@ class HomeVC: UIViewController,HomeProtocol {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter?.getHome(lat: lastLat, lng: lastlon, keyword: "")
+    }
+    
+    func setlocation(){
+        let userdata = AuthService.instance
+        if userdata.authToken == "" || userdata.authToken == nil {
+            lastLat =  String(LocationManager.SharedInstans.getlatitude())
+            lastlon =  String(LocationManager.SharedInstans.getlongitude())
+        }else{
+            lastLat = userdata.lattitude ?? ""
+            lastlon = userdata.lantitude ?? ""
+        }
+    }
     
     func SetSiliderImages(){
         let pageIndicator = UIPageControl()
@@ -184,6 +202,10 @@ extension HomeVC:Addressprotocole{
     func passAddress(value: String, Id: Int, lat: String, lon: String, code: String) {
         if value != "" {
             addressLabel.text = value
+            AuthService.instance.userAddress = value
+            AuthService.instance.lattitude = lat
+            AuthService.instance.lantitude = lon
+            presenter?.getHome(lat: lat, lng: lon, keyword: "")
         }
     }
 }

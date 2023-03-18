@@ -94,7 +94,7 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
      let AddProduct = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
     
       let Homevc = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
-     let ProfleVC = Bundle.main.loadNibNamed("MyOrderVC", owner: nil, options: nil)![0] as! MyOrderVC
+     let ProfleVC = Bundle.main.loadNibNamed("CartVC", owner: nil, options: nil)![0] as! CartVC
      let More = Bundle.main.loadNibNamed("MoreVC", owner: nil, options: nil)![0] as! MoreVC
    let MyWalletVC = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
      
@@ -130,7 +130,7 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
             UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: 5.0)
         }
      }
-        home.tabBarItem = UITabBarItem(title: "Home".localize, image: UIImage(named: "shopping-list"), tag: 2)
+        home.tabBarItem = UITabBarItem(title: "Home".localize, image: UIImage(named: "home-39"), tag: 2)
         profile.tabBarItem = UITabBarItem(title: "Chat".localize, image:UIImage(named: "chat"), tag: 3)
         MoreVC.tabBarItem = UITabBarItem(title: "More".localize, image:UIImage(named: "Group 24040"), tag: 4)
         MyWallet.tabBarItem = UITabBarItem(title: "Wallet".localize, image:UIImage(named: "Group 24370"), tag: 5)

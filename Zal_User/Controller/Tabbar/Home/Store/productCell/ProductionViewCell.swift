@@ -20,6 +20,7 @@ class ProductionViewCell: UICollectionViewCell,Reuseable,ProductsCellView {
     @IBOutlet weak var productImage: UIImageView!
     
     var favoriteProducte: (() -> Void)?
+    var addToCartProducte: (() -> Void)?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -44,4 +45,7 @@ class ProductionViewCell: UICollectionViewCell,Reuseable,ProductsCellView {
         favoriteProducte!()
     }
     
+    @IBAction func addToCartButton(_ sender: UIButton) {
+        addToCartProducte!()
+    }
 }

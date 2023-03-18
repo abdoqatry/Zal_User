@@ -72,7 +72,8 @@ enum PayType: String, Codable {
 struct ProductElement: Codable {
     let id: String?
     let product: ProductProduct?
-    let quantity, price: Int?
+    let quantity: Int?
+    let price: Double?
 }
 
 // MARK: - ProductProduct

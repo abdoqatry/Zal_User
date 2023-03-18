@@ -75,6 +75,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Group 24311"/>
+                                <connections>
+                                    <action selector="addToCartButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Xpv-gl-BVV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

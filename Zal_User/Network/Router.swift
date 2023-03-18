@@ -38,6 +38,12 @@ enum Router {
     case addAddress(name:String,name_en:String,desc:String,lat:String,lng:String,location:String)
     case editAddress(name:String,name_en:String,desc:String,lat:String,lng:String,location:String,id:Int)
     case fav_products
+    case cancel_order(id:String)
+    case store_cart(id:String,quantity:String)
+    case cart
+    case cartincrement(id:String)
+    case cartdecrement(id:String)
+    case cartcoupon(id:String)
     
     private var path: String {
         var path: String
@@ -102,6 +108,18 @@ enum Router {
             path = "api/addresses/\(id)"
         case.fav_products:
             path = "api/fav_products"
+        case.cancel_order(let id):
+            path = "api/cancel_order/\(id)"
+        case.store_cart:
+            path = "api/cart"
+        case.cart:
+            path = "api/cart"
+        case.cartincrement(let id):
+            path = "api/cart/increment/\(id)"
+        case.cartdecrement(let id):
+            path = "api/cart/decrement/\(id)"
+        case.cartcoupon(let id):
+            path = "api/cart/coupon/\(id)"
             
         }
         return path
@@ -224,6 +242,11 @@ enum Router {
                 "lng" : lng,
                 "location" : location,
                 "_method" : "PUT"
+            ]
+        case.store_cart(let id,let quantity):
+            param = [
+                "product_id" : id,
+                "quantity" : quantity
             ]
             
         default:

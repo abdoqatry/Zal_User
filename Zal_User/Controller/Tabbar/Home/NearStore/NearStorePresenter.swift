@@ -24,7 +24,7 @@ protocol NearStoreProtocol {
 }
 
 protocol NearCellView {
-    func Data(name:String,ProfileImage:String,address:String,CoverImage:String,rate:Int,distance:Double)
+    func Data(name:String,ProfileImage:String,address:String,CoverImage:String,rate:Double,distance:Double)
    }
 
 class NearStorePresenter {

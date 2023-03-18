@@ -16,6 +16,8 @@ protocol TrackOrderProtocol {
     func Errormassage(msg:String)
     
     func getData(status:String)
+    
+    func navigationBack()
 }
 
 
@@ -33,6 +35,19 @@ class TrackPresenter {
             self?.vc.closeIndicator()
             if Code == 200 {
                 self?.vc.getData(status: Data?.data?.status ?? "")
+            }else{
+                self?.vc.Errormassage(msg: Data?.message ?? "")
+            }
+            
+        }
+    }
+    
+    func CancelOrder(id:String){
+        vc.openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
+        NetworkManager.shared.getData(OrdersDtailsModel.self, Requst: .cancel_order(id: id), method: .get, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
+            self?.vc.closeIndicator()
+            if Code == 200 {
+                self?.vc.navigationBack()
             }else{
                 self?.vc.Errormassage(msg: Data?.message ?? "")
             }

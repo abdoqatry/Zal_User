@@ -49,7 +49,7 @@ class NearStoreVC: UIViewController,NearStoreProtocol,UITextFieldDelegate {
     
     var presenter : NearStorePresenter?
     var lastLat = ""
-    var lastlon = ""  String(LocationManager.SharedInstans.getlongitude())
+    var lastlon = "" 
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = NearStorePresenter(self)

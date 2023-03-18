@@ -8,6 +8,10 @@
 import UIKit
 
 class TrackOrderVC: UIViewController,TrackOrderProtocol {
+    func navigationBack() {
+        navigationController?.popViewController(animated: true)
+    }
+    
     
     func Errormassage(msg: String) {
         showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
@@ -141,6 +145,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
     var presenter : TrackPresenter?
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Order Details"
         presenter = TrackPresenter(self)
         setView()
     }
@@ -160,7 +165,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
     }
     
     @IBAction func cancelButtonAction(_ sender: UIButton) {
-        
+        presenter?.CancelOrder(id: id)
     }
     
 

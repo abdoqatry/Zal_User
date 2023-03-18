@@ -138,3 +138,4 @@ struct FavoriteDataClass: Codable {
         case likeStatus = "like_status"
     }
 }
+

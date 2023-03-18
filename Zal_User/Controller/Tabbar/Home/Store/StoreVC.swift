@@ -35,6 +35,10 @@ class StoreVC: UIViewController,StoreProtocol {
         
         productcollectionHeight.constant = CGFloat((round(item) * 200) + 20 )
     }
+    
+    func addToCart(msg:String){
+        showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
+    }
 
     @IBOutlet weak var searchTF: UITextField!
     @IBOutlet weak var shopAddressLabel: UILabel!
@@ -86,6 +90,22 @@ class StoreVC: UIViewController,StoreProtocol {
         profileImage.layer.cornerRadius = 60
         
     }
+    
+    func SingInAlert(){
+        let alert = UIAlertController(title: "", message: "you have sign in first".localize, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel".localize, style: .cancel, handler: { action in
+
+                   }))
+        alert.addAction(UIAlertAction(title: "Sing in".localize, style: .default, handler: { action in
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+               let LoginVC = storyboard.instantiateViewController(withIdentifier: "LoginVC")  as! LoginVC
+                      
+                   self.navigationController?.pushViewController(LoginVC, animated: true)
+
+                   }))
+                   self.present(alert, animated: true, completion: nil)
+          
+      }
 
 }
 
@@ -124,7 +144,18 @@ extension StoreVC: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
             presenter?.configureProducts(cell: cell, index: indexPath.row)
             
             cell.favoriteProducte = {
+                if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
+                    self.SingInAlert()
+                        return
+                    }
                 self.presenter?.makeFavorite(index: indexPath.row, catId: self.catId, providerId: self.id )
+            }
+            cell.addToCartProducte = {
+                if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
+                    self.SingInAlert()
+                        return
+                    }
+                self.presenter?.storeCart(index: indexPath.row)
             }
             
             return cell

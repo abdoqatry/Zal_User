@@ -42,11 +42,11 @@ class NearStoreTabelCell: UITableViewCell,Reuseable,NearCellView {
         // Configure the view for the selected state
     }
     
-    func Data(name: String, ProfileImage: String, address: String, CoverImage: String, rate: Int, distance: Double) {
+    func Data(name: String, ProfileImage: String, address: String, CoverImage: String, rate: Double, distance: Double) {
         nameLabel.text = name
         addressLabel.text = address
         distanceLabel.text = String(distance)
-        rateView.rating = Double(rate)
+        rateView.rating = rate
         let url = URL(string: ProfileImage)
         profileImage.kf.setImage(with: url)
         let url2 = URL(string: CoverImage)

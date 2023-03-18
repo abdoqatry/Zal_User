@@ -22,6 +22,8 @@ protocol StoreProtocol {
     func reloadProducts()
     
     func productHeight(count:Double)
+    
+    func addToCart(msg:String)
 }
 
 protocol CategoryCellView {
@@ -93,6 +95,20 @@ class StorePresenter {
             self?.vc.closeIndicator()
             if Code == 200 {
                 self?.getProducts(catId: catId, providerId: providerId)
+            }else{
+                self?.vc.errormassage(msg: Data?.message ?? "")
+            }
+            
+        }
+    }
+    
+    func storeCart(index:Int){
+        vc.openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
+        let id = String(productsList[index].id ?? 0)
+        NetworkManager.shared.getData(CartModel.self, Requst: .store_cart(id: id, quantity: "1"), method: .post, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
+            self?.vc.closeIndicator()
+            if Code == 200 {
+                self?.vc.addToCart(msg: Data?.message ?? "")
             }else{
                 self?.vc.errormassage(msg: Data?.message ?? "")
             }
