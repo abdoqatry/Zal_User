@@ -24,10 +24,10 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTl-Fz-c06">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o32-qM-PBe">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o32-qM-PBe">
                                 <rect key="frame" x="20" y="45" width="30" height="30"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24032" translatesAutoresizingMaskIntoConstraints="NO" id="WSr-XF-8mh">
+                                    <imageView hidden="YES" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24032" translatesAutoresizingMaskIntoConstraints="NO" id="WSr-XF-8mh">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                     </imageView>
                                 </subviews>
@@ -247,6 +247,7 @@
                 <outlet property="ViewSlider" destination="ec9-KW-9oY" id="qCV-Tn-qsM"/>
                 <outlet property="addressImage" destination="C7M-an-yVv" id="73X-bc-oKN"/>
                 <outlet property="addressLabel" destination="SJR-0O-8hr" id="tRK-nu-oeM"/>
+                <outlet property="cartVieew" destination="o32-qM-PBe" id="59p-vy-J5N"/>
                 <outlet property="locationImage" destination="yU3-Ck-flE" id="fTt-th-Epb"/>
                 <outlet property="nameLabel" destination="Luo-Bd-UVw" id="1Ga-Kv-AVO"/>
                 <outlet property="nearStoreCollection" destination="uZU-C5-KK3" id="yhJ-zM-eOj"/>

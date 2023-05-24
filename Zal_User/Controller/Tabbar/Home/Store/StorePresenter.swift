@@ -24,6 +24,8 @@ protocol StoreProtocol {
     func productHeight(count:Double)
     
     func addToCart(msg:String)
+    
+    func selectedProduct(id:String)
 }
 
 protocol CategoryCellView {
@@ -164,5 +166,10 @@ class StorePresenter {
         cell.Data(name: name, Image: Image, price: price, rate: rate, id: id, is_liked: liked)
 
         }
+    
+    func selectProduct(index: Int){
+        let id = String(productsList[index].id ?? 0)
+        self.vc.selectedProduct(id: id)
+    }
     
 }

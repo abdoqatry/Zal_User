@@ -39,7 +39,7 @@
                                             <constraint firstItem="3JI-eY-qMM" firstAttribute="centerX" secondItem="B7e-Qc-4tP" secondAttribute="centerX" id="x6w-7i-i1j"/>
                                         </constraints>
                                     </view>
-                                    <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyo-SZ-9dE">
+                                    <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyo-SZ-9dE">
                                         <rect key="frame" x="5" y="70" width="290" height="190"/>
                                         <date key="date" timeIntervalSinceReferenceDate="626016446.78182399">
                                             <!--2020-11-02 13:27:26 +0000-->

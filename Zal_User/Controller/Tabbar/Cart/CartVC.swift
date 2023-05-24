@@ -8,13 +8,14 @@
 import UIKit
 
 class CartVC: UIViewController,CartProtocol {
-    func setData(itemNum:String,amount:String,discountPer:String,deleveryFees:String,totalAmount:String,vat:String) {
+    func setData(itemNum:String,amount:String,discountPer:String,deleveryFees:String,totalAmount:String,vat:String,orderNum : String) {
         itemNumLabel.text = itemNum
         amountLabel.text = amount
         discountNumLabel.text = discountPer
         deliveryFeeLabel.text = deleveryFees
         totalAmountLabel.text = totalAmount
         servicesVatLabe.text = vat
+        self.orderNum = orderNum
     }
     
     func errormassage(msg: String) {
@@ -63,6 +64,7 @@ class CartVC: UIViewController,CartProtocol {
     @IBOutlet weak var descountTF: UITextField!
     @IBOutlet weak var ProductionTabelHeight: NSLayoutConstraint!
     
+    var orderNum = ""
     var presenter : CartPresenter?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,6 +90,12 @@ class CartVC: UIViewController,CartProtocol {
     }
     
     @IBAction func ConfirmButton(_ sender: UIButton) {
+        let vc = Bundle.main.loadNibNamed("CheckOutVC", owner: nil, options: nil)![0] as! CheckOutVC
+        vc.orderNumLabel.text = orderNum
+        vc.orderAmountLabel.text = amountLabel.text
+        vc.deliverChargeLabel.text = deliveryFeeLabel.text
+        vc.totalLabel.text = totalAmountLabel.text
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
@@ -110,6 +118,9 @@ extension CartVC: UITableViewDataSource {
         cell.decrementProducte = {
             self.presenter?.decreamentCart(index: indexPath.row)
         }
+        
+        cell.selectionStyle = .none
+        
         return cell
     }
     

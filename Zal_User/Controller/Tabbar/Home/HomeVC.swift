@@ -40,6 +40,7 @@ class HomeVC: UIViewController,HomeProtocol {
     @IBOutlet weak var ImageSliderView: ImageSlideshow!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var cartVieew: UIView!
     
     
     var Images = [sliderModel](){
@@ -73,6 +74,7 @@ class HomeVC: UIViewController,HomeProtocol {
         setView()
         presenter?.getSlider()
         setupNavigationBar()
+        setNavigationLeftBT()
         
     }
     
@@ -122,6 +124,7 @@ class HomeVC: UIViewController,HomeProtocol {
         }
         addressImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.getAddress)))
         addressLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.getAddress)))
+//        cartVieew.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.openCart)))
     }
     
     @objc func getAddress(){
@@ -132,6 +135,11 @@ class HomeVC: UIViewController,HomeProtocol {
          presentPop(viewController: vc)
      }
     
+//    @objc func openCart(){
+//        let vc = Bundle.main.loadNibNamed("CartVC", owner: nil, options: nil)![0] as! CartVC
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
+//
     @IBAction func ShowAllTransActionButton(_ sender: UIButton) {
         let vc = Bundle.main.loadNibNamed("NearStoreVC", owner: nil, options: nil)![0] as! NearStoreVC
         self.navigationController?.pushViewController(vc, animated: true)
@@ -203,6 +211,7 @@ extension HomeVC:Addressprotocole{
         if value != "" {
             addressLabel.text = value
             AuthService.instance.userAddress = value
+            AuthService.instance.userAddressId = Id
             AuthService.instance.lattitude = lat
             AuthService.instance.lantitude = lon
             presenter?.getHome(lat: lat, lng: lon, keyword: "")

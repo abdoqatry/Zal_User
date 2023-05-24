@@ -42,6 +42,17 @@ class CurrentOrderVC: UIViewController,CurrentOrderProtocol {
         super.viewDidLoad()
         presenter = CurrentPresenter(self)
         presenter?.getCurrentOrder()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.openDelivery2), name: NSNotification.Name(rawValue: "OpenOrders"), object: nil)
+
+    }
+    
+    @objc func openDelivery2(){
+        let id = AuthService.instance.id ?? ""
+        let num = AuthService.instance.orderNum ?? ""
+        let vc = Bundle.main.loadNibNamed("TrackOrderVC",owner: nil, options: nil)![0] as! TrackOrderVC
+        vc.id = id
+        vc.orderNumTF.text = num
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }

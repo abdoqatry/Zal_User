@@ -25,6 +25,8 @@ class CategorycollectionCell: UICollectionViewCell,Reuseable,CategoryCellView {
         let url = URL(string: Image)
         catImage.kf.setImage(with: url)
         nameLabel.text = name
+//        catImage.backgroundColor = UIColor.clear
+//        catImage.isOpaque = true
     }
 
 }

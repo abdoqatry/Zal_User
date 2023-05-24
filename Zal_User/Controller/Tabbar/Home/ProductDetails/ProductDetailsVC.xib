@@ -67,8 +67,11 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="Group 24312"/>
+                                        <connections>
+                                            <action selector="increesBT:" destination="Bri-Q8-aPB" eventType="touchUpInside" id="V4v-fY-TWb"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55w-aQ-hkp">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55w-aQ-hkp">
                                         <rect key="frame" x="56.999999999999972" y="0.0" width="10.666666666666671" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,6 +84,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="Group 24313"/>
+                                        <connections>
+                                            <action selector="decreaseBT:" destination="Bri-Q8-aPB" eventType="touchUpInside" id="tzV-dF-kYh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -99,45 +105,29 @@
                                     <action selector="addtoCartButton:" destination="Bri-Q8-aPB" eventType="touchUpInside" id="ZlH-yY-1NX"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mUD-IS-TfR">
-                                <rect key="frame" x="71.666666666666686" y="215" width="250" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="HpU-zz-Lpj"/>
-                                    <constraint firstAttribute="width" constant="250" id="dfx-e9-4E5"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Specifications"/>
-                                    <segment title="Rating"/>
-                                </segments>
-                                <color key="selectedSegmentTintColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="0.2383588576" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="SegmantDetailBT:" destination="Bri-Q8-aPB" eventType="touchUpInside" id="CZQ-jk-TpR"/>
-                                </connections>
-                            </segmentedControl>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHT-e2-m5h">
-                                <rect key="frame" x="20" y="275" width="353" height="347"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCO-6j-Tr4">
+                                <rect key="frame" x="20" y="205" width="353" height="18.666666666666657"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hCO-6j-Tr4" secondAttribute="trailing" constant="20" id="32d-wd-PPs"/>
                             <constraint firstItem="5p5-kZ-JRH" firstAttribute="top" secondItem="yhZ-6X-G6m" secondAttribute="top" constant="20" id="8DN-1h-o6j"/>
                             <constraint firstItem="hfT-PN-H5B" firstAttribute="centerY" secondItem="fif-o9-gAe" secondAttribute="centerY" id="BEK-z6-jpa"/>
                             <constraint firstAttribute="trailing" secondItem="IdS-yh-aDU" secondAttribute="trailing" constant="15" id="CGx-jw-TKQ"/>
                             <constraint firstAttribute="trailing" secondItem="hfT-PN-H5B" secondAttribute="trailing" constant="20" id="LUn-BB-nie"/>
                             <constraint firstItem="fif-o9-gAe" firstAttribute="top" secondItem="5p5-kZ-JRH" secondAttribute="bottom" constant="25" id="OkS-Sx-nM2"/>
                             <constraint firstItem="Dc7-FS-1Tr" firstAttribute="centerX" secondItem="yhZ-6X-G6m" secondAttribute="centerX" id="P1O-Gi-WQY"/>
+                            <constraint firstItem="hCO-6j-Tr4" firstAttribute="leading" secondItem="yhZ-6X-G6m" secondAttribute="leading" constant="20" id="Ry7-fS-0oV"/>
                             <constraint firstItem="IdS-yh-aDU" firstAttribute="leading" secondItem="5p5-kZ-JRH" secondAttribute="trailing" constant="20" id="XC1-yO-0b2"/>
-                            <constraint firstItem="JHT-e2-m5h" firstAttribute="leading" secondItem="yhZ-6X-G6m" secondAttribute="leading" constant="20" id="bbV-Ge-XZe"/>
-                            <constraint firstAttribute="bottom" secondItem="JHT-e2-m5h" secondAttribute="bottom" constant="20" id="c79-Bz-q1v"/>
                             <constraint firstItem="Dc7-FS-1Tr" firstAttribute="top" secondItem="fif-o9-gAe" secondAttribute="bottom" constant="50" id="cgm-Uf-1v8"/>
                             <constraint firstItem="fif-o9-gAe" firstAttribute="leading" secondItem="5p5-kZ-JRH" secondAttribute="leading" id="f0P-xg-sYy"/>
-                            <constraint firstAttribute="trailing" secondItem="JHT-e2-m5h" secondAttribute="trailing" constant="20" id="jR9-H6-QSq"/>
-                            <constraint firstItem="mUD-IS-TfR" firstAttribute="centerX" secondItem="yhZ-6X-G6m" secondAttribute="centerX" id="ltw-bw-ANc"/>
                             <constraint firstItem="5p5-kZ-JRH" firstAttribute="leading" secondItem="yhZ-6X-G6m" secondAttribute="leading" constant="15" id="n29-Uk-AOI"/>
-                            <constraint firstItem="mUD-IS-TfR" firstAttribute="top" secondItem="Dc7-FS-1Tr" secondAttribute="bottom" constant="40" id="ofG-9h-Ohw"/>
                             <constraint firstItem="IdS-yh-aDU" firstAttribute="top" secondItem="yhZ-6X-G6m" secondAttribute="top" constant="10" id="tFI-8q-RvM"/>
-                            <constraint firstItem="JHT-e2-m5h" firstAttribute="top" secondItem="mUD-IS-TfR" secondAttribute="bottom" constant="20" id="tVa-sb-lU6"/>
+                            <constraint firstItem="hCO-6j-Tr4" firstAttribute="top" secondItem="Dc7-FS-1Tr" secondAttribute="bottom" constant="30" id="whG-L0-EQZ"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -155,12 +145,12 @@
             </view>
             <connections>
                 <outlet property="ImageSliderView" destination="zwL-7e-cce" id="nf4-Qr-xbs"/>
-                <outlet property="MainView" destination="JHT-e2-m5h" id="Ylw-yl-ffD"/>
                 <outlet property="PriceView" destination="IdS-yh-aDU" id="3eK-uk-TxA"/>
                 <outlet property="addtocartBT" destination="Dc7-FS-1Tr" id="cH6-Tz-lGg"/>
+                <outlet property="descLabel" destination="hCO-6j-Tr4" id="gjh-Li-IPP"/>
                 <outlet property="nameLabel" destination="5p5-kZ-JRH" id="TLf-NM-T6B"/>
                 <outlet property="priceLabel" destination="fuo-EV-4Gg" id="xvz-qK-FHA"/>
-                <outlet property="segmantsubView" destination="mUD-IS-TfR" id="p8x-Q2-eZr"/>
+                <outlet property="quentityLabel" destination="55w-aQ-hkp" id="F1F-gp-qLA"/>
             </connections>
             <point key="canvasLocation" x="-34.351145038167935" y="-1.4084507042253522"/>
         </viewController>

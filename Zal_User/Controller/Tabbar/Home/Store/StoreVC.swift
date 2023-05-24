@@ -39,6 +39,12 @@ class StoreVC: UIViewController,StoreProtocol {
     func addToCart(msg:String){
         showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
     }
+    
+    func selectedProduct(id:String){
+        let vc = Bundle.main.loadNibNamed("ProductDetailsVC", owner: nil, options: nil)![0] as! ProductDetailsVC
+        vc.productid = id
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
     @IBOutlet weak var searchTF: UITextField!
     @IBOutlet weak var shopAddressLabel: UILabel!
@@ -195,9 +201,7 @@ extension StoreVC: UICollectionViewDelegate {
 //            productCollectionView.reloadData()
             Categorycollection.reloadData()
         }else{
-            let vc = Bundle.main.loadNibNamed("ProductDetailsVC", owner: nil, options: nil)![0] as! ProductDetailsVC
-            vc.productid = "2"
-            self.navigationController?.pushViewController(vc, animated: true)
+            presenter?.selectProduct(index: indexPath.row)
         }
     }
     

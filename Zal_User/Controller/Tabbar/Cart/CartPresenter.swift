@@ -19,7 +19,7 @@ protocol CartProtocol {
     
     func countTabel(count:Int)
     
-    func setData(itemNum:String,amount:String,discountPer:String,deleveryFees:String,totalAmount:String,vat:String)
+    func setData(itemNum:String,amount:String,discountPer:String,deleveryFees:String,totalAmount:String,vat:String,orderNum : String)
     
 }
 
@@ -52,8 +52,9 @@ class CartPresenter {
                 let delevery = String(Data?.data?.delivery ?? 0)
                 let total = String(Data?.data?.total ?? 0)
                 let vat = String(Data?.data?.vat ?? 0.0)
+                let orderNum = Data?.data?.id ?? ""
                 
-                self?.vc.setData(itemNum: String(count), amount: amount, discountPer: discountper, deleveryFees: delevery, totalAmount: total,vat:vat)
+                self?.vc.setData(itemNum: String(count), amount: amount, discountPer: discountper, deleveryFees: delevery, totalAmount: total,vat:vat, orderNum: orderNum)
             }else{
                 self?.vc.errormassage(msg: Data?.message ?? "")
             }
@@ -112,8 +113,9 @@ class CartPresenter {
                 let delevery = String(Data?.data?.delivery ?? 0)
                 let total = String(Data?.data?.total ?? 0)
                 let vat = String(Data?.data?.vat ?? 0.0)
+                let orderNum = Data?.data?.id ?? ""
                 
-                self?.vc.setData(itemNum: String(count), amount: amount, discountPer: discountper, deleveryFees: delevery, totalAmount: total,vat:vat)
+                self?.vc.setData(itemNum: String(count), amount: amount, discountPer: discountper, deleveryFees: delevery, totalAmount: total,vat:vat, orderNum: orderNum)
             }else{
                 self?.vc.errormassage(msg: Data?.message ?? "")
             }

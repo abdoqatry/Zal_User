@@ -50,6 +50,14 @@ private init () { }
                 defaults.set(newValue, forKey: "id")
             }
         }
+    var orderNum : String? {
+            get {
+                return defaults.value(forKey: "orderNum") as? String
+            }
+            set {
+                defaults.set(newValue, forKey: "orderNum")
+            }
+        }
    
       var TappedViews: Int? {
               get {
@@ -102,6 +110,14 @@ private init () { }
         }
         set {
             defaults.set(newValue, forKey: "Useraddress")
+        }
+    }
+    var userAddressId: Int? {
+        get {
+            return defaults.value(forKey: "UseraddressId") as? Int
+        }
+        set {
+            defaults.set(newValue, forKey: "UseraddressID")
         }
     }
     var lattitude: String? {

@@ -71,13 +71,13 @@ class DateController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-//        if mode == 1 {
+        if mode == 1 {
         datePicker.datePickerMode = .date
         TitleStatus.text = "Choose date".localize
-//        }else{
-//            datePicker.datePickerMode = .time
-//            TitleStatus.text = "Choose time".localize
-//        }
+        }else{
+            datePicker.datePickerMode = .dateAndTime
+            TitleStatus.text = "Choose time".localize
+        }
         
     }
 
@@ -85,15 +85,15 @@ class DateController: UIViewController {
     //MARK: - IBAction func
     @IBAction func Confirm(_ sender: UIButton) {
         //get date from date picker
-//        if mode == 1 {
+        if mode == 1 {
         let dataAsString = self.configDate(date: datePicker.date)
         delegetDate?.dateView(didSelect: dataAsString, mode: mode, type: type)
             self.dismissViews()
-//        }else{
-//            let dataAsString = self.configDate2(date: datePicker.date)
-//            delegetDate?.dateView(didSelect: dataAsString, mode: mode)
-//                self.dismissViews()
-//        }
+        }else{
+            let dataAsString = self.configDate2(date: datePicker.date)
+            delegetDate?.dateView(didSelect: dataAsString, mode: mode, type: type)
+                self.dismissViews()
+        }
         
     }
     
@@ -129,7 +129,7 @@ class DateController: UIViewController {
     func configDate2(date: Date) -> String {
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "hh:mm a"
+        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
         dateFormatter.locale = Locale(identifier: "en")
         dateFormatter.calendar = Calendar(identifier: .iso8601)
         return dateFormatter.string(from: date)

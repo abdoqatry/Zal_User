@@ -14,10 +14,15 @@ class ProductDetailsVC: UIViewController,ProductDetailsProtocol {
         showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
     }
     
-    func setData(coverImage: [Image], name: String, price: String) {
+    func setData(coverImage: [Image], name: String, price: String,description:String) {
         Images = coverImage
         priceLabel.text = "\(price)\("SR".localize)"
         nameLabel.text = name
+        descLabel.text = description
+    }
+    
+    func addToCart(msg:String){
+        showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
     }
     
     var Images = [Image](){
@@ -33,18 +38,19 @@ class ProductDetailsVC: UIViewController,ProductDetailsProtocol {
         }
     }
 
+    @IBOutlet weak var descLabel: UILabel!
+    @IBOutlet weak var quentityLabel: UILabel!
     @IBOutlet weak var addtocartBT: UIButton!
     @IBOutlet weak var PriceView: UIView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var ImageSliderView: ImageSlideshow!
-    @IBOutlet weak var segmantsubView: UISegmentedControl!
-    @IBOutlet weak var MainView: UIView!
     
     var productid = ""
     var catId = ""
     var providerId = ""
     var presenter : ProductDetailsPresenter?
+    var quantity = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = ProductDetailsPresenter(self)
@@ -60,40 +66,37 @@ class ProductDetailsVC: UIViewController,ProductDetailsProtocol {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter?.getProduct(id: productid)
-        
-        addRate()
     }
     
-    @IBAction func SegmantDetailBT(_ sender: UISegmentedControl) {
-        
-        if sender.selectedSegmentIndex == 1 {
-            addRate()
-            
-        }else if sender.selectedSegmentIndex == 0 {
-//            addproduct()
+   
+    @IBAction func decreaseBT(_ sender: UIButton) {
+        quantity = Int(quentityLabel.text!)!
+        print(quantity)
+        if quentityLabel.text! > "0" {
+           let x = quantity - 1
+            print(x)
+            quentityLabel.text = String(x)
         }
-        
     }
+    
+    @IBAction func increesBT(_ sender: UIButton) {
+        quantity = Int(quentityLabel.text!)!
+        print(quantity)
+//        if quentityLabel.text! > "0" {
+           let x = quantity + 1
+            print(x)
+            quentityLabel.text = String(x)
+//        }
 
+    }
+    
     
     @IBAction func addtoCartButton(_ sender: UIButton) {
-        
+        presenter?.storeCart(id: productid, quantity: quentityLabel.text ?? "")
     }
     
     
-    func addRate(){
-        MainView.subviews.forEach({ $0.removeFromSuperview() })
-        let vc = Bundle.main.loadNibNamed("ProductRateVC", owner: nil, options: nil)![0] as! ProductRateVC
-        vc.id = productid
-    let controller = vc
-    addChild(controller)
-        MainView.layer.borderColor = #colorLiteral(red: 0.9647058824, green: 0.9647058824, blue: 0.9647058824, alpha: 1)
-//    contantView.translatesAutoresizingMaskIntoConstraints = true
-        MainView.addSubview(controller.view)
-  
-    controller.didMove(toParent: self)
-    controller.view.frame = CGRect(x:0, y: 0, width: MainView.frame.width, height: MainView.frame.height)
-    }
+   
     
     
 }

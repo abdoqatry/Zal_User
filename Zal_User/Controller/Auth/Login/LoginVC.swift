@@ -55,6 +55,7 @@ class LoginVC: UIViewController,LoginProtocol {
         guard  let mail = EmailTF.text , !mail.isEmpty , mail.isEmail  else{
             showAlert(title:  "Enter valid mail".localize, messages: nil, message: nil, selfDismissing: true)
                 return  }
+        
         guard let pass = PasswordTF.text , !pass.isEmpty, pass.count > 5 else{
             showAlert(title: "Enter a password of at least 6 characters".localize, messages: nil, message: nil, selfDismissing: true)
         return  }

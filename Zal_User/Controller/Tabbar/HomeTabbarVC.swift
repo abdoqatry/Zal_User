@@ -94,15 +94,15 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
      let AddProduct = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
     
       let Homevc = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
-     let ProfleVC = Bundle.main.loadNibNamed("CartVC", owner: nil, options: nil)![0] as! CartVC
+     let MessageVC = Bundle.main.loadNibNamed("MessageVC", owner: nil, options: nil)![0] as! MessageVC
      let More = Bundle.main.loadNibNamed("MoreVC", owner: nil, options: nil)![0] as! MoreVC
-   let MyWalletVC = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
+   let ProfileVC = Bundle.main.loadNibNamed("ProfileVC", owner: nil, options: nil)![0] as! ProfileVC
      
      let addProduct = UINavigationController(rootViewController: AddProduct)
          let home = UINavigationController(rootViewController: Homevc)
-         let profile = UINavigationController(rootViewController: ProfleVC)
+         let message = UINavigationController(rootViewController: MessageVC)
          let MoreVC = UINavigationController(rootViewController: More)
-     let MyWallet = UINavigationController(rootViewController: MyWalletVC)
+     let Profile = UINavigationController(rootViewController: ProfileVC)
 
          
         addProduct.tabBarItem = UITabBarItem(title:"Add Meal".localize, image: UIImage(named: ""), tag: 1)
@@ -131,18 +131,18 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
         }
      }
         home.tabBarItem = UITabBarItem(title: "Home".localize, image: UIImage(named: "home-39"), tag: 2)
-        profile.tabBarItem = UITabBarItem(title: "Chat".localize, image:UIImage(named: "chat"), tag: 3)
+        message.tabBarItem = UITabBarItem(title: "Chat".localize, image:UIImage(named: "chat"), tag: 3)
         MoreVC.tabBarItem = UITabBarItem(title: "More".localize, image:UIImage(named: "Group 24040"), tag: 4)
-        MyWallet.tabBarItem = UITabBarItem(title: "Wallet".localize, image:UIImage(named: "Group 24370"), tag: 5)
+        Profile.tabBarItem = UITabBarItem(title: "Profile".localize, image:UIImage(named: "user-43"), tag: 5)
  
     
      var tabBarList : [ UIViewController]?
 //        if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
          tabBarList = [
             home,
-            profile,
+            message,
 //            addProduct,
-            MyWallet,
+            Profile,
             MoreVC,
              ]
 //        }else{

@@ -148,14 +148,14 @@ UINavigationBar.appearance().tintColor = UIColor.white
 
        }
     
-    func setNavigationRightBT(){
-        let button1 = UIBarButtonItem(image: UIImage(named:"Group 24311")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(bell))
-        navigationItem.setRightBarButtonItems([button1], animated: true)
+    func setNavigationLeftBT(){
+        let button1 = UIBarButtonItem(image: UIImage(named:"Group 24032")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(bell))
+        navigationItem.setLeftBarButtonItems([button1], animated: true)
     }
     
     @objc func bell(){
-//        let vc = Bundle.main.loadNibNamed("NotificationVC", owner: nil, options: nil)![0] as! NotificationVC
-//        navigationController?.pushViewController(vc, animated: true)
+        let vc = Bundle.main.loadNibNamed("CartVC", owner: nil, options: nil)![0] as! CartVC
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     
