@@ -44,6 +44,10 @@ enum Router {
     case cartincrement(id:String)
     case cartdecrement(id:String)
     case cartcoupon(id:String)
+    case checkoutOrders(address_id:String,pay_type:String,date:String)
+    case chat
+    case chatsgetMessages(page:String,id:String)
+    case SendMessage(order_id:String,msg:String,msg_type:String)
     
     private var path: String {
         var path: String
@@ -120,6 +124,14 @@ enum Router {
             path = "api/cart/decrement/\(id)"
         case.cartcoupon(let id):
             path = "api/cart/coupon/\(id)"
+        case.checkoutOrders:
+            path = "api/orders"
+        case.chat:
+            path = "api/chat"
+        case.chatsgetMessages(let page,let id):
+            path = "api/chat/\(id)"
+        case.SendMessage:
+            path = "api/chat"
             
         }
         return path
@@ -148,6 +160,12 @@ enum Router {
             URLQueryItem(name: "lat", value: lat),
             URLQueryItem(name: "lng", value: lng),
             URLQueryItem(name: "keyword", value: keyword),
+            ]
+        case.SendMessage(let order_id,let msg,let msg_type):
+            queryItems = [
+            URLQueryItem(name: "order_id", value: order_id),
+            URLQueryItem(name: "msg", value: msg),
+            URLQueryItem(name: "msg_type", value: msg_type),
             ]
         default:
             queryItems = []
@@ -247,6 +265,12 @@ enum Router {
             param = [
                 "product_id" : id,
                 "quantity" : quantity
+            ]
+        case.checkoutOrders(let address_id,let pay_type,let date):
+            param = [
+                "address_id" : address_id,
+                "pay_type" : pay_type,
+                "date" : date
             ]
             
         default:
