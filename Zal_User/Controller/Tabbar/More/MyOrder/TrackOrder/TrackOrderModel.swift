@@ -22,9 +22,9 @@ struct OrderDetailsClass: Codable {
     let products: [ProductElement]?
     let provider: Provider?
     let coupon: Coupon?
-    let distance, productsTotal, delivery: Int?
+    let distance, productsTotal, delivery: Double?
     let totalBeforeDiscount: Double?
-    let discountAmount: Int?
+    let discountAmount: Double?
     let vat, appAmount, providerAmount, total: Double?
     let date, createdAt: String?
 

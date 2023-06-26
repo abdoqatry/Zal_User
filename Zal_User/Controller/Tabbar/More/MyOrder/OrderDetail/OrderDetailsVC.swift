@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OrderDetailsVC: UIViewController {
+class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
     
     @IBOutlet weak var TabelHeight: NSLayoutConstraint!
     @IBOutlet weak var orderDetailTabel: UITableView!{
@@ -20,7 +20,7 @@ class OrderDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Order Details"
         
     }
     
