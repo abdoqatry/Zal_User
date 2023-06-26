@@ -8,7 +8,16 @@
 import UIKit
 import Cosmos
 
-class OrderDetailsCell: UITableViewCell,Reuseable {
+class OrderDetailsCell: UITableViewCell,Reuseable,OrderDetailsCellView {
+    
+    func Data(image: String, name: String, desc: String, quanty: String, price: Double) {
+        nameLabel.text = name
+        priceLabel.text = "\(price)\("SR".localize)"
+        quanityLabel.text = quanty
+        descLabel.text = desc
+        let url = URL(string: image)
+        productImg.kf.setImage(with: url)
+    }
 
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var rateView: CosmosView!

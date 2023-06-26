@@ -67,12 +67,12 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
 
 extension OrderDetailsVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       5
+        presenter?.GettransCount() ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: OrderDetailsCell = orderDetailTabel.dequeueReusableCell(forIndexPath: indexPath)
-//        presenter?.configureType(cell: cell, index: indexPath.row)
+        presenter?.configureType(cell: cell, index: indexPath.row)
         cell.selectionStyle = .none
         return cell
     }

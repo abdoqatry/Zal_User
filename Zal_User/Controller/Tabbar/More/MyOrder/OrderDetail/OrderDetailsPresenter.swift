@@ -20,6 +20,10 @@ protocol OrderDetailsProtocol {
     func navigationBack()
 }
 
+protocol OrderDetailsCellView {
+    func Data(image:String,name:String,desc:String,quanty:String,price:Double)
+   }
+
 class OrderDetailsPresenter {
     
     let vc: OrderDetailsProtocol
@@ -27,6 +31,8 @@ class OrderDetailsPresenter {
     init(_ controller: OrderDetailsProtocol) {
         vc = controller
     }
+    
+    var OrderList : [ProductElement] = []
     
     func getOrderDetails(id:String){
         vc.openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
@@ -50,4 +56,20 @@ class OrderDetailsPresenter {
         }
     }
     
+    func GettransCount () -> Int{
+        return  OrderList.count
+        }
+    
+    func configureType(cell: OrderDetailsCellView, index: Int) {
+           let data = OrderList[index]
+        
+        let image = data.product?.image ?? ""
+        let name = data.product?.name ?? ""
+        let des = data.product?.productDescription ?? ""
+        let quanty = String(data.quantity ?? 0)
+        let price = data.price ?? 0
+         
+        cell.Data(image: image, name: name, desc: des, quanty: quanty, price: price)
+       
+        }
 }

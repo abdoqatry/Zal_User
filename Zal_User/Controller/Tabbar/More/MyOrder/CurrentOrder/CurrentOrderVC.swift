@@ -31,6 +31,7 @@ class CurrentOrderVC: UIViewController,CurrentOrderProtocol {
     
     func selectorder(id:String){
         let vc = Bundle.main.loadNibNamed("OrderDetailsVC",owner: nil, options: nil)![0] as! OrderDetailsVC
+        vc.id = id
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
