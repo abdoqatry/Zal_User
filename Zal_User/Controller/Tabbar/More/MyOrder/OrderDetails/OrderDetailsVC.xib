@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetailsVC" customModule="Zal_User" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="e85-79-sMH" customClass="OrderDetailsVC" customModule="Zal_User" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="7H5-to-m3e">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iix-oX-Php">
+                        <rect key="frame" x="5" y="79" width="383" height="300"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="300" id="Kzj-Od-2eB"/>
+                        </constraints>
+                    </tableView>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="WLQ-k3-4OR"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="iix-oX-Php" firstAttribute="leading" secondItem="7H5-to-m3e" secondAttribute="leading" constant="5" id="4v7-5z-CE8"/>
+                    <constraint firstItem="WLQ-k3-4OR" firstAttribute="trailing" secondItem="iix-oX-Php" secondAttribute="trailing" constant="5" id="NaS-uM-QnO"/>
+                    <constraint firstItem="iix-oX-Php" firstAttribute="top" secondItem="WLQ-k3-4OR" secondAttribute="top" constant="20" id="RuL-tN-Smq"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="orderDetailTabel" destination="iix-oX-Php" id="li2-88-hAh"/>
+            </connections>
+            <point key="canvasLocation" x="-327" y="-56"/>
+        </viewController>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

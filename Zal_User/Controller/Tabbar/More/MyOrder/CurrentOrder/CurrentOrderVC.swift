@@ -75,7 +75,8 @@ extension CurrentOrderVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        presenter?.selecteCell(index: indexPath.row)
+        let vc = Bundle.main.loadNibNamed("OrderDetailsVC",owner: nil, options: nil)![0] as! OrderDetailsVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
