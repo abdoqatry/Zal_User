@@ -27,6 +27,9 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
         
     }
     
+    func reloadTabel(){
+        orderDetailTabel.reloadData()
+    }
     
     @IBOutlet weak var addresLAbel: UILabel!
     @IBOutlet weak var orderNumLabel: UILabel!

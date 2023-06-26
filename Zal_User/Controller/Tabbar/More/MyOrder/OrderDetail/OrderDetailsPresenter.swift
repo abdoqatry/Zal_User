@@ -18,6 +18,8 @@ protocol OrderDetailsProtocol {
     func getData(num:String,address:String,paymentType:String,price:Double,discount:Double,tax:Double,delivery:Double,total:Double)
     
     func navigationBack()
+    
+    func reloadTabel()
 }
 
 protocol OrderDetailsCellView {
@@ -48,6 +50,9 @@ class OrderDetailsPresenter {
                 let delivery = Data?.data?.delivery ?? 0.0
                 let total = Data?.data?.total ?? 0.0
                 
+                self?.OrderList = Data?.data?.products ?? []
+                self?.vc.reloadTabel()
+                
                 self?.vc.getData(num: num, address: address, paymentType: paymentType, price: price, discount: discount, tax: tax, delivery: delivery, total: total)
             }else{
                 self?.vc.Errormassage(msg: Data?.message ?? "")
@@ -65,7 +70,7 @@ class OrderDetailsPresenter {
         
         let image = data.product?.image ?? ""
         let name = data.product?.name ?? ""
-        let des = data.product?.productDescription ?? ""
+        let des = data.product?.description ?? ""
         let quanty = String(data.quantity ?? 0)
         let price = data.price ?? 0
          
