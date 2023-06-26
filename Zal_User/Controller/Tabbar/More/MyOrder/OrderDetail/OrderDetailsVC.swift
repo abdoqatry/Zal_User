@@ -8,7 +8,8 @@
 import UIKit
 
 class OrderDetailsVC: UIViewController {
-
+    
+    @IBOutlet weak var TabelHeight: NSLayoutConstraint!
     @IBOutlet weak var orderDetailTabel: UITableView!{
         didSet {
             orderDetailTabel.delegate = self
