@@ -17,6 +17,8 @@ protocol CurrentOrderProtocol {
     
     func selectIndex(id : String,num:String)
     
+    func selectorder(id:String)
+    
     func realoadData()
 }
 
@@ -69,6 +71,12 @@ class CurrentPresenter {
         let id = OrderList[index].id ?? ""
         let num = OrderList[index].orderNum ?? ""
         self.vc.selectIndex(id: id, num: num)
+    }
+    
+    func OpenCell(index:Int){
+        let id = OrderList[index].id ?? ""
+        let num = OrderList[index].orderNum ?? ""
+        self.vc.selectorder(id: id)
     }
     
 }

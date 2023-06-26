@@ -29,6 +29,11 @@ class CurrentOrderVC: UIViewController,CurrentOrderProtocol {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    func selectorder(id:String){
+        let vc = Bundle.main.loadNibNamed("OrderDetailsVC",owner: nil, options: nil)![0] as! OrderDetailsVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     @IBOutlet weak var nodataLabel: UILabel!
     @IBOutlet weak var currentOrderTabelView: UITableView!{
         didSet {
@@ -75,8 +80,7 @@ extension CurrentOrderVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = Bundle.main.loadNibNamed("OrderDetailsVC",owner: nil, options: nil)![0] as! OrderDetailsVC
-        self.navigationController?.pushViewController(vc, animated: true)
+        presenter?.OpenCell(index: indexPath.row)
     }
     
 }

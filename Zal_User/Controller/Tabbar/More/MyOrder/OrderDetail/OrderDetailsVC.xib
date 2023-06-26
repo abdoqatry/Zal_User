@@ -243,7 +243,15 @@
             </view>
             <connections>
                 <outlet property="TabelHeight" destination="Kzj-Od-2eB" id="v6o-7L-jJ2"/>
+                <outlet property="addresLAbel" destination="89w-iu-BKo" id="2qH-xA-VEG"/>
+                <outlet property="deliveryLabel" destination="Kah-sj-JQs" id="9NT-LC-bgZ"/>
+                <outlet property="discountLabel" destination="axq-Ow-qQH" id="Pd3-uo-bFj"/>
                 <outlet property="orderDetailTabel" destination="iix-oX-Php" id="li2-88-hAh"/>
+                <outlet property="orderNumLabel" destination="eS1-09-zFA" id="VLZ-Xg-Y9r"/>
+                <outlet property="paymentLabel" destination="aZF-Pa-N7Q" id="h9m-Om-THr"/>
+                <outlet property="priceLabel" destination="9gs-ZH-5xe" id="BlP-TJ-mZc"/>
+                <outlet property="taxLabel" destination="DaE-w1-lh8" id="3cG-Be-1ze"/>
+                <outlet property="totalLAbel" destination="Iih-nc-3KK" id="Px0-8N-byg"/>
             </connections>
             <point key="canvasLocation" x="-327.48091603053433" y="-56.338028169014088"/>
         </viewController>
