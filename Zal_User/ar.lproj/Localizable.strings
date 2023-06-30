@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  Zal_User
+
+  Created by Admin on 30/06/2023.
+  
+*/
+// login
+"Enter user name" = "ادخل الاسم";
+"Enter valid mail" = "ادخل البريد الإليكتروني";
+"choose City" = "اختر المدينة";
+"Cancel" = "إلغاء";
+"Select City" = "اختر مدينة";
+"Phone Number" = "رقم الجوال";
+"Enter Phone Number" = "ادخل رقم الجوال";
+"Confirm Mobile Number" = "تأكيد رقم الجوال";
+"Please type the new password" = "برجاء كتابة كلمة المرور الجديدة";
+"Password" = "كلمة المرور";
+"Confirm Password" = "تأكيد كلمة المرور";
+"Confirm" = "تأكيد";
+"Enter a password of at least 6 characters" = "ادخل كلمة مرور لا تقل عن ٦ احرف";
+"Confirm a password of at least 6 characters" = "تأكيد كلمة مرور لا تقل عن ٦ احرف ";
+"Password is not the same" =  "كلمة المرور غير متشابهة";
+"password dosn't match" =  "كلمة المرور غير متشابهة";
+"Resend Code" = "إعادة إرسال الكود";
+"Confirmation code has been sent" = "تم إرسال كود تأكيد لرقم الجوال المدرج بالتطبيق";
+"Change Password" = "تغيير كلمة المرور";
+"Current Password" = "كلمة المرور الحالية";
+"New Password" = "كلمة المرور الجديدة";
+"Enter Verification Code" =  "ادخل رمز التحقق";
+"Forget Password ?" = "نسيت كلمة المرور ؟";
+"Agree to the terms and conditions" = "الموافقة علي الشروط والأحكام";
+"you have accept app police" = "يجب الموافقة علي الشروط والاحكام";
+"please choose city" = "اختر مدينة";
+"please choose area" = "اختر المنطقة";
+"please choose Address" = "اضف العنوان";
+// verification
+
+"code has been sent to your mail" = "تم إرسال كود التحقق لبريدك الإليكتروني";
+

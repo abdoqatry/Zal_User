@@ -113,7 +113,7 @@ class SignUP: UIViewController,SignUpProtocol {
             showAlert(title:  "you have accept app police".localize, messages: nil, message: nil, selfDismissing: true)
         return  }
         guard  let name = userNameTF.text , !name.isEmpty   else{
-            showAlert(title:  "Enter store name".localize, messages: nil, message: nil, selfDismissing: true)
+            showAlert(title:  "Enter user name".localize, messages: nil, message: nil, selfDismissing: true)
                 return  }
         guard let phone = phoneTF.text , !phone.isEmpty, phone.count == 9  else{
             showAlert(title:  "Enter Phone Number".localize, messages: nil, message: nil, selfDismissing: true)
@@ -125,9 +125,9 @@ class SignUP: UIViewController,SignUpProtocol {
             showAlert(title: "Enter a password of at least 6 characters".localize, messages: nil, message: nil, selfDismissing: true)
         return  }
         
-        guard catId != 0  else{
-            showAlert(title:  "please choose category".localize, messages: nil, message: nil, selfDismissing: true)
-        return  }
+//        guard catId != 0  else{
+//            showAlert(title:  "please choose category".localize, messages: nil, message: nil, selfDismissing: true)
+//        return  }
         guard cityId != 0  else{
             showAlert(title:  "please choose city".localize, messages: nil, message: nil, selfDismissing: true)
         return  }

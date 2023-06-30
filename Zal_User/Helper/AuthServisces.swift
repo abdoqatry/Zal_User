@@ -191,7 +191,7 @@ func SetTokenDefaults(user: UserModel) {
 //       let logout =  AppDelegate.app.pushNotifications
 //        logout.clearAllState { }
         guard let window =  UIApplication.shared.keyWindow else { return }
-        let storyboard = UIStoryboard(name: "AuthSb", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let rootViewController = storyboard.instantiateViewController(withIdentifier: "LoginVC")  as! LoginVC
         let VC = UINavigationController(rootViewController: rootViewController)
 //        NetworkManager.shared.getData(logoutModel.self, Requst: .logout, method: .get, headerType: .authenticated) { (Massage, Data, Code) in
