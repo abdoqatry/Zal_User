@@ -56,12 +56,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let Login = UINavigationController(rootViewController: vc)
         
-//        if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
-//            window?.rootViewController = Login
-//
-//        }else{
+        if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
+            window?.rootViewController = Login
+
+        }else{
         window?.rootViewController = HomeTabbarVC()
-//        }
+        }
 
         return true
     }
