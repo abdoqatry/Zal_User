@@ -1,0 +1,141 @@
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "2tX-7I-xPj"; */
+"2tX-7I-xPj.placeholder" = "البريد الإليكتروني";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "4G7-2S-KsO"; */
+"4G7-2S-KsO.configuration.title" = "تسجيل جديد";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4G7-2S-KsO"; */
+"4G7-2S-KsO.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "email"; ObjectID = "4eO-zA-lL9"; */
+"4eO-zA-lL9.placeholder" = "البريد الإليكتروني";
+
+/* Class = "UILabel"; text = "Sing up"; ObjectID = "8ij-LB-k1o"; */
+"8ij-LB-k1o.text" = "تسجيل جديد";
+
+/* Class = "UILabel"; text = "Forget Password"; ObjectID = "8pa-YP-0bD"; */
+"8pa-YP-0bD.text" = "نسيت كلمة المرور";
+
+/* Class = "UILabel"; text = "address"; ObjectID = "BHj-br-9d6"; */
+"BHj-br-9d6.text" = "العنوان";
+
+/* Class = "UIButton"; configuration.title = "do not have an account Register a new account"; ObjectID = "ClG-xL-E3e"; */
+"ClG-xL-E3e.configuration.title" = "ليس لديك حساب قم بتسجيل حساب جديد";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ClG-xL-E3e"; */
+"ClG-xL-E3e.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Verification code"; ObjectID = "D1L-1J-qIK"; */
+"D1L-1J-qIK.text" = "كود التحقق";
+
+/* Class = "UILabel"; text = "Login "; ObjectID = "Dpk-Ed-aY3"; */
+"Dpk-Ed-aY3.text" = "تسجيل دخول ";
+
+/* Class = "UITextField"; placeholder = "user name"; ObjectID = "GYc-9A-IQa"; */
+"GYc-9A-IQa.placeholder" = "اسم المستخدم";
+
+/* Class = "UILabel"; text = "Order data, status updates, and invoices will be sent via e-mail or via WhatsApp to the registered number"; ObjectID = "H0w-eg-SGm"; */
+"H0w-eg-SGm.text" = "سيتم إرسال بينات الطلب,وتحديثات الحالات,وبيانات الفواتير عبر بريدك الإليكتروني او رقم الواتس الخاص بك";
+
+/* Class = "UIButton"; configuration.title = "Resend Code"; ObjectID = "KRh-JQ-sIh"; */
+"KRh-JQ-sIh.configuration.title" = "إعادة إرسال";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KRh-JQ-sIh"; */
+"KRh-JQ-sIh.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "phone number"; ObjectID = "KfU-Ee-9tI"; */
+"KfU-Ee-9tI.placeholder" = "رقم الجوال";
+
+/* Class = "UIButton"; configuration.title = "Send code"; ObjectID = "Kjh-0t-8GA"; */
+"Kjh-0t-8GA.configuration.title" = "إرسال الكود";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Kjh-0t-8GA"; */
+"Kjh-0t-8GA.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Send code"; ObjectID = "L1N-i6-wLO"; */
+"L1N-i6-wLO.configuration.title" = "إرسال الكود";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "L1N-i6-wLO"; */
+"L1N-i6-wLO.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "confirm password"; ObjectID = "OEm-sv-Czs"; */
+"OEm-sv-Czs.placeholder" = "تأكيد كلمة المرور";
+
+/* Class = "UIButton"; configuration.title = "Confirm"; ObjectID = "P6s-XM-zeZ"; */
+"P6s-XM-zeZ.configuration.title" = "تأكيد";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "P6s-XM-zeZ"; */
+"P6s-XM-zeZ.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Send code"; ObjectID = "Xzr-3J-VFk"; */
+"Xzr-3J-VFk.configuration.title" = "إرسال الكود";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Xzr-3J-VFk"; */
+"Xzr-3J-VFk.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "city"; ObjectID = "YZm-tT-Bjf"; */
+"YZm-tT-Bjf.text" = "المدينة";
+
+/* Class = "UILabel"; text = "Set a new password"; ObjectID = "Zyz-8z-7gE"; */
+"Zyz-8z-7gE.text" = "تعين كلمة مرور جديدة";
+
+/* Class = "UILabel"; text = "Password recovery via email"; ObjectID = "aTa-EN-2bk"; */
+"aTa-EN-2bk.text" = "استرجاع كلمة المرور عن طريق البريد الإليكتروني";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "aig-LW-HOY"; */
+"aig-LW-HOY.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aig-LW-HOY"; */
+"aig-LW-HOY.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "area"; ObjectID = "b0J-Cs-b87"; */
+"b0J-Cs-b87.text" = "المنظقة";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "bKf-N5-2Yy"; */
+"bKf-N5-2Yy.placeholder" = "البريد الإليكتروني";
+
+/* Class = "UILabel"; text = "Verification code"; ObjectID = "dBZ-OD-G6s"; */
+"dBZ-OD-G6s.text" = "كود التحقق";
+
+/* Class = "UIButton"; configuration.title = "Resend Code"; ObjectID = "e6P-N0-3PF"; */
+"e6P-N0-3PF.configuration.title" = "إعادة إرسال الكود";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "e6P-N0-3PF"; */
+"e6P-N0-3PF.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "A verification code will be sent to your mail"; ObjectID = "jwO-rH-s7S"; */
+"jwO-rH-s7S.text" = "سيتم إرسال كود التحقق عن طريق البريد الإليكتروني";
+
+/* Class = "UIButton"; configuration.title = "Save"; ObjectID = "mw8-PN-z3z"; */
+"mw8-PN-z3z.configuration.title" = "حفظ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mw8-PN-z3z"; */
+"mw8-PN-z3z.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Agree to the terms and conditions"; ObjectID = "n0u-w8-DE0"; */
+"n0u-w8-DE0.normalTitle" = "الموافقة علي الشروط والاحكام";
+
+/* Class = "UITextField"; placeholder = "new password"; ObjectID = "nh2-qo-2OC"; */
+"nh2-qo-2OC.placeholder" = "كلمة مرور جديدة";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "rwj-Mm-qqD"; */
+"rwj-Mm-qqD.placeholder" = "تأكيد كلمة المرور";
+
+/* Class = "UIButton"; configuration.title = "Sign in"; ObjectID = "tFO-Xy-aec"; */
+"tFO-Xy-aec.configuration.title" = "تسجيل دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tFO-Xy-aec"; */
+"tFO-Xy-aec.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "tSX-Iv-itr"; */
+"tSX-Iv-itr.placeholder" = "كلمة المرور";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "xAO-r7-Iq0"; */
+"xAO-r7-Iq0.placeholder" = "كلمة المرور";
+
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "xGG-hS-eVU"; */
+"xGG-hS-eVU.placeholder" = "كلمة مرور جديدة";
+
+/* Class = "UITextField"; placeholder = "Old Password"; ObjectID = "xX5-hc-irS"; */
+"xX5-hc-irS.placeholder" = "كلمة المرور القديمة";
