@@ -20,7 +20,7 @@ struct CurrentOrderDatum: Codable {
     let id, orderNum: String?
     let status: String?
     let statusTimes: [StatusTime]?
-    let payType: PayType?
+    let payType: String?
     let transactionID: String?
     let products: [ProductElement]?
     let provider: ProviderCurrent?
@@ -64,9 +64,7 @@ struct Coupon: Codable {
     }
 }
 
-enum PayType: String, Codable {
-    case cash = "cash"
-}
+
 
 // MARK: - ProductElement
 struct ProductElement: Codable {
