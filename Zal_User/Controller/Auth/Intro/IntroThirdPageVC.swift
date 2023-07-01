@@ -12,19 +12,20 @@ class IntroThirdPageVC: UIViewController {
     @IBOutlet weak var nextImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let appearance = UINavigationBarAppearance()
-            appearance.configureWithTransparentBackground()
-            self.navigationItem.standardAppearance = appearance
-            self.navigationItem.scrollEdgeAppearance = appearance
+//        let appearance = UINavigationBarAppearance()
+//            appearance.configureWithTransparentBackground()
+//            self.navigationItem.standardAppearance = appearance
+//            self.navigationItem.scrollEdgeAppearance = appearance
         nextImage.addGestureRecognizer(UITapGestureRecognizer(target: self
                                                               , action: #selector(nextPage)))
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        let appearance = UINavigationBarAppearance()
-            appearance.configureWithOpaqueBackground()
-            self.navigationItem.standardAppearance = appearance
-            self.navigationItem.scrollEdgeAppearance = appearance
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     @objc func nextPage(){

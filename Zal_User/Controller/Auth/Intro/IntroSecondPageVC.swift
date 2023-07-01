@@ -12,14 +12,17 @@ class IntroSecondPageVC: UIViewController {
     @IBOutlet weak var nextImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let appearance = UINavigationBarAppearance()
-            appearance.configureWithTransparentBackground()
-            self.navigationItem.standardAppearance = appearance
-            self.navigationItem.scrollEdgeAppearance = appearance
+//        let appearance = UINavigationBarAppearance()
+//            appearance.configureWithTransparentBackground()
+//            self.navigationItem.standardAppearance = appearance
+//            self.navigationItem.scrollEdgeAppearance = appearance
         nextImage.addGestureRecognizer(UITapGestureRecognizer(target: self
                                                               , action: #selector(nextPage)))
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
     @objc func nextPage(){
         
         let vc = Bundle.main.loadNibNamed("IntroThirdPageVC", owner: nil, options: nil)![0] as! IntroThirdPageVC
