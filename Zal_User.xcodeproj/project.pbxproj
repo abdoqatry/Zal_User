@@ -53,7 +53,6 @@
 		841BB1DF299420DE00F74113 /* HomeTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BB1DD299420DE00F74113 /* HomeTabbarVC.swift */; };
 		841BB1E0299420DE00F74113 /* HomeTabbarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841BB1DE299420DE00F74113 /* HomeTabbarVC.xib */; };
 		841BB1E8299421C500F74113 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BB1E6299421C500F74113 /* HomeVC.swift */; };
-		841BB1E9299421C500F74113 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841BB1E7299421C500F74113 /* HomeVC.xib */; };
 		841BB1EB29942CD000F74113 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BB1EA29942CD000F74113 /* HomePresenter.swift */; };
 		841BB1ED29942E2400F74113 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BB1EC29942E2400F74113 /* HomeModel.swift */; };
 		841BB1F0299435C100F74113 /* SpecialStoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BB1EE299435C100F74113 /* SpecialStoreCell.swift */; };
@@ -151,6 +150,7 @@
 		84B742AA29A4282A0091AA34 /* IntroFirstPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B742A829A4282A0091AA34 /* IntroFirstPageVC.swift */; };
 		84B742AE29A430B10091AA34 /* IntroSecondPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B742AC29A430B10091AA34 /* IntroSecondPageVC.swift */; };
 		84B742B229A431E10091AA34 /* IntroThirdPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B742B029A431E10091AA34 /* IntroThirdPageVC.swift */; };
+		84C172C52A5080A700A17DEC /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C172C72A5080A700A17DEC /* HomeVC.xib */; };
 		84CFBCFB2A4F7401001D3D95 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84CFBCFD2A4F7401001D3D95 /* Localizable.strings */; };
 		84CFBCFF2A4F7679001D3D95 /* MapPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CFBD012A4F7679001D3D95 /* MapPageVC.xib */; };
 		84CFBD042A4F7798001D3D95 /* IntroFirstPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CFBD062A4F7798001D3D95 /* IntroFirstPageVC.xib */; };
@@ -216,7 +216,6 @@
 		841BB1DD299420DE00F74113 /* HomeTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabbarVC.swift; sourceTree = "<group>"; };
 		841BB1DE299420DE00F74113 /* HomeTabbarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabbarVC.xib; sourceTree = "<group>"; };
 		841BB1E6299421C500F74113 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		841BB1E7299421C500F74113 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		841BB1EA29942CD000F74113 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		841BB1EC29942E2400F74113 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		841BB1EE299435C100F74113 /* SpecialStoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialStoreCell.swift; sourceTree = "<group>"; };
@@ -314,6 +313,8 @@
 		84B742A829A4282A0091AA34 /* IntroFirstPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroFirstPageVC.swift; sourceTree = "<group>"; };
 		84B742AC29A430B10091AA34 /* IntroSecondPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSecondPageVC.swift; sourceTree = "<group>"; };
 		84B742B029A431E10091AA34 /* IntroThirdPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroThirdPageVC.swift; sourceTree = "<group>"; };
+		84C172C62A5080A700A17DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeVC.xib; sourceTree = "<group>"; };
+		84C172C92A5080AE00A17DEC /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/HomeVC.strings; sourceTree = "<group>"; };
 		84C99C232A4F473A00475EFD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		84C99C242A4F473B00475EFD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		84CFBCFC2A4F7401001D3D95 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -526,7 +527,7 @@
 				845F031F29AB8717006EB4C2 /* Store */,
 				8415E9DE29996435007B1A48 /* NearStore */,
 				841BB1E6299421C500F74113 /* HomeVC.swift */,
-				841BB1E7299421C500F74113 /* HomeVC.xib */,
+				84C172C72A5080A700A17DEC /* HomeVC.xib */,
 				841BB1EA29942CD000F74113 /* HomePresenter.swift */,
 				841BB1EC29942E2400F74113 /* HomeModel.swift */,
 				841BB1EE299435C100F74113 /* SpecialStoreCell.swift */,
@@ -975,7 +976,7 @@
 				84292AAD299A5926007BE0AD /* Tajawal-Bold.ttf in Resources */,
 				849F172029DA280500EE81DE /* ChatMessageCell.xib in Resources */,
 				841D356929A145F900004DB6 /* TrackOrderVC.xib in Resources */,
-				841BB1E9299421C500F74113 /* HomeVC.xib in Resources */,
+				84C172C52A5080A700A17DEC /* HomeVC.xib in Resources */,
 				84CFBD0E2A4F78BE001D3D95 /* IntroThirdPageVC.xib in Resources */,
 				849FFF3529AFE00B00332478 /* ProductRateVC.xib in Resources */,
 				8402D7E729CB8C0A00CC3E90 /* CheckOutVC.xib in Resources */,
@@ -1177,6 +1178,15 @@
 				84C99C242A4F473B00475EFD /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84C172C72A5080A700A17DEC /* HomeVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C172C62A5080A700A17DEC /* Base */,
+				84C172C92A5080AE00A17DEC /* ar */,
+			);
+			name = HomeVC.xib;
 			sourceTree = "<group>";
 		};
 		84CFBCFD2A4F7401001D3D95 /* Localizable.strings */ = {

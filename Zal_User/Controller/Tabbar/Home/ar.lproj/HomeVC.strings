@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "special store list"; ObjectID = "3kt-gk-VUT"; */
+"3kt-gk-VUT.text" = "المتاجر المميزة";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "3we-3M-COv"; */
+"3we-3M-COv.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3we-3M-COv"; */
+"3we-3M-COv.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "search"; ObjectID = "BW0-LX-zYW"; */
+"BW0-LX-zYW.placeholder" = "البحث";
+
+/* Class = "UILabel"; text = "مصطفي  محمد"; ObjectID = "Luo-Bd-UVw"; */
+"Luo-Bd-UVw.text" = "مصطفي  محمد";
+
+/* Class = "UILabel"; text = "محمد ا تبتي بيىبني بنيتبلايتبحمد عبد الحميد"; ObjectID = "SJR-0O-8hr"; */
+"SJR-0O-8hr.text" = "محمد ا تبتي بيىبني بنيتبلايتبحمد عبد الحميد";
+
+/* Class = "UILabel"; text = "near store list"; ObjectID = "iqm-aV-PzH"; */
+"iqm-aV-PzH.text" = "المتاجر الاقرب إليك";
