@@ -35,11 +35,12 @@ class LoginVC: UIViewController,LoginProtocol {
         super.viewDidLoad()
         presenter = LoginPresenter(self)
         SetView()
+        setupNavigationBar()
         
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupNavigationBar()
+       
     }
 
     func SetView(){
