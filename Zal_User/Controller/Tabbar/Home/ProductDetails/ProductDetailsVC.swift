@@ -61,7 +61,7 @@ class ProductDetailsVC: UIViewController,ProductDetailsProtocol {
             self.navigationItem.scrollEdgeAppearance = appearance
         addtocartBT.layer.cornerRadius = 12
         PriceView.layer.cornerRadius = 4
-    setView()
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
