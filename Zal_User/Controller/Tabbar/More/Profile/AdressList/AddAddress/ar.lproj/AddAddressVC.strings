@@ -1,0 +1,15 @@
+
+/* Class = "UITextField"; placeholder = "description"; ObjectID = "KcM-hl-hft"; */
+"KcM-hl-hft.placeholder" = "وصف العنوان";
+
+/* Class = "UILabel"; text = "location"; ObjectID = "PJL-P0-amd"; */
+"PJL-P0-amd.text" = "الموقع";
+
+/* Class = "UITextField"; placeholder = "name"; ObjectID = "n35-aZ-CIx"; */
+"n35-aZ-CIx.placeholder" = "الاسم";
+
+/* Class = "UIButton"; configuration.title = "Save"; ObjectID = "xls-er-2WV"; */
+"xls-er-2WV.configuration.title" = "حفظ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xls-er-2WV"; */
+"xls-er-2WV.normalTitle" = "Button";

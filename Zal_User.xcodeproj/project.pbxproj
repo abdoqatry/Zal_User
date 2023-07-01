@@ -57,7 +57,6 @@
 		841BB1F0299435C100F74113 /* SpecialStoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BB1EE299435C100F74113 /* SpecialStoreCell.swift */; };
 		841BB1F1299435C100F74113 /* SpecialStoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841BB1EF299435C100F74113 /* SpecialStoreCell.xib */; };
 		841D356829A145F900004DB6 /* TrackOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D356629A145F900004DB6 /* TrackOrderVC.swift */; };
-		841D356929A145F900004DB6 /* TrackOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D356729A145F900004DB6 /* TrackOrderVC.xib */; };
 		84292AA0299990E4007BE0AD /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292A9E299990E4007BE0AD /* ProfileVC.swift */; };
 		84292AA329999C85007BE0AD /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292AA229999C85007BE0AD /* ProfileModel.swift */; };
 		84292AA729999EFC007BE0AD /* EditeProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292AA529999EFC007BE0AD /* EditeProfileVC.swift */; };
@@ -66,27 +65,19 @@
 		84292AAE299A5926007BE0AD /* Tajawal-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84292AAB299A5926007BE0AD /* Tajawal-Light.ttf */; };
 		84292AB2299AD1C0007BE0AD /* EditePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292AB0299AD1C0007BE0AD /* EditePasswordVC.swift */; };
 		84292AB8299ADE70007BE0AD /* MyOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292AB6299ADE70007BE0AD /* MyOrderVC.swift */; };
-		84292AB9299ADE70007BE0AD /* MyOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84292AB7299ADE70007BE0AD /* MyOrderVC.xib */; };
 		84292ABC299AE21A007BE0AD /* CurrentOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292ABA299AE21A007BE0AD /* CurrentOrderVC.swift */; };
-		84292ABD299AE21A007BE0AD /* CurrentOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84292ABB299AE21A007BE0AD /* CurrentOrderVC.xib */; };
 		84292AC1299AE28F007BE0AD /* CurrentOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292ABF299AE28F007BE0AD /* CurrentOrderCell.swift */; };
-		84292AC2299AE28F007BE0AD /* CurrentOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84292AC0299AE28F007BE0AD /* CurrentOrderCell.xib */; };
 		84292AC4299AEA2F007BE0AD /* CurrentOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292AC3299AEA2F007BE0AD /* CurrentOrderModel.swift */; };
 		84292AC6299AEB57007BE0AD /* CurrentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292AC5299AEB57007BE0AD /* CurrentPresenter.swift */; };
 		84292ACE299C3636007BE0AD /* FinishedOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292ACC299C3636007BE0AD /* FinishedOrderVC.swift */; };
-		84292ACF299C3636007BE0AD /* FinishedOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84292ACD299C3636007BE0AD /* FinishedOrderVC.xib */; };
 		84292AD2299C36F2007BE0AD /* FinishedOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292AD0299C36F2007BE0AD /* FinishedOrderCell.swift */; };
-		84292AD3299C36F2007BE0AD /* FinishedOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84292AD1299C36F2007BE0AD /* FinishedOrderCell.xib */; };
 		84292AD5299C39D3007BE0AD /* finshOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292AD4299C39D3007BE0AD /* finshOrderPresenter.swift */; };
 		84292AD9299C3D63007BE0AD /* CancelOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292AD7299C3D62007BE0AD /* CancelOrderCell.swift */; };
-		84292ADA299C3D64007BE0AD /* CancelOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84292AD8299C3D63007BE0AD /* CancelOrderCell.xib */; };
 		84292ADD299C3DCC007BE0AD /* CancelOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292ADB299C3DCC007BE0AD /* CancelOrderVC.swift */; };
-		84292ADE299C3DCC007BE0AD /* CancelOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84292ADC299C3DCC007BE0AD /* CancelOrderVC.xib */; };
 		84292AE0299C3FC1007BE0AD /* CancelOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292ADF299C3FC1007BE0AD /* CancelOrderPresenter.swift */; };
 		843E8F3929C62C6800E91C12 /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E8F3829C62C6800E91C12 /* CartModel.swift */; };
 		843E8F3B29C62E1200E91C12 /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E8F3A29C62E1200E91C12 /* CartPresenter.swift */; };
 		844E88B029BE5F1D00F157CF /* EditAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E88AE29BE5F1D00F157CF /* EditAddressVC.swift */; };
-		844E88B129BE5F1D00F157CF /* EditAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844E88AF29BE5F1D00F157CF /* EditAddressVC.xib */; };
 		844E88B529BE731300F157CF /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E88B329BE731300F157CF /* FavoriteVC.swift */; };
 		844E88B629BE731300F157CF /* FavoriteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844E88B429BE731300F157CF /* FavoriteVC.xib */; };
 		844E88B929BE739B00F157CF /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E88B729BE739B00F157CF /* FavoriteCell.swift */; };
@@ -98,9 +89,7 @@
 		8453F3EE29BFBE6C00F06E67 /* CartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8453F3EC29BFBE6C00F06E67 /* CartVC.xib */; };
 		8453F3F229BFC09100F06E67 /* CartProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453F3F029BFC09100F06E67 /* CartProductCell.swift */; };
 		8453F3F329BFC09100F06E67 /* CartProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8453F3F129BFC09100F06E67 /* CartProductCell.xib */; };
-		845B59F12A49DF2C0020E81C /* OrderDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845B59ED2A49DF2B0020E81C /* OrderDetailsVC.xib */; };
 		845B59F22A49DF2C0020E81C /* OrderDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B59EE2A49DF2B0020E81C /* OrderDetailsVC.swift */; };
-		845B59F32A49DF2C0020E81C /* OrderDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845B59EF2A49DF2C0020E81C /* OrderDetailsCell.xib */; };
 		845B59F42A49DF2C0020E81C /* OrderDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B59F02A49DF2C0020E81C /* OrderDetailsCell.swift */; };
 		845B59F62A4A0BD20020E81C /* OrderDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B59F52A4A0BD20020E81C /* OrderDetailsPresenter.swift */; };
 		845F032229AB8749006EB4C2 /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F032029AB8749006EB4C2 /* StoreVC.swift */; };
@@ -112,7 +101,6 @@
 		849486FE299D61870049EE07 /* NearStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849486FD299D61870049EE07 /* NearStoreModel.swift */; };
 		84948700299D65E50049EE07 /* LocationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849486FF299D65E50049EE07 /* LocationManger.swift */; };
 		849F034D29BCF7820010A3F8 /* AddAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F034B29BCF7820010A3F8 /* AddAddressVC.swift */; };
-		849F034E29BCF7820010A3F8 /* AddAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F034C29BCF7820010A3F8 /* AddAddressVC.xib */; };
 		849F170C29DA13CE00EE81DE /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F170A29DA13CE00EE81DE /* MessageVC.swift */; };
 		849F170D29DA13CE00EE81DE /* MessageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F170B29DA13CE00EE81DE /* MessageVC.xib */; };
 		849F171029DA145C00EE81DE /* MessagelistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F170E29DA145C00EE81DE /* MessagelistCell.swift */; };
@@ -134,11 +122,23 @@
 		84A5F5182A50934200316B94 /* StoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F51A2A50934200316B94 /* StoreVC.xib */; };
 		84A5F5272A509EC900316B94 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F5292A509EC900316B94 /* ProfileVC.xib */; };
 		84A5F52C2A509FE700316B94 /* EditeProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F52E2A509FE700316B94 /* EditeProfileVC.xib */; };
+		84A5F5312A50A33A00316B94 /* ShowlistAdressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F5332A50A33A00316B94 /* ShowlistAdressVC.xib */; };
+		84A5F5362A50A3C100316B94 /* AddAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F5382A50A3C100316B94 /* AddAddressVC.xib */; };
+		84A5F53B2A50A48600316B94 /* EditAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F53D2A50A48600316B94 /* EditAddressVC.xib */; };
+		84A5F5402A50A6FC00316B94 /* CurrentOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F5422A50A6FC00316B94 /* CurrentOrderVC.xib */; };
+		84A5F5452A50A77400316B94 /* MyOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F5472A50A77400316B94 /* MyOrderVC.xib */; };
+		84A5F54A2A50A7A700316B94 /* CurrentOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F54C2A50A7A700316B94 /* CurrentOrderCell.xib */; };
+		84A5F54F2A50A81800316B94 /* FinishedOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F5512A50A81800316B94 /* FinishedOrderVC.xib */; };
+		84A5F5542A50A83700316B94 /* FinishedOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F5562A50A83700316B94 /* FinishedOrderCell.xib */; };
+		84A5F5592A50A86C00316B94 /* CancelOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F55B2A50A86C00316B94 /* CancelOrderVC.xib */; };
+		84A5F55E2A50A88300316B94 /* CancelOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F5602A50A88300316B94 /* CancelOrderCell.xib */; };
+		84A5F5632A50A8BF00316B94 /* TrackOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F5652A50A8BF00316B94 /* TrackOrderVC.xib */; };
+		84A5F5682A50AC4800316B94 /* OrderDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F56A2A50AC4800316B94 /* OrderDetailsVC.xib */; };
+		84A5F56D2A50ACBC00316B94 /* OrderDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F56F2A50ACBC00316B94 /* OrderDetailsCell.xib */; };
 		84A980FE2990386D00D89A72 /* ForgetPassCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A980FD2990386D00D89A72 /* ForgetPassCodeVC.swift */; };
 		84A9810129903EEA00D89A72 /* NewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9810029903EEA00D89A72 /* NewPasswordVC.swift */; };
 		84A981042990411B00D89A72 /* VerivicationCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A981032990411B00D89A72 /* VerivicationCodeVC.swift */; };
 		84B13D1F29BCE1FE00F8B226 /* ShowlistAdressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13D1D29BCE1FE00F8B226 /* ShowlistAdressVC.swift */; };
-		84B13D2029BCE1FE00F8B226 /* ShowlistAdressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B13D1E29BCE1FE00F8B226 /* ShowlistAdressVC.xib */; };
 		84B13D2329BCE33100F8B226 /* AdressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13D2129BCE33100F8B226 /* AdressCell.swift */; };
 		84B13D2429BCE33100F8B226 /* AdressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B13D2229BCE33100F8B226 /* AdressCell.xib */; };
 		84B13D2629BCE68D00F8B226 /* AddressListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B13D2529BCE68D00F8B226 /* AddressListPresenter.swift */; };
@@ -220,7 +220,6 @@
 		841BB1EE299435C100F74113 /* SpecialStoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialStoreCell.swift; sourceTree = "<group>"; };
 		841BB1EF299435C100F74113 /* SpecialStoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialStoreCell.xib; sourceTree = "<group>"; };
 		841D356629A145F900004DB6 /* TrackOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderVC.swift; sourceTree = "<group>"; };
-		841D356729A145F900004DB6 /* TrackOrderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackOrderVC.xib; sourceTree = "<group>"; };
 		84292A9E299990E4007BE0AD /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		84292AA229999C85007BE0AD /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		84292AA529999EFC007BE0AD /* EditeProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeProfileVC.swift; sourceTree = "<group>"; };
@@ -229,27 +228,19 @@
 		84292AAB299A5926007BE0AD /* Tajawal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Light.ttf"; sourceTree = "<group>"; };
 		84292AB0299AD1C0007BE0AD /* EditePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditePasswordVC.swift; sourceTree = "<group>"; };
 		84292AB6299ADE70007BE0AD /* MyOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderVC.swift; sourceTree = "<group>"; };
-		84292AB7299ADE70007BE0AD /* MyOrderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrderVC.xib; sourceTree = "<group>"; };
 		84292ABA299AE21A007BE0AD /* CurrentOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrderVC.swift; sourceTree = "<group>"; };
-		84292ABB299AE21A007BE0AD /* CurrentOrderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentOrderVC.xib; sourceTree = "<group>"; };
 		84292ABF299AE28F007BE0AD /* CurrentOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrderCell.swift; sourceTree = "<group>"; };
-		84292AC0299AE28F007BE0AD /* CurrentOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentOrderCell.xib; sourceTree = "<group>"; };
 		84292AC3299AEA2F007BE0AD /* CurrentOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrderModel.swift; sourceTree = "<group>"; };
 		84292AC5299AEB57007BE0AD /* CurrentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPresenter.swift; sourceTree = "<group>"; };
 		84292ACC299C3636007BE0AD /* FinishedOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedOrderVC.swift; sourceTree = "<group>"; };
-		84292ACD299C3636007BE0AD /* FinishedOrderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinishedOrderVC.xib; sourceTree = "<group>"; };
 		84292AD0299C36F2007BE0AD /* FinishedOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedOrderCell.swift; sourceTree = "<group>"; };
-		84292AD1299C36F2007BE0AD /* FinishedOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinishedOrderCell.xib; sourceTree = "<group>"; };
 		84292AD4299C39D3007BE0AD /* finshOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finshOrderPresenter.swift; sourceTree = "<group>"; };
 		84292AD7299C3D62007BE0AD /* CancelOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelOrderCell.swift; sourceTree = "<group>"; };
-		84292AD8299C3D63007BE0AD /* CancelOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CancelOrderCell.xib; sourceTree = "<group>"; };
 		84292ADB299C3DCC007BE0AD /* CancelOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelOrderVC.swift; sourceTree = "<group>"; };
-		84292ADC299C3DCC007BE0AD /* CancelOrderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CancelOrderVC.xib; sourceTree = "<group>"; };
 		84292ADF299C3FC1007BE0AD /* CancelOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelOrderPresenter.swift; sourceTree = "<group>"; };
 		843E8F3829C62C6800E91C12 /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
 		843E8F3A29C62E1200E91C12 /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
 		844E88AE29BE5F1D00F157CF /* EditAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddressVC.swift; sourceTree = "<group>"; };
-		844E88AF29BE5F1D00F157CF /* EditAddressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditAddressVC.xib; sourceTree = "<group>"; };
 		844E88B329BE731300F157CF /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
 		844E88B429BE731300F157CF /* FavoriteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteVC.xib; sourceTree = "<group>"; };
 		844E88B729BE739B00F157CF /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
@@ -261,9 +252,7 @@
 		8453F3EC29BFBE6C00F06E67 /* CartVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartVC.xib; sourceTree = "<group>"; };
 		8453F3F029BFC09100F06E67 /* CartProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProductCell.swift; sourceTree = "<group>"; };
 		8453F3F129BFC09100F06E67 /* CartProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartProductCell.xib; sourceTree = "<group>"; };
-		845B59ED2A49DF2B0020E81C /* OrderDetailsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDetailsVC.xib; sourceTree = "<group>"; };
 		845B59EE2A49DF2B0020E81C /* OrderDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsVC.swift; sourceTree = "<group>"; };
-		845B59EF2A49DF2C0020E81C /* OrderDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDetailsCell.xib; sourceTree = "<group>"; };
 		845B59F02A49DF2C0020E81C /* OrderDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsCell.swift; sourceTree = "<group>"; };
 		845B59F52A4A0BD20020E81C /* OrderDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsPresenter.swift; sourceTree = "<group>"; };
 		845F032029AB8749006EB4C2 /* StoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
@@ -275,7 +264,6 @@
 		849486FD299D61870049EE07 /* NearStoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearStoreModel.swift; sourceTree = "<group>"; };
 		849486FF299D65E50049EE07 /* LocationManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManger.swift; sourceTree = "<group>"; };
 		849F034B29BCF7820010A3F8 /* AddAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressVC.swift; sourceTree = "<group>"; };
-		849F034C29BCF7820010A3F8 /* AddAddressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAddressVC.xib; sourceTree = "<group>"; };
 		849F170A29DA13CE00EE81DE /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		849F170B29DA13CE00EE81DE /* MessageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageVC.xib; sourceTree = "<group>"; };
 		849F170E29DA145C00EE81DE /* MessagelistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagelistCell.swift; sourceTree = "<group>"; };
@@ -301,11 +289,36 @@
 		84A5F52B2A509ECE00316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ProfileVC.strings; sourceTree = "<group>"; };
 		84A5F52D2A509FE700316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/EditeProfileVC.xib; sourceTree = "<group>"; };
 		84A5F5302A509FEC00316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/EditeProfileVC.strings; sourceTree = "<group>"; };
+		84A5F5322A50A33A00316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShowlistAdressVC.xib; sourceTree = "<group>"; };
+		84A5F5352A50A33E00316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ShowlistAdressVC.strings; sourceTree = "<group>"; };
+		84A5F5372A50A3C100316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AddAddressVC.xib; sourceTree = "<group>"; };
+		84A5F53A2A50A3C400316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/AddAddressVC.strings; sourceTree = "<group>"; };
+		84A5F53C2A50A48600316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/EditAddressVC.xib; sourceTree = "<group>"; };
+		84A5F53F2A50A48A00316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/EditAddressVC.strings; sourceTree = "<group>"; };
+		84A5F5412A50A6FC00316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CurrentOrderVC.xib; sourceTree = "<group>"; };
+		84A5F5442A50A70100316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/CurrentOrderVC.strings; sourceTree = "<group>"; };
+		84A5F5462A50A77400316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MyOrderVC.xib; sourceTree = "<group>"; };
+		84A5F5492A50A77800316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/MyOrderVC.strings; sourceTree = "<group>"; };
+		84A5F54B2A50A7A700316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CurrentOrderCell.xib; sourceTree = "<group>"; };
+		84A5F54E2A50A7AB00316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/CurrentOrderCell.strings; sourceTree = "<group>"; };
+		84A5F5502A50A81800316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/FinishedOrderVC.xib; sourceTree = "<group>"; };
+		84A5F5532A50A81C00316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/FinishedOrderVC.strings; sourceTree = "<group>"; };
+		84A5F5552A50A83700316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/FinishedOrderCell.xib; sourceTree = "<group>"; };
+		84A5F5582A50A83A00316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/FinishedOrderCell.strings; sourceTree = "<group>"; };
+		84A5F55A2A50A86C00316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CancelOrderVC.xib; sourceTree = "<group>"; };
+		84A5F55D2A50A86F00316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/CancelOrderVC.strings; sourceTree = "<group>"; };
+		84A5F55F2A50A88300316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CancelOrderCell.xib; sourceTree = "<group>"; };
+		84A5F5622A50A88600316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/CancelOrderCell.strings; sourceTree = "<group>"; };
+		84A5F5642A50A8BF00316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TrackOrderVC.xib; sourceTree = "<group>"; };
+		84A5F5672A50A8C300316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/TrackOrderVC.strings; sourceTree = "<group>"; };
+		84A5F5692A50AC4800316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OrderDetailsVC.xib; sourceTree = "<group>"; };
+		84A5F56C2A50AC4D00316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/OrderDetailsVC.strings; sourceTree = "<group>"; };
+		84A5F56E2A50ACBC00316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OrderDetailsCell.xib; sourceTree = "<group>"; };
+		84A5F5712A50ACC100316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/OrderDetailsCell.strings; sourceTree = "<group>"; };
 		84A980FD2990386D00D89A72 /* ForgetPassCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassCodeVC.swift; sourceTree = "<group>"; };
 		84A9810029903EEA00D89A72 /* NewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordVC.swift; sourceTree = "<group>"; };
 		84A981032990411B00D89A72 /* VerivicationCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerivicationCodeVC.swift; sourceTree = "<group>"; };
 		84B13D1D29BCE1FE00F8B226 /* ShowlistAdressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowlistAdressVC.swift; sourceTree = "<group>"; };
-		84B13D1E29BCE1FE00F8B226 /* ShowlistAdressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowlistAdressVC.xib; sourceTree = "<group>"; };
 		84B13D2129BCE33100F8B226 /* AdressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressCell.swift; sourceTree = "<group>"; };
 		84B13D2229BCE33100F8B226 /* AdressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdressCell.xib; sourceTree = "<group>"; };
 		84B13D2529BCE68D00F8B226 /* AddressListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListPresenter.swift; sourceTree = "<group>"; };
@@ -559,7 +572,7 @@
 			isa = PBXGroup;
 			children = (
 				841D356629A145F900004DB6 /* TrackOrderVC.swift */,
-				841D356729A145F900004DB6 /* TrackOrderVC.xib */,
+				84A5F5652A50A8BF00316B94 /* TrackOrderVC.xib */,
 				84B742A329A402550091AA34 /* TrackOrderModel.swift */,
 				84B742A529A4037A0091AA34 /* TrackOrderPresenter.swift */,
 			);
@@ -616,7 +629,7 @@
 				84292ACB299C3617007BE0AD /* finisheOrder */,
 				84292ABE299AE26D007BE0AD /* CurrentOrder */,
 				84292AB6299ADE70007BE0AD /* MyOrderVC.swift */,
-				84292AB7299ADE70007BE0AD /* MyOrderVC.xib */,
+				84A5F5472A50A77400316B94 /* MyOrderVC.xib */,
 			);
 			path = MyOrder;
 			sourceTree = "<group>";
@@ -625,9 +638,9 @@
 			isa = PBXGroup;
 			children = (
 				84292ABA299AE21A007BE0AD /* CurrentOrderVC.swift */,
-				84292ABB299AE21A007BE0AD /* CurrentOrderVC.xib */,
+				84A5F5422A50A6FC00316B94 /* CurrentOrderVC.xib */,
 				84292ABF299AE28F007BE0AD /* CurrentOrderCell.swift */,
-				84292AC0299AE28F007BE0AD /* CurrentOrderCell.xib */,
+				84A5F54C2A50A7A700316B94 /* CurrentOrderCell.xib */,
 				84292AC3299AEA2F007BE0AD /* CurrentOrderModel.swift */,
 				84292AC5299AEB57007BE0AD /* CurrentPresenter.swift */,
 			);
@@ -638,9 +651,9 @@
 			isa = PBXGroup;
 			children = (
 				84292ACC299C3636007BE0AD /* FinishedOrderVC.swift */,
-				84292ACD299C3636007BE0AD /* FinishedOrderVC.xib */,
+				84A5F5512A50A81800316B94 /* FinishedOrderVC.xib */,
 				84292AD0299C36F2007BE0AD /* FinishedOrderCell.swift */,
-				84292AD1299C36F2007BE0AD /* FinishedOrderCell.xib */,
+				84A5F5562A50A83700316B94 /* FinishedOrderCell.xib */,
 				84292AD4299C39D3007BE0AD /* finshOrderPresenter.swift */,
 			);
 			path = finisheOrder;
@@ -650,9 +663,9 @@
 			isa = PBXGroup;
 			children = (
 				84292AD7299C3D62007BE0AD /* CancelOrderCell.swift */,
-				84292AD8299C3D63007BE0AD /* CancelOrderCell.xib */,
+				84A5F5602A50A88300316B94 /* CancelOrderCell.xib */,
 				84292ADB299C3DCC007BE0AD /* CancelOrderVC.swift */,
-				84292ADC299C3DCC007BE0AD /* CancelOrderVC.xib */,
+				84A5F55B2A50A86C00316B94 /* CancelOrderVC.xib */,
 				84292ADF299C3FC1007BE0AD /* CancelOrderPresenter.swift */,
 			);
 			path = CancledOrder;
@@ -662,7 +675,7 @@
 			isa = PBXGroup;
 			children = (
 				844E88AE29BE5F1D00F157CF /* EditAddressVC.swift */,
-				844E88AF29BE5F1D00F157CF /* EditAddressVC.xib */,
+				84A5F53D2A50A48600316B94 /* EditAddressVC.xib */,
 			);
 			path = EditAddress;
 			sourceTree = "<group>";
@@ -706,9 +719,9 @@
 			isa = PBXGroup;
 			children = (
 				845B59F02A49DF2C0020E81C /* OrderDetailsCell.swift */,
-				845B59EF2A49DF2C0020E81C /* OrderDetailsCell.xib */,
+				84A5F56F2A50ACBC00316B94 /* OrderDetailsCell.xib */,
 				845B59EE2A49DF2B0020E81C /* OrderDetailsVC.swift */,
-				845B59ED2A49DF2B0020E81C /* OrderDetailsVC.xib */,
+				84A5F56A2A50AC4800316B94 /* OrderDetailsVC.xib */,
 				845B59F52A4A0BD20020E81C /* OrderDetailsPresenter.swift */,
 			);
 			path = OrderDetail;
@@ -749,7 +762,7 @@
 			isa = PBXGroup;
 			children = (
 				849F034B29BCF7820010A3F8 /* AddAddressVC.swift */,
-				849F034C29BCF7820010A3F8 /* AddAddressVC.xib */,
+				84A5F5382A50A3C100316B94 /* AddAddressVC.xib */,
 			);
 			path = AddAddress;
 			sourceTree = "<group>";
@@ -834,7 +847,7 @@
 				844E88AD29BE5F0000F157CF /* EditAddress */,
 				849F034A29BCF75D0010A3F8 /* AddAddress */,
 				84B13D1D29BCE1FE00F8B226 /* ShowlistAdressVC.swift */,
-				84B13D1E29BCE1FE00F8B226 /* ShowlistAdressVC.xib */,
+				84A5F5332A50A33A00316B94 /* ShowlistAdressVC.xib */,
 				84B13D2129BCE33100F8B226 /* AdressCell.swift */,
 				84B13D2229BCE33100F8B226 /* AdressCell.xib */,
 				84B13D2529BCE68D00F8B226 /* AddressListPresenter.swift */,
@@ -936,9 +949,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CFBD092A4F7841001D3D95 /* IntroSecondPageVC.xib in Resources */,
-				84292ADE299C3DCC007BE0AD /* CancelOrderVC.xib in Resources */,
+				84A5F5592A50A86C00316B94 /* CancelOrderVC.xib in Resources */,
 				844E88BA29BE739B00F157CF /* FavoriteCell.xib in Resources */,
-				844E88B129BE5F1D00F157CF /* EditAddressVC.xib in Resources */,
+				84A5F53B2A50A48600316B94 /* EditAddressVC.xib in Resources */,
 				845F033129ABA471006EB4C2 /* ProductionViewCell.xib in Resources */,
 				84B13D2429BCE33100F8B226 /* AdressCell.xib in Resources */,
 				849F171A29DA1DF000EE81DE /* ChatVC.xib in Resources */,
@@ -946,13 +959,13 @@
 				849FFF3D29AFE21200332478 /* RateStoreCell.xib in Resources */,
 				849FFF3029AFD11B00332478 /* ProductDetailsVC.xib in Resources */,
 				840AE730298D70AD000BECE2 /* LaunchScreen.storyboard in Resources */,
-				84292AD3299C36F2007BE0AD /* FinishedOrderCell.xib in Resources */,
+				84A5F5542A50A83700316B94 /* FinishedOrderCell.xib in Resources */,
 				8453F3EE29BFBE6C00F06E67 /* CartVC.xib in Resources */,
 				84A5F52C2A509FE700316B94 /* EditeProfileVC.xib in Resources */,
-				84292AC2299AE28F007BE0AD /* CurrentOrderCell.xib in Resources */,
-				84B13D2029BCE1FE00F8B226 /* ShowlistAdressVC.xib in Resources */,
+				84A5F54A2A50A7A700316B94 /* CurrentOrderCell.xib in Resources */,
+				84A5F5312A50A33A00316B94 /* ShowlistAdressVC.xib in Resources */,
 				849F170D29DA13CE00EE81DE /* MessageVC.xib in Resources */,
-				84292ADA299C3D64007BE0AD /* CancelOrderCell.xib in Resources */,
+				84A5F55E2A50A88300316B94 /* CancelOrderCell.xib in Resources */,
 				84CFBCFF2A4F7679001D3D95 /* MapPageVC.xib in Resources */,
 				841A8241299D732D00141DEE /* MoreVC.xib in Resources */,
 				84B6CB652994E8420049192E /* NearStoreCell.xib in Resources */,
@@ -967,25 +980,25 @@
 				840AE72B298D70AC000BECE2 /* Main.storyboard in Resources */,
 				844E88B629BE731300F157CF /* FavoriteVC.xib in Resources */,
 				841BB1E0299420DE00F74113 /* HomeTabbarVC.xib in Resources */,
-				84292AB9299ADE70007BE0AD /* MyOrderVC.xib in Resources */,
+				84A5F5452A50A77400316B94 /* MyOrderVC.xib in Resources */,
 				8415E9E629996701007B1A48 /* NearStoreTabelCell.xib in Resources */,
 				84CFBCFB2A4F7401001D3D95 /* Localizable.strings in Resources */,
 				84A5F5132A5092F100316B94 /* NearStoreVC.xib in Resources */,
 				84292AAC299A5926007BE0AD /* Tajawal-Regular.ttf in Resources */,
 				84CFBD042A4F7798001D3D95 /* IntroFirstPageVC.xib in Resources */,
-				849F034E29BCF7820010A3F8 /* AddAddressVC.xib in Resources */,
-				84292ABD299AE21A007BE0AD /* CurrentOrderVC.xib in Resources */,
-				845B59F12A49DF2C0020E81C /* OrderDetailsVC.xib in Resources */,
+				84A5F5362A50A3C100316B94 /* AddAddressVC.xib in Resources */,
+				84A5F5402A50A6FC00316B94 /* CurrentOrderVC.xib in Resources */,
+				84A5F5682A50AC4800316B94 /* OrderDetailsVC.xib in Resources */,
 				84A5F5182A50934200316B94 /* StoreVC.xib in Resources */,
 				84292AAD299A5926007BE0AD /* Tajawal-Bold.ttf in Resources */,
 				849F172029DA280500EE81DE /* ChatMessageCell.xib in Resources */,
-				841D356929A145F900004DB6 /* TrackOrderVC.xib in Resources */,
+				84A5F5632A50A8BF00316B94 /* TrackOrderVC.xib in Resources */,
 				84C172C52A5080A700A17DEC /* HomeVC.xib in Resources */,
 				84CFBD0E2A4F78BE001D3D95 /* IntroThirdPageVC.xib in Resources */,
 				849FFF3529AFE00B00332478 /* ProductRateVC.xib in Resources */,
 				8402D7E729CB8C0A00CC3E90 /* CheckOutVC.xib in Resources */,
-				845B59F32A49DF2C0020E81C /* OrderDetailsCell.xib in Resources */,
-				84292ACF299C3636007BE0AD /* FinishedOrderVC.xib in Resources */,
+				84A5F56D2A50ACBC00316B94 /* OrderDetailsCell.xib in Resources */,
+				84A5F54F2A50A81800316B94 /* FinishedOrderVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1218,6 +1231,123 @@
 				84A5F5302A509FEC00316B94 /* ar */,
 			);
 			name = EditeProfileVC.xib;
+			sourceTree = "<group>";
+		};
+		84A5F5332A50A33A00316B94 /* ShowlistAdressVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F5322A50A33A00316B94 /* Base */,
+				84A5F5352A50A33E00316B94 /* ar */,
+			);
+			name = ShowlistAdressVC.xib;
+			sourceTree = "<group>";
+		};
+		84A5F5382A50A3C100316B94 /* AddAddressVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F5372A50A3C100316B94 /* Base */,
+				84A5F53A2A50A3C400316B94 /* ar */,
+			);
+			name = AddAddressVC.xib;
+			sourceTree = "<group>";
+		};
+		84A5F53D2A50A48600316B94 /* EditAddressVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F53C2A50A48600316B94 /* Base */,
+				84A5F53F2A50A48A00316B94 /* ar */,
+			);
+			name = EditAddressVC.xib;
+			sourceTree = "<group>";
+		};
+		84A5F5422A50A6FC00316B94 /* CurrentOrderVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F5412A50A6FC00316B94 /* Base */,
+				84A5F5442A50A70100316B94 /* ar */,
+			);
+			name = CurrentOrderVC.xib;
+			sourceTree = "<group>";
+		};
+		84A5F5472A50A77400316B94 /* MyOrderVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F5462A50A77400316B94 /* Base */,
+				84A5F5492A50A77800316B94 /* ar */,
+			);
+			name = MyOrderVC.xib;
+			sourceTree = "<group>";
+		};
+		84A5F54C2A50A7A700316B94 /* CurrentOrderCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F54B2A50A7A700316B94 /* Base */,
+				84A5F54E2A50A7AB00316B94 /* ar */,
+			);
+			name = CurrentOrderCell.xib;
+			sourceTree = "<group>";
+		};
+		84A5F5512A50A81800316B94 /* FinishedOrderVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F5502A50A81800316B94 /* Base */,
+				84A5F5532A50A81C00316B94 /* ar */,
+			);
+			name = FinishedOrderVC.xib;
+			sourceTree = "<group>";
+		};
+		84A5F5562A50A83700316B94 /* FinishedOrderCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F5552A50A83700316B94 /* Base */,
+				84A5F5582A50A83A00316B94 /* ar */,
+			);
+			name = FinishedOrderCell.xib;
+			sourceTree = "<group>";
+		};
+		84A5F55B2A50A86C00316B94 /* CancelOrderVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F55A2A50A86C00316B94 /* Base */,
+				84A5F55D2A50A86F00316B94 /* ar */,
+			);
+			name = CancelOrderVC.xib;
+			sourceTree = "<group>";
+		};
+		84A5F5602A50A88300316B94 /* CancelOrderCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F55F2A50A88300316B94 /* Base */,
+				84A5F5622A50A88600316B94 /* ar */,
+			);
+			name = CancelOrderCell.xib;
+			sourceTree = "<group>";
+		};
+		84A5F5652A50A8BF00316B94 /* TrackOrderVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F5642A50A8BF00316B94 /* Base */,
+				84A5F5672A50A8C300316B94 /* ar */,
+			);
+			name = TrackOrderVC.xib;
+			sourceTree = "<group>";
+		};
+		84A5F56A2A50AC4800316B94 /* OrderDetailsVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F5692A50AC4800316B94 /* Base */,
+				84A5F56C2A50AC4D00316B94 /* ar */,
+			);
+			name = OrderDetailsVC.xib;
+			sourceTree = "<group>";
+		};
+		84A5F56F2A50ACBC00316B94 /* OrderDetailsCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F56E2A50ACBC00316B94 /* Base */,
+				84A5F5712A50ACC100316B94 /* ar */,
+			);
+			name = OrderDetailsCell.xib;
 			sourceTree = "<group>";
 		};
 		84C172C72A5080A700A17DEC /* HomeVC.xib */ = {

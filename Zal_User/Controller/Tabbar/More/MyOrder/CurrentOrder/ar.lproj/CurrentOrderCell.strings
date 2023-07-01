@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Order Num"; ObjectID = "4yk-FY-MMB"; */
+"4yk-FY-MMB.text" = "رقم الطلب";
+
+/* Class = "UILabel"; text = "Order Num"; ObjectID = "ISh-kT-Bqv"; */
+"ISh-kT-Bqv.text" = "رقم الطلب";
+
+/* Class = "UILabel"; text = "Order Status"; ObjectID = "QXN-ut-BfR"; */
+"QXN-ut-BfR.text" = "حالة الطلب";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "fJt-mL-JXM"; */
+"fJt-mL-JXM.text" = "الإجمالي";
+
+/* Class = "UIButton"; configuration.title = "  Track Order"; ObjectID = "nUA-Xa-f8b"; */
+"nUA-Xa-f8b.configuration.title" = "تتبع الطلب ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nUA-Xa-f8b"; */
+"nUA-Xa-f8b.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Start Chat"; ObjectID = "s1P-9j-IUE"; */
+"s1P-9j-IUE.configuration.title" = "بدأ محادثة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "s1P-9j-IUE"; */
+"s1P-9j-IUE.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Order Num"; ObjectID = "sx6-Sr-871"; */
+"sx6-Sr-871.text" = "رقم الطلب";
+
+/* Class = "UILabel"; text = "Order Num"; ObjectID = "zWx-8G-No9"; */
+"zWx-8G-No9.text" = "رقم الطلب";

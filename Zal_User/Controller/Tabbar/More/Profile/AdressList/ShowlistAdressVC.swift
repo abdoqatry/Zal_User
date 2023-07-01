@@ -41,7 +41,7 @@ class ShowlistAdressVC: UIViewController,AdressListProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = AddressListPresenter(self)
-        title = "Addresses"
+        title = "Addresses".localize
         
         AddBT.layer.cornerRadius = 16
     }

@@ -52,7 +52,7 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
     var presenter : OrderDetailsPresenter?
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Order Details"
+        title = "Order Details".localize
         presenter = OrderDetailsPresenter(self)
         
         

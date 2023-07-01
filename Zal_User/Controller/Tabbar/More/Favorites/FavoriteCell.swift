@@ -30,7 +30,7 @@ class FavoriteCell: UICollectionViewCell,Reuseable,FavoriteCellView {
     func Data(name: String, Image: String, price: String, rate: Double, id: Int, is_liked: Bool) {
         rateView.rating = rate
         productNameLabel.text = name
-        priceLabel.text = ("\(price)\("RS")")
+        priceLabel.text = ("\(price)\("SR".localize)")
         let url = URL(string: Image)
         productImage.kf.setImage(with: url)
         if is_liked == false {

@@ -23,7 +23,7 @@ class EditePasswordVC: UIViewController {
     
     func setView(){
         confirmBT.layer.cornerRadius = 18
-        title = "Edit Password"
+        title = "Edit Password".localize
         for i in itemsView{
             i.layer.cornerRadius = 22
             i.layer.borderColor = UIColor.lightGray.cgColor

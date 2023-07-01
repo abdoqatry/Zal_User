@@ -55,3 +55,30 @@
 // "Profile"
 
 "Profile" = "الملف الشخصي";
+"Edit Password" = "تغير كلمة المرور";
+"Password Updated" = "تم تغير كلمة المرور";
+// "Addresses"
+
+"Addresses" = "العناوين";
+"Add Address" = "إضافة عنوان";
+"Enter location name" = "ادخل اسم العنوان";
+"Enter location description" = "ادخل وصف العنوان";
+"please choose Address" = "اختر العنوان";
+"Edit Address" = "تعديل العنوان";
+// "My Orders"
+"My Orders" = "طلباتي";
+// "Order Details"
+"Order Details" = "تفاصيل الطلب";
+
+// more list
+"More" = "المزيد";
+"My Order" = "طلباتي";
+"My Favorite" = "المفضلة";
+"Settings" = "الإعدادات";
+"About us" = "عن التطبيق";
+"Contact us" = "تواصل معنا";
+"Support" = "الدعم الفني";
+"Log out" = "تسجيل خروج";
+"Terms and condition" = "الشروط والاحكام";
+// "My Favorite"
+"My Favorite"= "المفضلة";

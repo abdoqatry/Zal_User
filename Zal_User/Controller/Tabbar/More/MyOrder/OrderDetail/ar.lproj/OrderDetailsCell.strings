@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "description"; ObjectID = "DLH-zV-1c9"; */
+"DLH-zV-1c9.text" = "الوصف";
+
+/* Class = "UILabel"; text = "12 RS"; ObjectID = "FWi-Z6-T4u"; */
+"FWi-Z6-T4u.text" = "12 RS";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "JVN-Tl-JuT"; */
+"JVN-Tl-JuT.text" = "الاسم";
+
+/* Class = "UILabel"; text = "quantity :"; ObjectID = "VAD-RW-5dh"; */
+"VAD-RW-5dh.text" = "الكمية :";
+
+/* Class = "UILabel"; text = "price"; ObjectID = "VhR-VA-NZW"; */
+"VhR-VA-NZW.text" = "السعر";
+
+/* Class = "UILabel"; text = "12"; ObjectID = "cf5-mb-a0w"; */
+"cf5-mb-a0w.text" = "12";

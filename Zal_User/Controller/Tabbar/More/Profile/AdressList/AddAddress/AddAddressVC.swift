@@ -25,7 +25,7 @@ class AddAddressVC: UIViewController {
     }
     
     func setView(){
-        title = "Add Address"
+        title = "Add Address".localize
         for i in itemsView{
             i.layer.cornerRadius = 18
             i.layer.borderColor = UIColor.lightGray.cgColor
@@ -40,7 +40,7 @@ class AddAddressVC: UIViewController {
             showAlert(title:  "Enter location name".localize, messages: nil, message: nil, selfDismissing: true)
                 return  }
         guard  let des = descriptionTF.text , !des.isEmpty   else{
-            showAlert(title:  "Enter location name".localize, messages: nil, message: nil, selfDismissing: true)
+            showAlert(title:  "Enter location description".localize, messages: nil, message: nil, selfDismissing: true)
                 return  }
         guard lat != "" || lon != "" else{
             showAlert(title:  "please choose Address".localize, messages: nil, message: nil, selfDismissing: true)

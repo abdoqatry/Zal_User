@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Request under review"; ObjectID = "aPS-YU-1iQ"; */
+"aPS-YU-1iQ.text" = "الطلب قيد المراجعة";
+
+/* Class = "UILabel"; text = "order is under delivery"; ObjectID = "bNA-FI-JH3"; */
+"bNA-FI-JH3.text" = "الطلب تحت التسليم";
+
+/* Class = "UILabel"; text = "request accepted and waiting for payment "; ObjectID = "gxj-OA-ShF"; */
+"gxj-OA-ShF.text" = "تم قبول الطلب وبانتظار الدفع";
+
+/* Class = "UILabel"; text = "request was accepted"; ObjectID = "juX-6h-R2W"; */
+"juX-6h-R2W.text" = "تم قبول الطلب";
+
+/* Class = "UIButton"; configuration.title = "Cancel"; ObjectID = "nGO-s1-lw2"; */
+"nGO-s1-lw2.configuration.title" = "إلغاء";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nGO-s1-lw2"; */
+"nGO-s1-lw2.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "رقم طلبك هو ٣٢٣٢٣٢٣٢٣٢٣٧٤٤٤٥٥ "; ObjectID = "rEA-bK-fb7"; */
+"rEA-bK-fb7.text" = "رقم طلبك هو ٣٢٣٢٣٢٣٢٣٢٣٧٤٤٤٥٥ ";
+
+/* Class = "UILabel"; text = "Notification will be sent rhen request is confirmed"; ObjectID = "tga-59-8EQ"; */
+"tga-59-8EQ.text" = "سوف يتم ارسال إشعار فور تأكيد الطلب";
+
+/* Class = "UILabel"; text = "request was accepted"; ObjectID = "uoC-FM-N1f"; */
+"uoC-FM-N1f.text" = "تم قبول الطلب";
+
+/* Class = "UILabel"; text = "order received"; ObjectID = "y2U-UI-XlP"; */
+"y2U-UI-XlP.text" = "تم استلام الطلب";

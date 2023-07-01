@@ -30,7 +30,7 @@ class FavoriteVC: UIViewController,FavoriteProtocol {
         super.viewDidLoad()
         presenter = FavoritePresenter(self)
         presenter?.getProducts()
-        title = "My Favorite"
+        title = "My Favorite".localize
     }
     
     

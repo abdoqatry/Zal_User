@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Order Num"; ObjectID = "5GV-sB-x6l"; */
+"5GV-sB-x6l.text" = "رقم الطلب";
+
+/* Class = "UILabel"; text = "Order Status"; ObjectID = "Ikv-VQ-udr"; */
+"Ikv-VQ-udr.text" = "حالة الطلب";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "J5a-Xg-KOQ"; */
+"J5a-Xg-KOQ.text" = "الإجمالي";
+
+/* Class = "UILabel"; text = "Order Num"; ObjectID = "dAe-p4-8K2"; */
+"dAe-p4-8K2.text" = "رقم الطلب";
+
+/* Class = "UILabel"; text = "Order Num"; ObjectID = "g5I-dS-P96"; */
+"g5I-dS-P96.text" = "رقم الطلب";
+
+/* Class = "UILabel"; text = "Order Num"; ObjectID = "gxQ-Ld-39l"; */
+"gxQ-Ld-39l.text" = "رقم الطلب";

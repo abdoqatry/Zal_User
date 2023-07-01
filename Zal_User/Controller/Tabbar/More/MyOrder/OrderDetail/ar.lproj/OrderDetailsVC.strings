@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "6OQ-Y4-McG"; */
+"6OQ-Y4-McG.text" = "الإجمالي";
+
+/* Class = "UILabel"; text = "23344455"; ObjectID = "89w-iu-BKo"; */
+"89w-iu-BKo.text" = "23344455";
+
+/* Class = "UILabel"; text = "400"; ObjectID = "9gs-ZH-5xe"; */
+"9gs-ZH-5xe.text" = "400";
+
+/* Class = "UILabel"; text = "Delivery"; ObjectID = "D0L-Zq-MGZ"; */
+"D0L-Zq-MGZ.text" = "التوصيل";
+
+/* Class = "UILabel"; text = "203"; ObjectID = "DaE-w1-lh8"; */
+"DaE-w1-lh8.text" = "203";
+
+/* Class = "UILabel"; text = "203"; ObjectID = "Iih-nc-3KK"; */
+"Iih-nc-3KK.text" = "203";
+
+/* Class = "UILabel"; text = "203"; ObjectID = "Kah-sj-JQs"; */
+"Kah-sj-JQs.text" = "203";
+
+/* Class = "UILabel"; text = "Payment type"; ObjectID = "XiP-0Z-xGA"; */
+"XiP-0Z-xGA.text" = "نوع الدفع";
+
+/* Class = "UILabel"; text = "Cach"; ObjectID = "aZF-Pa-N7Q"; */
+"aZF-Pa-N7Q.text" = "Cach";
+
+/* Class = "UILabel"; text = "20%"; ObjectID = "axq-Ow-qQH"; */
+"axq-Ow-qQH.text" = "20%";
+
+/* Class = "UILabel"; text = "23344455"; ObjectID = "eS1-09-zFA"; */
+"eS1-09-zFA.text" = "23344455";
+
+/* Class = "UILabel"; text = "Discount percentage"; ObjectID = "juD-nY-wv8"; */
+"juD-nY-wv8.text" = "الخصم";
+
+/* Class = "UILabel"; text = "Order Number"; ObjectID = "lQ4-J3-I1v"; */
+"lQ4-J3-I1v.text" = "رقم الطلب";
+
+/* Class = "UILabel"; text = "Delivery Address"; ObjectID = "pCX-lH-gCD"; */
+"pCX-lH-gCD.text" = "عنوان التوصيل";
+
+/* Class = "UILabel"; text = "price"; ObjectID = "yZi-LP-j2Y"; */
+"yZi-LP-j2Y.text" = "السعر";
+
+/* Class = "UILabel"; text = "Tax"; ObjectID = "z8L-pM-v4w"; */
+"z8L-pM-v4w.text" = "الضريبة";

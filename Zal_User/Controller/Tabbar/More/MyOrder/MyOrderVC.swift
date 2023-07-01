@@ -17,7 +17,7 @@ class MyOrderVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "My Orders".localize
         setView()
     }
     

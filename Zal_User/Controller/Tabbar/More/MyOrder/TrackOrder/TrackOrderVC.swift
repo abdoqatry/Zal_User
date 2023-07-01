@@ -145,7 +145,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
     var presenter : TrackPresenter?
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Order Details"
+        title = "Order Details".localize
         presenter = TrackPresenter(self)
         setView()
     }

@@ -21,17 +21,16 @@ class MoreVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "More"
+        title = "More".localize
 //        setupNavigationBar()
       addDate()
     }
     
     func addDate(){
 //        dumyDate.append(dummyItem(name: "Profile",image: "Group 24189"))
-        dumyDate.append(dummyItem(name: "My Order",image: "Group 24190"))
-        dumyDate.append(dummyItem(name: "My Favorite",image: "Group 24191"))
-        dumyDate.append(dummyItem(name: "Wallet",image: "wallet"))
-        dumyDate.append(dummyItem(name: "Setting", image: "Group 24192"))
+        dumyDate.append(dummyItem(name: "My Order".localize,image: "Group 24190"))
+        dumyDate.append(dummyItem(name: "My Favorite".localize,image: "Group 24191"))
+        dumyDate.append(dummyItem(name: "Settings".localize, image: "Group 24192"))
         dumyDate.append(dummyItem(name: "About us".localize,image: "Group 24193"))
         dumyDate.append(dummyItem(name: "Terms and condition".localize,image: "Group 24194"))
         dumyDate.append(dummyItem(name: "Contact us".localize,image: "Group 24194"))

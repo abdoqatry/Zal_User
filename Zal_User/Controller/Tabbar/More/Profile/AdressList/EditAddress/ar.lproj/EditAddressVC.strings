@@ -1,0 +1,15 @@
+
+/* Class = "UITextField"; placeholder = "name"; ObjectID = "37c-CB-fzc"; */
+"37c-CB-fzc.placeholder" = "اسم العنوان";
+
+/* Class = "UIButton"; configuration.title = "Save"; ObjectID = "HqQ-j4-TC0"; */
+"HqQ-j4-TC0.configuration.title" = "حفظ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HqQ-j4-TC0"; */
+"HqQ-j4-TC0.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "location"; ObjectID = "jNj-pH-sW4"; */
+"jNj-pH-sW4.text" = "موقع العنوان";
+
+/* Class = "UITextField"; placeholder = "description"; ObjectID = "jWN-A3-6Jn"; */
+"jWN-A3-6Jn.placeholder" = "وصف العنوان";
