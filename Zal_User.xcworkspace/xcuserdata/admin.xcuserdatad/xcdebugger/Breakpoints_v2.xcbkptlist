@@ -110,8 +110,8 @@
             filePath = "Zal_User/Controller/Tabbar/Home/HomeVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "setlocation()"
             landmarkType = "7">
          </BreakpointContent>

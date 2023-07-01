@@ -81,6 +81,7 @@ class HomeVC: UIViewController,HomeProtocol {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter?.getHome(lat: lastLat, lng: lastlon, keyword: "")
+        UIButton.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     }
     
     func setlocation(){
