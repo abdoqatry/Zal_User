@@ -78,7 +78,7 @@ class CartVC: UIViewController,CartProtocol {
     }
     
     func setView(){
-        title = "Cart"
+        title = "Cart".localize
         discountView.layer.cornerRadius = 12
         discountView.layer.borderWidth = 0.5
         discountView.layer.borderColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)

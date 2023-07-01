@@ -1,0 +1,51 @@
+
+/* Class = "UILabel"; text = "12344"; ObjectID = "0gQ-Wi-VxO"; */
+"0gQ-Wi-VxO.text" = "12344";
+
+/* Class = "UILabel"; text = "choose date"; ObjectID = "5fX-G2-mav"; */
+"5fX-G2-mav.text" = "اختر التاريخ";
+
+/* Class = "UILabel"; text = "Amount"; ObjectID = "7Wy-wV-iW4"; */
+"7Wy-wV-iW4.text" = "الكمية";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "91W-3R-AEc"; */
+"91W-3R-AEc.text" = "الإجمالي";
+
+/* Class = "UILabel"; text = "Please choose payment method"; ObjectID = "KZ4-vu-ib7"; */
+"KZ4-vu-ib7.text" = "اختر طريقة الدفع";
+
+/* Class = "UILabel"; text = "12344"; ObjectID = "SF0-k3-S0g"; */
+"SF0-k3-S0g.text" = "12344";
+
+/* Class = "UILabel"; text = "Registered addresses"; ObjectID = "T98-g0-y23"; */
+"T98-g0-y23.text" = "العناوين المسجلة";
+
+/* Class = "UIButton"; configuration.title = "Complete the request"; ObjectID = "TYF-2g-1xZ"; */
+"TYF-2g-1xZ.configuration.title" = "تكلمة الطلب";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TYF-2g-1xZ"; */
+"TYF-2g-1xZ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Please choose a delivery date"; ObjectID = "Y0c-48-IbU"; */
+"Y0c-48-IbU.text" = "اختر تاريخ التوصيل";
+
+/* Class = "UILabel"; text = "Please choose  address to be delivered to"; ObjectID = "YHV-rH-Vn0"; */
+"YHV-rH-Vn0.text" = "اختر عنوان التوصيل";
+
+/* Class = "UILabel"; text = "cash"; ObjectID = "aNi-yP-OYK"; */
+"aNi-yP-OYK.text" = "كاش";
+
+/* Class = "UILabel"; text = "Delivery data"; ObjectID = "aPV-UV-RXL"; */
+"aPV-UV-RXL.text" = "تاريخ التوصيل";
+
+/* Class = "UILabel"; text = "12344"; ObjectID = "bFs-G9-0XJ"; */
+"bFs-G9-0XJ.text" = "12344";
+
+/* Class = "UILabel"; text = "Order number"; ObjectID = "dIQ-02-L1l"; */
+"dIQ-02-L1l.text" = "رقم الطلب";
+
+/* Class = "UILabel"; text = "Delivery charge"; ObjectID = "kLD-3o-ogH"; */
+"kLD-3o-ogH.text" = "مصاريف التوصيل";
+
+/* Class = "UILabel"; text = "12344"; ObjectID = "u1H-rs-p2a"; */
+"u1H-rs-p2a.text" = "12344";

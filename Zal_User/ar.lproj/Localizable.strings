@@ -82,3 +82,9 @@
 "Terms and condition" = "الشروط والاحكام";
 // "My Favorite"
 "My Favorite"= "المفضلة";
+// "Cart"
+"Cart" = "عربة الشراء";
+"Checkout" = "اتمام الشراء";
+"choose address" = "اختر عنوان";
+"choose date" = "اختر تاريخ";
+"Cash" = "كاش";

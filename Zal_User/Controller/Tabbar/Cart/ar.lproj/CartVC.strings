@@ -1,0 +1,54 @@
+
+/* Class = "UIButton"; configuration.title = "Complete the purchase"; ObjectID = "4cp-aC-afK"; */
+"4cp-aC-afK.configuration.title" = "إكمال عملية الشراء";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4cp-aC-afK"; */
+"4cp-aC-afK.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Number of items"; ObjectID = "7rw-PV-adh"; */
+"7rw-PV-adh.text" = "عدد الأغراض";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "8OF-dV-g1i"; */
+"8OF-dV-g1i.text" = "3";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "Guw-hJ-9pr"; */
+"Guw-hJ-9pr.text" = "3";
+
+/* Class = "UILabel"; text = "Delivery Service"; ObjectID = "K5d-y3-YtV"; */
+"K5d-y3-YtV.text" = "خدمة التوصيل";
+
+/* Class = "UILabel"; text = "Amount"; ObjectID = "Kro-8r-1gB"; */
+"Kro-8r-1gB.text" = "الكمية";
+
+/* Class = "UILabel"; text = "Total amount"; ObjectID = "Mlp-qd-B0S"; */
+"Mlp-qd-B0S.text" = "الإجمالي";
+
+/* Class = "UITextField"; placeholder = "code"; ObjectID = "NEH-q5-9qW"; */
+"NEH-q5-9qW.placeholder" = "الكود";
+
+/* Class = "UILabel"; text = "there is no data"; ObjectID = "UM6-eV-gRW"; */
+"UM6-eV-gRW.text" = "لا توجد بيانات";
+
+/* Class = "UILabel"; text = "3 SR"; ObjectID = "YB6-o2-C4c"; */
+"YB6-o2-C4c.text" = "3 SR";
+
+/* Class = "UILabel"; text = "Discount percentage"; ObjectID = "YYt-C2-1zW"; */
+"YYt-C2-1zW.text" = "الخصم";
+
+/* Class = "UIButton"; configuration.title = "Confirm"; ObjectID = "ZPG-d2-3X0"; */
+"ZPG-d2-3X0.configuration.title" = "تأكيد";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZPG-d2-3X0"; */
+"ZPG-d2-3X0.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "dYd-q3-Mnp"; */
+"dYd-q3-Mnp.text" = "3";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "ene-Ja-0eA"; */
+"ene-Ja-0eA.text" = "3";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "oMi-bq-AiH"; */
+"oMi-bq-AiH.text" = "3";
+
+/* Class = "UILabel"; text = "Vat Service"; ObjectID = "wOS-QP-emt"; */
+"wOS-QP-emt.text" = "الضريبة";

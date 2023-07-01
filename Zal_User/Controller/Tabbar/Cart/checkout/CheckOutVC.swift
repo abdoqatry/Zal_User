@@ -54,7 +54,7 @@ class CheckOutVC: UIViewController,CeckoutProtocol {
     }
     
     func setView(){
-        title = "Checkout"
+        title = "Checkout".localize
         addressView.layer.cornerRadius = 16
         addressView.layer.borderColor = UIColor.darkGray.cgColor
         addressView.layer.borderWidth = 0.5
@@ -83,12 +83,12 @@ class CheckOutVC: UIViewController,CeckoutProtocol {
     @IBAction func completOrderButton(_ sender: Any) {
         
         if addressId == 0 {
-            showAlert(title:  "choose address", messages: nil, message: nil, selfDismissing: true)
+            showAlert(title:  "choose address".localize, messages: nil, message: nil, selfDismissing: true)
             return
         }
         
         if date == "" {
-            showAlert(title:  "choose date", messages: nil, message: nil, selfDismissing: true)
+            showAlert(title:  "choose date".localize, messages: nil, message: nil, selfDismissing: true)
             return
         }
         
@@ -132,7 +132,7 @@ extension CheckOutVC : GetDateProtocole{
     
     func dateView(didSelect date: String, mode: Int,type:Int) {
         if date == "" {
-            dateLabel.text = "choose date"
+            dateLabel.text = "choose date".localize
             self.date = date
             
         }else{
@@ -152,7 +152,7 @@ extension CheckOutVC : Paymentprotocole{
             self.paymentLabel.text = value
         }else{
             self.paymentcode = "cash"
-            self.paymentLabel.text = "Cash"
+            self.paymentLabel.text = "Cash".localize
         }
     }
     
