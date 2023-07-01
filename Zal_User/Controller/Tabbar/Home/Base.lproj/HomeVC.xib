@@ -22,7 +22,7 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTl-Fz-c06">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="160"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
                         <subviews>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o32-qM-PBe">
                                 <rect key="frame" x="20" y="45" width="30" height="30"/>
@@ -80,11 +80,11 @@
                                     <constraint firstAttribute="width" constant="20" id="LH4-mc-VjT"/>
                                 </constraints>
                             </imageView>
-                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="search" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BW0-LX-zYW">
-                                <rect key="frame" x="40" y="137.66666666666666" width="313" height="0.0"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="search" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BW0-LX-zYW">
+                                <rect key="frame" x="40" y="137.66666666666666" width="313" height="40"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.92156862750000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" id="B6Y-LT-Sey"/>
+                                    <constraint firstAttribute="height" constant="40" id="B6Y-LT-Sey"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -99,7 +99,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="160" id="00S-n7-Kal"/>
+                            <constraint firstAttribute="height" constant="200" id="00S-n7-Kal"/>
                             <constraint firstAttribute="trailing" secondItem="BW0-LX-zYW" secondAttribute="trailing" constant="40" id="3ka-mE-mYx"/>
                             <constraint firstItem="Luo-Bd-UVw" firstAttribute="top" secondItem="GTl-Fz-c06" secondAttribute="top" constant="75" id="Ckc-7a-UjJ"/>
                             <constraint firstItem="BW0-LX-zYW" firstAttribute="leading" secondItem="GTl-Fz-c06" secondAttribute="leading" constant="40" id="Fwu-QH-omQ"/>
@@ -118,7 +118,7 @@
                         </constraints>
                     </view>
                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2lI-qu-1uL">
-                        <rect key="frame" x="0.0" y="160" width="393" height="658"/>
+                        <rect key="frame" x="0.0" y="200" width="393" height="618"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7S-jv-my2">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="795"/>

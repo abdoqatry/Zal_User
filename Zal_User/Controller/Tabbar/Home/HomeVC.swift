@@ -118,7 +118,7 @@ class HomeVC: UIViewController,HomeProtocol {
             locationImage.isHidden = false
             addressImage.isHidden = false
         }else{
-            nameLabel.text = "welcome to Zal application".localize
+            nameLabel.text = "welcome to Zal application"
             addressLabel.text = ""
             locationImage.isHidden = true
             addressImage.isHidden = true
