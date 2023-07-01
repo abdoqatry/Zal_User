@@ -32,7 +32,7 @@ class ProfileVC: UIViewController {
     
     
     func setView(){
-        title = "Profile"
+        title = "Profile".localize
         ProfileView.layer.cornerRadius = 60
         ProfileImage.layer.cornerRadius = 60
         ProfileImage.layer.applySketchShadow()

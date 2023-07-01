@@ -41,7 +41,7 @@
                         </constraints>
                     </view>
                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24314" translatesAutoresizingMaskIntoConstraints="NO" id="bIX-KX-GAR">
-                        <rect key="frame" x="116.66666666666667" y="179" width="20.000000000000014" height="20"/>
+                        <rect key="frame" x="121.66666666666669" y="179" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="NWq-rX-nTA"/>
                             <constraint firstAttribute="width" constant="20" id="XJL-Ng-gAP"/>
@@ -163,7 +163,7 @@
                     <constraint firstItem="Udo-cg-8iG" firstAttribute="leading" secondItem="YW6-zQ-tmp" secondAttribute="leading" id="wGj-ev-V3V"/>
                     <constraint firstItem="g7Q-1e-yRW" firstAttribute="top" secondItem="YW6-zQ-tmp" secondAttribute="bottom" constant="-8" id="xa9-hs-KFc"/>
                     <constraint firstItem="Phc-F9-v9W" firstAttribute="trailing" secondItem="Suf-uQ-R32" secondAttribute="trailing" constant="60" id="zQw-bG-hVc"/>
-                    <constraint firstItem="bmp-B2-E0X" firstAttribute="leading" secondItem="bIX-KX-GAR" secondAttribute="trailing" id="zSR-rO-pxz"/>
+                    <constraint firstItem="bmp-B2-E0X" firstAttribute="leading" secondItem="bIX-KX-GAR" secondAttribute="trailing" constant="-5" id="zSR-rO-pxz"/>
                 </constraints>
             </view>
             <connections>

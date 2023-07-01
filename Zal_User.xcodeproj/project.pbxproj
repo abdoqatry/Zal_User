@@ -61,7 +61,6 @@
 		84292AA0299990E4007BE0AD /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292A9E299990E4007BE0AD /* ProfileVC.swift */; };
 		84292AA329999C85007BE0AD /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292AA229999C85007BE0AD /* ProfileModel.swift */; };
 		84292AA729999EFC007BE0AD /* EditeProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292AA529999EFC007BE0AD /* EditeProfileVC.swift */; };
-		84292AA829999EFC007BE0AD /* EditeProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84292AA629999EFC007BE0AD /* EditeProfileVC.xib */; };
 		84292AAC299A5926007BE0AD /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84292AA9299A5926007BE0AD /* Tajawal-Regular.ttf */; };
 		84292AAD299A5926007BE0AD /* Tajawal-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84292AAA299A5926007BE0AD /* Tajawal-Bold.ttf */; };
 		84292AAE299A5926007BE0AD /* Tajawal-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84292AAB299A5926007BE0AD /* Tajawal-Light.ttf */; };
@@ -134,6 +133,7 @@
 		84A5F5132A5092F100316B94 /* NearStoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F5152A5092F100316B94 /* NearStoreVC.xib */; };
 		84A5F5182A50934200316B94 /* StoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F51A2A50934200316B94 /* StoreVC.xib */; };
 		84A5F5272A509EC900316B94 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F5292A509EC900316B94 /* ProfileVC.xib */; };
+		84A5F52C2A509FE700316B94 /* EditeProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5F52E2A509FE700316B94 /* EditeProfileVC.xib */; };
 		84A980FE2990386D00D89A72 /* ForgetPassCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A980FD2990386D00D89A72 /* ForgetPassCodeVC.swift */; };
 		84A9810129903EEA00D89A72 /* NewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9810029903EEA00D89A72 /* NewPasswordVC.swift */; };
 		84A981042990411B00D89A72 /* VerivicationCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A981032990411B00D89A72 /* VerivicationCodeVC.swift */; };
@@ -224,7 +224,6 @@
 		84292A9E299990E4007BE0AD /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		84292AA229999C85007BE0AD /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		84292AA529999EFC007BE0AD /* EditeProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeProfileVC.swift; sourceTree = "<group>"; };
-		84292AA629999EFC007BE0AD /* EditeProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditeProfileVC.xib; sourceTree = "<group>"; };
 		84292AA9299A5926007BE0AD /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
 		84292AAA299A5926007BE0AD /* Tajawal-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Bold.ttf"; sourceTree = "<group>"; };
 		84292AAB299A5926007BE0AD /* Tajawal-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Light.ttf"; sourceTree = "<group>"; };
@@ -300,6 +299,8 @@
 		84A5F51C2A50934800316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/StoreVC.strings; sourceTree = "<group>"; };
 		84A5F5282A509EC900316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProfileVC.xib; sourceTree = "<group>"; };
 		84A5F52B2A509ECE00316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ProfileVC.strings; sourceTree = "<group>"; };
+		84A5F52D2A509FE700316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/EditeProfileVC.xib; sourceTree = "<group>"; };
+		84A5F5302A509FEC00316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/EditeProfileVC.strings; sourceTree = "<group>"; };
 		84A980FD2990386D00D89A72 /* ForgetPassCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassCodeVC.swift; sourceTree = "<group>"; };
 		84A9810029903EEA00D89A72 /* NewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordVC.swift; sourceTree = "<group>"; };
 		84A981032990411B00D89A72 /* VerivicationCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerivicationCodeVC.swift; sourceTree = "<group>"; };
@@ -582,7 +583,7 @@
 			isa = PBXGroup;
 			children = (
 				84292AA529999EFC007BE0AD /* EditeProfileVC.swift */,
-				84292AA629999EFC007BE0AD /* EditeProfileVC.xib */,
+				84A5F52E2A509FE700316B94 /* EditeProfileVC.xib */,
 			);
 			path = EditeProfile;
 			sourceTree = "<group>";
@@ -947,7 +948,7 @@
 				840AE730298D70AD000BECE2 /* LaunchScreen.storyboard in Resources */,
 				84292AD3299C36F2007BE0AD /* FinishedOrderCell.xib in Resources */,
 				8453F3EE29BFBE6C00F06E67 /* CartVC.xib in Resources */,
-				84292AA829999EFC007BE0AD /* EditeProfileVC.xib in Resources */,
+				84A5F52C2A509FE700316B94 /* EditeProfileVC.xib in Resources */,
 				84292AC2299AE28F007BE0AD /* CurrentOrderCell.xib in Resources */,
 				84B13D2029BCE1FE00F8B226 /* ShowlistAdressVC.xib in Resources */,
 				849F170D29DA13CE00EE81DE /* MessageVC.xib in Resources */,
@@ -1208,6 +1209,15 @@
 				84A5F52B2A509ECE00316B94 /* ar */,
 			);
 			name = ProfileVC.xib;
+			sourceTree = "<group>";
+		};
+		84A5F52E2A509FE700316B94 /* EditeProfileVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A5F52D2A509FE700316B94 /* Base */,
+				84A5F5302A509FEC00316B94 /* ar */,
+			);
+			name = EditeProfileVC.xib;
 			sourceTree = "<group>";
 		};
 		84C172C72A5080A700A17DEC /* HomeVC.xib */ = {

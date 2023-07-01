@@ -31,7 +31,7 @@ class EditeProfileVC: UIViewController {
     var ProfileImage : UIImage?
     
     func setView(){
-        title = "Profile"
+        title = "Profile".localize
         SaveBt.layer.cornerRadius = 18
         profileView.layer.cornerRadius = 60
         profileImage.layer.cornerRadius = 60
@@ -79,11 +79,11 @@ class EditeProfileVC: UIViewController {
       }
         
         guard let name = nameTF.text , !name.isEmpty  else{
-            showAlert(title:  "enter your name", messages: nil, message: nil, selfDismissing: true)
+            showAlert(title:  "Enter user name".localize, messages: nil, message: nil, selfDismissing: true)
         return  }
         
         guard let phone = pgoneTF.text , !phone.isEmpty  else{
-            showAlert(title:  "enter your phone", messages: nil, message: nil, selfDismissing: true)
+            showAlert(title:  "Enter Phone Number".localize, messages: nil, message: nil, selfDismissing: true)
         return  }
         
         guard  let mail = MailTF.text , !mail.isEmpty , mail.isEmail  else{
