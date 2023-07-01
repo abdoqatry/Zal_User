@@ -16,7 +16,7 @@ class ProductDetailsVC: UIViewController,ProductDetailsProtocol {
     
     func setData(coverImage: [Image], name: String, price: String,description:String) {
         Images = coverImage
-        priceLabel.text = "\(price)\("SR".localize)"
+        priceLabel.text = "\(price)\(" ")\("SR".localize)"
         nameLabel.text = name
         descLabel.text = description
     }
