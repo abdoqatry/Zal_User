@@ -149,7 +149,7 @@ UINavigationBar.appearance().tintColor = UIColor.white
        }
     
     func setNavigationLeftBT(){
-        let button1 = UIBarButtonItem(image: UIImage(named:"shopping-cart")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(bell))
+        let button1 = UIBarButtonItem(image: UIImage(named:"card")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(bell))
         navigationItem.setLeftBarButtonItems([button1], animated: true)
     }
     
