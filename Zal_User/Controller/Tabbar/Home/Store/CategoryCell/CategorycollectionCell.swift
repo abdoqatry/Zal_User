@@ -24,9 +24,22 @@ class CategorycollectionCell: UICollectionViewCell,Reuseable,CategoryCellView {
     func Data(name:String,Image:String){
         let url = URL(string: Image)
         catImage.kf.setImage(with: url)
+       
         nameLabel.text = name
 //        catImage.backgroundColor = UIColor.clear
 //        catImage.isOpaque = true
     }
 
+}
+
+
+extension UIImage {
+
+    func alpha(_ value:CGFloat) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+        draw(at: CGPoint.zero, blendMode: .normal, alpha: value)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!
+    }
 }
