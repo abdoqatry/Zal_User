@@ -137,6 +137,8 @@ extension StoreVC: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
             if currentSelected == indexPath.row{
                 cell.nameLabel.textColor = colorWithHexString(hexString: "#8B004C")
                 cell.imageview.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
+                cell.catImage.tintColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
+                cell.catImage.tintColorDidChange()
                 catId = presenter?.selectedType(index: indexPath.row) ?? ""
                 presenter?.getProducts(catId: catId, providerId: id)
             }else{

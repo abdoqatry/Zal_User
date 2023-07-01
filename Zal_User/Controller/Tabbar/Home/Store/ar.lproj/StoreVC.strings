@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Categories"; ObjectID = "GYA-gE-DVg"; */
+"GYA-gE-DVg.text" = "الأقسام";
+
+/* Class = "UITextField"; placeholder = "search"; ObjectID = "jzH-qR-zq3"; */
+"jzH-qR-zq3.placeholder" = "البحث";
+
+/* Class = "UILabel"; text = "shop address"; ObjectID = "pUE-un-ISm"; */
+"pUE-un-ISm.text" = "shop address";
+
+/* Class = "UILabel"; text = "shop name"; ObjectID = "tVJ-sX-zKR"; */
+"tVJ-sX-zKR.text" = "shop name";
