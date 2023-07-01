@@ -150,6 +150,7 @@
                 <outlet property="descLabel" destination="hCO-6j-Tr4" id="gjh-Li-IPP"/>
                 <outlet property="nameLabel" destination="5p5-kZ-JRH" id="TLf-NM-T6B"/>
                 <outlet property="priceLabel" destination="fuo-EV-4Gg" id="xvz-qK-FHA"/>
+                <outlet property="quantityLabel" destination="fif-o9-gAe" id="A7z-Zq-RA5"/>
                 <outlet property="quentityLabel" destination="55w-aQ-hkp" id="F1F-gp-qLA"/>
             </connections>
             <point key="canvasLocation" x="-34.351145038167935" y="-1.4084507042253522"/>

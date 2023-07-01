@@ -38,6 +38,7 @@ class ProductDetailsVC: UIViewController,ProductDetailsProtocol {
         }
     }
 
+    @IBOutlet weak var quantityLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var quentityLabel: UILabel!
     @IBOutlet weak var addtocartBT: UIButton!
@@ -66,6 +67,11 @@ class ProductDetailsVC: UIViewController,ProductDetailsProtocol {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter?.getProduct(id: productid)
+    }
+    
+    func setView(){
+        addtocartBT.setTitle("Add to cart".localize, for: .normal)
+        quantityLabel.text = "Quantity".localize
     }
     
    
