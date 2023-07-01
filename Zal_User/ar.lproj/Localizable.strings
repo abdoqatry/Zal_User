@@ -43,4 +43,9 @@
 "Chat" = "الرسائل";
 "More" = "المزيد";
 "Profile" = "الملف الشخصي";
+// home
+"Show All" = "اعرض المزيد";
+"welcome to Zal application" = "اهلا بيك في تطبيق زل";
+// store
+"Sing in" = "تسجيل دخول";
 

@@ -28,5 +28,9 @@ class CategorycollectionCell: UICollectionViewCell,Reuseable,CategoryCellView {
 //        catImage.backgroundColor = UIColor.clear
 //        catImage.isOpaque = true
     }
+    
+    func selectImage(){
+        catImage.tintColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
+    }
 
 }
