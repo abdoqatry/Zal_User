@@ -198,11 +198,11 @@ func SetTokenDefaults(user: UserModel) {
 //            if Code == 204 {
 
                 AuthService.instance.removeUserDefaults()
-//                window.rootViewController = UserTapparVC()
+                window.rootViewController = HomeTabbarVC()
 //        navigationController?.pushViewController(rootViewController, animated: true)
 //            }else{
 //                AuthService.instance.removeUserDefaults()
-                window.rootViewController = VC
+//                window.rootViewController = VC
 //        }
 //
 //        }
