@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4510DF3F6BCBA4AB48214219 /* Pods_Zal_User.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D938FEDFF5CE5582D62E0F28 /* Pods_Zal_User.framework */; };
+		8402A61C2A5B43370047EBDD /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402A61A2A5B43370047EBDD /* SettingVC.swift */; };
+		8402A61D2A5B43370047EBDD /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8402A61B2A5B43370047EBDD /* SettingVC.xib */; };
+		8402A6202A5B43910047EBDD /* ChooseLangVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402A61E2A5B43910047EBDD /* ChooseLangVC.swift */; };
+		8402A6212A5B43910047EBDD /* ChooseLangVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8402A61F2A5B43910047EBDD /* ChooseLangVC.xib */; };
 		8402D7E629CB8C0A00CC3E90 /* CheckOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402D7E429CB8C0A00CC3E90 /* CheckOutVC.swift */; };
 		840AE724298D70AC000BECE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AE723298D70AC000BECE2 /* AppDelegate.swift */; };
 		840AE72B298D70AC000BECE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840AE729298D70AC000BECE2 /* Main.storyboard */; };
@@ -169,6 +173,10 @@
 /* Begin PBXFileReference section */
 		485C5ED39489569CBF6BD13B /* Pods-Zal_User.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zal_User.release.xcconfig"; path = "Target Support Files/Pods-Zal_User/Pods-Zal_User.release.xcconfig"; sourceTree = "<group>"; };
 		7DC3E77B19EC5E2B96E508FB /* Pods-Zal_User.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zal_User.debug.xcconfig"; path = "Target Support Files/Pods-Zal_User/Pods-Zal_User.debug.xcconfig"; sourceTree = "<group>"; };
+		8402A61A2A5B43370047EBDD /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		8402A61B2A5B43370047EBDD /* SettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
+		8402A61E2A5B43910047EBDD /* ChooseLangVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLangVC.swift; sourceTree = "<group>"; };
+		8402A61F2A5B43910047EBDD /* ChooseLangVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseLangVC.xib; sourceTree = "<group>"; };
 		8402D7E429CB8C0A00CC3E90 /* CheckOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutVC.swift; sourceTree = "<group>"; };
 		840AE720298D70AC000BECE2 /* Zal_User.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zal_User.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840AE723298D70AC000BECE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -369,6 +377,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8402A6192A5B431D0047EBDD /* sitting */ = {
+			isa = PBXGroup;
+			children = (
+				8402A61A2A5B43370047EBDD /* SettingVC.swift */,
+				8402A61B2A5B43370047EBDD /* SettingVC.xib */,
+				8402A61E2A5B43910047EBDD /* ChooseLangVC.swift */,
+				8402A61F2A5B43910047EBDD /* ChooseLangVC.xib */,
+			);
+			path = sitting;
+			sourceTree = "<group>";
+		};
 		8402D7E329CB8BF100CC3E90 /* checkout */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,6 +540,7 @@
 		841A823B299D72E500141DEE /* MoreList */ = {
 			isa = PBXGroup;
 			children = (
+				8402A6192A5B431D0047EBDD /* sitting */,
 				841A823C299D72F900141DEE /* MoreModel.swift */,
 				841A823E299D732D00141DEE /* MoreVC.swift */,
 				841A823F299D732D00141DEE /* MoreVC.xib */,
@@ -963,9 +983,11 @@
 				840AE730298D70AD000BECE2 /* LaunchScreen.storyboard in Resources */,
 				84A5F5542A50A83700316B94 /* FinishedOrderCell.xib in Resources */,
 				84A5F5722A50B46B00316B94 /* CartVC.xib in Resources */,
+				8402A61D2A5B43370047EBDD /* SettingVC.xib in Resources */,
 				84A5F52C2A509FE700316B94 /* EditeProfileVC.xib in Resources */,
 				84A5F54A2A50A7A700316B94 /* CurrentOrderCell.xib in Resources */,
 				84A5F5312A50A33A00316B94 /* ShowlistAdressVC.xib in Resources */,
+				8402A6212A5B43910047EBDD /* ChooseLangVC.xib in Resources */,
 				849F170D29DA13CE00EE81DE /* MessageVC.xib in Resources */,
 				84A5F55E2A50A88300316B94 /* CancelOrderCell.xib in Resources */,
 				84CFBCFF2A4F7679001D3D95 /* MapPageVC.xib in Resources */,
@@ -1075,6 +1097,7 @@
 				840AE75B298D80AD000BECE2 /* BaseCodebal.swift in Sources */,
 				845F032729AB94BA006EB4C2 /* CategorycollectionCell.swift in Sources */,
 				844E88B529BE731300F157CF /* FavoriteVC.swift in Sources */,
+				8402A61C2A5B43370047EBDD /* SettingVC.swift in Sources */,
 				84FECA3A29AC1B1500637385 /* StorePresenter.swift in Sources */,
 				849486FC299D5EFE0049EE07 /* NearStorePresenter.swift in Sources */,
 				841D356829A145F900004DB6 /* TrackOrderVC.swift in Sources */,
@@ -1123,6 +1146,7 @@
 				84292AB2299AD1C0007BE0AD /* EditePasswordVC.swift in Sources */,
 				843E8F3929C62C6800E91C12 /* CartModel.swift in Sources */,
 				841A823D299D72F900141DEE /* MoreModel.swift in Sources */,
+				8402A6202A5B43910047EBDD /* ChooseLangVC.swift in Sources */,
 				84292AC1299AE28F007BE0AD /* CurrentOrderCell.swift in Sources */,
 				84B13D2329BCE33100F8B226 /* AdressCell.swift in Sources */,
 				8415E9E129996513007B1A48 /* NearStoreVC.swift in Sources */,

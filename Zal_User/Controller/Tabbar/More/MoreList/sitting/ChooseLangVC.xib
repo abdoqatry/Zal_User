@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="neosans_regular.ttf">
+            <string>NeoSansW23</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseLangVC" customModule="Zal_User" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="PxH-Im-smw" customClass="ChooseLangVC" customModule="Zal_Provide" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="3ZU-bg-R93">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qof-5B-WSz">
+                        <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.67018942640000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHk-Bb-17r">
+                        <rect key="frame" x="40" y="346" width="313" height="200"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IVM-af-RZU">
+                                <rect key="frame" x="20" y="45" width="273" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7I-Ku-5TB">
+                                        <rect key="frame" x="0.0" y="0.0" width="273" height="45"/>
+                                        <color key="backgroundColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Go1-ER-Bua"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="15"/>
+                                        <state key="normal" title="English">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="EngButton:" destination="PxH-Im-smw" eventType="touchUpInside" id="GcS-9x-LtD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMQ-M3-U0S">
+                                        <rect key="frame" x="0.0" y="65" width="273" height="45"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Cbk-Rq-T67"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="15"/>
+                                        <state key="normal" title="عربي">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ARButton:" destination="PxH-Im-smw" eventType="touchUpInside" id="R8M-Yu-OyM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IVM-af-RZU" firstAttribute="centerX" secondItem="DHk-Bb-17r" secondAttribute="centerX" id="9bY-S7-hag"/>
+                            <constraint firstItem="IVM-af-RZU" firstAttribute="centerY" secondItem="DHk-Bb-17r" secondAttribute="centerY" id="euG-tA-Cvz"/>
+                            <constraint firstAttribute="height" constant="200" id="jaZ-9g-LCW"/>
+                            <constraint firstAttribute="trailing" secondItem="IVM-af-RZU" secondAttribute="trailing" constant="20" id="vAj-fo-Whg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="Ozd-8M-y2v"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="Qof-5B-WSz" firstAttribute="leading" secondItem="3ZU-bg-R93" secondAttribute="leading" id="4tf-dK-23c"/>
+                    <constraint firstItem="Qof-5B-WSz" firstAttribute="trailing" secondItem="Ozd-8M-y2v" secondAttribute="trailing" id="77r-De-z5U"/>
+                    <constraint firstAttribute="bottom" secondItem="Qof-5B-WSz" secondAttribute="bottom" id="Ozj-w9-yWw"/>
+                    <constraint firstItem="Ozd-8M-y2v" firstAttribute="trailing" secondItem="DHk-Bb-17r" secondAttribute="trailing" constant="40" id="UOF-13-s3A"/>
+                    <constraint firstItem="Qof-5B-WSz" firstAttribute="top" secondItem="Ozd-8M-y2v" secondAttribute="top" id="UuT-Nb-kN2"/>
+                    <constraint firstItem="DHk-Bb-17r" firstAttribute="centerY" secondItem="3ZU-bg-R93" secondAttribute="centerY" constant="20" id="YSP-eq-qDA"/>
+                    <constraint firstItem="DHk-Bb-17r" firstAttribute="centerX" secondItem="3ZU-bg-R93" secondAttribute="centerX" id="iSa-Eh-eNS"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="ARBT" destination="vMQ-M3-U0S" id="cjH-ae-e68"/>
+                <outlet property="EngBT" destination="j7I-Ku-5TB" id="Spg-N4-bg2"/>
+                <outlet property="MainView" destination="Qof-5B-WSz" id="yMf-tF-cSz"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="54.910714285714285"/>
+        </viewController>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

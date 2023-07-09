@@ -77,6 +77,9 @@ extension MoreVC: UITableViewDataSource {
                 let vc = Bundle.main.loadNibNamed("FavoriteVC", owner: nil, options: nil)![0] as! FavoriteVC
                 self.navigationController?.pushViewController(vc, animated: true)
             }
+        }else if indexPath.row == 2 {
+            let vc = Bundle.main.loadNibNamed("SettingVC", owner: nil, options: nil)![0] as! SettingVC
+            self.navigationController?.pushViewController(vc, animated: true)
         }else if indexPath.row == 6 {
             AuthService.instance.Logout()
         }
