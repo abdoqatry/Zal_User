@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowlistAdressVC" customModule="Zal_User" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="jY3-V4-hLB" customClass="ShowlistAdressVC" customModule="Zal_User" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="ldR-fo-mPq">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NcW-Iu-teF">
+                        <rect key="frame" x="0.0" y="59" width="393" height="664"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </tableView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPA-0Q-0vA">
+                        <rect key="frame" x="60" y="753" width="273" height="45"/>
+                        <color key="backgroundColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="nSI-cz-PxA"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Add Address"/>
+                        <connections>
+                            <action selector="AddButton:" destination="jY3-V4-hLB" eventType="touchUpInside" id="aBN-4U-fws"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="3oP-jB-wDC"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="3oP-jB-wDC" firstAttribute="trailing" secondItem="NcW-Iu-teF" secondAttribute="trailing" id="1Xi-K2-JZf"/>
+                    <constraint firstItem="3oP-jB-wDC" firstAttribute="bottom" secondItem="WPA-0Q-0vA" secondAttribute="bottom" constant="20" id="3dX-uv-Ab6"/>
+                    <constraint firstItem="WPA-0Q-0vA" firstAttribute="top" secondItem="NcW-Iu-teF" secondAttribute="bottom" constant="30" id="4mY-nA-ol4"/>
+                    <constraint firstItem="3oP-jB-wDC" firstAttribute="trailing" secondItem="WPA-0Q-0vA" secondAttribute="trailing" constant="60" id="IFs-Vd-fz9"/>
+                    <constraint firstItem="NcW-Iu-teF" firstAttribute="top" secondItem="3oP-jB-wDC" secondAttribute="top" id="NDv-K0-zKI"/>
+                    <constraint firstItem="NcW-Iu-teF" firstAttribute="leading" secondItem="3oP-jB-wDC" secondAttribute="leading" id="h0O-Xu-Dqb"/>
+                    <constraint firstItem="WPA-0Q-0vA" firstAttribute="centerX" secondItem="ldR-fo-mPq" secondAttribute="centerX" id="tmI-1J-7Ki"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="AddBT" destination="WPA-0Q-0vA" id="Hs3-J4-gFz"/>
+                <outlet property="adressTabelView" destination="NcW-Iu-teF" id="KBf-UF-n6Q"/>
+            </connections>
+            <point key="canvasLocation" x="-291" y="-1"/>
+        </viewController>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
