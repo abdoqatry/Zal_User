@@ -34,6 +34,8 @@
 "please choose city" = "اختر مدينة";
 "please choose area" = "اختر المنطقة";
 "please choose Address" = "اضف العنوان";
+"Sign in" = "تسجيل الدخول";
+"First You have to sign in " = "يجب ان تقوم بتسجيل الدخول اولا";
 // verification
 
 "code has been sent to your mail" = "تم إرسال كود التحقق لبريدك الإليكتروني";

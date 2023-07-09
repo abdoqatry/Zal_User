@@ -147,17 +147,17 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
         if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
          tabBarList = [
             home,
-            message,
+            lmessage,
 //            addProduct,
-            Profile,
+            LProfile,
             MoreVC,
              ]
         }else{
             tabBarList = [
                 home,
-                lmessage,
+                message,
     //            addProduct,
-                LProfile,
+                Profile,
                 MoreVC,
                 ]
         }

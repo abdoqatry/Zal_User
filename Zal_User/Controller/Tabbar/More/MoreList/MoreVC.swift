@@ -64,11 +64,19 @@ extension MoreVC: UITableViewDataSource {
 //            self.navigationController?.pushViewController(vc, animated: true)
 //        }else
         if indexPath.row == 0 {
+            if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
+                LogoutAlert()
+            }else{
             let vc = Bundle.main.loadNibNamed("MyOrderVC", owner: nil, options: nil)![0] as! MyOrderVC
             self.navigationController?.pushViewController(vc, animated: true)
+            }
         }else if indexPath.row == 1 {
-            let vc = Bundle.main.loadNibNamed("FavoriteVC", owner: nil, options: nil)![0] as! FavoriteVC
-            self.navigationController?.pushViewController(vc, animated: true)
+            if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
+                LogoutAlert()
+            }else{
+                let vc = Bundle.main.loadNibNamed("FavoriteVC", owner: nil, options: nil)![0] as! FavoriteVC
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
         }else if indexPath.row == 6 {
             AuthService.instance.Logout()
         }

@@ -159,6 +159,19 @@ UINavigationBar.appearance().tintColor = UIColor.white
     }
     
     
+    func LogoutAlert(){
+        let alert = UIAlertController(title: "", message: "First You have to sign in ".localize, preferredStyle: .alert)
+     
+        alert.addAction(UIAlertAction(title: "Sign in".localize, style: .default, handler: { action in
+            let VC = Bundle.main.loadNibNamed("LoginVC", owner: nil, options: nil)![0] as! LoginVC
+            
+            self.navigationController?.pushViewController(VC, animated: true)
+            }))
+            self.present(alert, animated: true, completion: nil)
+          
+      }
+    
+    
     
 }
 
