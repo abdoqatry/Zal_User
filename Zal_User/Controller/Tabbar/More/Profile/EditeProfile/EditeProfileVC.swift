@@ -91,7 +91,7 @@ class EditeProfileVC: UIViewController {
         return  }
         
         openIndicator(title: Constants.PLEASE_WAIT, description: Constants.LOADING_DATA)
-            let url = "https://zal.develobug.com/api/profile"
+            let url = "https://api.elzal.com/api/profile"
             let parameter = [
                 "name" : name,
                 "phone" : phone,

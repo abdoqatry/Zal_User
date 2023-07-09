@@ -291,7 +291,9 @@ enum Router {
     }
     
     internal var requestURL: URL {
-        var urlComponents = URLComponents(string:"https://zal.develobug.com/")
+        
+        // https://zal.develobug.com/
+        var urlComponents = URLComponents(string:"https://api.elzal.com/")
         if self.queryItems.count > 0 {
             urlComponents?.queryItems = self.queryItems
         }
