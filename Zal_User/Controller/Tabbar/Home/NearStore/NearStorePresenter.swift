@@ -52,6 +52,21 @@ class NearStorePresenter {
         }
     }
     
+    func searchHome(lat:String,lan:String,search:String){
+        vc.openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
+        NetworkManager.shared.getData(NearStoreModel.self, Requst: .search(lat: lat, lng: lan,keyword:search), method: .get, headerType: .unAuthenticated) {[weak self] (Massage, Data, Code) in
+            self?.vc.closeIndicator()
+            if Code == 200 {
+                self?.neartoreList = Data?.data ?? []
+                self?.vc.dataCount(count: Data?.data?.count ?? 0 )
+                self?.vc.dataReload()
+            }else{
+                self?.vc.Errormassage(msg: Data?.message ?? "")
+            }
+            
+        }
+    }
+    
     func GetSpecialCount () -> Int{
         return  neartoreList.count
         }

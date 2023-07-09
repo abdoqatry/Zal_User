@@ -80,7 +80,7 @@ class NearStoreVC: UIViewController,NearStoreProtocol,UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         search = SearchTF.text ?? ""
-        presenter?.getHome(lat: lastLat, lan: lastlon,search:search)
+        presenter?.searchHome(lat: lastLat, lan: lastlon,search:search)
 
         return true
     }
