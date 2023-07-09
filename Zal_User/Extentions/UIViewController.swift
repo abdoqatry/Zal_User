@@ -163,7 +163,8 @@ UINavigationBar.appearance().tintColor = UIColor.white
         let alert = UIAlertController(title: "", message: "First You have to sign in ".localize, preferredStyle: .alert)
      
         alert.addAction(UIAlertAction(title: "Sign in".localize, style: .default, handler: { action in
-            let VC = Bundle.main.loadNibNamed("LoginVC", owner: nil, options: nil)![0] as! LoginVC
+            let profileStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            let VC = profileStoryBoard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
             
             self.navigationController?.pushViewController(VC, animated: true)
             }))
