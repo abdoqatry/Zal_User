@@ -67,7 +67,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfB-f0-4dO">
-                                        <rect key="frame" x="15" y="14.999999999999998" width="196" height="16.333333333333329"/>
+                                        <rect key="frame" x="15" y="20" width="196" height="16.333333333333329"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -112,9 +112,9 @@
                                     <constraint firstItem="YNL-yk-h2B" firstAttribute="leading" secondItem="gfB-f0-4dO" secondAttribute="trailing" constant="20" id="W83-yo-4m6"/>
                                     <constraint firstItem="djU-Fi-CYP" firstAttribute="leading" secondItem="gfB-f0-4dO" secondAttribute="leading" id="e3M-hs-yXS"/>
                                     <constraint firstItem="lcD-m7-YaT" firstAttribute="leading" secondItem="djU-Fi-CYP" secondAttribute="trailing" constant="8" id="hOE-mx-qGu"/>
-                                    <constraint firstItem="gfB-f0-4dO" firstAttribute="top" secondItem="G9K-hS-oHW" secondAttribute="top" constant="15" id="hoc-2t-eoa"/>
+                                    <constraint firstItem="gfB-f0-4dO" firstAttribute="top" secondItem="G9K-hS-oHW" secondAttribute="top" constant="20" id="hoc-2t-eoa"/>
                                     <constraint firstAttribute="trailing" secondItem="csc-TI-4l2" secondAttribute="trailing" constant="20" id="rn2-kb-Mdq"/>
-                                    <constraint firstItem="djU-Fi-CYP" firstAttribute="top" secondItem="gfB-f0-4dO" secondAttribute="bottom" constant="10" id="srB-FX-B70"/>
+                                    <constraint firstItem="djU-Fi-CYP" firstAttribute="top" secondItem="gfB-f0-4dO" secondAttribute="bottom" constant="5" id="srB-FX-B70"/>
                                     <constraint firstItem="jU2-Ex-xQz" firstAttribute="leading" secondItem="djU-Fi-CYP" secondAttribute="leading" id="wwt-tZ-WeZ"/>
                                     <constraint firstItem="csc-TI-4l2" firstAttribute="centerY" secondItem="jU2-Ex-xQz" secondAttribute="centerY" id="yFc-wr-wf4"/>
                                 </constraints>
@@ -157,11 +157,6 @@
             <point key="canvasLocation" x="300.76335877862596" y="66.197183098591552"/>
         </collectionViewCell>
     </objects>
-    <designables>
-        <designable name="YNL-yk-h2B">
-            <size key="intrinsicContentSize" width="70" height="10"/>
-        </designable>
-    </designables>
     <resources>
         <image name="Group 24087" width="11.666666984558105" height="7"/>
         <image name="location-" width="13" height="18"/>
