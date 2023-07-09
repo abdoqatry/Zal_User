@@ -19,6 +19,7 @@ class NearStoreTabelCell: UITableViewCell,Reuseable,NearCellView {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var mainCategory: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -42,7 +43,8 @@ class NearStoreTabelCell: UITableViewCell,Reuseable,NearCellView {
         // Configure the view for the selected state
     }
     
-    func Data(name: String, ProfileImage: String, address: String, CoverImage: String, rate: Double, distance: Double) {
+    func Data(name: String, ProfileImage: String, address: String, CoverImage: String, rate: Double, distance: Double,category:String) {
+        mainCategory.text = category
         nameLabel.text = name
         addressLabel.text = address
         distanceLabel.text = String(distance)

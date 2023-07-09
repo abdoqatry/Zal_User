@@ -80,7 +80,11 @@ class NearStoreVC: UIViewController,NearStoreProtocol,UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         search = SearchTF.text ?? ""
-        presenter?.searchHome(lat: lastLat, lan: lastlon,search:search)
+        if search.isEmpty {
+            presenter?.getHome(lat: lastLat, lan: lastlon,search:search)
+        }else{
+            presenter?.searchHome(lat: lastLat, lan: lastlon,search:search)
+        }
 
         return true
     }
@@ -112,7 +116,7 @@ extension NearStoreVC: UITableViewDataSource {
 extension NearStoreVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 210
+        return 225
         
     }
     

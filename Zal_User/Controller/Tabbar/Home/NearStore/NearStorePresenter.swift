@@ -24,7 +24,7 @@ protocol NearStoreProtocol {
 }
 
 protocol NearCellView {
-    func Data(name:String,ProfileImage:String,address:String,CoverImage:String,rate:Double,distance:Double)
+    func Data(name:String,ProfileImage:String,address:String,CoverImage:String,rate:Double,distance:Double,category:String)
    }
 
 class NearStorePresenter {
@@ -80,8 +80,9 @@ class NearStorePresenter {
         let coverimage = data.coverImage ?? ""
         let rate = data.rate ?? 0
         let distance = data.distance ?? 0.0
+        let category = data.mainCategory?.name ?? ""
          
-        cell.Data(name: name, ProfileImage: profileImage, address: address, CoverImage: coverimage, rate: rate, distance: distance)
+        cell.Data(name: name, ProfileImage: profileImage, address: address, CoverImage: coverimage, rate: rate, distance: distance,category: category)
        
         }
     
