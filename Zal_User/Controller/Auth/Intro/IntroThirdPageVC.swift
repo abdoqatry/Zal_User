@@ -29,9 +29,11 @@ class IntroThirdPageVC: UIViewController {
     }
     
     @objc func nextPage(){
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "LoginVC")  as! LoginVC
-        navigationController?.pushViewController(vc, animated: true)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "LoginVC")  as! LoginVC
+//        navigationController?.pushViewController(vc, animated: true)
+        guard let window =  UIApplication.shared.keyWindow else { return }
+        window.rootViewController = HomeTabbarVC()
     }
     
 
