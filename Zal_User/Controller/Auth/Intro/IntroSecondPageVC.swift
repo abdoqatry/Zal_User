@@ -30,6 +30,6 @@ class IntroSecondPageVC: UIViewController {
     @objc func nextPage(){
         
         let vc = Bundle.main.loadNibNamed("IntroThirdPageVC", owner: nil, options: nil)![0] as! IntroThirdPageVC
-        navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: false)
     }
 }
