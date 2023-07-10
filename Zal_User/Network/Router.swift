@@ -49,6 +49,7 @@ enum Router {
     case chatsgetMessages(page:String,id:String)
     case SendMessage(order_id:String,msg:String,msg_type:String)
     case search(lat:String,lng:String,keyword:String)
+    case about
     
     private var path: String {
         var path: String
@@ -135,6 +136,8 @@ enum Router {
             path = "api/chat"
         case.search:
             path = "api/search"
+        case.about:
+            path = "api/about_app"
             
         }
         return path

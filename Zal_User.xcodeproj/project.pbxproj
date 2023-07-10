@@ -80,6 +80,8 @@
 		84292AE0299C3FC1007BE0AD /* CancelOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292ADF299C3FC1007BE0AD /* CancelOrderPresenter.swift */; };
 		843E8F3929C62C6800E91C12 /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E8F3829C62C6800E91C12 /* CartModel.swift */; };
 		843E8F3B29C62E1200E91C12 /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E8F3A29C62E1200E91C12 /* CartPresenter.swift */; };
+		844292E92A5CB958006A51FD /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844292E72A5CB958006A51FD /* AboutViewController.swift */; };
+		844292EA2A5CB958006A51FD /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844292E82A5CB958006A51FD /* AboutViewController.xib */; };
 		844E88B029BE5F1D00F157CF /* EditAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E88AE29BE5F1D00F157CF /* EditAddressVC.swift */; };
 		844E88B529BE731300F157CF /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E88B329BE731300F157CF /* FavoriteVC.swift */; };
 		844E88B629BE731300F157CF /* FavoriteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844E88B429BE731300F157CF /* FavoriteVC.xib */; };
@@ -247,6 +249,8 @@
 		84292ADF299C3FC1007BE0AD /* CancelOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelOrderPresenter.swift; sourceTree = "<group>"; };
 		843E8F3829C62C6800E91C12 /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
 		843E8F3A29C62E1200E91C12 /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
+		844292E72A5CB958006A51FD /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		844292E82A5CB958006A51FD /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		844E88AE29BE5F1D00F157CF /* EditAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddressVC.swift; sourceTree = "<group>"; };
 		844E88B329BE731300F157CF /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
 		844E88B429BE731300F157CF /* FavoriteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteVC.xib; sourceTree = "<group>"; };
@@ -697,6 +701,8 @@
 		844292E62A5CB76C006A51FD /* AboutUs */ = {
 			isa = PBXGroup;
 			children = (
+				844292E72A5CB958006A51FD /* AboutViewController.swift */,
+				844292E82A5CB958006A51FD /* AboutViewController.xib */,
 			);
 			path = AboutUs;
 			sourceTree = "<group>";
@@ -994,6 +1000,7 @@
 				8402A61D2A5B43370047EBDD /* SettingVC.xib in Resources */,
 				84A5F52C2A509FE700316B94 /* EditeProfileVC.xib in Resources */,
 				84A5F54A2A50A7A700316B94 /* CurrentOrderCell.xib in Resources */,
+				844292EA2A5CB958006A51FD /* AboutViewController.xib in Resources */,
 				84A5F5312A50A33A00316B94 /* ShowlistAdressVC.xib in Resources */,
 				8402A6212A5B43910047EBDD /* ChooseLangVC.xib in Resources */,
 				849F170D29DA13CE00EE81DE /* MessageVC.xib in Resources */,
@@ -1166,6 +1173,7 @@
 				84292ADD299C3DCC007BE0AD /* CancelOrderVC.swift in Sources */,
 				844E88BC29BE786100F157CF /* FavoriteModel.swift in Sources */,
 				84D7229529D4E15900B2777A /* PaymentScrool.swift in Sources */,
+				844292E92A5CB958006A51FD /* AboutViewController.swift in Sources */,
 				843E8F3B29C62E1200E91C12 /* CartPresenter.swift in Sources */,
 				84292AC6299AEB57007BE0AD /* CurrentPresenter.swift in Sources */,
 				84A980FE2990386D00D89A72 /* ForgetPassCodeVC.swift in Sources */,
