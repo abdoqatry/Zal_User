@@ -82,6 +82,8 @@
 		843E8F3B29C62E1200E91C12 /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E8F3A29C62E1200E91C12 /* CartPresenter.swift */; };
 		844292E92A5CB958006A51FD /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844292E72A5CB958006A51FD /* AboutViewController.swift */; };
 		844292EA2A5CB958006A51FD /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844292E82A5CB958006A51FD /* AboutViewController.xib */; };
+		844292EE2A5CBADB006A51FD /* TermsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844292EC2A5CBADB006A51FD /* TermsVc.swift */; };
+		844292EF2A5CBADB006A51FD /* TermsVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844292ED2A5CBADB006A51FD /* TermsVc.xib */; };
 		844E88B029BE5F1D00F157CF /* EditAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E88AE29BE5F1D00F157CF /* EditAddressVC.swift */; };
 		844E88B529BE731300F157CF /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E88B329BE731300F157CF /* FavoriteVC.swift */; };
 		844E88B629BE731300F157CF /* FavoriteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844E88B429BE731300F157CF /* FavoriteVC.xib */; };
@@ -251,6 +253,8 @@
 		843E8F3A29C62E1200E91C12 /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
 		844292E72A5CB958006A51FD /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		844292E82A5CB958006A51FD /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		844292EC2A5CBADB006A51FD /* TermsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsVc.swift; sourceTree = "<group>"; };
+		844292ED2A5CBADB006A51FD /* TermsVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsVc.xib; sourceTree = "<group>"; };
 		844E88AE29BE5F1D00F157CF /* EditAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddressVC.swift; sourceTree = "<group>"; };
 		844E88B329BE731300F157CF /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
 		844E88B429BE731300F157CF /* FavoriteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteVC.xib; sourceTree = "<group>"; };
@@ -711,6 +715,8 @@
 		844292EB2A5CBAAF006A51FD /* Terms */ = {
 			isa = PBXGroup;
 			children = (
+				844292EC2A5CBADB006A51FD /* TermsVc.swift */,
+				844292ED2A5CBADB006A51FD /* TermsVc.xib */,
 			);
 			path = Terms;
 			sourceTree = "<group>";
@@ -1039,6 +1045,7 @@
 				84A5F5182A50934200316B94 /* StoreVC.xib in Resources */,
 				84292AAD299A5926007BE0AD /* Tajawal-Bold.ttf in Resources */,
 				849F172029DA280500EE81DE /* ChatMessageCell.xib in Resources */,
+				844292EF2A5CBADB006A51FD /* TermsVc.xib in Resources */,
 				84A5F5632A50A8BF00316B94 /* TrackOrderVC.xib in Resources */,
 				84C172C52A5080A700A17DEC /* HomeVC.xib in Resources */,
 				84CFBD0E2A4F78BE001D3D95 /* IntroThirdPageVC.xib in Resources */,
@@ -1178,6 +1185,7 @@
 				844E88B029BE5F1D00F157CF /* EditAddressVC.swift in Sources */,
 				84B13D2629BCE68D00F8B226 /* AddressListPresenter.swift in Sources */,
 				84292AD9299C3D63007BE0AD /* CancelOrderCell.swift in Sources */,
+				844292EE2A5CBADB006A51FD /* TermsVc.swift in Sources */,
 				84292ADD299C3DCC007BE0AD /* CancelOrderVC.swift in Sources */,
 				844E88BC29BE786100F157CF /* FavoriteModel.swift in Sources */,
 				84D7229529D4E15900B2777A /* PaymentScrool.swift in Sources */,

@@ -50,6 +50,7 @@ enum Router {
     case SendMessage(order_id:String,msg:String,msg_type:String)
     case search(lat:String,lng:String,keyword:String)
     case about
+    case terms
     
     private var path: String {
         var path: String
@@ -138,6 +139,8 @@ enum Router {
             path = "api/search"
         case.about:
             path = "api/about_app"
+        case.terms :
+            path = "api/terms"
             
         }
         return path
