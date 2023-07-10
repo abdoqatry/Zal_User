@@ -13,7 +13,7 @@ class AboutViewController: UIViewController {
     @IBOutlet weak var aboutLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "About the app".localize
+        title = "About us".localize
 //        let image = UIImage(named: "Group 23843")?.withRenderingMode(.alwaysTemplate)
 //        LogoImage.image = image
 //        LogoImage.tintColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
