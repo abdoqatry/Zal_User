@@ -544,6 +544,7 @@
 		841A823B299D72E500141DEE /* MoreList */ = {
 			isa = PBXGroup;
 			children = (
+				844292EB2A5CBAAF006A51FD /* Terms */,
 				844292E62A5CB76C006A51FD /* AboutUs */,
 				8402A6192A5B431D0047EBDD /* sitting */,
 				841A823C299D72F900141DEE /* MoreModel.swift */,
@@ -705,6 +706,13 @@
 				844292E82A5CB958006A51FD /* AboutViewController.xib */,
 			);
 			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		844292EB2A5CBAAF006A51FD /* Terms */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Terms;
 			sourceTree = "<group>";
 		};
 		844E88AD29BE5F0000F157CF /* EditAddress */ = {
