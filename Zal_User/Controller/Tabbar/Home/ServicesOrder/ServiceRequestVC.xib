@@ -104,7 +104,7 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v5V-kY-Q9O">
                                                 <rect key="frame" x="5" y="5" width="343" height="140"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <color key="textColor" systemColor="labelColor"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -161,6 +161,7 @@
                 <outlet property="MessageTV" destination="v5V-kY-Q9O" id="h31-HF-Lzr"/>
                 <outletCollection property="itemsView" destination="xSz-4o-uiA" collectionClass="NSMutableArray" id="2uX-uE-JNb"/>
                 <outletCollection property="itemsView" destination="olZ-NE-FDf" collectionClass="NSMutableArray" id="g6M-5S-rAB"/>
+                <outletCollection property="itemsView" destination="8Sm-3y-Xa8" collectionClass="NSMutableArray" id="bYW-0H-bhe"/>
             </connections>
             <point key="canvasLocation" x="-466" y="-54"/>
         </viewController>
@@ -168,9 +169,6 @@
     <resources>
         <image name="calendar4-week" width="49" height="49"/>
         <image name="wall-clock (2)" width="19.333333969116211" height="19.333333969116211"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
