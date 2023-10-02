@@ -147,7 +147,8 @@ class HomeVC: UIViewController,HomeProtocol {
     }
     
     @IBAction func requestServesButton(_ sender: UIButton) {
-        
+        let vc = Bundle.main.loadNibNamed("ServiceRequestVC", owner: nil, options: nil)![0] as! ServiceRequestVC
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     
