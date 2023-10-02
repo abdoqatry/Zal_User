@@ -197,6 +197,14 @@
                                             <action selector="ShowAllTransActionButton:" destination="1lb-J2-O1H" eventType="touchUpInside" id="Lui-SK-l0X"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ju7-5N-rKN">
+                                        <rect key="frame" x="253" y="565" width="90" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Group 6822"/>
+                                        <connections>
+                                            <action selector="requestServesButton:" destination="1lb-J2-O1H" eventType="touchUpInside" id="FaA-yi-aeb"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -205,9 +213,11 @@
                                     <constraint firstItem="iqm-aV-PzH" firstAttribute="top" secondItem="nwj-PK-YfO" secondAttribute="bottom" constant="15" id="7vD-M8-6F7"/>
                                     <constraint firstAttribute="bottom" secondItem="uZU-C5-KK3" secondAttribute="bottom" constant="60" id="ADq-KY-Xn6"/>
                                     <constraint firstItem="iqm-aV-PzH" firstAttribute="leading" secondItem="3kt-gk-VUT" secondAttribute="leading" id="CwW-de-Nta"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ju7-5N-rKN" secondAttribute="bottom" constant="150" id="E9w-8F-pPg"/>
                                     <constraint firstItem="3we-3M-COv" firstAttribute="centerY" secondItem="iqm-aV-PzH" secondAttribute="centerY" id="NY1-JI-Rzy"/>
                                     <constraint firstItem="ec9-KW-9oY" firstAttribute="leading" secondItem="x7S-jv-my2" secondAttribute="leading" constant="40" id="YDm-vb-wyh"/>
                                     <constraint firstItem="ec9-KW-9oY" firstAttribute="top" secondItem="x7S-jv-my2" secondAttribute="top" constant="20" id="Z1C-7u-DNz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ju7-5N-rKN" secondAttribute="trailing" constant="50" id="Zlg-Wq-t9I"/>
                                     <constraint firstItem="3kt-gk-VUT" firstAttribute="top" secondItem="ec9-KW-9oY" secondAttribute="bottom" constant="30" id="aUG-sW-XzL"/>
                                     <constraint firstAttribute="trailing" secondItem="uZU-C5-KK3" secondAttribute="trailing" constant="10" id="eVz-Gh-fFi"/>
                                     <constraint firstAttribute="trailing" secondItem="3we-3M-COv" secondAttribute="trailing" constant="30" id="fWt-qC-66y"/>
@@ -258,6 +268,7 @@
     </objects>
     <resources>
         <image name="Group 24032" width="24" height="24"/>
+        <image name="Group 6822" width="66" height="66"/>
         <image name="arrow-207-24" width="24" height="24"/>
         <image name="location (21)" width="9" height="11"/>
         <systemColor name="systemBackgroundColor">
