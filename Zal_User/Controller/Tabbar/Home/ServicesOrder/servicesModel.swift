@@ -10,7 +10,7 @@ import Foundation
 // MARK: - ServicesOrderModel
 struct ServicesOrderModel: Codable {
     let data: DataservicesModel?
-    let status, message: String?
+    let message: String?
 }
 
 // MARK: - DataClass

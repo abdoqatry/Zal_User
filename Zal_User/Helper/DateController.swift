@@ -117,7 +117,7 @@ class DateController: UIViewController {
         delegetDate?.dateView(didSelect: dataAsString, mode: mode, type: type)
             self.dismissViews()
         }else{
-            let dataAsString = self.configDate2(date: datePicker.date)
+            let dataAsString = self.configtime(date: datePicker.date)
             delegetDate?.dateView(didSelect: dataAsString, mode: mode, type: type)
                 self.dismissViews()
         }
@@ -157,6 +157,15 @@ class DateController: UIViewController {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+        dateFormatter.locale = Locale(identifier: "en")
+        dateFormatter.calendar = Calendar(identifier: .iso8601)
+        return dateFormatter.string(from: date)
+    }
+    
+    func configtime(date: Date) -> String {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "hh:mm a"
         dateFormatter.locale = Locale(identifier: "en")
         dateFormatter.calendar = Calendar(identifier: .iso8601)
         return dateFormatter.string(from: date)

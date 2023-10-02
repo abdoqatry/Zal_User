@@ -290,6 +290,12 @@ enum Router {
                 "pay_type" : pay_type,
                 "date" : date
             ]
+        case.service_orders(let desc,let day,let time):
+            param = [
+                "desc" : desc,
+                "day" : day,
+                "time" : time
+            ]
             
         default:
             return nil
