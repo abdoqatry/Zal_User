@@ -165,7 +165,7 @@ class DateController: UIViewController {
     func configtime(date: Date) -> String {
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "hh:mm a"
+        dateFormatter.dateFormat = "hh:mm"
         dateFormatter.locale = Locale(identifier: "en")
         dateFormatter.calendar = Calendar(identifier: .iso8601)
         return dateFormatter.string(from: date)
