@@ -118,6 +118,20 @@
                                             <constraint firstItem="v5V-kY-Q9O" firstAttribute="leading" secondItem="olZ-NE-FDf" secondAttribute="leading" constant="5" id="l2t-gw-9Wj"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bd8-fr-3oc">
+                                        <rect key="frame" x="96.666666666666686" y="498" width="200" height="40"/>
+                                        <color key="backgroundColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="DZ4-8b-eZk"/>
+                                            <constraint firstAttribute="height" constant="40" id="Ixp-TW-qoI"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Send"/>
+                                        <connections>
+                                            <action selector="sendButton:" destination="vbY-Nl-bxF" eventType="touchUpInside" id="3rq-cD-f4X"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -127,8 +141,10 @@
                                     <constraint firstItem="olZ-NE-FDf" firstAttribute="top" secondItem="8Sm-3y-Xa8" secondAttribute="bottom" constant="20" id="XZC-Rg-soN"/>
                                     <constraint firstItem="xSz-4o-uiA" firstAttribute="top" secondItem="qJw-sH-mLH" secondAttribute="bottom" constant="40" id="aaI-x6-4xh"/>
                                     <constraint firstAttribute="trailing" secondItem="xSz-4o-uiA" secondAttribute="trailing" constant="20" id="dgH-nQ-bEP"/>
+                                    <constraint firstItem="Bd8-fr-3oc" firstAttribute="top" secondItem="olZ-NE-FDf" secondAttribute="bottom" constant="60" id="hGE-JR-IFO"/>
                                     <constraint firstItem="olZ-NE-FDf" firstAttribute="trailing" secondItem="8Sm-3y-Xa8" secondAttribute="trailing" id="i4e-Cz-1YG"/>
                                     <constraint firstItem="qJw-sH-mLH" firstAttribute="top" secondItem="2z8-VH-FqY" secondAttribute="bottom" constant="20" id="ke5-Wj-Vdm"/>
+                                    <constraint firstItem="Bd8-fr-3oc" firstAttribute="centerX" secondItem="NJe-3o-Awd" secondAttribute="centerX" id="lKh-q5-HaO"/>
                                     <constraint firstItem="8Sm-3y-Xa8" firstAttribute="trailing" secondItem="xSz-4o-uiA" secondAttribute="trailing" id="mBu-rj-B68"/>
                                     <constraint firstAttribute="trailing" secondItem="qJw-sH-mLH" secondAttribute="trailing" constant="40" id="orN-t8-Ybd"/>
                                     <constraint firstItem="qJw-sH-mLH" firstAttribute="leading" secondItem="2z8-VH-FqY" secondAttribute="leading" id="qHR-cZ-yUy"/>
@@ -159,6 +175,9 @@
             </view>
             <connections>
                 <outlet property="MessageTV" destination="v5V-kY-Q9O" id="h31-HF-Lzr"/>
+                <outlet property="dayLabel" destination="EUt-Zj-Otw" id="ONa-mU-cEz"/>
+                <outlet property="sendBT" destination="Bd8-fr-3oc" id="AY9-YN-aWy"/>
+                <outlet property="timeLabel" destination="Vcj-IQ-ai6" id="f0M-Ic-KCb"/>
                 <outletCollection property="itemsView" destination="xSz-4o-uiA" collectionClass="NSMutableArray" id="2uX-uE-JNb"/>
                 <outletCollection property="itemsView" destination="olZ-NE-FDf" collectionClass="NSMutableArray" id="g6M-5S-rAB"/>
                 <outletCollection property="itemsView" destination="8Sm-3y-Xa8" collectionClass="NSMutableArray" id="bYW-0H-bhe"/>

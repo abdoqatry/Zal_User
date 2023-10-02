@@ -91,3 +91,8 @@
 "choose date" = "اختر تاريخ";
 "Cash" = "كاش";
 "Description of the required service" = "وصف الخدمة المطلوبة";
+
+// "Service Request"
+"Service Request" = "طلب خدمة";
+"Enter message contant" = "إدخل محتوي الرسالة";
+"please Choose time" = "اختار الوقت و التاريخ";

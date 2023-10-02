@@ -172,6 +172,7 @@
 		84F5203229B013F20003F8D5 /* ProductDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5203129B013F20003F8D5 /* ProductDetailsPresenter.swift */; };
 		84FC742F2ACB5171007246DA /* ServiceRequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC742D2ACB5171007246DA /* ServiceRequestVC.swift */; };
 		84FC74302ACB5171007246DA /* ServiceRequestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FC742E2ACB5171007246DA /* ServiceRequestVC.xib */; };
+		84FC74322ACB6C9F007246DA /* servicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC74312ACB6C9F007246DA /* servicesModel.swift */; };
 		84FECA3829AC189F00637385 /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECA3729AC189F00637385 /* StoreModel.swift */; };
 		84FECA3A29AC1B1500637385 /* StorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECA3929AC1B1500637385 /* StorePresenter.swift */; };
 /* End PBXBuildFile section */
@@ -373,6 +374,7 @@
 		84F5203129B013F20003F8D5 /* ProductDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsPresenter.swift; sourceTree = "<group>"; };
 		84FC742D2ACB5171007246DA /* ServiceRequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestVC.swift; sourceTree = "<group>"; };
 		84FC742E2ACB5171007246DA /* ServiceRequestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceRequestVC.xib; sourceTree = "<group>"; };
+		84FC74312ACB6C9F007246DA /* servicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = servicesModel.swift; sourceTree = "<group>"; };
 		84FECA3729AC189F00637385 /* StoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
 		84FECA3929AC1B1500637385 /* StorePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorePresenter.swift; sourceTree = "<group>"; };
 		D938FEDFF5CE5582D62E0F28 /* Pods_Zal_User.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zal_User.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -930,6 +932,7 @@
 			children = (
 				84FC742D2ACB5171007246DA /* ServiceRequestVC.swift */,
 				84FC742E2ACB5171007246DA /* ServiceRequestVC.xib */,
+				84FC74312ACB6C9F007246DA /* servicesModel.swift */,
 			);
 			path = ServicesOrder;
 			sourceTree = "<group>";
@@ -1210,6 +1213,7 @@
 				843E8F3B29C62E1200E91C12 /* CartPresenter.swift in Sources */,
 				84292AC6299AEB57007BE0AD /* CurrentPresenter.swift in Sources */,
 				84A980FE2990386D00D89A72 /* ForgetPassCodeVC.swift in Sources */,
+				84FC74322ACB6C9F007246DA /* servicesModel.swift in Sources */,
 				840AE766298D9ACC000BECE2 /* CityPosition.swift in Sources */,
 				845B59F42A49DF2C0020E81C /* OrderDetailsCell.swift in Sources */,
 				84F5203029B013C10003F8D5 /* ProductDetailsModel.swift in Sources */,
