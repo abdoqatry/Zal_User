@@ -90,6 +90,13 @@ class ServiceRequestVC: UIViewController,UITextViewDelegate {
             self?.closeIndicator()
             if Code == 200 {
                 self?.showAlert(title: Data?.message ?? "", messages: nil, message: nil, selfDismissing: true)
+                DispatchQueue.global(qos: .background).async {
+                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+                           // Put your code which should be executed with a delay here
+                   
+                   self?.navigationController?.popViewController(animated: true)
+               }
+                       }
                 
             }else{
                 self?.showAlert(title: Data?.message ?? "", messages: nil, message: nil, selfDismissing: true)

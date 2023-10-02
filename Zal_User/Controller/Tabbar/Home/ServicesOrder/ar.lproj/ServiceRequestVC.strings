@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Required service data"; ObjectID = "2z8-VH-FqY"; */
+"2z8-VH-FqY.text" = "بيانات الخدمة المطلوبة";
+
+/* Class = "UIButton"; configuration.title = "Send"; ObjectID = "Bd8-fr-3oc"; */
+"Bd8-fr-3oc.configuration.title" = "إرسال الطلب";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Bd8-fr-3oc"; */
+"Bd8-fr-3oc.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Choose a day"; ObjectID = "EUt-Zj-Otw"; */
+"EUt-Zj-Otw.text" = "اختر يوم";
+
+/* Class = "UILabel"; text = "Choose an hour"; ObjectID = "Vcj-IQ-ai6"; */
+"Vcj-IQ-ai6.text" = "اختر الساعه";
+
+/* Class = "UILabel"; text = "To request a special service that is not available in the application sections related to events, parties, weddings, and gatherings"; ObjectID = "qJw-sH-mLH"; */
+"qJw-sH-mLH.text" = "لطلب خدمة خاصة غير متوفرة في اقسام التطبيق ترتبط بالمناسبات و الحفلات و الأفراح و التجمعات";
