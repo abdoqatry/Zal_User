@@ -89,7 +89,7 @@ class ServiceRequestVC: UIViewController,UITextViewDelegate {
         NetworkManager.shared.getData(ServicesOrderModel.self, Requst: .service_orders(desc: desc, day: day, time: time), method: .post, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
             self?.closeIndicator()
             if Code == 200 {
-                showAlert(title: Data?.message ?? "", messages: nil, message: nil, selfDismissing: true)
+                self?.showAlert(title: Data?.message ?? "", messages: nil, message: nil, selfDismissing: true)
                 
             }else{
                 self?.showAlert(title: Data?.message ?? "", messages: nil, message: nil, selfDismissing: true)
@@ -106,9 +106,8 @@ extension ServiceRequestVC : GetDateProtocole{
 
     func dateView(didSelect date: String, mode: Int,type:Int) {
     if date == "" {
-       taxDateLabel.text = ""
-        taxDateLabel.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        date2 = date
+        date1 = date
+        time = date
 //        TimeLabel = date
         
     }else{

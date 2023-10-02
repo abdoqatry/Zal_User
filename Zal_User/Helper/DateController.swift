@@ -49,10 +49,42 @@ class DateController: UIViewController {
         currentView.semanticContentAttribute = .forceRightToLeft
         }
         
+//        let calendar = Calendar(identifier: .gregorian)
+//
+//        let currentDate = Date()
+//        var components = DateComponents()
+//        components.calendar = calendar
+//
+//
+////        components.year = +18
+////        components.month = 12
+//        let maxDate = calendar.date(byAdding: components, to: currentDate)!
+//
+////        components.year =
+//        let minDate = calendar.date(byAdding: components, to: currentDate)!
+//
+//        datePicker.minimumDate = minDate
+        
+//        datePicker.maximumDate = maxDate
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+        if mode == 1 {
+        datePicker.datePickerMode = .date
+        TitleStatus.text = "Choose date".localize
+        datePicker.preferredDatePickerStyle = .wheels
+    for currentView in datePicker.subviews {
+        currentView.semanticContentAttribute = .forceRightToLeft
+        }
+        
         let calendar = Calendar(identifier: .gregorian)
 
         let currentDate = Date()
         var components = DateComponents()
+        components.month = minMonth
         components.calendar = calendar
        
 
@@ -63,19 +95,13 @@ class DateController: UIViewController {
 //        components.year =
         let minDate = calendar.date(byAdding: components, to: currentDate)!
 
-        datePicker.minimumDate = minDate
-        
-//        datePicker.maximumDate = maxDate
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        if mode == 1 {
-        datePicker.datePickerMode = .date
-        TitleStatus.text = "Choose date".localize
+//            if type == 2 {
+//                datePicker.minimumDate = minDate
+//            }else{
+//                datePicker.maximumDate = maxDate
+//            }
         }else{
-            datePicker.datePickerMode = .dateAndTime
+            datePicker.datePickerMode = .time
             TitleStatus.text = "Choose time".localize
         }
         
