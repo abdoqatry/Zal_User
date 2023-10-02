@@ -9,15 +9,15 @@ import Foundation
 
 // MARK: - ServicesOrderModel
 struct ServicesOrderModel: Codable {
-    let data: DataservicesModel
-    let status, message: String
+    let data: DataservicesModel?
+    let status, message: String?
 }
 
 // MARK: - DataClass
 struct DataservicesModel: Codable {
-    let id: Int
-    let day, time, desc, status: String
-    let createdAt: String
+    let id: Int?
+    let day, time, desc, status: String?
+    let createdAt: String?
 
     enum CodingKeys: String, CodingKey {
         case id, day, time, desc, status

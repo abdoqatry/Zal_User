@@ -20,6 +20,7 @@ class DateController: UIViewController {
     
     var mode = 0
     var type = 0
+    var minMonth = 0
     
     var minDate: String! {
         willSet {
