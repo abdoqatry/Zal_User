@@ -19,6 +19,8 @@ protocol CurrentOrderProtocol {
     
     func selectorder(id:String)
     
+    func openChat(id:String)
+    
     func realoadData()
 }
 
@@ -77,6 +79,12 @@ class CurrentPresenter {
         let id = OrderList[index].id ?? ""
         let num = OrderList[index].orderNum ?? ""
         self.vc.selectorder(id: id)
+    }
+    
+    func OpenChat(index: Int){
+        let id = OrderList[index].id ?? ""
+        self.vc.openChat(id: id)
+        
     }
     
 }

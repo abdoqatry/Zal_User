@@ -35,6 +35,13 @@ class CurrentOrderVC: UIViewController,CurrentOrderProtocol {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    func openChat(id:String){
+        let vc = Bundle.main.loadNibNamed("ChatVC",owner: nil, options: nil)![0] as! ChatVC
+        vc.orderId = id
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
     @IBOutlet weak var nodataLabel: UILabel!
     @IBOutlet weak var currentOrderTabelView: UITableView!{
         didSet {
@@ -77,6 +84,10 @@ extension CurrentOrderVC: UITableViewDataSource {
         cell.trackOrderafunction = {
             self.presenter?.selecteCell(index: indexPath.row)
         }
+        cell.chatfunction = {
+            self.presenter?.OpenCell(index: indexPath.row)
+        }
+        
         return cell
     }
     
