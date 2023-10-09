@@ -85,7 +85,7 @@ extension CurrentOrderVC: UITableViewDataSource {
             self.presenter?.selecteCell(index: indexPath.row)
         }
         cell.chatfunction = {
-            self.presenter?.OpenCell(index: indexPath.row)
+            self.presenter?.OpenChat(index: indexPath.row)
         }
         
         return cell

@@ -189,7 +189,7 @@ func collectionView(_ collectionView: UICollectionView, layout collectionViewLay
     if collectionView == SpecialStoreCollection {
         return .init(width: 200, height: 210)
     }else{
-        return .init(width: 320, height: 210)
+        return .init(width: 350, height: 210)
     }
    }
    
