@@ -96,7 +96,7 @@ class StoreVC: UIViewController,StoreProtocol {
             self.navigationItem.standardAppearance = appearance
             self.navigationItem.scrollEdgeAppearance = appearance
         
-        if lang = "ar" {
+        if lang == "ar" {
             Categorycollection.transform = CGAffineTransform(scaleX: -1, y: 1)
         }
         setView()
@@ -113,6 +113,7 @@ class StoreVC: UIViewController,StoreProtocol {
         profileView.layer.applySketchShadow()
         profileImage.layer.cornerRadius = 60
         dayTittleLabel.text = "workdays".localize
+    self.Categorycollection?.contentOffset.x = 0
         
     }
     
@@ -163,7 +164,7 @@ extension StoreVC: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                 cell.imageview.backgroundColor = .gray
             }
                     presenter?.configureType(cell: cell, index: indexPath.row)
-            if lang = "ar" {
+            if lang == "ar" {
                 cell.transform = CGAffineTransform(scaleX: -1, y: 1)
             }
             return cell
@@ -185,7 +186,7 @@ extension StoreVC: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                     }
                 self.presenter?.storeCart(index: indexPath.row)
             }
-            if lang = "ar" {
+            if lang == "ar" {
                 cell.transform = CGAffineTransform(scaleX: -1, y: 1)
             }
             
@@ -212,6 +213,7 @@ extension StoreVC: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
         }
         
        }
+    
     
 }
 
