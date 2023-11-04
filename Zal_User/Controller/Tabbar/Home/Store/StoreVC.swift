@@ -85,6 +85,7 @@ class StoreVC: UIViewController,StoreProtocol {
     var catId = ""
     var searchText = ""
     var id = ""
+    let lang = Bundle.currentAppleLanguage()
     
     var presenter : StorePresenter?
     override func viewDidLoad() {
@@ -94,7 +95,10 @@ class StoreVC: UIViewController,StoreProtocol {
             appearance.configureWithTransparentBackground()
             self.navigationItem.standardAppearance = appearance
             self.navigationItem.scrollEdgeAppearance = appearance
-        Categorycollection.transform = CGAffineTransform(scaleX: -1, y: 1)
+        
+        if lang = "ar" {
+            Categorycollection.transform = CGAffineTransform(scaleX: -1, y: 1)
+        }
         setView()
     }
     
@@ -159,7 +163,9 @@ extension StoreVC: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                 cell.imageview.backgroundColor = .gray
             }
                     presenter?.configureType(cell: cell, index: indexPath.row)
-            cell.transform = CGAffineTransform(scaleX: -1, y: 1)
+            if lang = "ar" {
+                cell.transform = CGAffineTransform(scaleX: -1, y: 1)
+            }
             return cell
         }else{
             let cell: ProductionViewCell = productCollectionView.dequeueReusableCell(forIndexPath: indexPath)
@@ -179,7 +185,9 @@ extension StoreVC: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                     }
                 self.presenter?.storeCart(index: indexPath.row)
             }
-            cell.transform = CGAffineTransform(scaleX: -1, y: 1)
+            if lang = "ar" {
+                cell.transform = CGAffineTransform(scaleX: -1, y: 1)
+            }
             
             return cell
         }
