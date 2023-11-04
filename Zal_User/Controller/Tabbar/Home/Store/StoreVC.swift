@@ -13,13 +13,20 @@ class StoreVC: UIViewController,StoreProtocol {
         showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
     }
     
-    func getdata(coverImage: String, profilImage: String, name: String, address: String) {
+    func getdata(coverImage: String, profilImage: String, name: String, address: String,from:String,to:String,Open:Bool) {
         let url = URL(string: coverImage)
         let url2 = URL(string: profilImage)
         coveImage.kf.setImage(with: url)
         profileImage.kf.setImage(with: url2)
         shopNameLabel.text = name
         shopAddressLabel.text = address
+        fromLabel.text = from
+        toLabel.text = to
+        if Open == true{
+            storeStatusLabel.text = "Open".localize
+        }else{
+            storeStatusLabel.text = "Close".localize
+        }
     }
     
     func dataReload() {
@@ -46,6 +53,9 @@ class StoreVC: UIViewController,StoreProtocol {
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
+    @IBOutlet weak var toLabel: UILabel!
+    @IBOutlet weak var fromLabel: UILabel!
+    @IBOutlet weak var storeStatusLabel: UILabel!
     @IBOutlet weak var searchTF: UITextField!
     @IBOutlet weak var shopAddressLabel: UILabel!
     @IBOutlet weak var productcollectionHeight: NSLayoutConstraint!

@@ -302,7 +302,6 @@
 		84A5F5142A5092F100316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NearStoreVC.xib; sourceTree = "<group>"; };
 		84A5F5172A5092F700316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/NearStoreVC.strings; sourceTree = "<group>"; };
 		84A5F5192A50934200316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StoreVC.xib; sourceTree = "<group>"; };
-		84A5F51C2A50934800316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/StoreVC.strings; sourceTree = "<group>"; };
 		84A5F5282A509EC900316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProfileVC.xib; sourceTree = "<group>"; };
 		84A5F52B2A509ECE00316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ProfileVC.strings; sourceTree = "<group>"; };
 		84A5F52D2A509FE700316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/EditeProfileVC.xib; sourceTree = "<group>"; };
@@ -369,6 +368,7 @@
 		84D7229229D4DFE800B2777A /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
 		84D7229429D4E15900B2777A /* PaymentScrool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentScrool.swift; sourceTree = "<group>"; };
 		84D7229629D4F0C400B2777A /* CheckOutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutPresenter.swift; sourceTree = "<group>"; };
+		84ED9E0D2AF6D38E009CA8D1 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/StoreVC.strings; sourceTree = "<group>"; };
 		84F5202D29B00DA70003F8D5 /* RateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateModel.swift; sourceTree = "<group>"; };
 		84F5202F29B013C10003F8D5 /* ProductDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsModel.swift; sourceTree = "<group>"; };
 		84F5203129B013F20003F8D5 /* ProductDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsPresenter.swift; sourceTree = "<group>"; };
@@ -1299,7 +1299,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				84A5F5192A50934200316B94 /* Base */,
-				84A5F51C2A50934800316B94 /* ar */,
+				84ED9E0D2AF6D38E009CA8D1 /* ar */,
 			);
 			name = StoreVC.xib;
 			sourceTree = "<group>";

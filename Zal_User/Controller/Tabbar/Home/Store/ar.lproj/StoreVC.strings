@@ -1,12 +1,33 @@
 
+/* Class = "UILabel"; text = "Delivery available"; ObjectID = "0MT-yl-I0I"; */
+"0MT-yl-I0I.text" = "متاح التوصيل";
+
+/* Class = "UILabel"; text = "Open"; ObjectID = "6sq-M4-gQf"; */
+"6sq-M4-gQf.text" = "مفتوح";
+
 /* Class = "UILabel"; text = "Categories"; ObjectID = "GYA-gE-DVg"; */
 "GYA-gE-DVg.text" = "الأقسام";
 
+/* Class = "UILabel"; text = "Open from"; ObjectID = "NjU-gz-qbN"; */
+"NjU-gz-qbN.text" = "يفتح من";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "Ocy-FH-foO"; */
+"Ocy-FH-foO.text" = "إلي";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "bEV-Ot-Dgp"; */
+"bEV-Ot-Dgp.text" = "إلي";
+
+/* Class = "UILabel"; text = "open"; ObjectID = "dZ6-yF-zlK"; */
+"dZ6-yF-zlK.text" = "open";
+
 /* Class = "UITextField"; placeholder = "search"; ObjectID = "jzH-qR-zq3"; */
-"jzH-qR-zq3.placeholder" = "البحث";
+"jzH-qR-zq3.placeholder" = "بحث";
 
 /* Class = "UILabel"; text = "shop address"; ObjectID = "pUE-un-ISm"; */
 "pUE-un-ISm.text" = "shop address";
 
 /* Class = "UILabel"; text = "shop name"; ObjectID = "tVJ-sX-zKR"; */
 "tVJ-sX-zKR.text" = "shop name";
+
+/* Class = "UILabel"; text = "Offers available"; ObjectID = "yDh-PR-16x"; */
+"yDh-PR-16x.text" = "متاح عروض";
