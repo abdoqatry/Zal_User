@@ -88,7 +88,7 @@ struct Category: Codable {
     let id: Int?
     let image: String?
     let isActive: Int?
-    let parentID: String?
+    let parentID: Int?
     let createdAt, updatedAt, name: String?
     let desc: String?
     let slug: String?

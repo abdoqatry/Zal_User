@@ -72,6 +72,8 @@ class StorePresenter {
             self?.vc.closeIndicator()
             if Code == 200 {
                 self?.catStoreList = Data?.data ?? []
+                let alltype : CatDataModel = CatDataModel(id: 0, name: "All".localize, image: "")
+                self?.catStoreList.insert(alltype, at: 0)
                 self?.vc.dataReload()
             }else{
                 self?.vc.errormassage(msg: Data?.message ?? "")
