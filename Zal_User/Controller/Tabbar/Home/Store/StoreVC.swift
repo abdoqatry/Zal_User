@@ -13,7 +13,7 @@ class StoreVC: UIViewController,StoreProtocol {
         showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
     }
     
-    func getdata(coverImage: String, profilImage: String, name: String, address: String,from:String,to:String,Open:Bool) {
+    func getdata(coverImage: String, profilImage: String, name: String, address: String,from:String,to:String,Open:Bool,days: String) {
         let url = URL(string: coverImage)
         let url2 = URL(string: profilImage)
         coveImage.kf.setImage(with: url)
@@ -27,6 +27,7 @@ class StoreVC: UIViewController,StoreProtocol {
         }else{
             storeStatusLabel.text = "Close".localize
         }
+        workDaysLabel.text = days
     }
     
     func dataReload() {

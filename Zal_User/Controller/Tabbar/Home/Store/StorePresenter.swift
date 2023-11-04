@@ -53,11 +53,12 @@ class StorePresenter {
             self?.vc.closeIndicator()
             if Code == 200 {
                 let storeData = Data?.data
-                let days = ""
-                for x in 0...(storeData?.days?.count) {
-                    print(x)
+                var days = ""
+                
+                for x in 0...(storeData?.days?.count ?? 0) - 1 {
+                    days.append("\(storeData?.days?[x].name ?? "")," )
                 }
-                self?.vc.getdata(coverImage: storeData?.coverImage ?? "", profilImage: storeData?.image ?? "", name: storeData?.name ?? "", address: storeData?.address ?? "",from:storeData?.from ?? "",to:storeData?.to ?? "",Open:storeData?.is_open ?? false)
+                self?.vc.getdata(coverImage: storeData?.coverImage ?? "", profilImage: storeData?.image ?? "", name: storeData?.name ?? "", address: storeData?.address ?? "",from:storeData?.from ?? "",to:storeData?.to ?? "",Open:storeData?.is_open ?? false, days: days)
             }else{
                 self?.vc.errormassage(msg: Data?.message ?? "")
             }
