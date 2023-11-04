@@ -53,6 +53,8 @@ class StoreVC: UIViewController,StoreProtocol {
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
+    @IBOutlet weak var workDaysLabel: UILabel!
+    @IBOutlet weak var dayTittleLabel: UILabel!
     @IBOutlet weak var toLabel: UILabel!
     @IBOutlet weak var fromLabel: UILabel!
     @IBOutlet weak var storeStatusLabel: UILabel!
@@ -104,6 +106,7 @@ class StoreVC: UIViewController,StoreProtocol {
         profileView.layer.cornerRadius = 60
         profileView.layer.applySketchShadow()
         profileImage.layer.cornerRadius = 60
+        dayTittleLabel.text = "workdays".localize
         
     }
     

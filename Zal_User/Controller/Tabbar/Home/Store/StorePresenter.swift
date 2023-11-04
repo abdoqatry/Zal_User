@@ -15,7 +15,7 @@ protocol StoreProtocol {
     
     func errormassage(msg:String)
     
-    func getdata(coverImage:String,profilImage:String,name:String,address:String,from:String,to:String,Open:Bool)
+    func getdata(coverImage:String,profilImage:String,name:String,address:String,from:String,to:String,Open:Bool,days:String)
     
     func dataReload()
     
@@ -53,6 +53,10 @@ class StorePresenter {
             self?.vc.closeIndicator()
             if Code == 200 {
                 let storeData = Data?.data
+                let days = ""
+                for x in 0...(storeData?.days?.count) {
+                    print(x)
+                }
                 self?.vc.getdata(coverImage: storeData?.coverImage ?? "", profilImage: storeData?.image ?? "", name: storeData?.name ?? "", address: storeData?.address ?? "",from:storeData?.from ?? "",to:storeData?.to ?? "",Open:storeData?.is_open ?? false)
             }else{
                 self?.vc.errormassage(msg: Data?.message ?? "")

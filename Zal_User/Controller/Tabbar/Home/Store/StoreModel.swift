@@ -26,9 +26,10 @@ struct StoreData: Codable {
     let isVerified,is_open: Bool?
     let distance: Int?
     let from,to: String?
+    let days: [Area]?
 
     enum CodingKeys: String, CodingKey {
-        case id, name, desc, email, image,is_open,from,to
+        case id, name, desc, email, image,is_open,from,to,days
         case coverImage = "cover_image"
         case phone, address, lat, lng, city, area
         case mainCategory = "main_category"
