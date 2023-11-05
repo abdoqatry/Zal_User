@@ -82,9 +82,9 @@ class StorePresenter {
         }
     }
     
-    func getProducts(catId:String,providerId:String){
+    func getProducts(catId:String,providerId:String,keyword:String){
         vc.openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
-        NetworkManager.shared.getData(ProductsModel.self, Requst: .get_products(catId: catId, providerId: providerId), method: .get, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
+        NetworkManager.shared.getData(ProductsModel.self, Requst: .get_products(catId: catId, providerId: providerId, keyword: keyword), method: .get, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
             self?.vc.closeIndicator()
             if Code == 200 {
                 self?.productsList = Data?.data ?? []
@@ -97,13 +97,13 @@ class StorePresenter {
         }
     }
     
-    func makeFavorite(index:Int,catId:String,providerId:String){
+    func makeFavorite(index:Int,catId:String,providerId:String,keyword:String){
         vc.openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
         let id = String(productsList[index].id ?? 0)
         NetworkManager.shared.getData(CategoryModel.self, Requst: .toggle_fav(id: id), method: .get, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
             self?.vc.closeIndicator()
             if Code == 200 {
-                self?.getProducts(catId: catId, providerId: providerId)
+                self?.getProducts(catId: catId, providerId: providerId, keyword: keyword)
             }else{
                 self?.vc.errormassage(msg: Data?.message ?? "")
             }

@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class StoreVC: UIViewController,StoreProtocol {
+class StoreVC: UIViewController,StoreProtocol,UITextFieldDelegate {
     func errormassage(msg: String) {
         showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
     }
@@ -113,8 +113,21 @@ class StoreVC: UIViewController,StoreProtocol {
         profileView.layer.applySketchShadow()
         profileImage.layer.cornerRadius = 60
         dayTittleLabel.text = "workdays".localize
-    self.Categorycollection?.contentOffset.x = 0
+        Categorycollection.semanticContentAttribute = .forceLeftToRight
+        searchTF.delegate = self
+        searchTF.returnKeyType = UIReturnKeyType.search
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchText = searchTF.text ?? ""
+        if searchText.isEmpty {
+            presenter?.getProducts(catId: catId, providerId: id, keyword: searchText)
+        }else{
+            presenter?.getProducts(catId: catId, providerId: id, keyword: searchText)
+        }
+
+        return true
     }
     
     func SingInAlert(){
@@ -158,7 +171,7 @@ extension StoreVC: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                 cell.nameLabel.textColor = colorWithHexString(hexString: "#8B004C")
                 cell.imageview.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
                 catId = presenter?.selectedType(index: indexPath.row) ?? ""
-                presenter?.getProducts(catId: catId, providerId: id)
+                presenter?.getProducts(catId: catId, providerId: id, keyword: searchText)
             }else{
                 cell.nameLabel.textColor = .gray
                 cell.imageview.backgroundColor = .gray

@@ -29,7 +29,7 @@ enum Router {
     case ordersDetails(id:String)
     case get_provider(id:String)
     case product_categories
-    case get_products(catId:String,providerId:String)
+    case get_products(catId:String,providerId:String,keyword:String)
     case product_rates(id:String)
     case get_product(id:String)
     case toggle_fav(id:String)
@@ -98,7 +98,7 @@ enum Router {
             path = "api/get_provider/\(id)"
         case.product_categories:
             path = "api/product_categories"
-        case.get_products(let catId,let providerId):
+        case.get_products(let catId,let providerId ,let keyword):
             path = "api/get_products/\(catId)/\(providerId)"
         case.product_rates(let id):
             path = "api/product_rates/\(id)"
@@ -156,6 +156,10 @@ enum Router {
         case.areas(let city_id):
             queryItems = [
             URLQueryItem(name: "city_id", value: city_id)
+            ]
+        case.get_products( _, _,let keyword):
+            queryItems = [
+            URLQueryItem(name: "keyword", value: keyword)
             ]
         case.orders(let status):
             queryItems = [
