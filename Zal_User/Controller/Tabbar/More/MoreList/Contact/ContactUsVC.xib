@@ -106,38 +106,38 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RRb-Pu-etD">
                                         <rect key="frame" x="51.666666666666657" y="396.33333333333331" width="290" height="40"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24334" translatesAutoresizingMaskIntoConstraints="NO" id="6I1-tO-7fv">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24334" translatesAutoresizingMaskIntoConstraints="NO" id="6I1-tO-7fv">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="6TV-6p-JIP"/>
                                                     <constraint firstAttribute="height" constant="40" id="c6a-JS-F3B"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24333" translatesAutoresizingMaskIntoConstraints="NO" id="1Lf-fm-4J1">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24333" translatesAutoresizingMaskIntoConstraints="NO" id="1Lf-fm-4J1">
                                                 <rect key="frame" x="50" y="0.0" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="fbv-dN-r48"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24332" translatesAutoresizingMaskIntoConstraints="NO" id="NdC-jx-dre">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24332" translatesAutoresizingMaskIntoConstraints="NO" id="NdC-jx-dre">
                                                 <rect key="frame" x="100" y="0.0" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="2Qk-b7-k53"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24331" translatesAutoresizingMaskIntoConstraints="NO" id="GZU-9b-qTO">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24331" translatesAutoresizingMaskIntoConstraints="NO" id="GZU-9b-qTO">
                                                 <rect key="frame" x="150" y="0.0" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="hia-tx-aWz"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24330" translatesAutoresizingMaskIntoConstraints="NO" id="1go-yu-w3q">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24330" translatesAutoresizingMaskIntoConstraints="NO" id="1go-yu-w3q">
                                                 <rect key="frame" x="200" y="0.0" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="MZA-2j-XmD"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24330" translatesAutoresizingMaskIntoConstraints="NO" id="Agr-WI-EcE">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24330" translatesAutoresizingMaskIntoConstraints="NO" id="Agr-WI-EcE">
                                                 <rect key="frame" x="250" y="0.0" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="kVT-u5-vaL"/>
