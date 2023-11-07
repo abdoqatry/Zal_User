@@ -58,6 +58,8 @@ class ContactUsVC: UIViewController,UITextViewDelegate {
         }
         sendBT.layer.cornerRadius = 12
         messageTV.delegate = self
+        gmailImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.openMail)))
+        InstegramImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.openInstegram)))
         
     }
     
@@ -66,8 +68,6 @@ class ContactUsVC: UIViewController,UITextViewDelegate {
         NetworkManager.shared.getData(ContactInfoModel.self, Requst: .contact_info, method: .get, headerType: .unAuthenticated) {[weak self] (Massage, Data, Code) in
             self?.closeIndicator()
             if Code == 200 {
-                self?.mailLabel.text = Data?.data?.email ?? ""
-                self?.phoneLabel.text = Data?.data?.phone ?? ""
                 self?.phone = Data?.data?.phone ?? ""
                 self?.mail = Data?.data?.email ?? ""
                 self?.instegram = Data?.data?.insta ?? ""
@@ -88,7 +88,7 @@ class ContactUsVC: UIViewController,UITextViewDelegate {
     }
     
     @objc func openMail(){
-        if let url = URL(string: "mailto:\(email)") {
+        if let url = URL(string: "mailto:\(mail)") {
           if #available(iOS 10.0, *) {
             UIApplication.shared.open(url)
           } else {
@@ -120,7 +120,7 @@ class ContactUsVC: UIViewController,UITextViewDelegate {
                         UIApplication.shared.open(whatsappURL as URL, options: [:], completionHandler: { (Bool) in
                         })
                     } else {
-                        AppTool.showAlertView(vc: self, titleString: "Error", messageString: "WhatsApp Not Found on your device")
+//                        AppTool.showAlertView(vc: self, titleString: "Error", messageString: "WhatsApp Not Found on your device")
                         // Handle a problem
                     }
                 }
