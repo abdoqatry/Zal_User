@@ -48,6 +48,7 @@
 		8415E9E629996701007B1A48 /* NearStoreTabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8415E9E429996701007B1A48 /* NearStoreTabelCell.xib */; };
 		8416630D2AFADB8000726E6B /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8416630B2AFADB8000726E6B /* ContactUsVC.swift */; };
 		8416630E2AFADB8000726E6B /* ContactUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8416630C2AFADB8000726E6B /* ContactUsVC.xib */; };
+		841663102AFAE6A900726E6B /* contactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8416630F2AFAE6A900726E6B /* contactModel.swift */; };
 		841A823D299D72F900141DEE /* MoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A823C299D72F900141DEE /* MoreModel.swift */; };
 		841A8240299D732D00141DEE /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A823E299D732D00141DEE /* MoreVC.swift */; };
 		841A8241299D732D00141DEE /* MoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841A823F299D732D00141DEE /* MoreVC.xib */; };
@@ -224,6 +225,7 @@
 		8415E9E429996701007B1A48 /* NearStoreTabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearStoreTabelCell.xib; sourceTree = "<group>"; };
 		8416630B2AFADB8000726E6B /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
 		8416630C2AFADB8000726E6B /* ContactUsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactUsVC.xib; sourceTree = "<group>"; };
+		8416630F2AFAE6A900726E6B /* contactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactModel.swift; sourceTree = "<group>"; };
 		841A823C299D72F900141DEE /* MoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreModel.swift; sourceTree = "<group>"; };
 		841A823E299D732D00141DEE /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 		841A823F299D732D00141DEE /* MoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreVC.xib; sourceTree = "<group>"; };
@@ -562,6 +564,7 @@
 			children = (
 				8416630B2AFADB8000726E6B /* ContactUsVC.swift */,
 				8416630C2AFADB8000726E6B /* ContactUsVC.xib */,
+				8416630F2AFAE6A900726E6B /* contactModel.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -1247,6 +1250,7 @@
 				84B742A629A4037A0091AA34 /* TrackOrderPresenter.swift in Sources */,
 				840AE754298D7EE8000BECE2 /* Constant.swift in Sources */,
 				849F034D29BCF7820010A3F8 /* AddAddressVC.swift in Sources */,
+				841663102AFAE6A900726E6B /* contactModel.swift in Sources */,
 				841BB1ED29942E2400F74113 /* HomeModel.swift in Sources */,
 				849486FE299D61870049EE07 /* NearStoreModel.swift in Sources */,
 				840AE75F298D8364000BECE2 /* LoginPresenter.swift in Sources */,

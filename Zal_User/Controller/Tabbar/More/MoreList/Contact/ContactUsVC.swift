@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ContactUsVC: UIViewController {
+class ContactUsVC: UIViewController,UITextViewDelegate {
 
     @IBOutlet weak var sendBT: UIButton!
     @IBOutlet weak var messageTV: UITextView!
@@ -23,6 +23,12 @@ class ContactUsVC: UIViewController {
     
     
     let placeholderText = "Message".localize
+    var phone = ""
+    var mail = ""
+    var instegram = ""
+    var snapChat = ""
+    var facebook = ""
+    var twitter = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Contact us".localize
@@ -32,6 +38,7 @@ class ContactUsVC: UIViewController {
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if textView.text == placeholderText {
             textView.text = ""
+            textView.textColor = .black
         }
         return true
     }
@@ -39,6 +46,7 @@ class ContactUsVC: UIViewController {
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
             textView.text = placeholderText
+            textView.textColor = .lightGray
         }
     }
     
@@ -53,11 +61,71 @@ class ContactUsVC: UIViewController {
         
     }
     
+    func contactinfo(){
+        openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
+        NetworkManager.shared.getData(ContactInfoModel.self, Requst: .contact_info, method: .get, headerType: .unAuthenticated) {[weak self] (Massage, Data, Code) in
+            self?.closeIndicator()
+            if Code == 200 {
+                self?.mailLabel.text = Data?.data?.email ?? ""
+                self?.phoneLabel.text = Data?.data?.phone ?? ""
+                self?.phone = Data?.data?.phone ?? ""
+                self?.mail = Data?.data?.email ?? ""
+                self?.instegram = Data?.data?.insta ?? ""
+                self?.twitter = Data?.data?.twitter ?? ""
+                self?.snapChat = Data?.data?.snapchat ?? ""
+                self?.facebook = Data?.data?.facebook ?? ""
+                
+            }else{
+//                self?.showAlert(title: Data?.message ?? "", messages: nil, message: nil, selfDismissing: true)
+            }
+            
+        }
+    }
+    
     
     @IBAction func sendButton(_ sender: UIButton) {
         
     }
     
+    @objc func openMail(){
+        if let url = URL(string: "mailto:\(email)") {
+          if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url)
+          } else {
+            UIApplication.shared.openURL(url)
+          }
+        }
+    }
+    
+    @objc func openInstegram(){
+        if let url = URL(string: self.instegram) {
+          if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url)
+          } else {
+            UIApplication.shared.openURL(url)
+          }
+        }
+    }
+    
+    func openWhatsApp(number : String){
+        var fullMob = phone
+            fullMob = fullMob.replacingOccurrences(of: " ", with: "")
+            fullMob = fullMob.replacingOccurrences(of: "+", with: "")
+            fullMob = fullMob.replacingOccurrences(of: "-", with: "")
+            let urlWhats = "whatsapp://send?phone=\(fullMob)"
+            
+            if let urlString = urlWhats.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) {
+                if let whatsappURL = NSURL(string: urlString) {
+                    if UIApplication.shared.canOpenURL(whatsappURL as URL) {
+                        UIApplication.shared.open(whatsappURL as URL, options: [:], completionHandler: { (Bool) in
+                        })
+                    } else {
+                        AppTool.showAlertView(vc: self, titleString: "Error", messageString: "WhatsApp Not Found on your device")
+                        // Handle a problem
+                    }
+                }
+            }
+        }
     
     
 }
