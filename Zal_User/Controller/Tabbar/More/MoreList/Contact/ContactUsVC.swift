@@ -60,10 +60,6 @@ class ContactUsVC: UIViewController,UITextViewDelegate {
         messageTV.delegate = self
         gmailImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.openMail)))
         InstegramImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.openInstegram)))
-        twitterImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.openTwitter)))
-        snapChatImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.openSanp)))
-        facebookImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.openfacebook)))
-        whatappImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.openWhatsApp)))
         
     }
     
@@ -86,42 +82,9 @@ class ContactUsVC: UIViewController,UITextViewDelegate {
         }
     }
     
-    func contactUs(phone:String,mail:String,message:String){
-        openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
-        NetworkManager.shared.getData(ContactusModel.self, Requst: .contact(phone: phone, email: mail, message: message), method: .post, headerType: .unAuthenticated) {[weak self] (Massage, Data, Code) in
-            self?.closeIndicator()
-            if Code == 200 {
-                self?.showAlert(title: "Sent success".localize, messages: nil, message: nil, selfDismissing: true)
-             DispatchQueue.global(qos: .background).async {
-             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
-                        // Put your code which should be executed with a delay here
-                
-                self?.navigationController?.popViewController(animated: true)
-            }
-                    }
-                
-            }else{
-                self?.showAlert(title: Data?.mssage ?? "", messages: nil, message: nil, selfDismissing: true)
-            }
-            
-        }
-    }
-    
     
     @IBAction func sendButton(_ sender: UIButton) {
-        guard let phone = PhonNumTF.text , !phone.isEmpty  else{
-            showAlert(title:  "Enter Phone Number".localize, messages: nil, message: nil, selfDismissing: true)
-        return  }
         
-        guard  let mail = mailTF.text , !mail.isEmpty , mail.isEmail  else{
-            showAlert(title:  "Enter valid mail".localize, messages: nil, message: nil, selfDismissing: true)
-                return  }
-        
-        guard let message = messageTV.text , !message.isEmpty else{
-            showAlert(title:  "Enter your message".localize, messages: nil, message: nil, selfDismissing: true)
-        return  }
-        
-        contactUs(phone: phone, mail: mail, message: message)
     }
     
     @objc func openMail(){
@@ -144,36 +107,7 @@ class ContactUsVC: UIViewController,UITextViewDelegate {
         }
     }
     
-    @objc func openTwitter(){
-        if let url = URL(string: self.twitter) {
-          if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url)
-          } else {
-            UIApplication.shared.openURL(url)
-          }
-        }
-    }
-    
-    @objc func openSanp(){
-        if let url = URL(string: self.snapChat) {
-          if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url)
-          } else {
-            UIApplication.shared.openURL(url)
-          }
-        }
-    }
-    @objc func openfacebook(){
-        if let url = URL(string: self.facebook) {
-          if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url)
-          } else {
-            UIApplication.shared.openURL(url)
-          }
-        }
-    }
-    
-    @objc func openWhatsApp(){
+    func openWhatsApp(number : String){
         var fullMob = phone
             fullMob = fullMob.replacingOccurrences(of: " ", with: "")
             fullMob = fullMob.replacingOccurrences(of: "+", with: "")

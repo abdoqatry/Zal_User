@@ -7,11 +7,6 @@
 
 import Foundation
 
-struct ContactusModel: Codable {
-    let mssage: String?
-    let status: Int?
-}
-
 // MARK: - ContactInfoModel
 struct ContactInfoModel: Codable {
     let status, message: String
