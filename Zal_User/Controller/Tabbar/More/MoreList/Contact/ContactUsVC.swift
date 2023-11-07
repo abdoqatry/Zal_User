@@ -20,10 +20,26 @@ class ContactUsVC: UIViewController {
     @IBOutlet weak var snapChatImage: UIImageView!
     @IBOutlet weak var PhonNumTF: UITextField!
     @IBOutlet var itemView: [UIView]!
+    
+    
+    let placeholderText = "Message".localize
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Contact us".localize
         setView()
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if textView.text == placeholderText {
+            textView.text = ""
+        }
+        return true
+    }
+
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = placeholderText
+        }
     }
     
     func setView(){
@@ -32,7 +48,11 @@ class ContactUsVC: UIViewController {
             i.layer.borderWidth = 0.5
             i.layer.borderColor = UIColor.lightGray.cgColor
         }
+        sendBT.layer.cornerRadius = 12
+        messageTV.delegate = self
+        
     }
+    
     
     @IBAction func sendButton(_ sender: UIButton) {
         
