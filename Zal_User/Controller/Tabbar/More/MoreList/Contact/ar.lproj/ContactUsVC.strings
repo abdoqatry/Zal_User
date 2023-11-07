@@ -1,0 +1,18 @@
+
+/* Class = "UITextField"; placeholder = "Mail"; ObjectID = "4OL-lw-F1p"; */
+"4OL-lw-F1p.placeholder" = "بريد إليكتروني";
+
+/* Class = "UILabel"; text = "Contact us"; ObjectID = "7YI-t8-J6b"; */
+"7YI-t8-J6b.text" = "تواصل معنا";
+
+/* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "XcB-2q-23y"; */
+"XcB-2q-23y.placeholder" = "رقم الجوال";
+
+/* Class = "UIButton"; configuration.title = "Send"; ObjectID = "teS-3z-RL2"; */
+"teS-3z-RL2.configuration.title" = "إرسال";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "teS-3z-RL2"; */
+"teS-3z-RL2.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "Message"; ObjectID = "uEg-lQ-kBE"; */
+"uEg-lQ-kBE.text" = "رسالة";

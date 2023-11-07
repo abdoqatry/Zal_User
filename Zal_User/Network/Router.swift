@@ -53,6 +53,7 @@ enum Router {
     case terms
     case service_orders(desc:String,day:String,time:String)
     case contact_info
+    case contact(phone: String, email: String, message: String)
     
     private var path: String {
         var path: String
@@ -147,6 +148,8 @@ enum Router {
             path = "api/service_orders"
         case.contact_info:
             path = "api/contact_info"
+        case.contact:
+            path = "provider/contact"
             
         }
         return path
@@ -302,6 +305,12 @@ enum Router {
                 "desc" : desc,
                 "day" : day,
                 "time" : time
+            ]
+        case.contact(let phone,let email,let message):
+            param = [
+                "phone" : phone,
+                "email" : email,
+                "message" : message
             ]
             
         default:
