@@ -99,6 +99,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Send"/>
+                                        <connections>
+                                            <action selector="sendButton:" destination="YZ7-49-8Ep" eventType="touchUpInside" id="qj7-zS-7Ex"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RRb-Pu-etD">
                                         <rect key="frame" x="51.666666666666657" y="396.33333333333331" width="290" height="40"/>
@@ -182,6 +185,21 @@
                     <constraint firstItem="S5i-3U-v8l" firstAttribute="trailing" secondItem="mxk-ZQ-Pwv" secondAttribute="trailing" id="RXG-94-7rt"/>
                 </constraints>
             </view>
+            <connections>
+                <outlet property="InstegramImage" destination="NdC-jx-dre" id="yLH-uP-Mhl"/>
+                <outlet property="PhonNumTF" destination="XcB-2q-23y" id="lva-ZV-GyZ"/>
+                <outlet property="facebookImage" destination="Agr-WI-EcE" id="opf-Lh-a6l"/>
+                <outlet property="gmailImage" destination="1go-yu-w3q" id="XEc-oc-9xk"/>
+                <outlet property="mailTF" destination="4OL-lw-F1p" id="HJf-A2-yoU"/>
+                <outlet property="messageTV" destination="uEg-lQ-kBE" id="fZ1-1P-85g"/>
+                <outlet property="sendBT" destination="teS-3z-RL2" id="EWf-I0-8qx"/>
+                <outlet property="snapChatImage" destination="1Lf-fm-4J1" id="VUd-hb-jwZ"/>
+                <outlet property="twitterImage" destination="GZU-9b-qTO" id="3Vu-UY-FPB"/>
+                <outlet property="whatappImage" destination="6I1-tO-7fv" id="dpS-yM-MFs"/>
+                <outletCollection property="itemView" destination="tJs-Ai-KMJ" collectionClass="NSMutableArray" id="wNl-Qn-Y5z"/>
+                <outletCollection property="itemView" destination="xqU-N7-ie6" collectionClass="NSMutableArray" id="3vS-WS-lZu"/>
+                <outletCollection property="itemView" destination="LmB-Nv-FP7" collectionClass="NSMutableArray" id="3QB-Ai-BrO"/>
+            </connections>
             <point key="canvasLocation" x="64.885496183206101" y="53.521126760563384"/>
         </viewController>
     </objects>
