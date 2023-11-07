@@ -190,7 +190,7 @@ extension StoreVC: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                     self.SingInAlert()
                         return
                     }
-                self.presenter?.makeFavorite(index: indexPath.row, catId: self.catId, providerId: self.id )
+                self.presenter?.makeFavorite(index: indexPath.row, catId: self.catId, providerId: self.id, keyword: self.searchText )
             }
             cell.addToCartProducte = {
                 if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
