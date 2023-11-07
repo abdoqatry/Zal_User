@@ -46,6 +46,8 @@
 		8415E9E129996513007B1A48 /* NearStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415E9DF29996513007B1A48 /* NearStoreVC.swift */; };
 		8415E9E529996701007B1A48 /* NearStoreTabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415E9E329996701007B1A48 /* NearStoreTabelCell.swift */; };
 		8415E9E629996701007B1A48 /* NearStoreTabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8415E9E429996701007B1A48 /* NearStoreTabelCell.xib */; };
+		8416630D2AFADB8000726E6B /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8416630B2AFADB8000726E6B /* ContactUsVC.swift */; };
+		8416630E2AFADB8000726E6B /* ContactUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8416630C2AFADB8000726E6B /* ContactUsVC.xib */; };
 		841A823D299D72F900141DEE /* MoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A823C299D72F900141DEE /* MoreModel.swift */; };
 		841A8240299D732D00141DEE /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A823E299D732D00141DEE /* MoreVC.swift */; };
 		841A8241299D732D00141DEE /* MoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841A823F299D732D00141DEE /* MoreVC.xib */; };
@@ -220,6 +222,8 @@
 		8415E9DF29996513007B1A48 /* NearStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearStoreVC.swift; sourceTree = "<group>"; };
 		8415E9E329996701007B1A48 /* NearStoreTabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearStoreTabelCell.swift; sourceTree = "<group>"; };
 		8415E9E429996701007B1A48 /* NearStoreTabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearStoreTabelCell.xib; sourceTree = "<group>"; };
+		8416630B2AFADB8000726E6B /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		8416630C2AFADB8000726E6B /* ContactUsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactUsVC.xib; sourceTree = "<group>"; };
 		841A823C299D72F900141DEE /* MoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreModel.swift; sourceTree = "<group>"; };
 		841A823E299D732D00141DEE /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 		841A823F299D732D00141DEE /* MoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreVC.xib; sourceTree = "<group>"; };
@@ -553,9 +557,19 @@
 			path = NearStore;
 			sourceTree = "<group>";
 		};
+		8416630A2AFADA1E00726E6B /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				8416630B2AFADB8000726E6B /* ContactUsVC.swift */,
+				8416630C2AFADB8000726E6B /* ContactUsVC.xib */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
 		841A823B299D72E500141DEE /* MoreList */ = {
 			isa = PBXGroup;
 			children = (
+				8416630A2AFADA1E00726E6B /* Contact */,
 				844292EB2A5CBAAF006A51FD /* Terms */,
 				844292E62A5CB76C006A51FD /* AboutUs */,
 				8402A6192A5B431D0047EBDD /* sitting */,
@@ -1028,6 +1042,7 @@
 				849FFF3D29AFE21200332478 /* RateStoreCell.xib in Resources */,
 				849FFF3029AFD11B00332478 /* ProductDetailsVC.xib in Resources */,
 				840AE730298D70AD000BECE2 /* LaunchScreen.storyboard in Resources */,
+				8416630E2AFADB8000726E6B /* ContactUsVC.xib in Resources */,
 				84A5F5542A50A83700316B94 /* FinishedOrderCell.xib in Resources */,
 				84A5F5722A50B46B00316B94 /* CartVC.xib in Resources */,
 				844292F02A5CBE6D006A51FD /* SettingVC.xib in Resources */,
@@ -1247,6 +1262,7 @@
 				845B59F22A49DF2C0020E81C /* OrderDetailsVC.swift in Sources */,
 				84292AB8299ADE70007BE0AD /* MyOrderVC.swift in Sources */,
 				84F5203229B013F20003F8D5 /* ProductDetailsPresenter.swift in Sources */,
+				8416630D2AFADB8000726E6B /* ContactUsVC.swift in Sources */,
 				840AE73F298D7BD5000BECE2 /* Langua.swift in Sources */,
 				840AE749298D7C6D000BECE2 /* ReusableUIView+Extension.swift in Sources */,
 				84D7229729D4F0C400B2777A /* CheckOutPresenter.swift in Sources */,
