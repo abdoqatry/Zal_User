@@ -15,6 +15,8 @@ target 'Zal_User' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'Cosmos'
+  pod 'Firebase'
+  pod 'Firebase/Messaging'
   
  pod 'Kingfisher', '~> 7.0'
 pod 'ImageSlideshow'
