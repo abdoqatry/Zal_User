@@ -12,7 +12,7 @@ enum Router {
     case login(username:String,password:String,token:String)
     case citieslist
     case areas(city_id:String)
-    case register(phone:String,name:String,email:String,password:String,password_confirmation:String,lat:String,lng:String,address:String)
+    case register(phone:String,name:String,email:String,password:String,password_confirmation:String,lat:String,lng:String,address:String,token:String)
     case forget_password(email:String)
     case check_forget_code(phone:String,code:String)
     case resend_forget_code(phone:String,type:String)
@@ -208,11 +208,11 @@ enum Router {
         case.login(let username,let password,let token):
             param = ["email" : username,
                      "password" : password,
-//                     "device_token" : token,
-//                     "device_type" : "ios",
+                     "device_token" : token,
+                     "device_type" : "ios",
                      
             ]
-        case.register(let phone,let name,let email,let password,let password_confirmation,let lat,let lng,let address):
+        case.register(let phone,let name,let email,let password,let password_confirmation,let lat,let lng,let address, let token):
             param = [
                 "phone" : phone,
                 "name" : name,
@@ -221,7 +221,9 @@ enum Router {
                 "password_confirmation" : password_confirmation,
                 "lat" : lat,
                 "lng" : lng,
-                "address" : address
+                "address" : address,
+                "device_token" : token,
+                "device_type" : "ios",
             ]
         case.forget_password(let email):
             param = [
