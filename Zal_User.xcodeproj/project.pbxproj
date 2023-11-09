@@ -242,6 +242,7 @@
 		841BB1EF299435C100F74113 /* SpecialStoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialStoreCell.xib; sourceTree = "<group>"; };
 		841D356629A145F900004DB6 /* TrackOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderVC.swift; sourceTree = "<group>"; };
 		8423E0042AFD5AF2007AF7BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8423E0062AFD5F8E007AF7BA /* Zal_User.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zal_User.entitlements; sourceTree = "<group>"; };
 		84292A9E299990E4007BE0AD /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		84292AA229999C85007BE0AD /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		84292AA529999EFC007BE0AD /* EditeProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeProfileVC.swift; sourceTree = "<group>"; };
@@ -448,6 +449,7 @@
 		840AE722298D70AC000BECE2 /* Zal_User */ = {
 			isa = PBXGroup;
 			children = (
+				8423E0062AFD5F8E007AF7BA /* Zal_User.entitlements */,
 				841BB1DB29941FC600F74113 /* Controller */,
 				840AE755298D7FCD000BECE2 /* Network */,
 				840AE74C298D7CDB000BECE2 /* Helper */,
@@ -1679,6 +1681,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Zal_User/Zal_User.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "Tajawal-Regular.ttf Tajawal-Bold.ttf Tajawal-Light.ttf";
@@ -1686,6 +1689,9 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Zal_User/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "the app required acces camera for profile images";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need Location To get Nearest Venue ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need Location To get Nearest Venue ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1711,6 +1717,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Zal_User/Zal_User.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "Tajawal-Regular.ttf Tajawal-Bold.ttf Tajawal-Light.ttf";
@@ -1718,6 +1725,9 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Zal_User/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "the app required acces camera for profile images";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need Location To get Nearest Venue ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need Location To get Nearest Venue ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

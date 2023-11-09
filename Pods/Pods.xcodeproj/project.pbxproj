@@ -18,6 +18,7 @@
 				8E357D8A662A766C8FFD0630F524CA62 /* PBXTargetDependency */,
 			);
 			name = Firebase;
+			productName = Firebase;
 		};
 		0C1885900810601510E0C632060FAF26 /* GooglePlaces */ = {
 			isa = PBXAggregateTarget;
@@ -27,6 +28,7 @@
 			dependencies = (
 			);
 			name = GooglePlaces;
+			productName = GooglePlaces;
 		};
 		B53D977A951AFC38B21751B706C1DF83 /* GoogleAppMeasurement */ = {
 			isa = PBXAggregateTarget;
@@ -39,6 +41,7 @@
 				B4453DE6F200EB0734C78995C6AAF95B /* PBXTargetDependency */,
 			);
 			name = GoogleAppMeasurement;
+			productName = GoogleAppMeasurement;
 		};
 		C49E7A4D59E5C8BE8DE9FB1EFB150185 /* FirebaseAnalytics */ = {
 			isa = PBXAggregateTarget;
@@ -54,6 +57,7 @@
 				DDEF470DAD7CB62EDD5683D87EB12698 /* PBXTargetDependency */,
 			);
 			name = FirebaseAnalytics;
+			productName = FirebaseAnalytics;
 		};
 		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
 			isa = PBXAggregateTarget;
@@ -63,6 +67,7 @@
 			dependencies = (
 			);
 			name = GoogleMaps;
+			productName = GoogleMaps;
 		};
 /* End PBXAggregateTarget section */
 
@@ -1380,7 +1385,7 @@
 		1B39ADBD50E3BB22D3FF68258AEAC854 /* RappleProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RappleProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		1BA3226D076D2D9E91C169CA485481C0 /* FBLPromise+Race.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Race.m"; path = "Sources/FBLPromises/FBLPromise+Race.m"; sourceTree = "<group>"; };
 		1BEC5C23BC81F7578D057079E9ADA97F /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
-		1C01CBE7190A62223316EF69094511C5 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ar.lproj; path = Sources/DKImagePickerController/Resource/Resources/ar.lproj; sourceTree = "<group>"; };
+		1C01CBE7190A62223316EF69094511C5 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ar.lproj; path = Sources/DKImagePickerController/Resource/Resources/ar.lproj; sourceTree = "<group>"; };
 		1C135FCE1AFDE63BCFF4EE5A6A70468C /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		1C453DC6155BC3BD6AA2D6C29CFE7A13 /* SDImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGIFCoder.h; path = SDWebImage/Core/SDImageGIFCoder.h; sourceTree = "<group>"; };
 		1C4AF78F81A59A7037D5BA5D2080B60E /* DKAssetGroupDetailVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupDetailVC.swift; path = Sources/DKImagePickerController/View/DKAssetGroupDetailVC.swift; sourceTree = "<group>"; };
@@ -1391,7 +1396,7 @@
 		1E5CEF44CC44D6E1DCBA179B6916E477 /* GDTCORTransport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORTransport.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORTransport.m; sourceTree = "<group>"; };
 		1EB95DF65BC0C1B912B6625B0D9BB3F6 /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = Cosmos/CosmosDefaultSettings.swift; sourceTree = "<group>"; };
 		1EB99B4C31CD7B32C4FD8C7E44C2448D /* FirebaseCoreInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseCoreInternal.h; path = FirebaseCore/Extension/FirebaseCoreInternal.h; sourceTree = "<group>"; };
-		1F01DBA002E9F49012509B712C83E43C /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.lproj; path = Sources/DKImagePickerController/Resource/Resources/Base.lproj; sourceTree = "<group>"; };
+		1F01DBA002E9F49012509B712C83E43C /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Base.lproj; path = Sources/DKImagePickerController/Resource/Resources/Base.lproj; sourceTree = "<group>"; };
 		1F15246734CDC5B551813BA4189203B7 /* GULNetworkURLSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkURLSession.h; path = GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkURLSession.h; sourceTree = "<group>"; };
 		1F17E068760DAFD62E2D1BAFF32926EE /* FIRLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRLogger.m; path = FirebaseCore/Sources/FIRLogger.m; sourceTree = "<group>"; };
 		1F51F66D791C3EC8EE70460870DDAC31 /* GULApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULApplication.h; path = GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULApplication.h; sourceTree = "<group>"; };
@@ -1465,10 +1470,10 @@
 		3221FFAEF41EEA2643A065F3A5CA0444 /* FIRAnalyticsInteropListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAnalyticsInteropListener.h; path = Interop/Analytics/Public/FIRAnalyticsInteropListener.h; sourceTree = "<group>"; };
 		32D4F5CDEC54C8D7EA8B757F1ED47E01 /* GDTCORTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORTransformer.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORTransformer.h; sourceTree = "<group>"; };
 		332A0A6DAEDD8980B6594DE9D86AF73C /* DKImageExtensionInlineCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKImageExtensionInlineCamera.swift; path = Sources/Extensions/DKImageExtensionInlineCamera.swift; sourceTree = "<group>"; };
-		333D02043C9FF60628DA0853D1AAD255 /* nb-NO.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "nb-NO.lproj"; path = "Sources/DKImagePickerController/Resource/Resources/nb-NO.lproj"; sourceTree = "<group>"; };
+		333D02043C9FF60628DA0853D1AAD255 /* nb-NO.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "nb-NO.lproj"; path = "Sources/DKImagePickerController/Resource/Resources/nb-NO.lproj"; sourceTree = "<group>"; };
 		3347A1AB6546F0A3977529B8F199DC41 /* PromisesObjC */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PromisesObjC; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33595063E39E34F771099F04B6EBF2E4 /* SDWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWeakProxy.m; path = SDWebImage/Private/SDWeakProxy.m; sourceTree = "<group>"; };
-		335F10696F0046BF4D696D9E6943A712 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = Sources/DKImagePickerController/Resource/Resources/nl.lproj; sourceTree = "<group>"; };
+		335F10696F0046BF4D696D9E6943A712 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nl.lproj; path = Sources/DKImagePickerController/Resource/Resources/nl.lproj; sourceTree = "<group>"; };
 		336A2A4C45E465A0A16D46B461336421 /* GDTCORAssert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORAssert.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORAssert.m; sourceTree = "<group>"; };
 		33ADE06AD0CF49F6388A6DC7B0A31924 /* FirebaseMessaging.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FirebaseMessaging.modulemap; sourceTree = "<group>"; };
 		345417FEE23619942CFC3D3E3A3AA3EB /* FIRMessagingAPNSInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMessagingAPNSInfo.h; path = FirebaseMessaging/Sources/Token/FIRMessagingAPNSInfo.h; sourceTree = "<group>"; };
@@ -1480,14 +1485,14 @@
 		3705CCBF078ADACF7A45CFBB366D03D7 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/Extensions/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
 		37263DDCACA12625A0E02DF1CAEF0986 /* SDDeviceHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDeviceHelper.m; path = SDWebImage/Private/SDDeviceHelper.m; sourceTree = "<group>"; };
 		373B93551B84C6A6939C34CD4A916FDC /* DKImagePickerControllerBaseUIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKImagePickerControllerBaseUIDelegate.swift; path = Sources/DKImagePickerController/DKImagePickerControllerBaseUIDelegate.swift; sourceTree = "<group>"; };
-		375E7B870DD788DC229462634FAC231F /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = Sources/DKImagePickerController/Resource/Resources/de.lproj; sourceTree = "<group>"; };
+		375E7B870DD788DC229462634FAC231F /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = de.lproj; path = Sources/DKImagePickerController/Resource/Resources/de.lproj; sourceTree = "<group>"; };
 		37CA175408C80BC9CE40E0342F1D2EC1 /* FBLPromise+Wrap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Wrap.m"; path = "Sources/FBLPromises/FBLPromise+Wrap.m"; sourceTree = "<group>"; };
 		387B0EFF3BEA5AD24E6ADA021DB7AB1C /* FIRMessagingUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingUtilities.m; path = FirebaseMessaging/Sources/FIRMessagingUtilities.m; sourceTree = "<group>"; };
 		387FA770CD85836BCCD68A21CC490FB1 /* SwiftyJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.debug.xcconfig; sourceTree = "<group>"; };
 		38D758CF6DF45443354809C669373F84 /* GULNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GULNSData+zlib.m"; path = "GoogleUtilities/NSData+zlib/GULNSData+zlib.m"; sourceTree = "<group>"; };
 		38FC632827505FEA15D7DDD74F6ED40E /* SDAnimatedImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageRep.m; path = SDWebImage/Core/SDAnimatedImageRep.m; sourceTree = "<group>"; };
 		3920FD75BB85DFE93C8F03CE3B0E8EE6 /* SwiftyGif.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyGif.modulemap; sourceTree = "<group>"; };
-		39431869BAC8A965464E74B5D95235DF /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = Sources/DKImagePickerController/Resource/Resources/ru.lproj; sourceTree = "<group>"; };
+		39431869BAC8A965464E74B5D95235DF /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ru.lproj; path = Sources/DKImagePickerController/Resource/Resources/ru.lproj; sourceTree = "<group>"; };
 		39480DE9CFE6F006BDD606120DB5481D /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/Core/SDWebImageOperation.h; sourceTree = "<group>"; };
 		3950368E86532CADA4DF02004618EBEE /* SDImageTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageTransformer.h; path = SDWebImage/Core/SDImageTransformer.h; sourceTree = "<group>"; };
 		395FDCE40CCBD6CD2D9E6E8FCC0B0B75 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
@@ -1530,12 +1535,12 @@
 		44A77FFBD24A048B1D3D092706BA9807 /* SDImageLoadersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageLoadersManager.h; path = SDWebImage/Core/SDImageLoadersManager.h; sourceTree = "<group>"; };
 		44D404AE97978BD99971006C1A4510F7 /* GULKeychainUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULKeychainUtils.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULKeychainUtils.h; sourceTree = "<group>"; };
 		44E6E47F446134BCDA858228C9AA016E /* SDInternalMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDInternalMacros.h; path = SDWebImage/Private/SDInternalMacros.h; sourceTree = "<group>"; };
-		45A05A2C05C34CCEFDE5B4AEEC36AA05 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = FirebaseAnalytics.xcframework; path = Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
+		45A05A2C05C34CCEFDE5B4AEEC36AA05 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
 		45B81D54CEAA85C232C388F9E3C9518A /* SDImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoderHelper.m; path = SDWebImage/Core/SDImageCoderHelper.m; sourceTree = "<group>"; };
 		45F11E32E1FC13D3E14DAF0A6F64A941 /* FIRBundleUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRBundleUtil.h; path = FirebaseCore/Sources/FIRBundleUtil.h; sourceTree = "<group>"; };
 		46330BFFD97282382BC90CE463D12C39 /* RappleProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RappleProgressHUD.release.xcconfig; sourceTree = "<group>"; };
 		4655BE83278B470BEEBCF0CE8A026A35 /* FIRLibrary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRLibrary.h; path = FirebaseCore/Extension/FIRLibrary.h; sourceTree = "<group>"; };
-		466F43E4D4A029528A1400D5ADC17619 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.lproj; path = DKPhotoGallery/Resource/Resources/Base.lproj; sourceTree = "<group>"; };
+		466F43E4D4A029528A1400D5ADC17619 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Base.lproj; path = DKPhotoGallery/Resource/Resources/Base.lproj; sourceTree = "<group>"; };
 		469B93124D3E5A767DA58D04B74DFE85 /* AVAssetImageDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVAssetImageDataProvider.swift; path = Sources/General/ImageSource/AVAssetImageDataProvider.swift; sourceTree = "<group>"; };
 		46AFA6909E4CAE5A6DAAB8485A042621 /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cosmos.modulemap; sourceTree = "<group>"; };
 		46C88E838CD1DC1A274FD9F424A62E00 /* SDImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageGIFCoder.m; path = SDWebImage/Core/SDImageGIFCoder.m; sourceTree = "<group>"; };
@@ -1581,7 +1586,7 @@
 		52A50883588E44A1FA939F042F3DD257 /* DKPhotoGallery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DKPhotoGallery-dummy.m"; sourceTree = "<group>"; };
 		52CBAD1C5EDC6919E8D0D53A559DC5C3 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		530D07B7022083A3F7EA886F157D1D96 /* SDWebImageDownloaderRequestModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderRequestModifier.m; path = SDWebImage/Core/SDWebImageDownloaderRequestModifier.m; sourceTree = "<group>"; };
-		5327FE56061EF0982CAE6F97BB1268DA /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		5327FE56061EF0982CAE6F97BB1268DA /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_encode.c; sourceTree = "<group>"; };
 		538DF065545EE57CD967FA3F7783706D /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
 		53B6A8D31048A4EAC60172C906D1D531 /* FIRComponentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponentType.h; path = FirebaseCore/Extension/FIRComponentType.h; sourceTree = "<group>"; };
 		53BA10415C820240CE160AE379F85963 /* SDInternalMacros.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDInternalMacros.m; path = SDWebImage/Private/SDInternalMacros.m; sourceTree = "<group>"; };
@@ -1657,8 +1662,8 @@
 		6383AF0798B204C744D04D4A2B1528E1 /* GDTCORTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORTransformer.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORTransformer.m; sourceTree = "<group>"; };
 		63A81CE4BD33D8DFB7BB75033B6103DD /* GDTCOREventDropReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCOREventDropReason.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCOREventDropReason.h; sourceTree = "<group>"; };
 		63CDF7DD905CC4D6A99505B807837E36 /* GULReachabilityChecker+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GULReachabilityChecker+Internal.h"; path = "GoogleUtilities/Reachability/GULReachabilityChecker+Internal.h"; sourceTree = "<group>"; };
-		63E0A74C5A67F9C8DEA339AE870FAD23 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hu.lproj; path = Sources/DKImagePickerController/Resource/Resources/hu.lproj; sourceTree = "<group>"; };
-		63E9EEBCB6C007BC808D8EA83DA842C4 /* pt_BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt_BR.lproj; path = Sources/DKImagePickerController/Resource/Resources/pt_BR.lproj; sourceTree = "<group>"; };
+		63E0A74C5A67F9C8DEA339AE870FAD23 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = hu.lproj; path = Sources/DKImagePickerController/Resource/Resources/hu.lproj; sourceTree = "<group>"; };
+		63E9EEBCB6C007BC808D8EA83DA842C4 /* pt_BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pt_BR.lproj; path = Sources/DKImagePickerController/Resource/Resources/pt_BR.lproj; sourceTree = "<group>"; };
 		640DFCA6DB073BD995C57A52BD93B764 /* GDTCORRegistrar_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORRegistrar_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORRegistrar_Private.h; sourceTree = "<group>"; };
 		64135E46D2B2ACF3DE313BF86BBEA1FB /* DKCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DKCamera.modulemap; sourceTree = "<group>"; };
 		64636D143947891F4C4A2DDC82A5F1DE /* DiskStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskStorage.swift; path = Sources/Cache/DiskStorage.swift; sourceTree = "<group>"; };
@@ -1712,7 +1717,7 @@
 		706A86898040F0ACC53372D3985ED8D5 /* DKImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DKImagePickerController-dummy.m"; sourceTree = "<group>"; };
 		709182FD7F2F6A671E3586739A417E63 /* DKPhotoProgressIndicatorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKPhotoProgressIndicatorProtocol.swift; path = DKPhotoGallery/Preview/DKPhotoProgressIndicatorProtocol.swift; sourceTree = "<group>"; };
 		7093ECFC8E6B2505E7BAECF031A91492 /* FIRComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponent.h; path = FirebaseCore/Extension/FIRComponent.h; sourceTree = "<group>"; };
-		709D975A9F21360283CA9D2A79B91EB3 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = Sources/DKImagePickerController/Resource/Resources/es.lproj; sourceTree = "<group>"; };
+		709D975A9F21360283CA9D2A79B91EB3 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = Sources/DKImagePickerController/Resource/Resources/es.lproj; sourceTree = "<group>"; };
 		70A04C03AA0380CCCA72EBD74732A39C /* FIRInstallationsAuthTokenResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsAuthTokenResult.h; path = FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsAuthTokenResult.h; sourceTree = "<group>"; };
 		70A93508476CB6A79B161D8955C9EC1A /* FIRMessagingSyncMessageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingSyncMessageManager.m; path = FirebaseMessaging/Sources/FIRMessagingSyncMessageManager.m; sourceTree = "<group>"; };
 		7190BA25AD73606A33CDE232B39F3D4D /* FIRInstallationsIIDStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsIIDStore.h; path = FirebaseInstallations/Source/Library/IIDMigration/FIRInstallationsIIDStore.h; sourceTree = "<group>"; };
@@ -1727,7 +1732,7 @@
 		7373DD147E6A8883F07B96ECF10776EB /* FirebaseAnalytics-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FirebaseAnalytics-xcframeworks.sh"; sourceTree = "<group>"; };
 		738A00D446BEE73E10D92535941F7B47 /* FIRMessagingAPNSInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingAPNSInfo.m; path = FirebaseMessaging/Sources/Token/FIRMessagingAPNSInfo.m; sourceTree = "<group>"; };
 		740AD54F25B10EC7212C01AD220FACEA /* GULMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULMutableDictionary.m; path = GoogleUtilities/Network/GULMutableDictionary.m; sourceTree = "<group>"; };
-		7429539753319C65347D2E535817419F /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "Sources/DKImagePickerController/Resource/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		7429539753319C65347D2E535817419F /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hant.lproj"; path = "Sources/DKImagePickerController/Resource/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
 		7452A03FAAFFA73FE7C7738918321949 /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
 		7504385FE8C0F00A7A8980F5E9A5EE47 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		7568CE71586728F754E9C66C708AC7CD /* GDTCORUploadCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORUploadCoordinator.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORUploadCoordinator.h; sourceTree = "<group>"; };
@@ -1756,7 +1761,7 @@
 		7E6E8F9285569FD01DC150B3D0DBD173 /* GDTCORAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORAssert.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORAssert.h; sourceTree = "<group>"; };
 		7E80E46C77DB17E0C5338E8CD0771D70 /* GDTCORRegistrar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORRegistrar.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORRegistrar.h; sourceTree = "<group>"; };
 		7F0EBF53C97277CC6AC0B0B419D300C1 /* SDWebImageOptionsProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageOptionsProcessor.m; path = SDWebImage/Core/SDWebImageOptionsProcessor.m; sourceTree = "<group>"; };
-		7F61A9659842FB341176CF27756ECD97 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = Sources/DKImagePickerController/Resource/Resources/ko.lproj; sourceTree = "<group>"; };
+		7F61A9659842FB341176CF27756ECD97 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ko.lproj; path = Sources/DKImagePickerController/Resource/Resources/ko.lproj; sourceTree = "<group>"; };
 		7FF25762A709D11EC80FD6D6A416B4DD /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
 		802F9EDF307F2C800D8EEE34C8E0FF96 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		8085E9A3CDE86C9442920CFD178D0481 /* FIRInstallationsBackoffController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsBackoffController.h; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsBackoffController.h; sourceTree = "<group>"; };
@@ -1769,7 +1774,7 @@
 		82372B505B92C8DA6C4F3A1457D224A3 /* FBLPromisePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromisePrivate.h; path = Sources/FBLPromises/include/FBLPromisePrivate.h; sourceTree = "<group>"; };
 		82538CEDF7FCF26D1703F2A247522E79 /* nanopb-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "nanopb-Info.plist"; sourceTree = "<group>"; };
 		8254772823EEF80889F472F41DEC467E /* FIRDependency.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRDependency.m; path = FirebaseCore/Sources/FIRDependency.m; sourceTree = "<group>"; };
-		82671C6E2C10A58CCF6271BE32E5A98F /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		82671C6E2C10A58CCF6271BE32E5A98F /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
 		82AB6255FDAD49D8C49BFAF052785472 /* SDImageLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoader.m; path = SDWebImage/Core/SDImageLoader.m; sourceTree = "<group>"; };
 		83C5F8F41D0AD1D872172A5B0194FB2B /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Sources/Networking/RedirectHandler.swift; sourceTree = "<group>"; };
 		83F696CA2F4B372F8BB582B26AE7F821 /* FIRAnalyticsConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAnalyticsConfiguration.m; path = FirebaseCore/Sources/FIRAnalyticsConfiguration.m; sourceTree = "<group>"; };
@@ -1830,21 +1835,21 @@
 		991EAB8E8C465D968DAB318A31B3713C /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		995D27407376EC52DBD8375979FD70C1 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
 		997DFDF7CBDA746286D0594AB0794283 /* GDTCORFlatFileStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORFlatFileStorage.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORFlatFileStorage.m; sourceTree = "<group>"; };
-		99882354589219985CD5995E4E88EA1C /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GoogleAppMeasurement.xcframework; path = Frameworks/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
+		99882354589219985CD5995E4E88EA1C /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = Frameworks/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
 		999BE1CB9D50A57C50A5B72C8E184E6F /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
 		99F2712207299A48441B2408D0F6160F /* GDTCORTransformer_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORTransformer_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORTransformer_Private.h; sourceTree = "<group>"; };
 		9AA51324763B7C858A5A8C70DFCE2FE6 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		9AEFAA94295235F8F61831AA91B53D7A /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		9B0CAA6EA834D1A7FE843CF850FB6C34 /* NSButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSButton+WebCache.m"; path = "SDWebImage/Core/NSButton+WebCache.m"; sourceTree = "<group>"; };
 		9B826453B6619621CB8BD164E6D3E9F3 /* SDImageHEICCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageHEICCoder.h; path = SDWebImage/Core/SDImageHEICCoder.h; sourceTree = "<group>"; };
-		9BB0A89C90BB7CD5D03897278BB8C600 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = Sources/DKImagePickerController/Resource/Resources/tr.lproj; sourceTree = "<group>"; };
+		9BB0A89C90BB7CD5D03897278BB8C600 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = tr.lproj; path = Sources/DKImagePickerController/Resource/Resources/tr.lproj; sourceTree = "<group>"; };
 		9BB9F990592854E48C8A9F2E6F3D5FD3 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/Core/UIImage+GIF.m"; sourceTree = "<group>"; };
 		9BC056094C0556A43A0564236F5F87AF /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
 		9CDE4A351009E4F4888EDAA9AC79FC24 /* DKPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKPlayerView.swift; path = DKPhotoGallery/Preview/PlayerPreview/DKPlayerView.swift; sourceTree = "<group>"; };
 		9D09711EDC4EEB342902F6ABCAFC02FE /* FirebaseCoreInternal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FirebaseCoreInternal.modulemap; sourceTree = "<group>"; };
 		9D1A0708AB2DEE1352D6507627466851 /* FBLPromise+Async.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Async.m"; path = "Sources/FBLPromises/FBLPromise+Async.m"; sourceTree = "<group>"; };
-		9D754C94E21AEC840ED8C09BC20C427D /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = DKPhotoGallery/Resource/Resources/en.lproj; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D754C94E21AEC840ED8C09BC20C427D /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = DKPhotoGallery/Resource/Resources/en.lproj; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EE837243B68E2DFFC5D53043DFD571B /* SwiftyGif-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyGif-dummy.m"; sourceTree = "<group>"; };
 		9EFDF1D2FD010443C1276FEC4C1FF998 /* DKAsset+Export.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DKAsset+Export.swift"; path = "Sources/DKImageDataManager/Model/DKAsset+Export.swift"; sourceTree = "<group>"; };
 		9F47BA8EC31015A1DB0807F5B85681CD /* _ObjC_HeartbeatsPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjC_HeartbeatsPayload.swift; path = FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatsPayload.swift; sourceTree = "<group>"; };
@@ -1858,7 +1863,7 @@
 		A1136EF506467D1247B60A69208898FC /* SDAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageView.m; path = SDWebImage/Core/SDAnimatedImageView.m; sourceTree = "<group>"; };
 		A1195231CA4C41D1D3444FF4E87780FA /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		A13A0A9DCF8DA55019CFEAC55294D230 /* SDWebImageOptionsProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOptionsProcessor.h; path = SDWebImage/Core/SDWebImageOptionsProcessor.h; sourceTree = "<group>"; };
-		A146F8A1CC990808315765D19BB04C95 /* me.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = me.nanopb.c; path = FirebaseMessaging/Sources/Protogen/nanopb/me.nanopb.c; sourceTree = "<group>"; };
+		A146F8A1CC990808315765D19BB04C95 /* me.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = me.nanopb.c; path = FirebaseMessaging/Sources/Protogen/nanopb/me.nanopb.c; sourceTree = "<group>"; };
 		A2084593A3387E90C06E6CB476D26A76 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/Core/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		A2A8745BAADAB5B4C4ADA553B452D9F0 /* GULHeartbeatDateStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULHeartbeatDateStorage.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULHeartbeatDateStorage.h; sourceTree = "<group>"; };
 		A2C0D50E040E28A743AE0A52D9008B35 /* UIImage+AspectFit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AspectFit.swift"; path = "ImageSlideshow/Classes/Core/UIImage+AspectFit.swift"; sourceTree = "<group>"; };
@@ -1926,7 +1931,7 @@
 		B11C0CA2209C78A3967AC26B3D28461C /* SDWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-umbrella.h"; sourceTree = "<group>"; };
 		B175D0270D85861553730E68CEEB4E37 /* FIRMessagingPubSub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMessagingPubSub.h; path = FirebaseMessaging/Sources/FIRMessagingPubSub.h; sourceTree = "<group>"; };
 		B1B241AB73146035575767A0EE9CA117 /* PageIndicatorPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageIndicatorPosition.swift; path = ImageSlideshow/Classes/Core/PageIndicatorPosition.swift; sourceTree = "<group>"; };
-		B1B247DE42D782218EFEA0CB0F6D6454 /* DKPhotoGallery */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DKPhotoGallery; path = DKPhotoGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B247DE42D782218EFEA0CB0F6D6454 /* DKPhotoGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DKPhotoGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2494D5A17A5007A647DBF922D599B4B /* RappleProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RappleProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		B301A626F78DAEFFB40FE4093FE3A1BC /* FIRMessagingRemoteNotificationsProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingRemoteNotificationsProxy.m; path = FirebaseMessaging/Sources/FIRMessagingRemoteNotificationsProxy.m; sourceTree = "<group>"; };
 		B348C879DC00DA599ED4B9D83F39D80C /* Pods-Zal_User.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Zal_User.modulemap"; sourceTree = "<group>"; };
@@ -1941,7 +1946,7 @@
 		B5CEA845C64A5E2AEBFCA7EC9CA655A4 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
 		B6D8FA688896DD1FA30AE0A9EE4F1BA6 /* HeartbeatController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeartbeatController.swift; path = FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatController.swift; sourceTree = "<group>"; };
 		B751DEDC9CBF8B3FD11EAC3CE2F70CA0 /* SDImageIOAnimatedCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOAnimatedCoderInternal.h; path = SDWebImage/Private/SDImageIOAnimatedCoderInternal.h; sourceTree = "<group>"; };
-		B7542539806261A780C2A4F6215C75B5 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = Sources/DKImagePickerController/Resource/Resources/ja.lproj; sourceTree = "<group>"; };
+		B7542539806261A780C2A4F6215C75B5 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ja.lproj; path = Sources/DKImagePickerController/Resource/Resources/ja.lproj; sourceTree = "<group>"; };
 		B76B087FD5A417109CCA7A35339005D1 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
 		B7738619B3A2808BA572CDCA211EE8D4 /* FIRDependency.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDependency.h; path = FirebaseCore/Extension/FIRDependency.h; sourceTree = "<group>"; };
 		B78714644EC4B25EF9D14B85484B5CEE /* FBLPromise+Race.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Race.h"; path = "Sources/FBLPromises/include/FBLPromise+Race.h"; sourceTree = "<group>"; };
@@ -1960,7 +1965,7 @@
 		BA90AAA2F293D86C26713E7945104BFF /* DKPhotoQRCodeResultVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKPhotoQRCodeResultVC.swift; path = DKPhotoGallery/Preview/QRCode/DKPhotoQRCodeResultVC.swift; sourceTree = "<group>"; };
 		BB070543C89A4795B360272263BF9790 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BB0B942571F65FAE2B4BE392433AB1E1 /* SDImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCodersManager.m; path = SDWebImage/Core/SDImageCodersManager.m; sourceTree = "<group>"; };
-		BB32B1BA2981E58BA89EC0B76EA1006F /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		BB32B1BA2981E58BA89EC0B76EA1006F /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_common.c; sourceTree = "<group>"; };
 		BB63FA79F554260A97E0354EEE2C73D0 /* SDImageAWebPCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAWebPCoder.m; path = SDWebImage/Core/SDImageAWebPCoder.m; sourceTree = "<group>"; };
 		BB7D26D96B2304498026FE6381BA7A58 /* FirebaseCoreInternal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseCoreInternal-umbrella.h"; sourceTree = "<group>"; };
 		BB9A43B7362686D761ECC76555AABADF /* SDImageIOCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOCoder.h; path = SDWebImage/Core/SDImageIOCoder.h; sourceTree = "<group>"; };
@@ -1988,7 +1993,7 @@
 		C2407A0AB866072A9A23BA954FDFE67A /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
 		C26D9ED05CAFF3417B9C9277A540A55F /* SDWebImageDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDefine.h; path = SDWebImage/Core/SDWebImageDefine.h; sourceTree = "<group>"; };
 		C278D2606AA6D9DAEB0F973783C4CCF7 /* GULAppEnvironmentUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULAppEnvironmentUtil.m; path = GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.m; sourceTree = "<group>"; };
-		C2A5566A9E1BA28A027BF7C386212374 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "Sources/DKImagePickerController/Resource/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		C2A5566A9E1BA28A027BF7C386212374 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "Sources/DKImagePickerController/Resource/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
 		C2C6B245555E5E05E97815DD5B69E174 /* UIImage+ExtendedCacheData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ExtendedCacheData.m"; path = "SDWebImage/Core/UIImage+ExtendedCacheData.m"; sourceTree = "<group>"; };
 		C304408D2C30E1357CD41828100ABE7F /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/Core/NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		C382163577A3AC7FCD250EADA559CA67 /* SDWebImageIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageIndicator.m; path = SDWebImage/Core/SDWebImageIndicator.m; sourceTree = "<group>"; };
@@ -2015,7 +2020,7 @@
 		CA033A3D1AF6D02A993B8BCEE298B0C4 /* DKCamera */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DKCamera; path = DKCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA105C5A0A957136F96AC6D6D2F19B66 /* GIFAnimatedImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GIFAnimatedImage.swift; path = Sources/Image/GIFAnimatedImage.swift; sourceTree = "<group>"; };
 		CA6527732A27DC18871D1D21D13DB2A4 /* FirebaseInstallations-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirebaseInstallations-dummy.m"; sourceTree = "<group>"; };
-		CAE650B16059981602E3ADEA5242F8FD /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = Sources/DKImagePickerController/Resource/Resources/fr.lproj; sourceTree = "<group>"; };
+		CAE650B16059981602E3ADEA5242F8FD /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr.lproj; path = Sources/DKImagePickerController/Resource/Resources/fr.lproj; sourceTree = "<group>"; };
 		CAEE1ED0CAA34F1148A0D010093408A8 /* DKAssetGroupCellItemProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupCellItemProtocol.swift; path = Sources/DKImagePickerController/View/Cell/DKAssetGroupCellItemProtocol.swift; sourceTree = "<group>"; };
 		CB8313C4A36DDA2B1B4C6342E2F221B6 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/Core/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
 		CBD535B9E883B2BBA224CFBF767FA976 /* FBLPromise+Then.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Then.h"; path = "Sources/FBLPromises/include/FBLPromise+Then.h"; sourceTree = "<group>"; };
@@ -2054,19 +2059,19 @@
 		D3D6719D08B98BE867513BF554F76D38 /* ImageContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageContext.swift; path = Sources/SwiftUI/ImageContext.swift; sourceTree = "<group>"; };
 		D40F1614FD5EF7F3F0ADD81340B1D7EF /* SDWebImageDownloaderRequestModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderRequestModifier.h; path = SDWebImage/Core/SDWebImageDownloaderRequestModifier.h; sourceTree = "<group>"; };
 		D411AF1016A5F0B1530DC2ADDD4A3B8E /* DKCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKCamera-umbrella.h"; sourceTree = "<group>"; };
-		D44B8EAE5BFE362ABC078773365DDD49 /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GoogleAppMeasurementIdentitySupport.xcframework; path = Frameworks/GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
+		D44B8EAE5BFE362ABC078773365DDD49 /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurementIdentitySupport.xcframework; path = Frameworks/GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
 		D493A1BA0B49EA43D03A62E6823F2E05 /* SDMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDMemoryCache.m; path = SDWebImage/Core/SDMemoryCache.m; sourceTree = "<group>"; };
 		D4C28897F7632E602963705F93E4C89D /* SDAnimatedImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SDAnimatedImageView+WebCache.m"; path = "SDWebImage/Core/SDAnimatedImageView+WebCache.m"; sourceTree = "<group>"; };
-		D4F8085DBA2B9292C01C5EBD0B2D4BAD /* cct.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cct.nanopb.c; path = GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/cct.nanopb.c; sourceTree = "<group>"; };
+		D4F8085DBA2B9292C01C5EBD0B2D4BAD /* cct.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = cct.nanopb.c; path = GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/cct.nanopb.c; sourceTree = "<group>"; };
 		D538920D5C066BC6F61425FB39C37AA2 /* UIColor+SDHexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SDHexString.h"; path = "SDWebImage/Private/UIColor+SDHexString.h"; sourceTree = "<group>"; };
 		D5587601FD60DA96A54C6262D61F3C21 /* FIRComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponent.h; path = FirebaseCore/Extension/FIRComponent.h; sourceTree = "<group>"; };
 		D55C510956A944E64E3B7BDF061EDB5C /* DKPhotoGallery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKPhotoGallery-umbrella.h"; sourceTree = "<group>"; };
-		D55C54D838807CBE620AA976EE9FB9D0 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = da.lproj; path = Sources/DKImagePickerController/Resource/Resources/da.lproj; sourceTree = "<group>"; };
+		D55C54D838807CBE620AA976EE9FB9D0 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = da.lproj; path = Sources/DKImagePickerController/Resource/Resources/da.lproj; sourceTree = "<group>"; };
 		D63420A872B5565D3557260362E3EEFB /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		D689B8959826996381423C27AF06AE6C /* FIRInstallationsStoredItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsStoredItem.m; path = FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredItem.m; sourceTree = "<group>"; };
 		D696BEF4F623A1AEE0AED4E856AAAB00 /* SDDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDiskCache.h; path = SDWebImage/Core/SDDiskCache.h; sourceTree = "<group>"; };
 		D6E54E0A67BE4F80BC43915D0ABFB87A /* RappleAIPrivate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RappleAIPrivate.swift; path = Sources/RappleProgressHUD/RappleAIPrivate.swift; sourceTree = "<group>"; };
-		D738A78C3CA5CBA3710D76CBC3A56789 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = Sources/DKImagePickerController/Resource/Resources/en.lproj; sourceTree = "<group>"; };
+		D738A78C3CA5CBA3710D76CBC3A56789 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = Sources/DKImagePickerController/Resource/Resources/en.lproj; sourceTree = "<group>"; };
 		D74BA3BCCD769FE979A1D43CA29EA031 /* GDTCORStorageMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORStorageMetadata.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORStorageMetadata.h; sourceTree = "<group>"; };
 		D7AACD47EBCC88B8E40ADE0E0FE6E4F5 /* DKPhotoGalleryTransitionPresent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKPhotoGalleryTransitionPresent.swift; path = DKPhotoGallery/Transition/DKPhotoGalleryTransitionPresent.swift; sourceTree = "<group>"; };
 		D7CD74EE7BB038E9924CF1E721ECE797 /* FIRInstallationsErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsErrors.h; path = FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsErrors.h; sourceTree = "<group>"; };
@@ -2075,7 +2080,7 @@
 		D85678490AE983EB637907191BBD0A89 /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
 		D893347F236EDB102EA932F6892332E8 /* RightToLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = Cosmos/Helpers/RightToLeft.swift; sourceTree = "<group>"; };
 		D8B145E8AE068472CB3963BD93A2E9A3 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
-		D8C4BFDB6695265A9B2AB8AB4271FD63 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = vi.lproj; path = Sources/DKImagePickerController/Resource/Resources/vi.lproj; sourceTree = "<group>"; };
+		D8C4BFDB6695265A9B2AB8AB4271FD63 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = vi.lproj; path = Sources/DKImagePickerController/Resource/Resources/vi.lproj; sourceTree = "<group>"; };
 		D8E50E0669786177F0067015E8A05944 /* Pods-Zal_User-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Zal_User-frameworks.sh"; sourceTree = "<group>"; };
 		D8F25567B86B1DB2CAB23135D46356C1 /* FIRInteropEventNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInteropEventNames.h; path = Interop/Analytics/Public/FIRInteropEventNames.h; sourceTree = "<group>"; };
 		D97B958AFD3FBDB90B78851DC4BABF56 /* DKPhotoWebVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKPhotoWebVC.swift; path = DKPhotoGallery/Preview/QRCode/DKPhotoWebVC.swift; sourceTree = "<group>"; };
@@ -2121,20 +2126,20 @@
 		E4157C16A72577B5D3F28FA71CE3FB5C /* SDGraphicsImageRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDGraphicsImageRenderer.h; path = SDWebImage/Core/SDGraphicsImageRenderer.h; sourceTree = "<group>"; };
 		E459033E124494B89B39704B237260D3 /* FBLPromiseError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromiseError.h; path = Sources/FBLPromises/include/FBLPromiseError.h; sourceTree = "<group>"; };
 		E46E53AEC9295A25F839CCEC3548433D /* GULNetworkConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetworkConstants.m; path = GoogleUtilities/Network/GULNetworkConstants.m; sourceTree = "<group>"; };
-		E495CB1F9FEAEB200293108F340B6E07 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "DKPhotoGallery/Resource/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		E495CB1F9FEAEB200293108F340B6E07 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "DKPhotoGallery/Resource/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
 		E4AD9E69D0E486BF16EE15DE33CD7CF7 /* NSError+FIRMessaging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+FIRMessaging.m"; path = "FirebaseMessaging/Sources/NSError+FIRMessaging.m"; sourceTree = "<group>"; };
 		E4F9697C10CCE12E1248D0A9DEA2D3AE /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/Core/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
 		E50AB8DFAE19DC236BFB22E2384646AD /* DKImageDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKImageDataManager.swift; path = Sources/DKImageDataManager/DKImageDataManager.swift; sourceTree = "<group>"; };
-		E540F8F88DED0DEDE48D0A8B0321A270 /* ur.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ur.lproj; path = Sources/DKImagePickerController/Resource/Resources/ur.lproj; sourceTree = "<group>"; };
+		E540F8F88DED0DEDE48D0A8B0321A270 /* ur.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ur.lproj; path = Sources/DKImagePickerController/Resource/Resources/ur.lproj; sourceTree = "<group>"; };
 		E5BB581D1BF69D74EBDE1A59D4ED7464 /* DKCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DKCamera-dummy.m"; sourceTree = "<group>"; };
 		E5CA03939053A4830B1FF655C81DB0C0 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/Views/AnimatedImageView.swift; sourceTree = "<group>"; };
 		E5DB4CBEAE0047336BF3AACEC3B3449A /* GULKeychainStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULKeychainStorage.m; path = GoogleUtilities/Environment/SecureStorage/GULKeychainStorage.m; sourceTree = "<group>"; };
 		E6899776AA78E26901B4DE8E419FDD33 /* FBLPromise+Retry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Retry.m"; path = "Sources/FBLPromises/FBLPromise+Retry.m"; sourceTree = "<group>"; };
 		E6DA4A22A2B6E9D08C669F0E32935A94 /* GULLoggerCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLoggerCodes.h; path = GoogleUtilities/Common/GULLoggerCodes.h; sourceTree = "<group>"; };
-		E6EA2D7C78D37F3F2194EAB5C8F5DEDF /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = Sources/DKImagePickerController/Resource/Resources/it.lproj; sourceTree = "<group>"; };
+		E6EA2D7C78D37F3F2194EAB5C8F5DEDF /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = it.lproj; path = Sources/DKImagePickerController/Resource/Resources/it.lproj; sourceTree = "<group>"; };
 		E872CC9349ABD137E79DEA88F260143D /* DKImagePickerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DKImagePickerController.release.xcconfig; sourceTree = "<group>"; };
 		E904148162B76974DD0FCFE84E74C8C1 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
-		E95F4135A781F1B0F90A544CD0398420 /* DKImagePickerController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DKImagePickerController; path = DKImagePickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95F4135A781F1B0F90A544CD0398420 /* DKImagePickerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DKImagePickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E966E059028F53A2905DBC8B6B9F2206 /* SwiftyGif-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-prefix.pch"; sourceTree = "<group>"; };
 		E9B6C1FC2C16B023326DA604EDA95A0E /* FIRMessagingUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMessagingUtilities.h; path = FirebaseMessaging/Sources/FIRMessagingUtilities.h; sourceTree = "<group>"; };
 		EA0019C541632238F76A269B1C297E11 /* FirebaseCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirebaseCore-dummy.m"; sourceTree = "<group>"; };
@@ -2153,7 +2158,7 @@
 		ED148747AEF5A6A6EA361C849CBE3451 /* FIRInstallationsAPIService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsAPIService.m; path = FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsAPIService.m; sourceTree = "<group>"; };
 		ED4CB87F6F627C90D66D30148140918B /* ImageFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFormat.swift; path = Sources/Image/ImageFormat.swift; sourceTree = "<group>"; };
 		ED704E12F0729A92ED42B4A95D4A7B54 /* FIRInstallationsStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsStore.m; path = FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStore.m; sourceTree = "<group>"; };
-		EE3E7284C06E027D1728322620C09D1C /* client_metrics.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = client_metrics.nanopb.c; path = GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/client_metrics.nanopb.c; sourceTree = "<group>"; };
+		EE3E7284C06E027D1728322620C09D1C /* client_metrics.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = client_metrics.nanopb.c; path = GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/client_metrics.nanopb.c; sourceTree = "<group>"; };
 		EE42D535869EE4B578A47CB7933D5E13 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/Core/UIImage+GIF.h"; sourceTree = "<group>"; };
 		EEC5FA8E9F5A52DB739106AB1C0D482E /* SDWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWeakProxy.h; path = SDWebImage/Private/SDWeakProxy.h; sourceTree = "<group>"; };
 		EEDA860D48E9A6BBAF6522D5CACEC77F /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
@@ -2452,7 +2457,6 @@
 				08C2E312882A8530A17924A3DCF6E17F /* CoreOnly */,
 				DF204BAC7C2E763B878A257B64C6EE2C /* Support Files */,
 			);
-			name = Firebase;
 			path = Firebase;
 			sourceTree = "<group>";
 		};
@@ -2509,7 +2513,6 @@
 				1FA66E94BA8314861F5EDE2C34B9156F /* FIRVersion.m */,
 				6C611A40897ADF7D52E94DF3993CF97F /* Support Files */,
 			);
-			name = FirebaseCore;
 			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
@@ -2520,7 +2523,6 @@
 				BE58DC16F4A40F2BDEFBFA5F167E8100 /* Maps */,
 				393C73C2AFBB7B2A018AAA67FBCFFD59 /* Support Files */,
 			);
-			name = GoogleMaps;
 			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
@@ -2542,7 +2544,6 @@
 				67772FEE441708F994EEF13B798B377F /* RappleProgressHUD.swift */,
 				79835DDC0438530C013ED08C7930EF43 /* Support Files */,
 			);
-			name = RappleProgressHUD;
 			path = RappleProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -2576,7 +2577,6 @@
 				E1C5F36BC657D659E9669BA6BE96D3AC /* encode */,
 				AA7DA18D3FBD4C99B986E6CF5854CB40 /* Support Files */,
 			);
-			name = nanopb;
 			path = nanopb;
 			sourceTree = "<group>";
 		};
@@ -2597,9 +2597,9 @@
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
 				05C4280976BF93DA8B36818DE2E2A5E0 /* Cosmos */,
 				CA033A3D1AF6D02A993B8BCEE298B0C4 /* DKCamera */,
-				E95F4135A781F1B0F90A544CD0398420 /* DKImagePickerController */,
+				E95F4135A781F1B0F90A544CD0398420 /* DKImagePickerController.framework */,
 				7247E064ECCE473BC39CE9C6B1E7C0B3 /* DKImagePickerController-DKImagePickerController */,
-				B1B247DE42D782218EFEA0CB0F6D6454 /* DKPhotoGallery */,
+				B1B247DE42D782218EFEA0CB0F6D6454 /* DKPhotoGallery.framework */,
 				B85D4E7E4EAEF1DAD4C541A2D2E6F27D /* DKPhotoGallery-DKPhotoGallery */,
 				E2B63D462DB7F827C4B11FD51E4F8E2D /* FirebaseCore */,
 				148D0F9E8C7373FEAF40D800FC5F1BAA /* FirebaseCoreInternal */,
@@ -2777,7 +2777,6 @@
 				A987C442F7A305A9317ACDD5BAE162C1 /* GoogleDataTransport.h */,
 				432A4ECFF666BB05F939A8078CE18CBA /* Support Files */,
 			);
-			name = GoogleDataTransport;
 			path = GoogleDataTransport;
 			sourceTree = "<group>";
 		};
@@ -2787,7 +2786,6 @@
 				72BDF55B8F53E79B7051A6564D44A371 /* SwiftyJSON.swift */,
 				93D8651BC06BB4210C08AAFE92D4E62E /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -2804,7 +2802,6 @@
 				023AFDD099C1A99A0B9A076DB0C9DDD3 /* Support Files */,
 				F8BAC8CD79B9FD90357C02F21FAAD9EA /* UserDefaults */,
 			);
-			name = GoogleUtilities;
 			path = GoogleUtilities;
 			sourceTree = "<group>";
 		};
@@ -2828,7 +2825,6 @@
 				D7F0E79450DBDC75D17C6EEC9043E932 /* StarLayer.swift */,
 				C4321378182B9CDF8EB13C11E36A4F97 /* Support Files */,
 			);
-			name = Cosmos;
 			path = Cosmos;
 			sourceTree = "<group>";
 		};
@@ -2859,7 +2855,6 @@
 				184D1B6990E9E0244B3A0DCB7ED4976F /* Resource */,
 				2CDC02881E795B9AE852BCD4241FA343 /* Support Files */,
 			);
-			name = DKImagePickerController;
 			path = DKImagePickerController;
 			sourceTree = "<group>";
 		};
@@ -3096,7 +3091,6 @@
 				078B08230DEFD29F664EE10108E56974 /* FBLPromises.h */,
 				C807B683F2F33853C93BF733FEE1A0A2 /* Support Files */,
 			);
-			name = PromisesObjC;
 			path = PromisesObjC;
 			sourceTree = "<group>";
 		};
@@ -3210,7 +3204,6 @@
 				0180995016CFFBB816ECEAA9FB651822 /* WeakContainer.swift */,
 				836417D15EB5E97885F3DF9073F5444A /* Support Files */,
 			);
-			name = FirebaseCoreInternal;
 			path = FirebaseCoreInternal;
 			sourceTree = "<group>";
 		};
@@ -3318,7 +3311,6 @@
 				F7208DB77F4CA6F099762E2ED39D1668 /* WKInterfaceImage+Kingfisher.swift */,
 				AFA456098D8E4D3995A4C9E9B3987D96 /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -3343,7 +3335,6 @@
 				61EF7DF61851A4C4BA0E7EFB41F89CE3 /* IQUIViewController+Additions.swift */,
 				45B0DEFE48E13EB64A7EAE9B5E7E0C64 /* Support Files */,
 			);
-			name = IQKeyboardManagerSwift;
 			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
@@ -3373,7 +3364,6 @@
 				9A2AAD36A658A48473904370826E1089 /* Resources */,
 				A722CD21BF4F3F0514F9C1264E411290 /* Support Files */,
 			);
-			name = DKCamera;
 			path = DKCamera;
 			sourceTree = "<group>";
 		};
@@ -3447,7 +3437,6 @@
 				8667BC3C3CFCDD443DEADA41E4D7483F /* UIImageView+SwiftyGif.swift */,
 				6E9D5027955313021CACC318024A72EA /* Support Files */,
 			);
-			name = SwiftyGif;
 			path = SwiftyGif;
 			sourceTree = "<group>";
 		};
@@ -3575,7 +3564,6 @@
 				19E1DBC64B8745942B6EC91EE53720D0 /* Resource */,
 				21D80C9EC78A38BCB81CC4A00232504E /* Support Files */,
 			);
-			name = DKPhotoGallery;
 			path = DKPhotoGallery;
 			sourceTree = "<group>";
 		};
@@ -3594,7 +3582,6 @@
 				56272D87370F03C782E64DEFBD9B2642 /* Resources */,
 				FE81488023FEFBF68075CAEB93985ABF /* Support Files */,
 			);
-			name = GooglePlaces;
 			path = GooglePlaces;
 			sourceTree = "<group>";
 		};
@@ -3652,7 +3639,6 @@
 				179184A9CEBF6BA25A2D67BDF4C155E4 /* FIROptionsInternal.h */,
 				EB7F7D270646931D921D3EC27BD89276 /* Support Files */,
 			);
-			name = FirebaseInstallations;
 			path = FirebaseInstallations;
 			sourceTree = "<group>";
 		};
@@ -3704,7 +3690,6 @@
 				AE9A5689C88ADDF3AE8D23333926238E /* Validation.swift */,
 				F9020395A9B6DE61040D3A88E3E18249 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -3776,7 +3761,6 @@
 				00D0713F3ED9B606526005AE26321D7B /* Support Files */,
 				80ADA1C4C77107893D2B554096CC064E /* WithoutAdIdSupport */,
 			);
-			name = GoogleAppMeasurement;
 			path = GoogleAppMeasurement;
 			sourceTree = "<group>";
 		};
@@ -3823,7 +3807,6 @@
 				12C20497BAC4556740F6B81160BB59BB /* AdIdSupport */,
 				163D9B942E24916583DC0367B84D0563 /* Support Files */,
 			);
-			name = FirebaseAnalytics;
 			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
@@ -3959,7 +3942,6 @@
 				E4AD9E69D0E486BF16EE15DE33CD7CF7 /* NSError+FIRMessaging.m */,
 				CA64520D5FFAC4FBE5DA789528EA5068 /* Support Files */,
 			);
-			name = FirebaseMessaging;
 			path = FirebaseMessaging;
 			sourceTree = "<group>";
 		};
@@ -3996,7 +3978,6 @@
 				2DEF264DDC21F6395B099FB5FA737186 /* Core */,
 				6B20D2A7C8A7AD69AE37D7D18EF8C818 /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -4085,7 +4066,6 @@
 				BF6729E408BBB4B3B8128075874BE865 /* Kingfisher */,
 				437461B88A8BE6C0C7B1CAB8582FEAB9 /* Support Files */,
 			);
-			name = ImageSlideshow;
 			path = ImageSlideshow;
 			sourceTree = "<group>";
 		};
@@ -4850,7 +4830,7 @@
 			);
 			name = DKPhotoGallery;
 			productName = DKPhotoGallery;
-			productReference = B1B247DE42D782218EFEA0CB0F6D6454 /* DKPhotoGallery */;
+			productReference = B1B247DE42D782218EFEA0CB0F6D6454 /* DKPhotoGallery.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		76ECBFA16F19926BEDC92324235D3BE7 /* DKPhotoGallery-DKPhotoGallery */ = {
@@ -4989,7 +4969,7 @@
 			);
 			name = DKImagePickerController;
 			productName = DKImagePickerController;
-			productReference = E95F4135A781F1B0F90A544CD0398420 /* DKImagePickerController */;
+			productReference = E95F4135A781F1B0F90A544CD0398420 /* DKImagePickerController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B2F46A67275CC5973EE13076CD708247 /* ImageSlideshow */ = {
@@ -6758,7 +6738,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DKImagePickerController/DKImagePickerController-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DKImagePickerController/DKImagePickerController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -7494,7 +7474,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DKPhotoGallery/DKPhotoGallery-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DKPhotoGallery/DKPhotoGallery-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -8110,7 +8090,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DKImagePickerController/DKImagePickerController-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DKImagePickerController/DKImagePickerController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -8291,7 +8271,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DKPhotoGallery/DKPhotoGallery-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DKPhotoGallery/DKPhotoGallery-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
