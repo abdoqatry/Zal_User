@@ -63,6 +63,14 @@
 		841BB1F1299435C100F74113 /* SpecialStoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841BB1EF299435C100F74113 /* SpecialStoreCell.xib */; };
 		841D356829A145F900004DB6 /* TrackOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D356629A145F900004DB6 /* TrackOrderVC.swift */; };
 		8423E0052AFD5AF2007AF7BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8423E0042AFD5AF2007AF7BA /* GoogleService-Info.plist */; };
+		8423E00A2B001113007AF7BA /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423E0082B001113007AF7BA /* NotificationVC.swift */; };
+		8423E00B2B001113007AF7BA /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8423E0092B001113007AF7BA /* NotificationVC.xib */; };
+		8423E00E2B0012BB007AF7BA /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423E00C2B0012BB007AF7BA /* NotificationCell.swift */; };
+		8423E00F2B0012BB007AF7BA /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8423E00D2B0012BB007AF7BA /* NotificationCell.xib */; };
+		8423E0112B0013CA007AF7BA /* notificationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423E0102B0013CA007AF7BA /* notificationProtocol.swift */; };
+		8423E0132B00140D007AF7BA /* notificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423E0122B00140D007AF7BA /* notificationModel.swift */; };
+		8423E0162B001447007AF7BA /* NotificationDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423E0142B001447007AF7BA /* NotificationDetailsVC.swift */; };
+		8423E0172B001447007AF7BA /* NotificationDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8423E0152B001447007AF7BA /* NotificationDetailsVC.xib */; };
 		84292AA0299990E4007BE0AD /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292A9E299990E4007BE0AD /* ProfileVC.swift */; };
 		84292AA329999C85007BE0AD /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292AA229999C85007BE0AD /* ProfileModel.swift */; };
 		84292AA729999EFC007BE0AD /* EditeProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84292AA529999EFC007BE0AD /* EditeProfileVC.swift */; };
@@ -243,6 +251,14 @@
 		841D356629A145F900004DB6 /* TrackOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderVC.swift; sourceTree = "<group>"; };
 		8423E0042AFD5AF2007AF7BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8423E0062AFD5F8E007AF7BA /* Zal_User.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zal_User.entitlements; sourceTree = "<group>"; };
+		8423E0082B001113007AF7BA /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		8423E0092B001113007AF7BA /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
+		8423E00C2B0012BB007AF7BA /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		8423E00D2B0012BB007AF7BA /* NotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
+		8423E0102B0013CA007AF7BA /* notificationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationProtocol.swift; sourceTree = "<group>"; };
+		8423E0122B00140D007AF7BA /* notificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationModel.swift; sourceTree = "<group>"; };
+		8423E0142B001447007AF7BA /* NotificationDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailsVC.swift; sourceTree = "<group>"; };
+		8423E0152B001447007AF7BA /* NotificationDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationDetailsVC.xib; sourceTree = "<group>"; };
 		84292A9E299990E4007BE0AD /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		84292AA229999C85007BE0AD /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		84292AA529999EFC007BE0AD /* EditeProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeProfileVC.swift; sourceTree = "<group>"; };
@@ -643,6 +659,21 @@
 			path = TrackOrder;
 			sourceTree = "<group>";
 		};
+		8423E0072B0010F1007AF7BA /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				8423E0082B001113007AF7BA /* NotificationVC.swift */,
+				8423E0092B001113007AF7BA /* NotificationVC.xib */,
+				8423E00C2B0012BB007AF7BA /* NotificationCell.swift */,
+				8423E00D2B0012BB007AF7BA /* NotificationCell.xib */,
+				8423E0102B0013CA007AF7BA /* notificationProtocol.swift */,
+				8423E0122B00140D007AF7BA /* notificationModel.swift */,
+				8423E0142B001447007AF7BA /* NotificationDetailsVC.swift */,
+				8423E0152B001447007AF7BA /* NotificationDetailsVC.xib */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		84292A9D29999079007BE0AD /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -676,6 +707,7 @@
 		84292AB4299ADE51007BE0AD /* More */ = {
 			isa = PBXGroup;
 			children = (
+				8423E0072B0010F1007AF7BA /* Notification */,
 				844E88B229BE72F700F157CF /* Favorites */,
 				841A823B299D72E500141DEE /* MoreList */,
 				84292AB5299ADE59007BE0AD /* MyOrder */,
@@ -1048,6 +1080,7 @@
 				84B13D2429BCE33100F8B226 /* AdressCell.xib in Resources */,
 				849F171A29DA1DF000EE81DE /* ChatVC.xib in Resources */,
 				8453F3F329BFC09100F06E67 /* CartProductCell.xib in Resources */,
+				8423E00F2B0012BB007AF7BA /* NotificationCell.xib in Resources */,
 				849FFF3D29AFE21200332478 /* RateStoreCell.xib in Resources */,
 				849FFF3029AFD11B00332478 /* ProductDetailsVC.xib in Resources */,
 				840AE730298D70AD000BECE2 /* LaunchScreen.storyboard in Resources */,
@@ -1059,6 +1092,7 @@
 				84A5F54A2A50A7A700316B94 /* CurrentOrderCell.xib in Resources */,
 				844292EA2A5CB958006A51FD /* AboutViewController.xib in Resources */,
 				84A5F5312A50A33A00316B94 /* ShowlistAdressVC.xib in Resources */,
+				8423E00B2B001113007AF7BA /* NotificationVC.xib in Resources */,
 				8402A6212A5B43910047EBDD /* ChooseLangVC.xib in Resources */,
 				849F170D29DA13CE00EE81DE /* MessageVC.xib in Resources */,
 				84A5F55E2A50A88300316B94 /* CancelOrderCell.xib in Resources */,
@@ -1067,6 +1101,7 @@
 				84B6CB652994E8420049192E /* NearStoreCell.xib in Resources */,
 				840AE752298D7D43000BECE2 /* DateController.xib in Resources */,
 				84A5F5272A509EC900316B94 /* ProfileVC.xib in Resources */,
+				8423E0172B001447007AF7BA /* NotificationDetailsVC.xib in Resources */,
 				841A8245299D736E00141DEE /* MoreCell.xib in Resources */,
 				84292AAE299A5926007BE0AD /* Tajawal-Light.ttf in Resources */,
 				841BB1F1299435C100F74113 /* SpecialStoreCell.xib in Resources */,
@@ -1178,6 +1213,8 @@
 				841D356829A145F900004DB6 /* TrackOrderVC.swift in Sources */,
 				8453F3F229BFC09100F06E67 /* CartProductCell.swift in Sources */,
 				84D7229329D4DFE800B2777A /* PaymentModel.swift in Sources */,
+				8423E0132B00140D007AF7BA /* notificationModel.swift in Sources */,
+				8423E0162B001447007AF7BA /* NotificationDetailsVC.swift in Sources */,
 				840AE751298D7D43000BECE2 /* DateController.swift in Sources */,
 				844E88B929BE739B00F157CF /* FavoriteCell.swift in Sources */,
 				840AE743298D7C0E000BECE2 /* String.swift in Sources */,
@@ -1210,10 +1247,12 @@
 				84292ACE299C3636007BE0AD /* FinishedOrderVC.swift in Sources */,
 				840AE73A298D77F5000BECE2 /* LoginVC.swift in Sources */,
 				8453F3ED29BFBE6C00F06E67 /* CartVC.swift in Sources */,
+				8423E00A2B001113007AF7BA /* NotificationVC.swift in Sources */,
 				84292AA329999C85007BE0AD /* ProfileModel.swift in Sources */,
 				84292AE0299C3FC1007BE0AD /* CancelOrderPresenter.swift in Sources */,
 				849F170C29DA13CE00EE81DE /* MessageVC.swift in Sources */,
 				840AE724298D70AC000BECE2 /* AppDelegate.swift in Sources */,
+				8423E00E2B0012BB007AF7BA /* NotificationCell.swift in Sources */,
 				84B742AA29A4282A0091AA34 /* IntroFirstPageVC.swift in Sources */,
 				8415E9E529996701007B1A48 /* NearStoreTabelCell.swift in Sources */,
 				840AE747298D7C53000BECE2 /* uitabelViewExtention.swift in Sources */,
@@ -1279,6 +1318,7 @@
 				84D7229729D4F0C400B2777A /* CheckOutPresenter.swift in Sources */,
 				849F171329DA157C00EE81DE /* chatModel.swift in Sources */,
 				840AE741298D7BF1000BECE2 /* UIViewController.swift in Sources */,
+				8423E0112B0013CA007AF7BA /* notificationProtocol.swift in Sources */,
 				84FECA3829AC189F00637385 /* StoreModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
