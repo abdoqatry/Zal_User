@@ -7,7 +7,41 @@
 
 import UIKit
 
-class NotificationVC: UIViewController {
+class NotificationVC: UIViewController,notificationProtocol {
+    
+    func Errormassage(msg: String) {
+        showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
+    }
+    
+    func realoadData() {
+        NotificationTabelView.reloadData()
+    }
+    
+    func notifictionCount(count:Int){
+        if count == 0 {
+            NodataLabel.isHidden = false
+        }else{
+            NodataLabel.isHidden = true
+        }
+    }
+    
+    func selectcell(orderId:String,type:String,title:String,body:String){
+        if type == "1" || type == "2" {
+//            AuthService.instance.id = orderId
+//            present(viewController: StoreTabbarVC())
+//            DispatchQueue.global(qos: .background).async {
+//                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
+//                    // Put your code which should be executed with a delay here
+//                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "UserOpenOrdersDetails"), object: nil)
+//                }
+//            }
+    }else if type == "3" {
+            let vc = Bundle.main.loadNibNamed("NotificationDetailsVC", owner: nil, options: nil)![0] as! NotificationDetailsVC
+            vc.titleLabel.text = title
+            vc.contentLabel.text = body
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 
     @IBOutlet weak var NodataLabel: UILabel!
     @IBOutlet weak var NotificationTabelView: UITableView!{
@@ -18,10 +52,12 @@ class NotificationVC: UIViewController {
         }
     }
     
+    var presenter : NotificationPresenter?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        presenter = NotificationPresenter(self)
+        title = "Notification".localize
+        presenter?.getnotification()
     }
     
     

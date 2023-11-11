@@ -158,6 +158,16 @@ UINavigationBar.appearance().tintColor = UIColor.white
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    func setNavigationRightBT(){
+        let button1 = UIBarButtonItem(image: UIImage(named:"Group 24315")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(bell2))
+        navigationItem.setRightBarButtonItems([button1], animated: true)
+    }
+    
+    @objc func bell2(){
+        let vc = Bundle.main.loadNibNamed("NotificationVC", owner: nil, options: nil)![0] as! NotificationVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     func LogoutAlert(){
         let alert = UIAlertController(title: "", message: "First You have to sign in ".localize, preferredStyle: .alert)

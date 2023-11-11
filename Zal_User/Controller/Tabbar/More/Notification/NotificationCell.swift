@@ -7,7 +7,14 @@
 
 import UIKit
 
-class NotificationCell: UITableViewCell,Reuseable {
+class NotificationCell: UITableViewCell,Reuseable,notificationCellView {
+    
+    func Data(name: String, image: String) {
+        let url = URL(string: image)
+        notifiImg.kf.setImage(with: url)
+        contantLabel.text = name
+    }
+    
 
     @IBOutlet weak var contantLabel: UILabel!
     @IBOutlet weak var notifiImg: UIImageView!

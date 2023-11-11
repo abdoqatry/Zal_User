@@ -75,6 +75,7 @@ class HomeVC: UIViewController,HomeProtocol {
         presenter?.getSlider()
         setupNavigationBar()
         setNavigationLeftBT()
+        setNavigationRightBT()
         
     }
     
