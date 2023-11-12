@@ -254,7 +254,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gze-LS-eBt">
-                                        <rect key="frame" x="25" y="544" width="343" height="52"/>
+                                        <rect key="frame" x="25" y="544" width="343" height="287"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The total amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijE-EI-QBP">
                                                 <rect key="frame" x="14.999999999999993" y="10" width="116.33333333333331" height="16"/>
@@ -270,10 +270,10 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4wa-6X-uNR">
-                                                <rect key="frame" x="15" y="52" width="313" height="0.0"/>
+                                                <rect key="frame" x="15" y="52" width="313" height="235"/>
                                                 <subviews>
-                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RmM-Vz-Ybe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="25"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RmM-Vz-Ybe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="313" height="25"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment type :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tK-Il-DZa">
                                                                 <rect key="frame" x="10" y="4.6666666666666288" width="99.666666666666671" height="16"/>
@@ -297,8 +297,8 @@
                                                             <constraint firstAttribute="height" constant="25" id="gOv-Ee-JpV"/>
                                                         </constraints>
                                                     </view>
-                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmV-gu-uNy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="25"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmV-gu-uNy">
+                                                        <rect key="frame" x="0.0" y="35" width="313" height="25"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsr-1l-7e2">
                                                                 <rect key="frame" x="10" y="4.6666666666666288" width="41" height="16"/>
@@ -322,8 +322,8 @@
                                                             <constraint firstAttribute="height" constant="25" id="yJG-WC-eTA"/>
                                                         </constraints>
                                                     </view>
-                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Lo-u0-ZhZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="25"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Lo-u0-ZhZ">
+                                                        <rect key="frame" x="0.0" y="70" width="313" height="25"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount percentage :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OO8-TT-ckJ">
                                                                 <rect key="frame" x="10" y="4.6666666666666288" width="146.66666666666666" height="16"/>
@@ -347,8 +347,8 @@
                                                             <constraint firstItem="oOS-dd-yXh" firstAttribute="leading" secondItem="OO8-TT-ckJ" secondAttribute="trailing" constant="10" id="pcY-lk-9nr"/>
                                                         </constraints>
                                                     </view>
-                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0X-dT-z9Q">
-                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="25"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0X-dT-z9Q">
+                                                        <rect key="frame" x="0.0" y="105" width="313" height="25"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Service :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tl1-78-gYV">
                                                                 <rect key="frame" x="10" y="4.6666666666666288" width="114" height="16"/>
@@ -372,8 +372,8 @@
                                                             <constraint firstAttribute="height" constant="25" id="qKN-Hc-tHd"/>
                                                         </constraints>
                                                     </view>
-                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4m-xd-407">
-                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="25"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4m-xd-407">
+                                                        <rect key="frame" x="0.0" y="140" width="313" height="25"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yq-Ys-ldr">
                                                                 <rect key="frame" x="10" y="4.6666666666666288" width="40.666666666666664" height="16"/>
@@ -397,8 +397,8 @@
                                                             <constraint firstAttribute="height" constant="25" id="bNX-qQ-wGv"/>
                                                         </constraints>
                                                     </view>
-                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="em6-cy-ZZS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="25"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="em6-cy-ZZS">
+                                                        <rect key="frame" x="0.0" y="175" width="313" height="25"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ِApp percentage (tax included) :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lE-zM-u7r">
                                                                 <rect key="frame" x="10" y="5.6666666666666288" width="184.33333333333334" height="14"/>
@@ -423,8 +423,8 @@
                                                             <constraint firstItem="mtQ-YC-BeQ" firstAttribute="centerY" secondItem="em6-cy-ZZS" secondAttribute="centerY" id="wpg-BP-GDJ"/>
                                                         </constraints>
                                                     </view>
-                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDa-F3-klx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="25"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDa-F3-klx">
+                                                        <rect key="frame" x="0.0" y="210" width="313" height="25"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCM-1o-po0">
                                                                 <rect key="frame" x="10" y="4.6666666666666288" width="61" height="16"/>
@@ -510,20 +510,36 @@
                 </constraints>
             </view>
             <connections>
+                <outlet property="AmountView" destination="YDa-F3-klx" id="Nok-U1-axr"/>
                 <outlet property="DateLabel" destination="Y2C-5I-Pg4" id="B1S-Ba-U8J"/>
                 <outlet property="DateLabelrecived" destination="9IZ-SI-VVt" id="XZs-YD-zte"/>
                 <outlet property="TabelHeight" destination="Kzj-Od-2eB" id="v6o-7L-jJ2"/>
+                <outlet property="VatView" destination="em6-cy-ZZS" id="DJP-vs-2ml"/>
                 <outlet property="bottomDateView" destination="osi-DS-kxj" id="mj8-zd-5Yw"/>
                 <outlet property="bottomDaterecivedView" destination="Xzh-G0-S1l" id="to6-kU-VJY"/>
+                <outlet property="bottompriceView" destination="ceR-5I-oxA" id="naN-EG-nzB"/>
                 <outlet property="colapsDateImage" destination="Zzd-eR-ImB" id="qRY-JZ-BrE"/>
                 <outlet property="colapsDaterecivedImage" destination="cO2-uX-iaD" id="cZg-Vr-037"/>
+                <outlet property="colapsPriceImage" destination="nUg-su-qCo" id="cco-Ug-yTz"/>
                 <outlet property="dateView" destination="Yb7-tI-jIy" id="16E-hc-sY8"/>
+                <outlet property="deliveryFessLabel" destination="C9M-FW-BuZ" id="Z3I-gi-wXn"/>
+                <outlet property="deliveryView" destination="i0X-dT-z9Q" id="UOX-Az-6gB"/>
+                <outlet property="discountLabel" destination="oOS-dd-yXh" id="XFD-n5-Oqs"/>
+                <outlet property="discountView" destination="5Lo-u0-ZhZ" id="1LL-ML-X4c"/>
                 <outlet property="locationLabel" destination="EzM-0s-eC0" id="yTD-bf-jUs"/>
                 <outlet property="locationView" destination="iVT-eZ-ouN" id="rOx-jN-DRK"/>
                 <outlet property="orderDetailTabel" destination="iix-oX-Php" id="li2-88-hAh"/>
+                <outlet property="paymentTypeLabel" destination="S7L-oD-gwb" id="F24-Co-nSh"/>
+                <outlet property="priceLabel" destination="k07-Xp-aYl" id="HVf-mg-bwN"/>
+                <outlet property="priceView" destination="xmV-gu-uNy" id="t0u-2F-kWP"/>
+                <outlet property="pymentTypeView" destination="RmM-Vz-Ybe" id="jDd-4F-WK6"/>
                 <outlet property="timeLabel" destination="Uj5-dB-Liv" id="3vA-U1-NF0"/>
                 <outlet property="timeLabelrecived" destination="wYv-kn-Fja" id="CLa-5G-Dp9"/>
                 <outlet property="timeView" destination="Kg2-pc-oHX" id="Yua-dT-6NV"/>
+                <outlet property="totalAmountLabel" destination="ddN-4e-LYT" id="8NC-mj-FIo"/>
+                <outlet property="totalView" destination="r4m-xd-407" id="pE2-CE-8qe"/>
+                <outlet property="totallLabel" destination="ZUQ-FR-74i" id="ezk-X5-eLs"/>
+                <outlet property="vatLabel" destination="mtQ-YC-BeQ" id="bqS-oi-LNB"/>
             </connections>
             <point key="canvasLocation" x="-327.48091603053433" y="-56.338028169014088"/>
         </viewController>

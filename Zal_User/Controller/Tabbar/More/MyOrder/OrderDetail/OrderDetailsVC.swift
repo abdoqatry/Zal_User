@@ -47,6 +47,7 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
     @IBOutlet weak var AmountView: UIView!
     @IBOutlet weak var bottompriceView: NSLayoutConstraint!
     @IBOutlet weak var colapsPriceImage: UIImageView!
+    @IBOutlet weak var totalAmountLabel: UILabel!
     
     @IBOutlet weak var colapsDateImage: UIImageView!
     @IBOutlet weak var bottomDateView: NSLayoutConstraint!
@@ -62,8 +63,8 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
     @IBOutlet weak var dateViewrecived: UIView!
     @IBOutlet weak var timeViewrecived: UIView!
     @IBOutlet weak var bottomDaterecivedView: NSLayoutConstraint!
-    @IBOutlet weak var discountLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
+//    @IBOutlet weak var discountLabel: UILabel!
+//    @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var TabelHeight: NSLayoutConstraint!
     @IBOutlet weak var orderDetailTabel: UITableView!{
         didSet {
@@ -79,13 +80,19 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
         super.viewDidLoad()
         title = "Order Details".localize
         presenter = OrderDetailsPresenter(self)
-        
+        setView()
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter?.getOrderDetails(id: id)
+    }
+    
+    func setView(){
+        colapsDateImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colacsDateView)))
+        colapsPriceImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colacspriceView)))
+        colapsDaterecivedImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colacsDateRecivedView)))
     }
     
     @objc func colacsDateRecivedView(){
