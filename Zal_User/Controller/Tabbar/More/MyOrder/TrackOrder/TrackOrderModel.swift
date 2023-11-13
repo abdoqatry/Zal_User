@@ -57,3 +57,47 @@ struct addressModel : Codable {
     let lng : String?
     let lat : String?
 }
+
+
+
+// MARK: - PaymentChickModel
+struct PaymentChickModel: Codable {
+//    let status: String?
+    let data: CheckPaymentClass?
+    let message: String?
+}
+
+// MARK: - DataClass
+struct CheckPaymentClass: Codable {
+    let result: Result?
+    let buildNumber, timestamp, ndc: String?
+}
+
+
+// MARK: - GetHyperPay
+struct GetHyperPayModel: Codable {
+    let status: String?
+    let data: PaymentDataClass?
+    let message: String?
+    let msg: Msg?
+}
+
+// MARK: - DataClass
+struct PaymentDataClass: Codable {
+    let checkoutID: String?
+
+    enum CodingKeys: String, CodingKey {
+        case checkoutID = "checkout_id"
+    }
+}
+
+// MARK: - Msg
+struct Msg: Codable {
+    let result: Result?
+    let buildNumber, timestamp, ndc, id: String?
+}
+
+// MARK: - Result
+struct Result: Codable {
+    let code, description: String?
+}

@@ -55,6 +55,8 @@ enum Router {
     case contact_info
     case contact(phone:String,email:String,message:String)
     case notifications
+    case get_checkout_id(amount:String,paymentType:String)
+    case check_status(paymentType:String,id:String)
     
     private var path: String {
         var path: String
@@ -153,6 +155,10 @@ enum Router {
             path = "provider/contact"
         case.notifications:
             path = "api/notifications"
+        case.get_checkout_id:
+            path = "api/get_checkout_id"
+        case.check_status(let paymentType,let id):
+            path = "api/check_status/\(id)"
             
         }
         return path
@@ -197,6 +203,10 @@ enum Router {
             URLQueryItem(name: "order_id", value: order_id),
             URLQueryItem(name: "msg", value: msg),
             URLQueryItem(name: "msg_type", value: msg_type),
+            ]
+        case.check_status(let paymentType,let id):
+            queryItems = [
+            URLQueryItem(name: "paymentType", value: paymentType)
             ]
         default:
             queryItems = []
@@ -316,6 +326,11 @@ enum Router {
                 "phone" : phone,
                 "email" : email,
                 "message" : message
+            ]
+        case.get_checkout_id(let amount,let paymentType):
+            param =  [
+                "amount" : amount,
+                "paymentType" : paymentType
             ]
             
         default:

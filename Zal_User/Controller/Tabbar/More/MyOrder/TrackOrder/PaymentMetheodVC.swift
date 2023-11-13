@@ -151,5 +151,179 @@ class PaymentMetheodVC: UIViewController,OPPCheckoutProviderDelegate, PKPaymentA
                 })
             }
         }
+    
+    func GetHyperId(amount:String){
+       
+     openIndicator(title: Constants.PLEASE_WAIT, description: Constants.LOADING_DATA)
+        NetworkManager.shared.getData(GetHyperPayModel.self, Requst: .get_checkout_id(amount: amount, paymentType: PaymentType),method: .post, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
+        self?.closeIndicator()
+         if Code == 200{
+             self?.chickoutId = Data?.data?.checkoutID ?? ""
+             self?.openHyperPay(chickid: Data?.data?.checkoutID ?? "" )
+            
+         }else if Code == 422{
+            let msg = Data?.message ?? ""
+             self?.showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
+         } else {
+            let msg = Constants.UNEXPECTED_ERROR
+             self?.showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
+         }
+     
+     }
+     
+         
+     }
+    
+    
+    func openHyperPay(chickid:String){
+        if id == 1 {
+            let request = OPPPaymentProvider.paymentRequest(withMerchantIdentifier: "merchant.com.elZal.Zal", countryCode: "SA")
+            request.supportedNetworks = [
+                .masterCard,
+                .visa,
+                .mada
+
+            ]
+                    // Set currency.
+                    request.currencyCode = "SAR"
+            request.supportedCountries = ["SA"]
+            
+                    // Create total item. Label should represent your company.
+                    // It will be prepended with the word "Pay" (i.e. "Pay
+            
+            guard let balance = AmountTF.text , !balance.isEmpty else{
+
+            return  }
+            
+            request.paymentSummaryItems = [PKPaymentSummaryItem(label: "Zal app", amount: NSDecimalNumber(string: balance))]
+            
+            //  let request1 = PKPaymentRequest() // See above
+            if OPPPaymentProvider.canSubmitPaymentRequest(request) {
+            if let vc = PKPaymentAuthorizationViewController(paymentRequest: request) as PKPaymentAuthorizationViewController? {
+                    vc.delegate = self
+                present(vc, animated: true, completion: nil)
+                        } else {
+                            NSLog("Apple Pay not supported.");
+                        }
+                    }
+            
+            
+        }else{
+            
+            //        AuthService.instance.typeWallet = 1
+            let checkoutSettings = OPPCheckoutSettings()
+            
+            
+            
+            let paymentRequest = OPPPaymentProvider.paymentRequest(withMerchantIdentifier: "merchant.com.elZal.Zal", countryCode: "SA")
+            paymentRequest.supportedNetworks = [
+                .masterCard,
+                .visa,
+                .mada,
+            ]
+            
+            paymentRequest.supportedCountries = ["SA"]
+            //        paymentRequest.merchantCapabilities : ["supports3DS"]
+            
+            guard let balance = AmountTF.text , !balance.isEmpty else{
+                
+                return  }
+            
+            let total = PKPaymentSummaryItem(label: "Zal App", amount: NSDecimalNumber(string: balance))
+            
+            //        summaryItems = [total]
+            paymentRequest.paymentSummaryItems = [total]
+            
+            //        paymentRequest.currencyCode = "USD"
+            checkoutSettings.language = "ar"
+            checkoutSettings.theme.navigationBarTintColor = UIColor.black
+            checkoutSettings.theme.confirmationButtonColor = #colorLiteral(red: 0.6666666667, green: 0.003921568627, blue: 0.0862745098, alpha: 1)
+            checkoutSettings.theme.navigationBarBackgroundColor = #colorLiteral(red: 0.6666666667, green: 0.003921568627, blue: 0.0862745098, alpha: 1)
+            // Set shopper result URL
+            checkoutSettings.shopperResultURL = "elzal.com://result"
+            
+            
+            checkoutSettings.applePayPaymentRequest = paymentRequest
+            checkoutSettings.storePaymentDetails = .never
+            
+            if id == 1 {
+                checkoutSettings.paymentBrands = ["APPLEPAY"]
+                checkoutSettings.theme.paymentBrandIconBorderColor = .black
+            }else if id == 2 {
+                checkoutSettings.paymentBrands = ["VISA","MASTER"]
+            }else if id == 3 {
+                checkoutSettings.paymentBrands = ["MADA"]
+            }else if id == 4 {
+                checkoutSettings.paymentBrands = ["STC_PAY"]
+            }
+            
+            
+            self.checkout = OPPCheckoutProvider(paymentProvider: provider, checkoutID: chickid, settings: checkoutSettings)
+            
+            checkout?.delegate = self
+            checkout?.presentCheckout(forSubmittingTransactionCompletionHandler: { (transaction, error) in
+                guard let transaction = transaction else {
+                    // Handle invalid transaction, check error
+                    self.showAlert(title: error?.localizedDescription ?? "", messages: nil, message: nil, selfDismissing: false)
+                    print(error?.localizedDescription)
+                    return
+                }
+                
+                
+                print("transaction = \(transaction)")
+                if transaction.type == .synchronous {
+                    // If a transaction is synchronous, just request the payment status
+                    // You can use transaction.resourcePath or just checkout ID to do it
+                    self.GetHyper(checkout_id: chickid)
+                    
+                } else if transaction.type == .asynchronous {
+                    // The SDK opens transaction.redirectUrl in a browser
+                    // See 'Asynchronous Payments' guide for more details
+                    NotificationCenter.default.addObserver(self, selector: #selector(self.didReceiveAsynchronous), name: Notification.Name(rawValue: "AsyncPaymentCompletedNotificationKey1"), object: nil)
+                    
+                    //               self.GetHyper(checkout_id: chickid)
+                    
+                    
+                } else {
+                    // Executed in case of failure of the transaction for any reason
+                    //
+                    
+                }
+            }
+                                      , cancelHandler: {
+                // Executed if the shopper closes the payment page prematurely
+                print("Error6")
+                //            self.GetHyper(chickid: chickid)
+                
+                self.dismiss(animated: true, completion: nil)
+            })
+            
+        }
+        
+        }
+    
+    func GetHyper(checkout_id:String){
+        openIndicator(title: Constants.PLEASE_WAIT, description: Constants.LOADING_DATA)
+        NetworkManager.shared.getData(PaymentChickModel.self, Requst: .check_status(paymentType: PaymentType, id: checkout_id), method: .get, headerType: .authenticated) { [weak self](Message, Data, Code) in
+            self?.closeIndicator()
+            if Code == 200 {
+                self?.showAlert(title: Data?.message ?? "", messages:nil, message: nil, selfDismissing: true)
+                DispatchQueue.global(qos: .background).async {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+                // Put your code which should be executed with a delay here
+               
+//                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "notificationName5"), object: nil)
+                self?.GetCharge(checkout_id: checkout_id)
+                self?.dismiss(animated: true, completion: nil )
+    }
+                }
+            }else if Code == 422 {
+                self?.showAlert(title: Data?.message ?? "" , messages:nil, message: nil, selfDismissing: true)
+            }else{
+                self?.showAlert(title: Constants.UNEXPECTED_ERROR , messages:nil, message: nil, selfDismissing: true)
+            }
+            
+        }
+    }
 
 }
