@@ -42,7 +42,7 @@
 "ddN-4e-LYT.text" = "20";
 
 /* Class = "UILabel"; text = "time and date  the order"; ObjectID = "igs-EN-pvi"; */
-"igs-EN-pvi.text" = "وقت وتاريخ الطلب"
+"igs-EN-pvi.text" = "وقت وتاريخ الطلب";
 
 /* Class = "UILabel"; text = "The total amount"; ObjectID = "ijE-EI-QBP"; */
 "ijE-EI-QBP.text" = "The total amount";
@@ -51,7 +51,7 @@
 "k07-Xp-aYl.text" = "200";
 
 /* Class = "UILabel"; text = "time and date of delivery the order"; ObjectID = "lCQ-nU-stj"; */
-"lCQ-nU-stj.text" = ;"وقت وتاريخ تسليم الطلب";
+"lCQ-nU-stj.text" = "وقت وتاريخ تسليم الطلب";
 
 /* Class = "UILabel"; text = "20"; ObjectID = "mtQ-YC-BeQ"; */
 "mtQ-YC-BeQ.text" = "20";
