@@ -307,6 +307,7 @@
 		849486FB299D5EFE0049EE07 /* NearStorePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearStorePresenter.swift; sourceTree = "<group>"; };
 		849486FD299D61870049EE07 /* NearStoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearStoreModel.swift; sourceTree = "<group>"; };
 		849486FF299D65E50049EE07 /* LocationManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManger.swift; sourceTree = "<group>"; };
+		8499E74E2B02A04B00AC754D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/OrderDetailsVC.strings; sourceTree = "<group>"; };
 		849F034B29BCF7820010A3F8 /* AddAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressVC.swift; sourceTree = "<group>"; };
 		849F170A29DA13CE00EE81DE /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		849F170B29DA13CE00EE81DE /* MessageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageVC.xib; sourceTree = "<group>"; };
@@ -355,7 +356,6 @@
 		84A5F5642A50A8BF00316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TrackOrderVC.xib; sourceTree = "<group>"; };
 		84A5F5672A50A8C300316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/TrackOrderVC.strings; sourceTree = "<group>"; };
 		84A5F5692A50AC4800316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OrderDetailsVC.xib; sourceTree = "<group>"; };
-		84A5F56C2A50AC4D00316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/OrderDetailsVC.strings; sourceTree = "<group>"; };
 		84A5F56E2A50ACBC00316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OrderDetailsCell.xib; sourceTree = "<group>"; };
 		84A5F5712A50ACC100316B94 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/OrderDetailsCell.strings; sourceTree = "<group>"; };
 		84A5F5732A50B46B00316B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CartVC.xib; sourceTree = "<group>"; };
@@ -1501,7 +1501,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				84A5F5692A50AC4800316B94 /* Base */,
-				84A5F56C2A50AC4D00316B94 /* ar */,
+				8499E74E2B02A04B00AC754D /* ar */,
 			);
 			name = OrderDetailsVC.xib;
 			sourceTree = "<group>";
