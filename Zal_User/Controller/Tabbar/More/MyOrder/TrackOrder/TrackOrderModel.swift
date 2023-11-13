@@ -27,9 +27,11 @@ struct OrderDetailsClass: Codable {
     let discountAmount: Double?
     let vat, appAmount, providerAmount, total: Double?
     let date, createdAt: String?
+    let address: addressModel?
+    let is_paid : Bool?
 
     enum CodingKeys: String, CodingKey {
-        case id
+        case id,is_paid,address
         case orderNum = "order_num"
         case status
         case statusTimes = "status_times"
@@ -48,56 +50,10 @@ struct OrderDetailsClass: Codable {
     }
 }
 
-//// MARK: - Coupon
-//struct Coupon: Codable {
-//    let id: Int?
-//    let name, code, discountType: String?
-//    let discount: Int?
-//
-//    enum CodingKeys: String, CodingKey {
-//        case id, name, code
-//        case discountType = "discount_type"
-//        case discount
-//    }
-//}
-
-// MARK: - ProductElement
-//struct ProductElement: Codable {
-//    let id: String?
-//    let product: ProductProduct?
-//    let quantity, price: Int?
-//}
-
-// MARK: - ProductProduct
-//struct ProductProduct: Codable {
-//    let id: Int?
-//    let image: String?
-//    let name: String?
-//    let nameEn: String?
-//    let price, description: String?
-//
-//    enum CodingKeys: String, CodingKey {
-//        case id, image, name
-//        case nameEn = "name_en"
-//        case price, description
-//    }
-//}
-
-// MARK: - Provider
-//struct Provider: Codable {
-//    let id: Int?
-//    let name, desc: String?
-//    let image: String?
-//    let address: String?
-//    let createdAt: String?
-//
-//    enum CodingKeys: String, CodingKey {
-//        case id, name, desc, image, address
-//        case createdAt = "created_at"
-//    }
-//}
-
-// MARK: - StatusTime
-//struct StatusTime: Codable {
-//    let pending: String?
-//}
+struct addressModel : Codable {
+    let location : String?
+    let desc : String?
+    let name : String?
+    let lng : String?
+    let lat : String?
+}

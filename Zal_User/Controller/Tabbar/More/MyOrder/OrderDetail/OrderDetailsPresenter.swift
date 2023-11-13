@@ -61,7 +61,7 @@ class OrderDetailsPresenter {
                 self?.OrderList = Data?.data?.products ?? []
                 self?.vc.reloadTabel()
                 
-                self?.vc.getData(num: num, address: address, paymentType: paymentType, price: price, discount: discount, tax: tax, delivery: delivery, total: total)
+//                self?.vc.getData(num: num, address: address, paymentType: paymentType, price: price, discount: discount, tax: tax, delivery: delivery, total: total)
             }else{
                 self?.vc.Errormassage(msg: Data?.message ?? "")
             }

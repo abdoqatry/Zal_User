@@ -511,12 +511,9 @@
                 </constraints>
             </view>
             <connections>
-                <outlet property="AmountLabel" destination="WCM-1o-po0" id="ePe-Jh-1Qi"/>
-                <outlet property="AmountView" destination="YDa-F3-klx" id="Nok-U1-axr"/>
                 <outlet property="DateLabel" destination="Y2C-5I-Pg4" id="B1S-Ba-U8J"/>
                 <outlet property="DateLabelrecived" destination="9IZ-SI-VVt" id="XZs-YD-zte"/>
                 <outlet property="TabelHeight" destination="Kzj-Od-2eB" id="v6o-7L-jJ2"/>
-                <outlet property="VatView" destination="em6-cy-ZZS" id="DJP-vs-2ml"/>
                 <outlet property="bottomDateView" destination="osi-DS-kxj" id="mj8-zd-5Yw"/>
                 <outlet property="bottomDaterecivedView" destination="Xzh-G0-S1l" id="to6-kU-VJY"/>
                 <outlet property="bottompriceView" destination="ceR-5I-oxA" id="naN-EG-nzB"/>
@@ -540,10 +537,8 @@
                 <outlet property="timeLabelrecived" destination="wYv-kn-Fja" id="CLa-5G-Dp9"/>
                 <outlet property="timeView" destination="Kg2-pc-oHX" id="Yua-dT-6NV"/>
                 <outlet property="timeViewrecived" destination="tGa-xG-qyu" id="ev5-97-t47"/>
-                <outlet property="totalAmountLabel" destination="ddN-4e-LYT" id="8NC-mj-FIo"/>
                 <outlet property="totalView" destination="r4m-xd-407" id="pE2-CE-8qe"/>
                 <outlet property="totallLabel" destination="ZUQ-FR-74i" id="ezk-X5-eLs"/>
-                <outlet property="vatLabel" destination="mtQ-YC-BeQ" id="bqS-oi-LNB"/>
             </connections>
             <point key="canvasLocation" x="-327.48091603053433" y="-56.338028169014088"/>
         </viewController>
