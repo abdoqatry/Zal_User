@@ -45,7 +45,7 @@
 "igs-EN-pvi.text" = "وقت وتاريخ الطلب";
 
 /* Class = "UILabel"; text = "The total amount"; ObjectID = "ijE-EI-QBP"; */
-"ijE-EI-QBP.text" = "The total amount";
+"ijE-EI-QBP.text" = "إجمالي المبلغ ";
 
 /* Class = "UILabel"; text = "200"; ObjectID = "k07-Xp-aYl"; */
 "k07-Xp-aYl.text" = "200";
