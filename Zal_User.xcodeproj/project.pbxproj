@@ -118,8 +118,10 @@
 		849486FC299D5EFE0049EE07 /* NearStorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849486FB299D5EFE0049EE07 /* NearStorePresenter.swift */; };
 		849486FE299D61870049EE07 /* NearStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849486FD299D61870049EE07 /* NearStoreModel.swift */; };
 		84948700299D65E50049EE07 /* LocationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849486FF299D65E50049EE07 /* LocationManger.swift */; };
-		8499E75C2B02D31700AC754D /* ipworks3ds_sdk_8546.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8499E75A2B02D31700AC754D /* ipworks3ds_sdk_8546.xcframework */; };
-		8499E75D2B02D31700AC754D /* OPPWAMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8499E75B2B02D31700AC754D /* OPPWAMobile.xcframework */; };
+		8499E75E2B02D35900AC754D /* ipworks3ds_sdk_8546.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8499E75A2B02D31700AC754D /* ipworks3ds_sdk_8546.xcframework */; };
+		8499E75F2B02D35900AC754D /* ipworks3ds_sdk_8546.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8499E75A2B02D31700AC754D /* ipworks3ds_sdk_8546.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8499E7612B02D35B00AC754D /* OPPWAMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8499E75B2B02D31700AC754D /* OPPWAMobile.xcframework */; };
+		8499E7622B02D35B00AC754D /* OPPWAMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8499E75B2B02D31700AC754D /* OPPWAMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		849F034D29BCF7820010A3F8 /* AddAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F034B29BCF7820010A3F8 /* AddAddressVC.swift */; };
 		849F170C29DA13CE00EE81DE /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F170A29DA13CE00EE81DE /* MessageVC.swift */; };
 		849F170D29DA13CE00EE81DE /* MessageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F170B29DA13CE00EE81DE /* MessageVC.xib */; };
@@ -190,6 +192,21 @@
 		84FECA3829AC189F00637385 /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECA3729AC189F00637385 /* StoreModel.swift */; };
 		84FECA3A29AC1B1500637385 /* StorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECA3929AC1B1500637385 /* StorePresenter.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8499E7602B02D35900AC754D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8499E75F2B02D35900AC754D /* ipworks3ds_sdk_8546.xcframework in Embed Frameworks */,
+				8499E7622B02D35B00AC754D /* OPPWAMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		485C5ED39489569CBF6BD13B /* Pods-Zal_User.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zal_User.release.xcconfig"; path = "Target Support Files/Pods-Zal_User/Pods-Zal_User.release.xcconfig"; sourceTree = "<group>"; };
@@ -416,8 +433,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8499E75D2B02D31700AC754D /* OPPWAMobile.xcframework in Frameworks */,
-				8499E75C2B02D31700AC754D /* ipworks3ds_sdk_8546.xcframework in Frameworks */,
+				8499E7612B02D35B00AC754D /* OPPWAMobile.xcframework in Frameworks */,
+				8499E75E2B02D35900AC754D /* ipworks3ds_sdk_8546.xcframework in Frameworks */,
 				4510DF3F6BCBA4AB48214219 /* Pods_Zal_User.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1031,6 +1048,7 @@
 				840AE71E298D70AC000BECE2 /* Resources */,
 				9E617C7D9BBA19BC54F8B223 /* [CP] Embed Pods Frameworks */,
 				588B55CC68A4D0E788BBD829 /* [CP] Copy Pods Resources */,
+				8499E7602B02D35900AC754D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
