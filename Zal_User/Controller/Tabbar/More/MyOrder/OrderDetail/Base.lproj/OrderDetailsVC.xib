@@ -21,11 +21,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5s0-mt-Fx1">
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5s0-mt-Fx1">
                         <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Azc-sr-sgr">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="673"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Azc-sr-sgr">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="861"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iix-oX-Php">
                                         <rect key="frame" x="5" y="30" width="383" height="150"/>
@@ -35,7 +35,7 @@
                                         </constraints>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1l-ob-nES">
-                                        <rect key="frame" x="25" y="220" width="343" height="112"/>
+                                        <rect key="frame" x="25" y="220" width="343" height="52"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time and date  the order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igs-EN-pvi">
                                                 <rect key="frame" x="15" y="10" width="164.33333333333334" height="16"/>
@@ -51,9 +51,9 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gkc-LO-Gtp">
-                                                <rect key="frame" x="15" y="52" width="313" height="60"/>
+                                                <rect key="frame" x="15" y="52" width="313" height="0.0"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGa-xG-qyu">
+                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGa-xG-qyu">
                                                         <rect key="frame" x="0.0" y="0.0" width="313" height="25"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24090" translatesAutoresizingMaskIntoConstraints="NO" id="xgc-bm-oxK">
@@ -79,8 +79,8 @@
                                                             <constraint firstItem="xgc-bm-oxK" firstAttribute="centerY" secondItem="tGa-xG-qyu" secondAttribute="centerY" id="uOp-sG-oYe"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMm-O1-nA8">
-                                                        <rect key="frame" x="0.0" y="35" width="313" height="25"/>
+                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMm-O1-nA8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="313" height="25"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar4-week" translatesAutoresizingMaskIntoConstraints="NO" id="i9v-2g-IAR">
                                                                 <rect key="frame" x="15" y="5" width="15" height="15"/>
@@ -131,7 +131,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyj-kn-Hzx">
-                                        <rect key="frame" x="25" y="352" width="343" height="172"/>
+                                        <rect key="frame" x="25" y="292" width="343" height="172"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time and date of delivery the order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCQ-nU-stj">
                                                 <rect key="frame" x="14.999999999999986" y="10" width="234.66666666666663" height="16"/>
@@ -205,14 +205,14 @@
                                                         <rect key="frame" x="0.0" y="70" width="313" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location (21)" translatesAutoresizingMaskIntoConstraints="NO" id="NpQ-is-MSb">
-                                                                <rect key="frame" x="15" y="17.666666666666629" width="15" height="15"/>
+                                                                <rect key="frame" x="15" y="17.666666666666686" width="15" height="15"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="15" id="6WY-ZU-opc"/>
                                                                     <constraint firstAttribute="height" constant="15" id="vJF-HQ-Qeb"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 am " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzM-0s-eC0">
-                                                                <rect key="frame" x="40" y="4.6666666666666288" width="253" height="40.333333333333336"/>
+                                                                <rect key="frame" x="40" y="4.6666666666666856" width="253" height="40.333333333333336"/>
                                                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -254,7 +254,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gze-LS-eBt">
-                                        <rect key="frame" x="25" y="544" width="343" height="287"/>
+                                        <rect key="frame" x="25" y="484" width="343" height="287"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The total amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijE-EI-QBP">
                                                 <rect key="frame" x="14.999999999999993" y="10" width="116.33333333333331" height="16"/>
@@ -476,6 +476,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gze-LS-eBt" secondAttribute="bottom" constant="90" id="1GX-g4-0kw"/>
                                     <constraint firstItem="y1l-ob-nES" firstAttribute="top" secondItem="iix-oX-Php" secondAttribute="bottom" constant="40" id="6fn-5E-6Qj"/>
                                     <constraint firstItem="gze-LS-eBt" firstAttribute="top" secondItem="cyj-kn-Hzx" secondAttribute="bottom" constant="20" id="A4v-aG-XhX"/>
                                     <constraint firstItem="gze-LS-eBt" firstAttribute="trailing" secondItem="cyj-kn-Hzx" secondAttribute="trailing" id="EE0-RH-PHS"/>
@@ -510,6 +511,7 @@
                 </constraints>
             </view>
             <connections>
+                <outlet property="AmountLabel" destination="WCM-1o-po0" id="ePe-Jh-1Qi"/>
                 <outlet property="AmountView" destination="YDa-F3-klx" id="Nok-U1-axr"/>
                 <outlet property="DateLabel" destination="Y2C-5I-Pg4" id="B1S-Ba-U8J"/>
                 <outlet property="DateLabelrecived" destination="9IZ-SI-VVt" id="XZs-YD-zte"/>
