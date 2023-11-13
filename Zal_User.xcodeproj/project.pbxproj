@@ -118,6 +118,8 @@
 		849486FC299D5EFE0049EE07 /* NearStorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849486FB299D5EFE0049EE07 /* NearStorePresenter.swift */; };
 		849486FE299D61870049EE07 /* NearStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849486FD299D61870049EE07 /* NearStoreModel.swift */; };
 		84948700299D65E50049EE07 /* LocationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849486FF299D65E50049EE07 /* LocationManger.swift */; };
+		8499E75C2B02D31700AC754D /* ipworks3ds_sdk_8546.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8499E75A2B02D31700AC754D /* ipworks3ds_sdk_8546.xcframework */; };
+		8499E75D2B02D31700AC754D /* OPPWAMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8499E75B2B02D31700AC754D /* OPPWAMobile.xcframework */; };
 		849F034D29BCF7820010A3F8 /* AddAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F034B29BCF7820010A3F8 /* AddAddressVC.swift */; };
 		849F170C29DA13CE00EE81DE /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F170A29DA13CE00EE81DE /* MessageVC.swift */; };
 		849F170D29DA13CE00EE81DE /* MessageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F170B29DA13CE00EE81DE /* MessageVC.xib */; };
@@ -308,6 +310,8 @@
 		849486FD299D61870049EE07 /* NearStoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearStoreModel.swift; sourceTree = "<group>"; };
 		849486FF299D65E50049EE07 /* LocationManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManger.swift; sourceTree = "<group>"; };
 		8499E7502B02A3AD00AC754D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/OrderDetailsVC.strings; sourceTree = "<group>"; };
+		8499E75A2B02D31700AC754D /* ipworks3ds_sdk_8546.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ipworks3ds_sdk_8546.xcframework; path = "../../Downloads/Hyperpay SDK_5.7.0/iOS_Frameworks_5.7.0/ipworks3ds_sdk_8546.xcframework"; sourceTree = "<group>"; };
+		8499E75B2B02D31700AC754D /* OPPWAMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OPPWAMobile.xcframework; path = "../../Downloads/Hyperpay SDK_5.7.0/iOS_Frameworks_5.7.0/OPPWAMobile.xcframework"; sourceTree = "<group>"; };
 		849F034B29BCF7820010A3F8 /* AddAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressVC.swift; sourceTree = "<group>"; };
 		849F170A29DA13CE00EE81DE /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		849F170B29DA13CE00EE81DE /* MessageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageVC.xib; sourceTree = "<group>"; };
@@ -412,6 +416,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8499E75D2B02D31700AC754D /* OPPWAMobile.xcframework in Frameworks */,
+				8499E75C2B02D31700AC754D /* ipworks3ds_sdk_8546.xcframework in Frameworks */,
 				4510DF3F6BCBA4AB48214219 /* Pods_Zal_User.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -996,6 +1002,8 @@
 		AEC734160927DA1796338434 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8499E75A2B02D31700AC754D /* ipworks3ds_sdk_8546.xcframework */,
+				8499E75B2B02D31700AC754D /* OPPWAMobile.xcframework */,
 				D938FEDFF5CE5582D62E0F28 /* Pods_Zal_User.framework */,
 			);
 			name = Frameworks;
