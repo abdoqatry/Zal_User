@@ -278,9 +278,26 @@
                                             <action selector="cancelButtonAction:" destination="9ph-eE-sZZ" eventType="touchUpInside" id="oKV-dL-vBJ"/>
                                         </connections>
                                     </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTo-bc-VU3">
+                                        <rect key="frame" x="96.666666666666686" y="680" width="200" height="45"/>
+                                        <color key="backgroundColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="dbM-Sm-5Pz"/>
+                                            <constraint firstAttribute="height" constant="45" id="srz-bx-zrP"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pay">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="payAcction:" destination="9ph-eE-sZZ" eventType="touchUpInside" id="Ow0-xK-fwK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="QTo-bc-VU3" firstAttribute="centerX" secondItem="Luf-Fr-vK4" secondAttribute="centerX" id="1Uj-nv-7th"/>
                                     <constraint firstItem="ELM-oj-SsA" firstAttribute="top" secondItem="qfa-e2-Bue" secondAttribute="bottom" constant="5" id="200-IR-k4H"/>
                                     <constraint firstItem="rEA-bK-fb7" firstAttribute="centerX" secondItem="D7u-ZZ-Cf9" secondAttribute="centerX" id="4BY-ea-iH9"/>
                                     <constraint firstItem="tga-59-8EQ" firstAttribute="leading" secondItem="aPS-YU-1iQ" secondAttribute="leading" id="5Th-mj-wdg"/>
@@ -304,6 +321,7 @@
                                     <constraint firstItem="ELM-oj-SsA" firstAttribute="centerX" secondItem="qfa-e2-Bue" secondAttribute="centerX" id="YQM-IT-AGH"/>
                                     <constraint firstAttribute="trailing" secondItem="gxj-OA-ShF" secondAttribute="trailing" constant="5" id="aar-Lm-RBJ"/>
                                     <constraint firstItem="62M-A8-0bS" firstAttribute="centerX" secondItem="Mnb-O7-nXU" secondAttribute="centerX" id="ciL-ZX-uSZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="QTo-bc-VU3" secondAttribute="bottom" constant="30" id="eU3-OZ-v11"/>
                                     <constraint firstItem="D7u-ZZ-Cf9" firstAttribute="centerX" secondItem="Luf-Fr-vK4" secondAttribute="centerX" id="fJ1-9U-KGQ"/>
                                     <constraint firstItem="nGO-s1-lw2" firstAttribute="centerX" secondItem="Luf-Fr-vK4" secondAttribute="centerX" id="frB-9x-Vst"/>
                                     <constraint firstItem="L7W-ZZ-WCx" firstAttribute="top" secondItem="ELM-oj-SsA" secondAttribute="bottom" constant="5" id="g4L-yr-7WX"/>
@@ -351,6 +369,7 @@
                 <outlet property="orderNumTF" destination="rEA-bK-fb7" id="hkh-7A-IFU"/>
                 <outlet property="orderReviewView" destination="qfa-e2-Bue" id="xex-xk-13d"/>
                 <outlet property="orderUnderDeliverLabel" destination="bNA-FI-JH3" id="mW9-ue-uzq"/>
+                <outlet property="payBT" destination="QTo-bc-VU3" id="00V-1j-T2f"/>
                 <outlet property="requestAcceptedLabel" destination="juX-6h-R2W" id="6CJ-9o-U00"/>
                 <outlet property="requestNotificationLAbel" destination="tga-59-8EQ" id="obE-xl-0kK"/>
                 <outlet property="requestReviewLabel" destination="aPS-YU-1iQ" id="9Px-zz-oGy"/>

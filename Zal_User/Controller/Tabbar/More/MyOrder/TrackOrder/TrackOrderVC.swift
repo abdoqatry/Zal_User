@@ -17,7 +17,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
         showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
     }
     
-    func getData(status: String) {
+    func getData(status: String,isPaid:Bool) {
         if status == "pending" {
             orderReviewView.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             requestNotificationLAbel.textColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
@@ -43,7 +43,13 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
                 i.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
             }
             cancelBT.isHidden = false
+            payBT.isHidden = true
         }else if status == "accept" {
+            if isPaid == false {
+                payBT.isHidden = false
+            }else{
+                payBT.isHidden = true
+            }
             orderReviewView.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             requestNotificationLAbel.textColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             requestReviewLabel.textColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
@@ -93,6 +99,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
                 i.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
             }
             cancelBT.isHidden = true
+            payBT.isHidden = true
         }else if status == "complete" {
             orderReviewView.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             requestNotificationLAbel.textColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
@@ -118,11 +125,13 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
                 i.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             }
             cancelBT.isHidden = true
+            payBT.isHidden = true
         }
         
     }
     
 
+    @IBOutlet weak var payBT: UIButton!
     @IBOutlet weak var requestNotificationLAbel: UILabel!
     @IBOutlet weak var requestReviewLabel: UILabel!
     @IBOutlet var itemsReviewView: [UIView]!
@@ -161,11 +170,16 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
         deliverdView.layer.cornerRadius = 30
         uderDeliverView.layer.cornerRadius = 30
         cancelBT.layer.cornerRadius = 12
+        payBT.setTitle("Pay".localize, for: .normal)
         
     }
     
     @IBAction func cancelButtonAction(_ sender: UIButton) {
         presenter?.CancelOrder(id: id)
+    }
+    
+    
+    @IBAction func payAcction(_ sender: UIButton) {
     }
     
 

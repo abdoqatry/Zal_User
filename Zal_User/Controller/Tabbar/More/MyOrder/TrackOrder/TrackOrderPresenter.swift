@@ -15,7 +15,7 @@ protocol TrackOrderProtocol {
     
     func Errormassage(msg:String)
     
-    func getData(status:String)
+    func getData(status:String,isPaid:Bool)
     
     func navigationBack()
 }
@@ -34,7 +34,7 @@ class TrackPresenter {
         NetworkManager.shared.getData(OrdersDtailsModel.self, Requst: .ordersDetails(id: id), method: .get, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
             self?.vc.closeIndicator()
             if Code == 200 {
-                self?.vc.getData(status: Data?.data?.status ?? "")
+                self?.vc.getData(status: Data?.data?.status ?? "",isPaid:Data?.data?.is_paid ?? false)
             }else{
                 self?.vc.Errormassage(msg: Data?.message ?? "")
             }
