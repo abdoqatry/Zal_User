@@ -83,11 +83,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
                                         <color key="tintColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Track Order and pay">
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Start Chat">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="trackOrderAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xNF-up-7KW"/>
+                                            <action selector="startChatAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jy3-Bv-g32"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUA-Xa-f8b">
@@ -99,11 +99,11 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="Group 23007" title="Start Chat">
+                                        <buttonConfiguration key="configuration" style="plain" image="Group 23007" title="  Track Order">
                                             <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="startChatAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Mph-Co-Esg"/>
+                                            <action selector="trackOrderAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nDE-gE-7qw"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -149,8 +149,8 @@
                 <outlet property="numberLabel" destination="ISh-kT-Bqv" id="9cV-IT-OKj"/>
                 <outlet property="priceLabel" destination="zWx-8G-No9" id="8R0-9f-bnP"/>
                 <outlet property="statusLabel" destination="sx6-Sr-871" id="bpW-Id-Kqf"/>
-                <outlet property="stratChatBT" destination="nUA-Xa-f8b" id="nHp-gX-GZh"/>
-                <outlet property="trackOrderBT" destination="s1P-9j-IUE" id="gM2-uX-4T6"/>
+                <outlet property="stratChatBT" destination="s1P-9j-IUE" id="udC-nI-KZE"/>
+                <outlet property="trackOrderBT" destination="nUA-Xa-f8b" id="Knn-Rw-6lQ"/>
             </connections>
             <point key="canvasLocation" x="5.343511450381679" y="46.126760563380287"/>
         </tableViewCell>

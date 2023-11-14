@@ -12,13 +12,13 @@
 "fJt-mL-JXM.text" = "الإجمالي";
 
 /* Class = "UIButton"; configuration.title = "  Track Order"; ObjectID = "nUA-Xa-f8b"; */
-"nUA-Xa-f8b.configuration.title" = ;"بدأ محادثة";
+"nUA-Xa-f8b.configuration.title" = "تتبع الطلب و الدفع ";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nUA-Xa-f8b"; */
 "nUA-Xa-f8b.normalTitle" = "Button";
 
 /* Class = "UIButton"; configuration.title = "Start Chat"; ObjectID = "s1P-9j-IUE"; */
-"s1P-9j-IUE.configuration.title" = "تتبع الطلب و الدفع "
+"s1P-9j-IUE.configuration.title" = "بدأ محادثة";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "s1P-9j-IUE"; */
 "s1P-9j-IUE.normalTitle" = "Button";
