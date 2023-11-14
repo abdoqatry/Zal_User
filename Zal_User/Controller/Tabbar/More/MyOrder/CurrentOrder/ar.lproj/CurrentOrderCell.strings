@@ -12,7 +12,7 @@
 "fJt-mL-JXM.text" = "الإجمالي";
 
 /* Class = "UIButton"; configuration.title = "  Track Order"; ObjectID = "nUA-Xa-f8b"; */
-"nUA-Xa-f8b.configuration.title" = "تتبع الطلب ";
+"nUA-Xa-f8b.configuration.title" = "تتبع الطلب و الدفع ";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nUA-Xa-f8b"; */
 "nUA-Xa-f8b.normalTitle" = "Button";
