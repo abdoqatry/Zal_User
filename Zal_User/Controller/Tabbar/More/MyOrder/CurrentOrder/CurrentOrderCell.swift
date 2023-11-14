@@ -29,6 +29,8 @@ class CurrentOrderCell: UITableViewCell,Reuseable,CurrentOrderCellView {
         stratChatBT.layer.borderWidth = 0.5
         stratChatBT.layer.borderColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
         mainView.layer.cornerRadius = 8
+        trackOrderBT.setTitle("Track and pay Order".localize, for: .normal)
+        stratChatBT.setTitle("Start Chat".localize, for: <#T##UIControl.State#>)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -45,11 +47,11 @@ class CurrentOrderCell: UITableViewCell,Reuseable,CurrentOrderCellView {
     
     
     @IBAction func startChatAction(_ sender: UIButton) {
-        chatfunction!()
+        trackOrderafunction!()
     }
     
     @IBAction func trackOrderAction(_ sender: UIButton) {
-        trackOrderafunction!()
+        chatfunction!()
     }
     
 }
