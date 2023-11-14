@@ -185,6 +185,10 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
     
     
     @IBAction func payAcction(_ sender: UIButton) {
+        let VC = Bundle.main.loadNibNamed("PaymentMetheodVC", owner: nil, options: nil)![0] as! PaymentMetheodVC
+        VC.orderId = id
+        
+        presentPop(viewController: VC)
     }
     
 

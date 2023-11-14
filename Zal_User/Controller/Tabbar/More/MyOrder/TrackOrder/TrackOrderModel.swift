@@ -101,3 +101,10 @@ struct Msg: Codable {
 struct Result: Codable {
     let code, description: String?
 }
+
+
+// MARK: - ChargeModel
+struct ChargeModel: Codable {
+    let status: String?
+    let message: String?
+}
