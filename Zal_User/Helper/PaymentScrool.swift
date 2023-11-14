@@ -70,7 +70,7 @@ class PaymentPositionVC: UIViewController {
     func addDate(){
         availapositions.append(PaymentItem(name: "Choose Method",id: "",code: "-10"))
         availapositions.append(PaymentItem(name: "Cash",id: "cash",code: "1"))
-        availapositions.append(PaymentItem(name: "OnLine",id: "credit",code: "2"))
+//        availapositions.append(PaymentItem(name: "OnLine",id: "credit",code: "2"))
         
         print(availapositions.count)
         pickerview.reloadAllComponents()
