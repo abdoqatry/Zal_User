@@ -102,6 +102,8 @@ class DateController: UIViewController {
 //            }else{
 //                datePicker.maximumDate = maxDate
 //            }
+        }else if mode == 2 {
+            datePicker.datePickerMode = .dateAndTime
         }else{
             datePicker.datePickerMode = .time
             TitleStatus.text = "Choose time".localize
@@ -117,6 +119,10 @@ class DateController: UIViewController {
         let dataAsString = self.configDate(date: datePicker.date)
         delegetDate?.dateView(didSelect: dataAsString, mode: mode, type: type)
             self.dismissViews()
+        }else if mode == 2 {
+            let dataAsString = self.configDate2(date: datePicker.date)
+            delegetDate?.dateView(didSelect: dataAsString, mode: mode, type: type)
+                self.dismissViews()
         }else{
             let dataAsString = self.configtime(date: datePicker.date)
             delegetDate?.dateView(didSelect: dataAsString, mode: mode, type: type)

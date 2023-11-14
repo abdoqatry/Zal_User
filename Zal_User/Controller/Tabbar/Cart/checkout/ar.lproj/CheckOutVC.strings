@@ -33,7 +33,7 @@
 "YHV-rH-Vn0.text" = "اختر عنوان التوصيل";
 
 /* Class = "UILabel"; text = "cash"; ObjectID = "aNi-yP-OYK"; */
-"aNi-yP-OYK.text" = "كاش";
+"aNi-yP-OYK.text" = "credit";
 
 /* Class = "UILabel"; text = "Delivery data"; ObjectID = "aPV-UV-RXL"; */
 "aPV-UV-RXL.text" = "تاريخ التوصيل";
