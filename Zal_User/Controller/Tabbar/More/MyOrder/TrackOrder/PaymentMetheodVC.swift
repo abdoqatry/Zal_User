@@ -27,6 +27,7 @@ class PaymentMetheodVC: UIViewController,OPPCheckoutProviderDelegate, PKPaymentA
 
     var checkout : OPPCheckoutProvider?
     var chickoutId = ""
+    var orderId = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -317,6 +318,24 @@ class PaymentMetheodVC: UIViewController,OPPCheckoutProviderDelegate, PKPaymentA
                 self?.dismiss(animated: true, completion: nil )
     }
                 }
+            }else if Code == 422 {
+                self?.showAlert(title: Data?.message ?? "" , messages:nil, message: nil, selfDismissing: true)
+            }else{
+                self?.showAlert(title: Constants.UNEXPECTED_ERROR , messages:nil, message: nil, selfDismissing: true)
+            }
+            
+        }
+    }
+    
+    func GetCharge(checkout_id:String){
+        openIndicator(title: Constants.PLEASE_WAIT, description: Constants.LOADING_DATA)
+        NetworkManager.shared.getData(ChargeModel.self, Requst: .charge(order_id: orderId, transaction_id: checkout_id), method: .post, headerType: .authenticated) { [weak self](Message, Data, Code) in
+            self?.closeIndicator()
+            if Code == 200 {
+               
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "notificationName5"), object: nil)
+    
+                
             }else if Code == 422 {
                 self?.showAlert(title: Data?.message ?? "" , messages:nil, message: nil, selfDismissing: true)
             }else{

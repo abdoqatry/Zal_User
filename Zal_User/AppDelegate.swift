@@ -18,6 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     lazy var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        if url.scheme?.caseInsensitiveCompare("Zal.payments") == .orderedSame {
+            
+            NotificationCenter.default.post(name: Notification.Name(rawValue: "AsyncPaymentCompletedNotificationKey1"), object: nil)
+            
+            return true
+        }
+        return false
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let googleKey = "AIzaSyBVRc85zEOrgFDOxGWMpBCG3Xjm7Q4jWQk"

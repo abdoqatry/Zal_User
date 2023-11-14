@@ -57,6 +57,7 @@ enum Router {
     case notifications
     case get_checkout_id(amount:String,paymentType:String)
     case check_status(paymentType:String,id:String)
+    case charge(order_id:String,transaction_id:String)
     
     private var path: String {
         var path: String
@@ -159,6 +160,8 @@ enum Router {
             path = "api/get_checkout_id"
         case.check_status(let paymentType,let id):
             path = "api/check_status/\(id)"
+        case.charge:
+            path = "api/update_order_payment"
             
         }
         return path
@@ -331,6 +334,11 @@ enum Router {
             param =  [
                 "amount" : amount,
                 "paymentType" : paymentType
+            ]
+        case.charge(let order_id,let transaction_id):
+            param = [
+                "order_id" : order_id,
+                "transaction_id" : transaction_id
             ]
             
         default:

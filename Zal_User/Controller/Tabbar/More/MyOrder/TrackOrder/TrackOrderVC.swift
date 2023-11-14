@@ -157,10 +157,15 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
         title = "Order Details".localize
         presenter = TrackPresenter(self)
         setView()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.Getdata), name: NSNotification.Name(rawValue: "notificationName5"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        presenter?.getOrderDetails(id: id)
+    }
+    
+    @objc func Getdata(){
         presenter?.getOrderDetails(id: id)
     }
     
