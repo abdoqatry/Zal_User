@@ -22,6 +22,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
             orderReviewView.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             requestNotificationLAbel.textColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             requestReviewLabel.textColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
+            orderAceptedLabel.text = "request accepted and waiting for payment".localize
             for i in itemsReviewView{
                 i.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             }
@@ -47,8 +48,10 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
         }else if status == "accept" {
             if isPaid == false {
                 payBT.isHidden = false
+                orderAceptedLabel.text = "request accepted and waiting for payment".localize
             }else{
                 payBT.isHidden = true
+                orderAceptedLabel.text = "request accepted and paid".localize
             }
             orderReviewView.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             requestNotificationLAbel.textColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
@@ -78,6 +81,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
             orderReviewView.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             requestNotificationLAbel.textColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             requestReviewLabel.textColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
+            orderAceptedLabel.text = "request accepted and paid".localize
             for i in itemsReviewView{
                 i.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             }
@@ -104,6 +108,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
             orderReviewView.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             requestNotificationLAbel.textColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             requestReviewLabel.textColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
+            orderAceptedLabel.text = "request accepted and paid".localize
             for i in itemsReviewView{
                 i.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             }
@@ -176,6 +181,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
         uderDeliverView.layer.cornerRadius = 30
         cancelBT.layer.cornerRadius = 12
         payBT.setTitle("Pay".localize, for: .normal)
+        payBT.layer.cornerRadius = 12
         
     }
     

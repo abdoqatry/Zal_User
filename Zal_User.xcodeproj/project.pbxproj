@@ -123,7 +123,7 @@
 		8499E7612B02D35B00AC754D /* OPPWAMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8499E75B2B02D31700AC754D /* OPPWAMobile.xcframework */; };
 		8499E7622B02D35B00AC754D /* OPPWAMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8499E75B2B02D31700AC754D /* OPPWAMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8499E7652B02DCF100AC754D /* PaymentMetheodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499E7632B02DCF100AC754D /* PaymentMetheodVC.swift */; };
-		8499E7662B02DCF100AC754D /* PaymentMetheodVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499E7642B02DCF100AC754D /* PaymentMetheodVC.xib */; };
+		8499E7672B03C4E400AC754D /* PaymentMetheodVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499E7692B03C4E400AC754D /* PaymentMetheodVC.xib */; };
 		849F034D29BCF7820010A3F8 /* AddAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F034B29BCF7820010A3F8 /* AddAddressVC.swift */; };
 		849F170C29DA13CE00EE81DE /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F170A29DA13CE00EE81DE /* MessageVC.swift */; };
 		849F170D29DA13CE00EE81DE /* MessageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F170B29DA13CE00EE81DE /* MessageVC.xib */; };
@@ -332,7 +332,8 @@
 		8499E75A2B02D31700AC754D /* ipworks3ds_sdk_8546.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ipworks3ds_sdk_8546.xcframework; path = "../../Downloads/Hyperpay SDK_5.7.0/iOS_Frameworks_5.7.0/ipworks3ds_sdk_8546.xcframework"; sourceTree = "<group>"; };
 		8499E75B2B02D31700AC754D /* OPPWAMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OPPWAMobile.xcframework; path = "../../Downloads/Hyperpay SDK_5.7.0/iOS_Frameworks_5.7.0/OPPWAMobile.xcframework"; sourceTree = "<group>"; };
 		8499E7632B02DCF100AC754D /* PaymentMetheodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMetheodVC.swift; sourceTree = "<group>"; };
-		8499E7642B02DCF100AC754D /* PaymentMetheodVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMetheodVC.xib; sourceTree = "<group>"; };
+		8499E7682B03C4E400AC754D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PaymentMetheodVC.xib; sourceTree = "<group>"; };
+		8499E76B2B03C4E800AC754D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/PaymentMetheodVC.strings; sourceTree = "<group>"; };
 		849F034B29BCF7820010A3F8 /* AddAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressVC.swift; sourceTree = "<group>"; };
 		849F170A29DA13CE00EE81DE /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		849F170B29DA13CE00EE81DE /* MessageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageVC.xib; sourceTree = "<group>"; };
@@ -683,7 +684,7 @@
 				84B742A329A402550091AA34 /* TrackOrderModel.swift */,
 				84B742A529A4037A0091AA34 /* TrackOrderPresenter.swift */,
 				8499E7632B02DCF100AC754D /* PaymentMetheodVC.swift */,
-				8499E7642B02DCF100AC754D /* PaymentMetheodVC.xib */,
+				8499E7692B03C4E400AC754D /* PaymentMetheodVC.xib */,
 			);
 			path = TrackOrder;
 			sourceTree = "<group>";
@@ -1140,7 +1141,7 @@
 				849F171129DA145C00EE81DE /* MessagelistCell.xib in Resources */,
 				840AE72D298D70AD000BECE2 /* Assets.xcassets in Resources */,
 				845F032829AB94BA006EB4C2 /* CategorycollectionCell.xib in Resources */,
-				8499E7662B02DCF100AC754D /* PaymentMetheodVC.xib in Resources */,
+				8499E7672B03C4E400AC754D /* PaymentMetheodVC.xib in Resources */,
 				8423E0052AFD5AF2007AF7BA /* GoogleService-Info.plist in Resources */,
 				840AE72B298D70AC000BECE2 /* Main.storyboard in Resources */,
 				844E88B629BE731300F157CF /* FavoriteVC.xib in Resources */,
@@ -1394,6 +1395,15 @@
 				844292F42A5CBE74006A51FD /* ar */,
 			);
 			name = SettingVC.xib;
+			sourceTree = "<group>";
+		};
+		8499E7692B03C4E400AC754D /* PaymentMetheodVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8499E7682B03C4E400AC754D /* Base */,
+				8499E76B2B03C4E800AC754D /* ar */,
+			);
+			name = PaymentMetheodVC.xib;
 			sourceTree = "<group>";
 		};
 		84A5F5152A5092F100316B94 /* NearStoreVC.xib */ = {

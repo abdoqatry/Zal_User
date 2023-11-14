@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Amount to be charged"; ObjectID = "MbG-Vx-ZI5"; */
+"MbG-Vx-ZI5.text" = "المبلغ المستحق للدفع";
+
+/* Class = "UIButton"; normalTitle = "Wallet Shipping"; ObjectID = "YEx-XR-iWV"; */
+"YEx-XR-iWV.normalTitle" = "لدفع الطلب";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "uMV-Lh-VnH"; */
+"uMV-Lh-VnH.normalTitle" = "إلغاء";

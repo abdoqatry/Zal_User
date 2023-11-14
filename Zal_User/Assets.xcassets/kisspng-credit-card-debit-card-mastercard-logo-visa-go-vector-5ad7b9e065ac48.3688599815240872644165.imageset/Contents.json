@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-credit-card-debit-card-mastercard-logo-visa-go-vector-5ad7b9e065ac48.3688599815240872644165.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-credit-card-debit-card-mastercard-logo-visa-go-vector-5ad7b9e065ac48.3688599815240872644165@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-credit-card-debit-card-mastercard-logo-visa-go-vector-5ad7b9e065ac48.3688599815240872644165@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
