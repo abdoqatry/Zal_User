@@ -92,7 +92,7 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
     
     private func setupTabBarButtons() {
         let profileStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-     let AllProduct = let vc = Bundle.main.loadNibNamed("StoreVC", owner: nil, options: nil)![0] as! StoreVC
+     let AllProduct = Bundle.main.loadNibNamed("NearStoreVC", owner: nil, options: nil)![0] as! NearStoreVC
     
       let Homevc = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
      let MessageVC = Bundle.main.loadNibNamed("MessageVC", owner: nil, options: nil)![0] as! MessageVC
