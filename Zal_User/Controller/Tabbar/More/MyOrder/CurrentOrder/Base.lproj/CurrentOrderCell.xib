@@ -76,22 +76,22 @@
                                     <constraint firstAttribute="height" constant="1" id="wxb-yh-f9A"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="MwN-K6-urQ">
-                                <rect key="frame" x="33" y="123" width="287" height="35"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MwN-K6-urQ">
+                                <rect key="frame" x="36.666666666666657" y="123" width="280" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1P-9j-IUE">
                                         <rect key="frame" x="0.0" y="0.0" width="135" height="35"/>
                                         <color key="tintColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Start Chat">
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="startChatAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jy3-Bv-g32"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUA-Xa-f8b">
-                                        <rect key="frame" x="152" y="0.0" width="135" height="35"/>
+                                        <rect key="frame" x="145" y="0.0" width="135" height="35"/>
                                         <color key="backgroundColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="5lA-ss-aJK"/>
@@ -100,7 +100,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="Group 23007" title="  Track Order">
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="trackOrderAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nDE-gE-7qw"/>
