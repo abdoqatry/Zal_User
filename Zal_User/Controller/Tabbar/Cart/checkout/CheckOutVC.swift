@@ -44,7 +44,7 @@ class CheckOutVC: UIViewController,CeckoutProtocol {
     
     var addressId = 0
     var date = ""
-    var paymentcode = "cash"
+    var paymentcode = "credit"
     
     var presenter : CechoutPresenter?
     override func viewDidLoad() {

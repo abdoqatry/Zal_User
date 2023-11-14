@@ -52,7 +52,7 @@ class DateController: UIViewController {
         
 //        let calendar = Calendar(identifier: .gregorian)
 //
-//        let currentDate = Date()
+        let currentDate = Date()
 //        var components = DateComponents()
 //        components.calendar = calendar
 //
@@ -67,6 +67,7 @@ class DateController: UIViewController {
 //        datePicker.minimumDate = minDate
         
 //        datePicker.maximumDate = maxDate
+        datePicker.date = currentDate
     }
     
     override func viewWillAppear(_ animated: Bool) {
