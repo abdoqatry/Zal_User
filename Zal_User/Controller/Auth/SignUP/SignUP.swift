@@ -70,9 +70,9 @@ class SignUP: UIViewController,SignUpProtocol {
     }
     
     @IBAction func termsAndConditionBtnAction(_ sender: Any) {
-//        let VC = Bundle.main.loadNibNamed("TermsVc", owner: nil, options: nil)![0] as! TermsVc
-//
-//        navigationController?.pushViewController(VC, animated: true)
+        let VC = Bundle.main.loadNibNamed("TermsVc", owner: nil, options: nil)![0] as! TermsVc
+
+        navigationController?.pushViewController(VC, animated: true)
     }
     
     @IBAction func TermsAction(_ sender: UIButton) {

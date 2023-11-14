@@ -100,7 +100,7 @@ class CheckOutVC: UIViewController,CeckoutProtocol {
         let myView = Bundle.main.loadNibNamed("DateController", owner: nil, options: nil)![0] as! DateController
                  myView.delegetDate = self
        
-        myView.mode = 1
+        myView.mode = 2
         presentPop(viewController: myView)
         }
     
