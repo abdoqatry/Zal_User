@@ -92,16 +92,16 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
     
     private func setupTabBarButtons() {
         let profileStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-     let AddProduct = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
+     let AllProduct = let vc = Bundle.main.loadNibNamed("StoreVC", owner: nil, options: nil)![0] as! StoreVC
     
       let Homevc = Bundle.main.loadNibNamed("HomeVC", owner: nil, options: nil)![0] as! HomeVC
      let MessageVC = Bundle.main.loadNibNamed("MessageVC", owner: nil, options: nil)![0] as! MessageVC
         let LMessageVC = profileStoryBoard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
      let More = Bundle.main.loadNibNamed("MoreVC", owner: nil, options: nil)![0] as! MoreVC
-   let ProfileVC = Bundle.main.loadNibNamed("ProfileVC", owner: nil, options: nil)![0] as! ProfileVC
+   let ProfileVC = Bundle.main.loadNibNamed("NotificationVC", owner: nil, options: nil)![0] as! NotificationVC
         let LProfileVC = profileStoryBoard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
      
-     let addProduct = UINavigationController(rootViewController: AddProduct)
+     let addProduct = UINavigationController(rootViewController: AllProduct)
          let home = UINavigationController(rootViewController: Homevc)
          let message = UINavigationController(rootViewController: MessageVC)
         let lmessage = UINavigationController(rootViewController: LMessageVC)
@@ -110,9 +110,9 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
         let LProfile = UINavigationController(rootViewController: LProfileVC)
 
          
-        addProduct.tabBarItem = UITabBarItem(title:"Add Meal".localize, image: UIImage(named: ""), tag: 1)
-//            search.tabBarItem = tabOneBarItem
-     addProduct.tabBarItem.imageInsets = UIEdgeInsets.init(top: -10,left: 0,bottom: -5,right: 0)
+//        addProduct.tabBarItem = UITabBarItem(title:"Add Meal".localize, image: UIImage(named: ""), tag: 1)
+////            search.tabBarItem = tabOneBarItem
+//     addProduct.tabBarItem.imageInsets = UIEdgeInsets.init(top: -10,left: 0,bottom: -5,right: 0)
 //            search.setViewControllers([tabOne], animated: false)
      
      
@@ -135,29 +135,30 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
             UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: 5.0)
         }
      }
+        addProduct.tabBarItem = UITabBarItem(title: "Stores".localize, image: UIImage(named: "home-39"), tag: 2)
         home.tabBarItem = UITabBarItem(title: "Home".localize, image: UIImage(named: "home-39"), tag: 2)
         message.tabBarItem = UITabBarItem(title: "Chat".localize, image:UIImage(named: "chat"), tag: 3)
         lmessage.tabBarItem = UITabBarItem(title: "Chat".localize, image:UIImage(named: "chat"), tag: 3)
         MoreVC.tabBarItem = UITabBarItem(title: "More".localize, image:UIImage(named: "Group 24040"), tag: 4)
-        Profile.tabBarItem = UITabBarItem(title: "Profile".localize, image:UIImage(named: "user-43"), tag: 5)
-        LProfile.tabBarItem = UITabBarItem(title: "Profile".localize, image:UIImage(named: "user-43"), tag: 5)
+        Profile.tabBarItem = UITabBarItem(title: "Notification".localize, image:UIImage(named: "Group 24315"), tag: 5)
+        LProfile.tabBarItem = UITabBarItem(title: "Notification".localize, image:UIImage(named: "Group 24315"), tag: 5)
  
     
      var tabBarList : [ UIViewController]?
         if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
          tabBarList = [
             home,
-            lmessage,
-//            addProduct,
+            addProduct,
             LProfile,
+            lmessage,
             MoreVC,
              ]
         }else{
             tabBarList = [
                 home,
-                message,
-    //            addProduct,
+                addProduct,
                 Profile,
+                message,
                 MoreVC,
                 ]
         }
