@@ -199,9 +199,9 @@ extension StoreVC: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                     }
                 self.presenter?.storeCart(index: indexPath.row)
             }
-            if lang == "ar" {
-                cell.transform = CGAffineTransform(scaleX: -1, y: 1)
-            }
+//            if lang == "ar" {
+//                cell.transform = CGAffineTransform(scaleX: -1, y: 1)
+//            }
             
             return cell
         }
