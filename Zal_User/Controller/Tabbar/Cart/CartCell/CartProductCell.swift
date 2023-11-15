@@ -11,6 +11,7 @@ import Cosmos
 class CartProductCell: UITableViewCell,Reuseable,CartProductsCellView {
  
 
+    @IBOutlet weak var deleteBT: UIButton!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!

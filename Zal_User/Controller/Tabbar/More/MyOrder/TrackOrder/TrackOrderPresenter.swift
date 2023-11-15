@@ -18,6 +18,8 @@ protocol TrackOrderProtocol {
     func getData(status:String,isPaid:Bool)
     
     func navigationBack()
+    
+    func sendData(products:[ProductElement])
 }
 
 
@@ -35,6 +37,7 @@ class TrackPresenter {
             self?.vc.closeIndicator()
             if Code == 200 {
                 self?.vc.getData(status: Data?.data?.status ?? "",isPaid:Data?.data?.is_paid ?? false)
+                self?.vc.sendData(products: Data?.data?.products ?? [])
             }else{
                 self?.vc.Errormassage(msg: Data?.message ?? "")
             }

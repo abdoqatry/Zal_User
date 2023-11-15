@@ -17,6 +17,10 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
         showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
     }
     
+    func sendData(products:[ProductElement]){
+        self.Products = products
+    }
+    
     func getData(status: String,isPaid:Bool) {
         if status == "pending" {
             orderReviewView.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
@@ -157,6 +161,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
     @IBOutlet weak var editBT: UIButton!
     
     var id = ""
+    var Products : [ProductElement]?
     
     var presenter : TrackPresenter?
     override func viewDidLoad() {
@@ -203,6 +208,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
     
     @IBAction func EditAction(_ sender: UIButton) {
         let VC = Bundle.main.loadNibNamed("EditOrderVC", owner: nil, options: nil)![0] as! EditOrderVC
+        VC.products = Products
         navigationController?.pushViewController(VC, animated: true)
         
     }

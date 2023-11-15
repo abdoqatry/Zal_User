@@ -17,6 +17,13 @@ class EditOrderVC: UIViewController {
             ProductTabelView.registerCell(withCellType: CartProductCell.self)
         }
     }
+    
+    var products : [ProductElement]? {
+        didSet{
+            ProductTabelView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,7 +48,7 @@ extension EditOrderVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: CartProductCell = ProductTabelView.dequeueReusableCell(forIndexPath: indexPath)
-        
+        cell.deleteBT.isHidden = true
 //        presenter?.configureType(cell: cell, index: indexPath.row)
         
 //        cell.incrementProducte = {
@@ -66,7 +73,7 @@ extension EditOrderVC: UITableViewDataSource {
 }
 
 
-extension CartVC: UITableViewDelegate {
+extension EditOrderVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 130

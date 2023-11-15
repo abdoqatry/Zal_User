@@ -17,11 +17,11 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AEl-bD-ZYX">
-                        <rect key="frame" x="30" y="69" width="333" height="499"/>
+                        <rect key="frame" x="30" y="69" width="333" height="549"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </tableView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Amx-bi-Q7O">
-                        <rect key="frame" x="96.666666666666686" y="628" width="200" height="40"/>
+                        <rect key="frame" x="96.666666666666686" y="678" width="200" height="40"/>
                         <color key="backgroundColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="200" id="QtP-Ay-Tt1"/>
@@ -38,12 +38,12 @@
                 <viewLayoutGuide key="safeArea" id="GrK-vY-Wu9"/>
                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 <constraints>
-                    <constraint firstItem="GrK-vY-Wu9" firstAttribute="bottom" secondItem="Amx-bi-Q7O" secondAttribute="bottom" constant="150" id="Jhx-JB-7y0"/>
+                    <constraint firstItem="GrK-vY-Wu9" firstAttribute="bottom" secondItem="Amx-bi-Q7O" secondAttribute="bottom" constant="100" id="Jhx-JB-7y0"/>
                     <constraint firstItem="AEl-bD-ZYX" firstAttribute="top" secondItem="GrK-vY-Wu9" secondAttribute="top" constant="10" id="Kzk-c1-Q0P"/>
                     <constraint firstItem="Amx-bi-Q7O" firstAttribute="centerX" secondItem="rSi-Yb-DUV" secondAttribute="centerX" id="cjn-OI-Zuc"/>
                     <constraint firstItem="GrK-vY-Wu9" firstAttribute="trailing" secondItem="AEl-bD-ZYX" secondAttribute="trailing" constant="30" id="eWg-lS-dLI"/>
                     <constraint firstItem="AEl-bD-ZYX" firstAttribute="leading" secondItem="rSi-Yb-DUV" secondAttribute="leading" constant="30" id="g95-Ih-dBz"/>
-                    <constraint firstItem="GrK-vY-Wu9" firstAttribute="bottom" secondItem="AEl-bD-ZYX" secondAttribute="bottom" constant="250" id="rxN-fn-rBW"/>
+                    <constraint firstItem="GrK-vY-Wu9" firstAttribute="bottom" secondItem="AEl-bD-ZYX" secondAttribute="bottom" constant="200" id="rxN-fn-rBW"/>
                 </constraints>
             </view>
             <connections>
