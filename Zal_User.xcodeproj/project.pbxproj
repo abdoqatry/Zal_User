@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4510DF3F6BCBA4AB48214219 /* Pods_Zal_User.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D938FEDFF5CE5582D62E0F28 /* Pods_Zal_User.framework */; };
+		840079282B055204004797EF /* EditCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840079262B055204004797EF /* EditCartCell.swift */; };
+		840079292B055204004797EF /* EditCartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840079272B055204004797EF /* EditCartCell.xib */; };
 		8402A61C2A5B43370047EBDD /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402A61A2A5B43370047EBDD /* SettingVC.swift */; };
 		8402A6202A5B43910047EBDD /* ChooseLangVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402A61E2A5B43910047EBDD /* ChooseLangVC.swift */; };
 		8402A6212A5B43910047EBDD /* ChooseLangVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8402A61F2A5B43910047EBDD /* ChooseLangVC.xib */; };
@@ -215,6 +217,8 @@
 /* Begin PBXFileReference section */
 		485C5ED39489569CBF6BD13B /* Pods-Zal_User.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zal_User.release.xcconfig"; path = "Target Support Files/Pods-Zal_User/Pods-Zal_User.release.xcconfig"; sourceTree = "<group>"; };
 		7DC3E77B19EC5E2B96E508FB /* Pods-Zal_User.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zal_User.debug.xcconfig"; path = "Target Support Files/Pods-Zal_User/Pods-Zal_User.debug.xcconfig"; sourceTree = "<group>"; };
+		840079262B055204004797EF /* EditCartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCartCell.swift; sourceTree = "<group>"; };
+		840079272B055204004797EF /* EditCartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditCartCell.xib; sourceTree = "<group>"; };
 		8402A61A2A5B43370047EBDD /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		8402A61E2A5B43910047EBDD /* ChooseLangVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLangVC.swift; sourceTree = "<group>"; };
 		8402A61F2A5B43910047EBDD /* ChooseLangVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseLangVC.xib; sourceTree = "<group>"; };
@@ -698,6 +702,8 @@
 			children = (
 				841D61552B054A2C00E00297 /* EditOrderVC.swift */,
 				841D61562B054A2C00E00297 /* EditOrderVC.xib */,
+				840079262B055204004797EF /* EditCartCell.swift */,
+				840079272B055204004797EF /* EditCartCell.xib */,
 			);
 			path = EditOrder;
 			sourceTree = "<group>";
@@ -1136,6 +1142,7 @@
 				84A5F5542A50A83700316B94 /* FinishedOrderCell.xib in Resources */,
 				84A5F5722A50B46B00316B94 /* CartVC.xib in Resources */,
 				844292F02A5CBE6D006A51FD /* SettingVC.xib in Resources */,
+				840079292B055204004797EF /* EditCartCell.xib in Resources */,
 				84A5F52C2A509FE700316B94 /* EditeProfileVC.xib in Resources */,
 				84A5F54A2A50A7A700316B94 /* CurrentOrderCell.xib in Resources */,
 				844292EA2A5CB958006A51FD /* AboutViewController.xib in Resources */,
@@ -1344,6 +1351,7 @@
 				840AE75D298D80C9000BECE2 /* Router.swift in Sources */,
 				84948700299D65E50049EE07 /* LocationManger.swift in Sources */,
 				84B742AE29A430B10091AA34 /* IntroSecondPageVC.swift in Sources */,
+				840079282B055204004797EF /* EditCartCell.swift in Sources */,
 				84B742A629A4037A0091AA34 /* TrackOrderPresenter.swift in Sources */,
 				840AE754298D7EE8000BECE2 /* Constant.swift in Sources */,
 				849F034D29BCF7820010A3F8 /* AddAddressVC.swift in Sources */,

@@ -14,7 +14,7 @@ class EditOrderVC: UIViewController {
         didSet {
             ProductTabelView.delegate = self
             ProductTabelView.dataSource = self
-            ProductTabelView.registerCell(withCellType: CartProductCell.self)
+            ProductTabelView.registerCell(withCellType: EditCartCell.self)
         }
     }
     
@@ -43,14 +43,14 @@ class EditOrderVC: UIViewController {
 
 extension EditOrderVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return products?.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: CartProductCell = ProductTabelView.dequeueReusableCell(forIndexPath: indexPath)
+        let cell: EditCartCell = ProductTabelView.dequeueReusableCell(forIndexPath: indexPath)
         cell.deleteBT.isHidden = true
-//        presenter?.configureType(cell: cell, index: indexPath.row)
         
+        cell.Data(product: products?[indexPath.row])
 //        cell.incrementProducte = {
 //            self.presenter?.increamentCart(index: indexPath.row)
 //        }
