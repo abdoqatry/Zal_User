@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditOrderVC" customModule="Zal_User" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="Z1L-Tm-SNi" customClass="EditOrderVC" customModule="Zal_User" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="rSi-Yb-DUV">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AEl-bD-ZYX">
+                        <rect key="frame" x="30" y="69" width="333" height="499"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </tableView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Amx-bi-Q7O">
+                        <rect key="frame" x="96.666666666666686" y="628" width="200" height="40"/>
+                        <color key="backgroundColor" red="0.5450980392" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="QtP-Ay-Tt1"/>
+                            <constraint firstAttribute="height" constant="40" id="fjg-21-MKc"/>
+                        </constraints>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Edit"/>
+                        <connections>
+                            <action selector="EditButtonAction:" destination="Z1L-Tm-SNi" eventType="touchUpInside" id="fEm-FA-JlB"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="GrK-vY-Wu9"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="GrK-vY-Wu9" firstAttribute="bottom" secondItem="Amx-bi-Q7O" secondAttribute="bottom" constant="150" id="Jhx-JB-7y0"/>
+                    <constraint firstItem="AEl-bD-ZYX" firstAttribute="top" secondItem="GrK-vY-Wu9" secondAttribute="top" constant="10" id="Kzk-c1-Q0P"/>
+                    <constraint firstItem="Amx-bi-Q7O" firstAttribute="centerX" secondItem="rSi-Yb-DUV" secondAttribute="centerX" id="cjn-OI-Zuc"/>
+                    <constraint firstItem="GrK-vY-Wu9" firstAttribute="trailing" secondItem="AEl-bD-ZYX" secondAttribute="trailing" constant="30" id="eWg-lS-dLI"/>
+                    <constraint firstItem="AEl-bD-ZYX" firstAttribute="leading" secondItem="rSi-Yb-DUV" secondAttribute="leading" constant="30" id="g95-Ih-dBz"/>
+                    <constraint firstItem="GrK-vY-Wu9" firstAttribute="bottom" secondItem="AEl-bD-ZYX" secondAttribute="bottom" constant="250" id="rxN-fn-rBW"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="ProductTabelView" destination="AEl-bD-ZYX" id="FNA-lQ-p1E"/>
+                <outlet property="editBT" destination="Amx-bi-Q7O" id="qg6-RP-r1U"/>
+            </connections>
+            <point key="canvasLocation" x="-66" y="-1"/>
+        </viewController>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

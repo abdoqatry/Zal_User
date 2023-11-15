@@ -62,6 +62,8 @@
 		841BB1F0299435C100F74113 /* SpecialStoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BB1EE299435C100F74113 /* SpecialStoreCell.swift */; };
 		841BB1F1299435C100F74113 /* SpecialStoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841BB1EF299435C100F74113 /* SpecialStoreCell.xib */; };
 		841D356829A145F900004DB6 /* TrackOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D356629A145F900004DB6 /* TrackOrderVC.swift */; };
+		841D61572B054A2C00E00297 /* EditOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D61552B054A2C00E00297 /* EditOrderVC.swift */; };
+		841D61582B054A2C00E00297 /* EditOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D61562B054A2C00E00297 /* EditOrderVC.xib */; };
 		8423E0052AFD5AF2007AF7BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8423E0042AFD5AF2007AF7BA /* GoogleService-Info.plist */; };
 		8423E00A2B001113007AF7BA /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423E0082B001113007AF7BA /* NotificationVC.swift */; };
 		8423E00B2B001113007AF7BA /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8423E0092B001113007AF7BA /* NotificationVC.xib */; };
@@ -270,6 +272,8 @@
 		841BB1EE299435C100F74113 /* SpecialStoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialStoreCell.swift; sourceTree = "<group>"; };
 		841BB1EF299435C100F74113 /* SpecialStoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialStoreCell.xib; sourceTree = "<group>"; };
 		841D356629A145F900004DB6 /* TrackOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderVC.swift; sourceTree = "<group>"; };
+		841D61552B054A2C00E00297 /* EditOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditOrderVC.swift; sourceTree = "<group>"; };
+		841D61562B054A2C00E00297 /* EditOrderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditOrderVC.xib; sourceTree = "<group>"; };
 		8423E0042AFD5AF2007AF7BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8423E0062AFD5F8E007AF7BA /* Zal_User.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zal_User.entitlements; sourceTree = "<group>"; };
 		8423E0082B001113007AF7BA /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
@@ -689,6 +693,15 @@
 			path = TrackOrder;
 			sourceTree = "<group>";
 		};
+		841D61542B054A0D00E00297 /* EditOrder */ = {
+			isa = PBXGroup;
+			children = (
+				841D61552B054A2C00E00297 /* EditOrderVC.swift */,
+				841D61562B054A2C00E00297 /* EditOrderVC.xib */,
+			);
+			path = EditOrder;
+			sourceTree = "<group>";
+		};
 		8423E0072B0010F1007AF7BA /* Notification */ = {
 			isa = PBXGroup;
 			children = (
@@ -749,6 +762,7 @@
 		84292AB5299ADE59007BE0AD /* MyOrder */ = {
 			isa = PBXGroup;
 			children = (
+				841D61542B054A0D00E00297 /* EditOrder */,
 				845B59EC2A49DF0D0020E81C /* OrderDetail */,
 				841D356529A145D400004DB6 /* TrackOrder */,
 				84292AD6299C3CAE007BE0AD /* CancledOrder */,
@@ -1107,6 +1121,7 @@
 			files = (
 				84CFBD092A4F7841001D3D95 /* IntroSecondPageVC.xib in Resources */,
 				84A5F5592A50A86C00316B94 /* CancelOrderVC.xib in Resources */,
+				841D61582B054A2C00E00297 /* EditOrderVC.xib in Resources */,
 				844E88BA29BE739B00F157CF /* FavoriteCell.xib in Resources */,
 				84A5F53B2A50A48600316B94 /* EditAddressVC.xib in Resources */,
 				845F033129ABA471006EB4C2 /* ProductionViewCell.xib in Resources */,
@@ -1307,6 +1322,7 @@
 				84292AD9299C3D63007BE0AD /* CancelOrderCell.swift in Sources */,
 				844292EE2A5CBADB006A51FD /* TermsVc.swift in Sources */,
 				84292ADD299C3DCC007BE0AD /* CancelOrderVC.swift in Sources */,
+				841D61572B054A2C00E00297 /* EditOrderVC.swift in Sources */,
 				844E88BC29BE786100F157CF /* FavoriteModel.swift in Sources */,
 				84D7229529D4E15900B2777A /* PaymentScrool.swift in Sources */,
 				844292E92A5CB958006A51FD /* AboutViewController.swift in Sources */,

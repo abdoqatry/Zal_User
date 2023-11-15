@@ -131,7 +131,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="hia-tx-aWz"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24330" translatesAutoresizingMaskIntoConstraints="NO" id="1go-yu-w3q">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 24336" translatesAutoresizingMaskIntoConstraints="NO" id="1go-yu-w3q">
                                                 <rect key="frame" x="200" y="0.0" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="MZA-2j-XmD"/>
@@ -209,6 +209,7 @@
         <image name="Group 24332" width="47" height="47"/>
         <image name="Group 24333" width="47" height="47"/>
         <image name="Group 24334" width="47" height="47"/>
+        <image name="Group 24336" width="45.333332061767578" height="45.333332061767578"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

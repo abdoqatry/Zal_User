@@ -153,6 +153,8 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
     @IBOutlet var itemsUndeDeliverView: [UIView]!
     @IBOutlet weak var uderDeliverView: UIView!
     @IBOutlet weak var cancelBT: UIButton!
+   
+    @IBOutlet weak var editBT: UIButton!
     
     var id = ""
     
@@ -182,6 +184,8 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
         cancelBT.layer.cornerRadius = 12
         payBT.setTitle("Pay".localize, for: .normal)
         payBT.layer.cornerRadius = 12
+        editBT.setTitle("Edit".localize, for: .normal)
+        editBT.layer.cornerRadius = 12
         
     }
     
@@ -197,5 +201,11 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
         presentPop(viewController: VC)
     }
     
-
+    @IBAction func EditAction(_ sender: UIButton) {
+        let VC = Bundle.main.loadNibNamed("EditOrderVC", owner: nil, options: nil)![0] as! EditOrderVC
+        navigationController?.pushViewController(VC, animated: true)
+        
+    }
+    
+    
 }
