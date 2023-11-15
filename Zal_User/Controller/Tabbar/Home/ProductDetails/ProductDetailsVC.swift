@@ -61,6 +61,8 @@ class ProductDetailsVC: UIViewController,ProductDetailsProtocol {
             self.navigationItem.scrollEdgeAppearance = appearance
         addtocartBT.layer.cornerRadius = 12
         PriceView.layer.cornerRadius = 4
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTap))
+        ImageSliderView.addGestureRecognizer(gestureRecognizer)
     setView()
     }
     
@@ -74,6 +76,9 @@ class ProductDetailsVC: UIViewController,ProductDetailsProtocol {
         quantityLabel.text = "Quantity".localize
     }
     
+    @objc func didTap() {
+        ImageSliderView.presentFullScreenController(from: self)
+    }
    
     @IBAction func decreaseBT(_ sender: UIButton) {
         quantity = Int(quentityLabel.text!)!

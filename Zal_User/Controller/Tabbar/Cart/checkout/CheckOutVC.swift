@@ -151,8 +151,8 @@ extension CheckOutVC : Paymentprotocole{
             self.paymentcode = Id
             self.paymentLabel.text = value
         }else{
-            self.paymentcode = "cash"
-            self.paymentLabel.text = "Cash".localize
+            self.paymentcode = "credit"
+            self.paymentLabel.text = "credit"
         }
     }
     

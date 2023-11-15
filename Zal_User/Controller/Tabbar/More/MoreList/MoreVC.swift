@@ -27,7 +27,7 @@ class MoreVC: UIViewController {
     }
     
     func addDate(){
-//        dumyDate.append(dummyItem(name: "Profile",image: "Group 24189"))
+        dumyDate.append(dummyItem(name: "Profile".localize,image: "Group 24189"))
         dumyDate.append(dummyItem(name: "My Order".localize,image: "Group 24190"))
         dumyDate.append(dummyItem(name: "My Favorite".localize,image: "Group 24191"))
         dumyDate.append(dummyItem(name: "Settings".localize, image: "Group 24192"))
@@ -59,38 +59,42 @@ extension MoreVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        presenter.selectRecipeCell(index: indexPath.row, RecipeId: 1)
-//        if indexPath.row == 0 {
-//            let vc = Bundle.main.loadNibNamed("ProfileVC", owner: nil, options: nil)![0] as! ProfileVC
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }else
         if indexPath.row == 0 {
+            if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
+                LogoutAlert()
+            }else{
+                let vc = Bundle.main.loadNibNamed("ProfileVC", owner: nil, options: nil)![0] as! ProfileVC
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }else
+        if indexPath.row == 1 {
             if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
                 LogoutAlert()
             }else{
             let vc = Bundle.main.loadNibNamed("MyOrderVC", owner: nil, options: nil)![0] as! MyOrderVC
             self.navigationController?.pushViewController(vc, animated: true)
             }
-        }else if indexPath.row == 1 {
+        }else if indexPath.row == 2 {
             if AuthService.instance.authToken == nil || AuthService.instance.authToken == "" {
                 LogoutAlert()
             }else{
                 let vc = Bundle.main.loadNibNamed("FavoriteVC", owner: nil, options: nil)![0] as! FavoriteVC
                 self.navigationController?.pushViewController(vc, animated: true)
             }
-        }else if indexPath.row == 2 {
+        }else if indexPath.row == 3 {
             let vc = Bundle.main.loadNibNamed("SettingVC", owner: nil, options: nil)![0] as! SettingVC
             self.navigationController?.pushViewController(vc, animated: true)
-        } else if indexPath.row == 3 {
+        } else if indexPath.row == 4 {
             
             let vc = Bundle.main.loadNibNamed("AboutViewController", owner: nil, options: nil)![0] as! AboutViewController
             self.navigationController?.pushViewController(vc, animated: true)
-        }else if indexPath.row == 4 {
+        }else if indexPath.row == 5 {
             let vc = Bundle.main.loadNibNamed("TermsVc", owner: nil, options: nil)![0] as! TermsVc
             self.navigationController?.pushViewController(vc, animated: true)
-        }else if indexPath.row == 5 {
+        }else if indexPath.row == 6 {
             let vc = Bundle.main.loadNibNamed("ContactUsVC", owner: nil, options: nil)![0] as! ContactUsVC
             self.navigationController?.pushViewController(vc, animated: true)
-        }else if indexPath.row == 6 {
+        }else if indexPath.row == 7 {
             AuthService.instance.Logout()
         }
         
