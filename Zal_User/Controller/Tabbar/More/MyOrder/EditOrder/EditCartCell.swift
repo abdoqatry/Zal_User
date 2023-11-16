@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EditCartCell: UITableViewCell {
+class EditCartCell: UITableViewCell,Reuseable {
 
     
     @IBOutlet weak var deleteBT: UIButton!
@@ -30,12 +30,13 @@ class EditCartCell: UITableViewCell {
  
 
     func Data(product:ProductElement) {
+        let price = product.price ?? 0
         nameLabel.text = product.product?.name
         descLabel.text = product.product?.description
-        priceLabel.text = ("\(product.price)\("RS")")
-        let url = URL(string: product.product?.image)
+        priceLabel.text = ("\(price)\("RS")")
+        let url = URL(string: product.product?.image ?? "")
         productImage.kf.setImage(with: url)
-        quintyLabel.text = String(product.quantity)
+        quintyLabel.text = String(product.quantity ?? 0)
     }
     
     @IBAction func icreaseButton(_ sender: UIButton) {

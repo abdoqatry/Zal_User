@@ -49,6 +49,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
             }
             cancelBT.isHidden = false
             payBT.isHidden = true
+            editBT.isHidden = false
         }else if status == "accept" {
             if isPaid == false {
                 payBT.isHidden = false
@@ -81,6 +82,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
                 i.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
             }
             cancelBT.isHidden = true
+            editBT.isHidden = true
         }else if status == "on_the_way" {
             orderReviewView.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             requestNotificationLAbel.textColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
@@ -108,6 +110,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
             }
             cancelBT.isHidden = true
             payBT.isHidden = true
+            editBT.isHidden = true
         }else if status == "complete" {
             orderReviewView.backgroundColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
             requestNotificationLAbel.textColor = #colorLiteral(red: 0.5450980392, green: 0, blue: 0.2980392157, alpha: 1)
@@ -135,6 +138,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
             }
             cancelBT.isHidden = true
             payBT.isHidden = true
+            editBT.isHidden = true
         }
         
     }

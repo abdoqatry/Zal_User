@@ -26,14 +26,33 @@ class EditOrderVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Edit Order".localize
+        editBT.layer.cornerRadius = 12
         
     }
     
     @IBAction func EditButtonAction(_ sender: UIButton) {
-        
+        navigationController?.popViewController(animated: true)
     }
     
+    
+//    func increamentCart(index:Int){
+//        let id = products[index].id ?? ""
+//        openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
+//        NetworkManager.shared.getData(CartModel.self, Requst: .cartincrement(id: id), method: .get, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
+//            self?.closeIndicator()
+//            if Code == 200 {
+//                self?.products = Data?.data?.products ?? []
+//                let count = self?.productList.count ?? 0
+//                self?.vc.countTabel(count: count)
+//                self?.vc.dataReload()
+//        
+//            }else{
+//                self?.vc.errormassage(msg: Data?.message ?? "")
+//            }
+//            
+//        }
+//    }
     
     
 
@@ -43,14 +62,14 @@ class EditOrderVC: UIViewController {
 
 extension EditOrderVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return products?.count
+        return products?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: EditCartCell = ProductTabelView.dequeueReusableCell(forIndexPath: indexPath)
         cell.deleteBT.isHidden = true
         
-        cell.Data(product: products?[indexPath.row])
+        cell.Data(product: (products?[indexPath.row])!)
 //        cell.incrementProducte = {
 //            self.presenter?.increamentCart(index: indexPath.row)
 //        }
@@ -64,10 +83,7 @@ extension EditOrderVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        presenter.selectRecipeCell(index: indexPath.row, RecipeId: 1)
-//        let vc = Bundle.main.loadNibNamed("ProductDetailsVC", owner: nil, options: nil)![0] as! ProductDetailsVC
-//        vc.id = "1"
-//        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
     
 }
