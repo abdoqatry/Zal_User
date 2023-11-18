@@ -131,7 +131,7 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
         shopView.layer.cornerRadius = 12
         shopView.layer.borderColor = UIColor.lightGray.cgColor
         shopView.layer.borderWidth = 0.5
-        taxLabel.text = "tax".localize
+        taxLabel.text = "tax :".localize
         
     }
     

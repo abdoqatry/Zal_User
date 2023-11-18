@@ -36,23 +36,20 @@ class EditOrderVC: UIViewController {
     }
     
     
-//    func increamentCart(index:Int){
-//        let id = products[index].id ?? ""
-//        openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
-//        NetworkManager.shared.getData(CartModel.self, Requst: .cartincrement(id: id), method: .get, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
-//            self?.closeIndicator()
-//            if Code == 200 {
-//                self?.products = Data?.data?.products ?? []
-//                let count = self?.productList.count ?? 0
-//                self?.vc.countTabel(count: count)
-//                self?.vc.dataReload()
-//        
-//            }else{
-//                self?.vc.errormassage(msg: Data?.message ?? "")
-//            }
-//            
-//        }
-//    }
+    func increamentCart(index:Int){
+        let id = products[index].id ?? ""
+        openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
+        NetworkManager.shared.getData(CartModel.self, Requst: .cartincrement(id: id), method: .get, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
+            self?.closeIndicator()
+            if Code == 200 {
+                self?.products = Data?.data?.products ?? []
+                self.ProductTabelView.reloadData()
+            }else{
+                self?.vc.errormassage(msg: Data?.message ?? "")
+            }
+            
+        }
+    }
     
     
 
