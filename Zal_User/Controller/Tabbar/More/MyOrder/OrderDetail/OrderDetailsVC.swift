@@ -11,7 +11,7 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
     func Errormassage(msg: String) {
         showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
     }
-    func getData(time: String, location: String, productPrice: String, discount: String, paymenttype: String, delivery: String, total: String, status: String,vat:String,creatTime:String,appAmount:Double,providerAmount:Double,lat:String,lng:String,ispaided:Bool) {
+    func getData(time: String, location: String, productPrice: String, discount: String, paymenttype: String, delivery: String, total: String, status: String,vat:String,creatTime:String,appAmount:Double,providerAmount:Double,lat:String,lng:String,ispaided:Bool,shopname:String,shopImage:String,rate:Double) {
 //        self.ispaided = ispaided
         if time != "" {
             timeLabel.text = converttime(time)
@@ -29,6 +29,9 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
         paymentTypeLabel.text = paymenttype
         deliveryFessLabel.text = ("\(delivery) \("SR".localize)")
         totallLabel.text = ("\(total) \("SR".localize)")
+        shopLabel.text = shopname
+        let url = URL(string: shopImage)
+        self.shopImage.kf.setImage(with: url)
 //        vatLabel.text = ("\(appAmount) \("SR".localize)")
 //        checkStatus(status: status)
 //        totalAmountLabel.text = ("\(providerAmount) \("SR".localize)")
@@ -53,6 +56,9 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
         orderDetailTabel.reloadData()
     }
     
+    @IBOutlet weak var shopLabel: UILabel!
+    @IBOutlet weak var shopImage: UIImageView!
+    @IBOutlet weak var shopView: UIView!
     @IBOutlet weak var totalView: UIView!
     @IBOutlet weak var deliveryView: UIView!
     @IBOutlet weak var pymentTypeView: UIView!
