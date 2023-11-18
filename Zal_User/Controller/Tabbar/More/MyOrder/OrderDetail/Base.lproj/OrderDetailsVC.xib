@@ -491,9 +491,18 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTW-tW-FV6" customClass="CosmosView" customModule="Cosmos">
+                                                <rect key="frame" x="268" y="205" width="90" height="20"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="FE8-sb-PpN"/>
+                                                    <constraint firstAttribute="width" constant="90" id="uFV-7K-alY"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ZTW-tW-FV6" secondAttribute="trailing" constant="15" id="4ud-oe-atY"/>
                                             <constraint firstItem="moW-RA-wMp" firstAttribute="top" secondItem="apV-dS-3W9" secondAttribute="bottom" constant="20" id="8dt-Tm-38h"/>
                                             <constraint firstAttribute="trailing" secondItem="apV-dS-3W9" secondAttribute="trailing" constant="5" id="CsE-y4-oTz"/>
                                             <constraint firstItem="apV-dS-3W9" firstAttribute="leading" secondItem="zEg-DH-f26" secondAttribute="leading" constant="5" id="FQS-Gu-etP"/>
@@ -501,6 +510,7 @@
                                             <constraint firstItem="apV-dS-3W9" firstAttribute="top" secondItem="zEg-DH-f26" secondAttribute="top" constant="10" id="WxY-4x-RH9"/>
                                             <constraint firstAttribute="trailing" secondItem="moW-RA-wMp" secondAttribute="trailing" constant="60" id="YEz-zT-AcE"/>
                                             <constraint firstAttribute="height" constant="240" id="jZO-On-CYK"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZTW-tW-FV6" secondAttribute="bottom" constant="15" id="vgY-Kg-hF2"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -566,6 +576,7 @@
                 <outlet property="priceLabel" destination="k07-Xp-aYl" id="HVf-mg-bwN"/>
                 <outlet property="priceView" destination="xmV-gu-uNy" id="t0u-2F-kWP"/>
                 <outlet property="pymentTypeView" destination="RmM-Vz-Ybe" id="jDd-4F-WK6"/>
+                <outlet property="rateView" destination="ZTW-tW-FV6" id="kjR-Kw-JU5"/>
                 <outlet property="shopImage" destination="apV-dS-3W9" id="Ph3-kN-eZ9"/>
                 <outlet property="shopLabel" destination="moW-RA-wMp" id="YDm-7T-ZqY"/>
                 <outlet property="shopView" destination="zEg-DH-f26" id="RJo-cS-d70"/>

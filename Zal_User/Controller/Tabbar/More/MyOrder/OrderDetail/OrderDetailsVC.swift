@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Cosmos
 
 class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
     func Errormassage(msg: String) {
@@ -32,6 +33,7 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
         shopLabel.text = shopname
         let url = URL(string: shopImage)
         self.shopImage.kf.setImage(with: url)
+        rateView.rating = rate
 //        vatLabel.text = ("\(appAmount) \("SR".localize)")
 //        checkStatus(status: status)
 //        totalAmountLabel.text = ("\(providerAmount) \("SR".localize)")
@@ -77,6 +79,7 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
     @IBOutlet weak var colapsPriceImage: UIImageView!
 //    @IBOutlet weak var totalAmountLabel: UILabel!
     
+    @IBOutlet weak var rateView: CosmosView!
     @IBOutlet weak var colapsDateImage: UIImageView!
     @IBOutlet weak var bottomDateView: NSLayoutConstraint!
     @IBOutlet weak var locationLabel: UILabel!
@@ -121,6 +124,10 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
         colapsDateImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colacsDateView)))
         colapsPriceImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colacspriceView)))
         colapsDaterecivedImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colacsDateRecivedView)))
+        shopView.layer.cornerRadius = 12
+        shopView.layer.borderColor = UIColor.lightGray.cgColor
+        shopView.layer.borderWidth = 0.5
+        
     }
     
     @objc func colacsDateRecivedView(){
