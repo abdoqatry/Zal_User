@@ -372,6 +372,32 @@
                                                             <constraint firstAttribute="height" constant="25" id="qKN-Hc-tHd"/>
                                                         </constraints>
                                                     </view>
+                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="em6-cy-ZZS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="313" height="25"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lE-zM-u7r">
+                                                                <rect key="frame" x="9.9999999999999982" y="5.6666666666666288" width="26.333333333333329" height="14"/>
+                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtQ-YC-BeQ">
+                                                                <rect key="frame" x="46.333333333333329" y="12.666666666666629" width="0.0" height="0.0"/>
+                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="9lE-zM-u7r" firstAttribute="leading" secondItem="em6-cy-ZZS" secondAttribute="leading" constant="10" id="5eF-z6-Pcp"/>
+                                                            <constraint firstItem="9lE-zM-u7r" firstAttribute="centerY" secondItem="em6-cy-ZZS" secondAttribute="centerY" id="Aqi-0K-dhm"/>
+                                                            <constraint firstAttribute="height" constant="25" id="Gbv-hE-6Bg"/>
+                                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mtQ-YC-BeQ" secondAttribute="trailing" constant="5" id="up5-UT-5Ob"/>
+                                                            <constraint firstItem="mtQ-YC-BeQ" firstAttribute="leading" secondItem="9lE-zM-u7r" secondAttribute="trailing" constant="10" id="utI-Ws-5Tc"/>
+                                                            <constraint firstItem="mtQ-YC-BeQ" firstAttribute="centerY" secondItem="em6-cy-ZZS" secondAttribute="centerY" id="wpg-BP-GDJ"/>
+                                                        </constraints>
+                                                    </view>
                                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4m-xd-407">
                                                         <rect key="frame" x="0.0" y="0.0" width="313" height="25"/>
                                                         <subviews>
@@ -395,32 +421,6 @@
                                                             <constraint firstItem="2Yq-Ys-ldr" firstAttribute="centerY" secondItem="r4m-xd-407" secondAttribute="centerY" id="C5L-eO-Oxr"/>
                                                             <constraint firstItem="2Yq-Ys-ldr" firstAttribute="leading" secondItem="r4m-xd-407" secondAttribute="leading" constant="10" id="Put-Rd-6t7"/>
                                                             <constraint firstAttribute="height" constant="25" id="bNX-qQ-wGv"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="em6-cy-ZZS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="313" height="25"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ِApp percentage (tax included) :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lE-zM-u7r">
-                                                                <rect key="frame" x="10" y="5.6666666666666288" width="184.33333333333334" height="14"/>
-                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtQ-YC-BeQ">
-                                                                <rect key="frame" x="204.33333333333334" y="5" width="15.666666666666657" height="15"/>
-                                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="15"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstItem="9lE-zM-u7r" firstAttribute="leading" secondItem="em6-cy-ZZS" secondAttribute="leading" constant="10" id="5eF-z6-Pcp"/>
-                                                            <constraint firstItem="9lE-zM-u7r" firstAttribute="centerY" secondItem="em6-cy-ZZS" secondAttribute="centerY" id="Aqi-0K-dhm"/>
-                                                            <constraint firstAttribute="height" constant="25" id="Gbv-hE-6Bg"/>
-                                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mtQ-YC-BeQ" secondAttribute="trailing" constant="5" id="up5-UT-5Ob"/>
-                                                            <constraint firstItem="mtQ-YC-BeQ" firstAttribute="leading" secondItem="9lE-zM-u7r" secondAttribute="trailing" constant="10" id="utI-Ws-5Tc"/>
-                                                            <constraint firstItem="mtQ-YC-BeQ" firstAttribute="centerY" secondItem="em6-cy-ZZS" secondAttribute="centerY" id="wpg-BP-GDJ"/>
                                                         </constraints>
                                                     </view>
                                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDa-F3-klx">
@@ -482,8 +482,8 @@
                                                     <constraint firstAttribute="height" constant="120" id="iVb-97-Gow"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moW-RA-wMp">
-                                                <rect key="frame" x="60" y="150" width="253" height="20.333333333333343"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moW-RA-wMp">
+                                                <rect key="frame" x="60" y="150" width="253" height="0.0"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="Vj0-Ci-iOY"/>
                                                 </constraints>
@@ -580,6 +580,9 @@
                 <outlet property="shopImage" destination="apV-dS-3W9" id="Ph3-kN-eZ9"/>
                 <outlet property="shopLabel" destination="moW-RA-wMp" id="YDm-7T-ZqY"/>
                 <outlet property="shopView" destination="zEg-DH-f26" id="RJo-cS-d70"/>
+                <outlet property="taxLabel" destination="9lE-zM-u7r" id="UMT-VS-Fbl"/>
+                <outlet property="taxValueLabel" destination="mtQ-YC-BeQ" id="oU1-P8-gQc"/>
+                <outlet property="taxView" destination="em6-cy-ZZS" id="M4z-CB-qtg"/>
                 <outlet property="timeLabel" destination="Uj5-dB-Liv" id="3vA-U1-NF0"/>
                 <outlet property="timeLabelrecived" destination="wYv-kn-Fja" id="CLa-5G-Dp9"/>
                 <outlet property="timeView" destination="Kg2-pc-oHX" id="Yua-dT-6NV"/>

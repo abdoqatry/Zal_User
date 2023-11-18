@@ -15,7 +15,7 @@ protocol OrderDetailsProtocol {
     
     func Errormassage(msg:String)
     
-    func getData(time:String,location:String,productPrice:String,discount:String,paymenttype:String,delivery:String,total:String,status : String,vat:String,creatTime:String,appAmount:Double,providerAmount:Double,lat:String,lng:String,ispaided:Bool,shopname:String,shopImage:String,rate:Double)
+    func getData(time:String,location:String,productPrice:String,discount:String,paymenttype:String,delivery:String,total:String,status : String,vat:String,creatTime:String,appAmount:Double,providerAmount:Double,lat:String,lng:String,ispaided:Bool,shopname:String,shopImage:String,rate:Double,tax:Double)
     
     func navigationBack()
     
@@ -59,7 +59,8 @@ class OrderDetailsPresenter {
                 let shopname = Data?.data?.provider?.name ?? ""
                 let shopImage = Data?.data?.provider?.image ?? ""
                 let rate = Data?.data?.provider?.rate ?? 0
-                self?.vc.getData(time: time, location: location, productPrice: productPrice, discount: discount, paymenttype: paymenttype, delivery: delivery, total: total, status: status, vat: vat, creatTime: creatTime,appAmount:appPercent,providerAmount:providerAmount,lat:lat,lng:lan,ispaided:paid,shopname:shopname,shopImage:shopImage,rate:rate)
+                let tax = Data?.data?.tax ?? 0.0
+                self?.vc.getData(time: time, location: location, productPrice: productPrice, discount: discount, paymenttype: paymenttype, delivery: delivery, total: total, status: status, vat: vat, creatTime: creatTime,appAmount:appPercent,providerAmount:providerAmount,lat:lat,lng:lan,ispaided:paid,shopname:shopname,shopImage:shopImage,rate:rate,tax: tax)
                 
                 self?.OrderList = Data?.data?.products ?? []
                 self?.vc.reloadTabel()

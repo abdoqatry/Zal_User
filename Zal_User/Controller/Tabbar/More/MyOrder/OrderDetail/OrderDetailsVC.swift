@@ -12,7 +12,7 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
     func Errormassage(msg: String) {
         showAlert(title: msg, messages: nil, message: nil, selfDismissing: true)
     }
-    func getData(time: String, location: String, productPrice: String, discount: String, paymenttype: String, delivery: String, total: String, status: String,vat:String,creatTime:String,appAmount:Double,providerAmount:Double,lat:String,lng:String,ispaided:Bool,shopname:String,shopImage:String,rate:Double) {
+    func getData(time: String, location: String, productPrice: String, discount: String, paymenttype: String, delivery: String, total: String, status: String,vat:String,creatTime:String,appAmount:Double,providerAmount:Double,lat:String,lng:String,ispaided:Bool,shopname:String,shopImage:String,rate:Double,tax:Double) {
 //        self.ispaided = ispaided
         if time != "" {
             timeLabel.text = converttime(time)
@@ -34,6 +34,7 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
         let url = URL(string: shopImage)
         self.shopImage.kf.setImage(with: url)
         rateView.rating = rate
+        taxValueLabel.text = String(tax)
 //        vatLabel.text = ("\(appAmount) \("SR".localize)")
 //        checkStatus(status: status)
 //        totalAmountLabel.text = ("\(providerAmount) \("SR".localize)")
@@ -58,6 +59,9 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
         orderDetailTabel.reloadData()
     }
     
+    @IBOutlet weak var taxValueLabel: UILabel!
+    @IBOutlet weak var taxLabel: UILabel!
+    @IBOutlet weak var taxView: UIView!
     @IBOutlet weak var shopLabel: UILabel!
     @IBOutlet weak var shopImage: UIImageView!
     @IBOutlet weak var shopView: UIView!
@@ -127,6 +131,7 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
         shopView.layer.cornerRadius = 12
         shopView.layer.borderColor = UIColor.lightGray.cgColor
         shopView.layer.borderWidth = 0.5
+        taxLabel.text = "tax".localize
         
     }
     
@@ -195,11 +200,12 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
               self.deliveryView.isHidden = false
               self.priceView.isHidden = false
               self.totalView.isHidden = false
-//              self.VatView.isHidden = false
+              self.taxView.isHidden = false
               self.discountLabel.isHidden = false
               self.paymentTypeLabel.isHidden = false
               self.deliveryFessLabel.isHidden = false
               self.priceLabel.isHidden = false
+              self.taxLabel.isHidden = false
 //              self.vatLabel.isHidden = false
 //              self.AmountView.isHidden = false
 //              self.AmountLabel.isHidden = false
@@ -216,11 +222,12 @@ class OrderDetailsVC: UIViewController,OrderDetailsProtocol {
               self.deliveryView.isHidden = true
               self.priceView.isHidden = true
               self.totalView.isHidden = true
-//              self.VatView.isHidden = true
+              self.taxView.isHidden = true
               self.discountLabel.isHidden = true
               self.paymentTypeLabel.isHidden = true
               self.deliveryFessLabel.isHidden = true
               self.priceLabel.isHidden = true
+              self.taxLabel.isHidden = true
 //              self.vatLabel.isHidden = true
 //              self.AmountView.isHidden = true
 //              self.AmountLabel.isHidden = true

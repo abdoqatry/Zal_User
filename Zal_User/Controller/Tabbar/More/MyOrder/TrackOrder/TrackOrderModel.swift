@@ -25,13 +25,13 @@ struct OrderDetailsClass: Codable {
     let distance, productsTotal, delivery: Double?
     let totalBeforeDiscount: Double?
     let discountAmount: Double?
-    let vat, appAmount, providerAmount, total: Double?
+    let vat, appAmount, providerAmount, total,tax: Double?
     let date, createdAt: String?
     let address: addressModel?
     let is_paid : Bool?
 
     enum CodingKeys: String, CodingKey {
-        case id,is_paid,address
+        case id,is_paid,address,tax
         case orderNum = "order_num"
         case status
         case statusTimes = "status_times"
