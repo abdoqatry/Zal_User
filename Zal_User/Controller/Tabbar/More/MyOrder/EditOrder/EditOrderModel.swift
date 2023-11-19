@@ -23,11 +23,11 @@ struct EditDataClass: Codable {
     let provider: Provider?
 //    let coupon: JSONNull?
     let isPaid: Bool?
-    let distance, productsTotal, delivery, totalBeforeDiscount: Int?
-    let discountAmount: Int?
+    let distance, productsTotal, delivery, totalBeforeDiscount: Double?
+    let discountAmount: Double?
     let tax, vat: Double?
     let appPercent: String?
-    let appAmount, providerAmount, subTotal: Int?
+    let appAmount, providerAmount, subTotal: Double?
     let total: Double?
     let date, createdAt: String?
 

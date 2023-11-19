@@ -52,6 +52,21 @@ class EditOrderVC: UIViewController {
         }
     }
     
+    func decreamentCart(index:Int){
+        let Productid = products?[index].id ?? ""
+        openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
+        NetworkManager.shared.getData(EditCartModel.self, Requst: .increment_order(order_id: orderID, order_product_id: Productid), method: .get, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
+            self?.closeIndicator()
+            if Code == 200 {
+                self?.products = Data?.data?.products ?? []
+                self?.ProductTabelView.reloadData()
+            }else{
+                self?.showAlert(title: Data?.message ?? "", messages: nil, message: nil, selfDismissing: true)
+            }
+            
+        }
+    }
+    
     
 
 }
@@ -71,9 +86,9 @@ extension EditOrderVC: UITableViewDataSource {
         cell.incrementProducte = {
             self.increamentCart(index: indexPath.row)
         }
-//        cell.decrementProducte = {
-//            self.presenter?.decreamentCart(index: indexPath.row)
-//        }
+        cell.decrementProducte = {
+            self.decreamentCart(index: indexPath.row)
+        }
         
         cell.selectionStyle = .none
         
