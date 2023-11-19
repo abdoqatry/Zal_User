@@ -213,6 +213,7 @@ class TrackOrderVC: UIViewController,TrackOrderProtocol {
     @IBAction func EditAction(_ sender: UIButton) {
         let VC = Bundle.main.loadNibNamed("EditOrderVC", owner: nil, options: nil)![0] as! EditOrderVC
         VC.products = Products
+        VC.orderID = id
         navigationController?.pushViewController(VC, animated: true)
         
     }

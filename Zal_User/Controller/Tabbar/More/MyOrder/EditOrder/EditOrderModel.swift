@@ -54,36 +54,36 @@ struct EditDataClass: Codable {
         case createdAt = "created_at"
     }
 }
-
-// MARK: - ProductElement
-struct ProductElement: Codable {
-    let id: String?
-    let product: ProductProduct?
-    let quantity, price: Int?
-}
-
-// MARK: - ProductProduct
-struct ProductProduct: Codable {
-    let id: Int?
-    let image: String?
-    let name: String?
-    let price, description: String?
-
-    enum CodingKeys: String, CodingKey {
-        case id, image, name
-        case price, description
-    }
-}
-
-// MARK: - Provider
-struct Provider: Codable {
-    let id: Int?
-    let name, desc, terms: String?
-    let image: String?
-    let createdAt: String?
-
-    enum CodingKeys: String, CodingKey {
-        case id, name, desc, terms, image
-        case createdAt = "created_at"
-    }
-}
+//
+//// MARK: - ProductElement
+//struct ProductElement: Codable {
+//    let id: String?
+//    let product: ProductProduct?
+//    let quantity, price: Int?
+//}
+//
+//// MARK: - ProductProduct
+//struct ProductProduct: Codable {
+//    let id: Int?
+//    let image: String?
+//    let name: String?
+//    let price, description: String?
+//
+//    enum CodingKeys: String, CodingKey {
+//        case id, image, name
+//        case price, description
+//    }
+//}
+//
+//// MARK: - Provider
+//struct Provider: Codable {
+//    let id: Int?
+//    let name, desc, terms: String?
+//    let image: String?
+//    let createdAt: String?
+//
+//    enum CodingKeys: String, CodingKey {
+//        case id, name, desc, terms, image
+//        case createdAt = "created_at"
+//    }
+//}

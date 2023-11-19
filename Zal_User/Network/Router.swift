@@ -58,6 +58,7 @@ enum Router {
     case get_checkout_id(amount:String,paymentType:String)
     case check_status(paymentType:String,id:String)
     case charge(order_id:String,transaction_id:String)
+    case increment_order(order_id:String,order_product_id:String)
     
     private var path: String {
         var path: String
@@ -163,6 +164,8 @@ enum Router {
         case.charge:
             path = "api/update_order_payment"
             
+        case .increment_order( let order_id, let order_product_id):
+            path = "api/increment_order_item_qty/\(order_id)/\(order_product_id)"
         }
         return path
     }

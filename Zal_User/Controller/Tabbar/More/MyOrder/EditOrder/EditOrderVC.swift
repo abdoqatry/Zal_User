@@ -24,6 +24,7 @@ class EditOrderVC: UIViewController {
         }
     }
     
+    var orderID = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Edit Order".localize
@@ -37,15 +38,15 @@ class EditOrderVC: UIViewController {
     
     
     func increamentCart(index:Int){
-        let id = products[index].id ?? ""
+        let Productid = products?[index].id ?? ""
         openIndicator(title:Constants.PLEASE_WAIT , description: Constants.LOADING_DATA)
-        NetworkManager.shared.getData(CartModel.self, Requst: .cartincrement(id: id), method: .get, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
+        NetworkManager.shared.getData(EditCartModel.self, Requst: .increment_order(order_id: orderID, order_product_id: Productid), method: .get, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
             self?.closeIndicator()
             if Code == 200 {
                 self?.products = Data?.data?.products ?? []
-                self.ProductTabelView.reloadData()
+                self?.ProductTabelView.reloadData()
             }else{
-                self?.vc.errormassage(msg: Data?.message ?? "")
+                self?.showAlert(title: Data?.message ?? "", messages: nil, message: nil, selfDismissing: true)
             }
             
         }
@@ -67,9 +68,9 @@ extension EditOrderVC: UITableViewDataSource {
         cell.deleteBT.isHidden = true
         
         cell.Data(product: (products?[indexPath.row])!)
-//        cell.incrementProducte = {
-//            self.presenter?.increamentCart(index: indexPath.row)
-//        }
+        cell.incrementProducte = {
+            self.increamentCart(index: indexPath.row)
+        }
 //        cell.decrementProducte = {
 //            self.presenter?.decreamentCart(index: indexPath.row)
 //        }
