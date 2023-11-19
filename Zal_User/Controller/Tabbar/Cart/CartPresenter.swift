@@ -68,10 +68,11 @@ class CartPresenter {
         NetworkManager.shared.getData(CartModel.self, Requst: .cartincrement(id: id), method: .get, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
             self?.vc.closeIndicator()
             if Code == 200 {
-                self?.productList = Data?.data?.products ?? []
-                let count = self?.productList.count ?? 0
-                self?.vc.countTabel(count: count)
-                self?.vc.dataReload()
+//                self?.productList = Data?.data?.products ?? []
+//                let count = self?.productList.count ?? 0
+//                self?.vc.countTabel(count: count)
+//                self?.vc.dataReload()
+                self?.getCart()
         
             }else{
                 self?.vc.errormassage(msg: Data?.message ?? "")
@@ -86,10 +87,11 @@ class CartPresenter {
         NetworkManager.shared.getData(CartModel.self, Requst: .cartdecrement(id: id), method: .get, headerType: .authenticated) {[weak self] (Massage, Data, Code) in
             self?.vc.closeIndicator()
             if Code == 200 {
-                self?.productList = Data?.data?.products ?? []
-                let count = self?.productList.count ?? 0
-                self?.vc.countTabel(count: count)
-                self?.vc.dataReload()
+//                self?.productList = Data?.data?.products ?? []
+//                let count = self?.productList.count ?? 0
+//                self?.vc.countTabel(count: count)
+//                self?.vc.dataReload()
+                self?.getCart()
         
             }else{
                 self?.vc.errormassage(msg: Data?.message ?? "")
