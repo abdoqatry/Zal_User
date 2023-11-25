@@ -38,5 +38,10 @@
 		<string>processing</string>
 		<string>remote-notification</string>
 	</array>
+    <key>WKBackgroundModes</key>
+    <array>
+        <string>App downloads content from the network</string>
+        <string>App downloads content in response to push notifications</string>
+    </array>
 </dict>
 </plist>

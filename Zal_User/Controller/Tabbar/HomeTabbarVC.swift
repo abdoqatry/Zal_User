@@ -135,7 +135,7 @@ class HomeTabbarVC: UITabBarController,UITabBarControllerDelegate {
             UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: 5.0)
         }
      }
-        addProduct.tabBarItem = UITabBarItem(title: "Stores".localize, image: UIImage(named: "home-39"), tag: 2)
+        addProduct.tabBarItem = UITabBarItem(title: "Stores".localize, image: UIImage(named: "stor"), tag: 2)
         home.tabBarItem = UITabBarItem(title: "Home".localize, image: UIImage(named: "home-39"), tag: 2)
         message.tabBarItem = UITabBarItem(title: "Chat".localize, image:UIImage(named: "chat"), tag: 3)
         lmessage.tabBarItem = UITabBarItem(title: "Chat".localize, image:UIImage(named: "chat"), tag: 3)
